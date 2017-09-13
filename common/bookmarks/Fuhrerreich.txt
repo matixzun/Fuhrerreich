@@ -1,0 +1,21 @@
+bookmarks = {
+	bookmark = {
+		name = "FUHRERREICH_NAME"
+		desc = "FUHRERREICH_DESC"
+		date = 1936.1.1.1
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+
+		"---"={
+			history = "OTHER_FUHRERREICH_DESC"
+		}
+
+		# minors ####
+		
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
