@@ -1,0 +1,29 @@
+﻿l_english:
+ ### Ideologies ###
+internationalist:0 "Internationalists"
+bolshevist:0 "Bolshevists"
+marxist_leninist:0 "Marxist Leninists"
+libertartarian_socialist:0 "Libertartarian Socialist"
+social_democrat:0 "Social Democrats"
+social_liberal:0 "Social Liberals"
+market_liberal:0 "Market Liberals"
+social_conservative:0 "Social Conservatives"
+authoritarian_democrat:0 "Authoritarian Dem."
+paternal_autocrat:0 "Paternal Autocrats"
+national_populist:0 "National Populists"
+valkist:0 "Valkists"
+
+### Drift ###
+internationalist_drift:0 "Daily Internationalist support"
+bolshevist_drift:0 "Daily Bolshevist support"
+marxist_leninist_drift:0 "Daily Marxist Leninist support"
+libertartarian_socialist_drift:0 "Daily Libertartarian Socialist support"
+social_democrat_drift:0 "Daily Social Democrat support"
+social_liberal_drift:0 "Daily Social Liberal support"
+market_liberal_drift:0 "Daily Market Liberal support"
+social_conservative_drift:0 "Daily Social Conservative support"
+authoritarian_democrat_drift:0 "Daily Authoritarian Democrat support"
+paternal_autocrat_drift:0 "Daily Paternal Autocrat support"
+national_populist_drift:0 "Daily National Populist support"
+valkist_drift:0 "Daily Valkist support"
+
