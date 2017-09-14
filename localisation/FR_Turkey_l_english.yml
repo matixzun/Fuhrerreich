@@ -143,3 +143,21 @@ TUR_authoritarian_democrat_ADJ:0 ""
 TUR_paternal_autocrat_ADJ:0 ""
 TUR_national_populist_ADJ:0 ""
 TUR_valkist_ADJ:0 ""
+
+
+#### Events ####
+
+tur.1.t:0 "The Sultan has been assassinated!"
+tur.1.d:0 "An assassin with unknown motives has taken out the Sultan! Becuase the Sultan was the only thing keeping our country together, the future is now uncertain and many factions are already clamouring for change or trying to seize power for themselves."
+tur.1.a:0 "This does not bode well..."
+
+
+#### Flags ####
+
+SULTAN_ABDULMECID_II_DEATH:0 "Abdulmecid II is dead."
+
+
+#### Ideas ####
+
+TUR_political_turmoil:0 "Political Turmoil"
+TUR_political_turmoil_desc:0 "With the recent assassination of the Entente-backed Sultan Abdulmecid II, stability within the Ottoman Empire is quickly deteriorating. Many factions and groups have their own agenda and wish to seize power for themselves. The death of the Sultan may be the straw that breaks the camel's back and destroys the Ottoman Empire unless we are quick to regain control..."

@@ -41,64 +41,178 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+1939.1.1 = {
 
+	add_political_power = 899
+
+	#adding ministers
+	add_ideas = {
+		FRA_charles_tillon
+		francois_darlan
+		philippe_fequant
+		famh
+		jean_marie_bergeret
+		renault_fra
+
+		#laws
+		partial_economic_mobilisation
+	}
+
+	complete_national_focus = FRA_metropolitan_france
+	complete_national_focus = FRA_industrial_expansion
+	complete_national_focus = FRA_initiate_government_reform
+	complete_national_focus = FRA_support_status_quo
+	complete_national_focus = FRA_go_with_britain
+	complete_national_focus = FRA_navy_focus
+	complete_national_focus = FRA_improved_screen_ships
+	complete_national_focus = FRA_air_focus
+	complete_national_focus = FRA_metropolitan_france
+	complete_national_focus = FRA_algerie_france
+	complete_national_focus = FRA_colonial_industry
+	complete_national_focus = FRA_colonial_military_factories
+
+	give_guarantee = POL
+	ENG = { add_to_faction = FRA }
+
+	oob = "FRA_1939"
+	set_technology = {
+		fighter1 = 1
+		fighter2 = 1
+		heavy_fighter1 = 1
+		tactical_bomber2 = 1
+		strategic_bomber1 = 1
+		cv_fighter1 = 1
+		cv_CAS1 = 1
+		improved_light_tank = 1
+		basic_medium_tank = 1
+		basic_heavy_tank = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		basic_battleship = 1
+		basic_battlecruiser = 1
+
+		#doctrines
+		#Air
+		force_rotation = 1
+		fighter_baiting = 1
+		low_echelon_support = 1
+		dispersed_fighting = 1
+		
+			grand_battle_plan = 1
+
+		trench_warfare = 1
+		prepared_defense = 1
+		battlefleet_concentration = 1
+		subsidiary_carrier_role = 1
+		convoy_sailing = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_plant = 1
+		improved_oil_plant = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+}
 
 set_convoys = 300
 set_national_unity = 0.4
 
 set_politics = {
 
-		parties = {
-		internationalist = {
-			popularity = 0
+	parties = {
+		democratic = { 
+			popularity = 69
 		}
-		bolshevist = {
-			popularity = 0
-		}
-		marxist_leninist = {
-			popularity = 0
-		}
-		libertartarian_socialist = {
-			popularity = 0
-		}
-		social_democrat = {
+
+		fascism = {
 			popularity = 1
 		}
-		social_liberal = {
-			popularity = 2
-		}
-		market_liberal = {
-			popularity = 2
-		}
-		social_conservative = {
-			popularity = 45
-		}
-		authoritarian_democrat = {
-			popularity = 47
-		}
-		paternal_autocrat = {
-			popularity = 3
-		}
-		national_populist = {
-			popularity = 0
-		}
-		valkist = {
-			popularity = 0
-		}
-	}
 		
-		ruling_party = social_conservative
-		last_election = "1936.6.10"
-		election_frequency = 120
-		elections_allowed = no
+		communism = {
+			popularity = 30
+		}
 	}
-
-add_ideas = {
+	
+	ruling_party = democratic
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = yes
 }
 
-puppet = RHI
+add_ideas = {
+	FRA_victors_of_wwi
+	FRA_disjointed_government
+	FRA_protected_by_the_maginot_line
+	limited_conscription
+}
 
+#give_guarantee = CZE
 
+#Order matters here Daladier will start as leaders because added last
+create_country_leader = {
+	name = "Charles de Gaulle"
+	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Édouard Daladier"
+	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	picture = "Portrait_France_Edouard_Daladier.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		stout_defender
+	}
+}
+
+create_country_leader = {
+	name = "Maurice Thorez"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Portrait_France_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = 	stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Philippe Pétain"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
 
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
