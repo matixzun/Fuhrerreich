@@ -1,0 +1,145 @@
+﻿l_english:
+
+#### Focus ####
+
+### Political Tree ###
+
+TUR_the_fifth_ankara_congress:0 "Fifth Ankara Congress"
+TUR_the_fifth_ankara_congress_desc:0 "The death of Abdulmecid II has thrown the Ottoman Empire into disarray. Many factions are clamouring for change while others are seeking to seize power. This emergency Congress will decide the future of the Ottoman Empire for the upcoming years."
+
+## Keep the Ottoman Empire ##
+
+TUR_consolidate_our_rule:0 "Consolidate our Rule"
+TUR_consolidate_our_rule_desc:0 "With the nation in disarray following the Sultan’s death, many seek to abolish the Ottoman Empire in its entirety. We cannot, must not, let that happen. It is up to us to ensure that the empire remains a whole."
+TUR_rise_from_the_ashes:0 "Rise from the Ashes"
+TUR_rise_from_the_ashes_desc:0 "By reforming and strengthening our empire we have managed to prove our legitimacy to both the international community and our people. The Ottoman Empire has truly risen from the ashes and reformed itself as a nation. No longer shall we be the ‘Sick Man of Europe’!"
+
+# Revanchist Sultan #
+
+TUR_revanchism:0 "Revanchism"
+TUR_revanchism_desc:0 "The Ottoman Empire must regain the confidence of its subjects, but, more importantly, we should seek to regain the lands that rightfully belong to us. Long live the Sultan!"
+TUR_prepare_for_war:0 "Prepare for War"
+TUR_prepare_for_war_desc:0 "If we are to retake our lands, we must ensure that we are prepared to go to war. This means mobilizing our men, producing modern weapons, and expanding the army."
+TUR_conscript_able_bodied_men:0 "Conscript Able-Bodied Men"
+TUR_conscript_able_bodied_men_desc:0 "If we are to go to war for our lands, it is important that the able-bodied men of the Ottoman Empire serve in the army."
+TUR_demand_constantinople:0 "Demand Constantinople"
+TUR_demand_constantinople_desc:0 "Constantinople was the former head of the Ottoman Empire and the cultural and economic centre of our nation. The fact that it is our of our grasp is insulting and undermines our power. Constantinople rightfully belongs to the Ottoman Empire!"
+
+# Democratic Sultan #
+
+TUR_the_democratic_sultan:0 "The Democratic Sultan"
+TUR_the_democratic_sultan_desc:0 "The way forward is not to make new enemies or restrict the rights and civil liberties of the people. We must ensure that we remain a democratic nation in order to preserve peace and stability within the empire."
+TUR_deal_with_corruption:0 "Deal with Corruption"
+TUR_deal_with_corruption_desc:0 "The death of the Sultan exposed the weaknesses of the Ottoman Empire. Namely the opportunistic factions seeking to usurp the throne of the Sultan or abolish the empire entirely. These cliques and factions are paralyzing our nation and if we are to reform and liberalize, we must eliminate all corruption within our glorious empire."
+TUR_protect_the_millet_system:0 "Protect the Millet System"
+TUR_protect_the_millet_system_desc:0 "The Millet System aids our tolerant rule and ensures that the Ottoman Empire maintains a policy of religious pluralism. Allowing all religions to co-exist peacefully will strengthen the Ottoman nation."
+TUR_education_reform:0 "Education Reform"
+TUR_education_reform_desc:0 "Much of the problems from our empire stemmed from the dismal state of our education system. Our military officers were never educated in the art of modern warfare, people living within the rural areas have never sought to educate themselves. By reforming the education system, and subsidizing the cost of schools, we can ensure an educated Ottoman population and hopefully prevent the mistakes of the past."
+
+## Abolish the Ottoman Empire ##
+
+TUR_abolish_the_empire:0 "Abolish the Empire"
+TUR_abolish_the_empire_desc:0 "The Ottoman Empire is a disgraced relic of the past. It was because of the weakness of the Sultan during the rule of the triumvirate that had led us to losing our vast empire. If we are to go forward as a nation, we must abolish the Ottoman Empire."
+TUR_a_new_nation:0 "A New Nation"
+TUR_a_new_nation_desc:0 "The reforms set in place by our leader have strengthened the once weak Turkish nation. Turkey can finally go into the world, stronger than ever before and prepared for any challenge."
+
+# Theocracy #
+
+TUR_turkish_theocracy:0 "Turkish Theocracy"
+TUR_turkish_theocracy_desc:0 "The reason the Ottoman Empire had lost during the First Great War was due to how lax the state had become in terms of religion. If we use religion, and establish Turkey as a theocracy, we shall tower above all of our enemies!"
+TUR_state_religion:0 "State Religion"
+TUR_state_religion_desc:0 "The new Turkish nation will continue the policy of maintaining a state religion. However, we will ensure that religion is prevalent within the day to day lives of all citizens."
+TUR_declare_the_caliphate:0 "Declare the Caliphate"
+TUR_declare_the_caliphate_desc:0 "We will take up the mantle of the old Ottoman Empire and declare ourselves the Caliphate in order to unite Muslims from all around the world. "
+TUR_unite_all_muslims:0 "Unite all Muslims"
+TUR_unite_all_muslims_desc:0 "It is the duty of the Caliphate to ensure that it unites all Muslims under a single state. We must carry out that duty in order to uphold our legitimacy."
+
+# Kemalists #
+
+TUR_ismet_pasas_republicans:0 "İsmet Paşa's Kemalists"
+TUR_ismet_pasas_republicans_desc:0 "Mustafa İsmet Paşa, a veteran of both the Great War and Turkish War of Independence has seized power. A supporter of Kemalism, which advocates for republicanism and laicism, the reforms proposed are both detailed and strong enough to ensure that a Turkish nation survives. Yaşa Mustafa Kemal Paşa yaşa!"
+TUR_embrace_laicism:0 "Embrace Laicism"
+TUR_embrace_laicism_desc:0 "One of İsmet's reforms is adopting a policy of laicism for the new Republic of Turkey. By making the state officially secular, we can ensure that the people are free to practice their religion, so long as it does not interfere with politics."
+TUR_the_turkish_constitution:0 "The Turkish Constitution"
+TUR_the_turkish_constitution_desc:0 "The new constitution of the Republic of Turkey will implement the reforms of Mustafa Kemal Paşa. Namely, a strong executive branch, the military assuming the role of maintaining the constitution, the declaration of a secular Republic of Turkey, and that the sovereignty of the Republic of Turkey lies with the Turkish people."
+TUR_greek_population_exchange:0 "Greek Population Exchange"
+TUR_greek_population_exchange_desc:0 "The lands of western Turkey are now in the hands of Greece, and some Greek people exist within the modern Republic of Turkey. If we are to make Turkey a nation for the Turks, we must ensure that all Turks are in their rightful nation. The best way to do that would be to exchange our Greeks for their Turks."
+
+# Republican-Democrats #
+
+TUR_a_democratic_turkey:0 "A Democratic Turkey"
+TUR_a_democratic_turkey_desc:0 "The only way forward for Turkey is as an Entente aligned democratic republic. Our former enemies during the First Great War had survived the conflict relatively unscathed and their form of governance seems to be stable. It is best we liberalize and follow the path of the nations in the Entente."
+TUR_fair_and_free_elections:0 "Fair and Free Elections"
+TUR_fair_and_free_elections_desc:0 "We will base our election system after that of the French Republic’s. People will elect MPs to Parliament from districts, and elections for a president will occur. The president will also be able to appoint a prime minister with parliamentary approval. Long live the Turkish Republic! "
+TUR_freedom_of_religion:0 "Freedom of Religion"
+TUR_freedom_of_religion_desc:0 "The Turkish Republic will ensure that the people are free to practice any religion, so long as it is private. Turkey shall be a multicultural state, tolerant of all."
+TUR_the_judiciary:0 "The Judiciary"
+TUR_the_judiciary_desc:0 "While our executive and legislative branches have been clearly defined, the role of the judiciary has not been. We must ensure the independence of our judiciary in order to avoid the corruption that plagued the former Ottoman Empire."
+
+
+#### Political Parties ####
+
+TUR_internationalist_party:0 ""
+TUR_internationalist_party_long:0 ""
+TUR_bolshevist_party:0 ""
+TUR_bolshevist_party_long:0 ""
+TUR_marxist_leninist_party:0 ""
+TUR_marxist_leninist_party_long:0 ""
+TUR_libertartarian_socialist_party:0 ""
+TUR_libertartarian_socialist_party_long:0 ""
+TUR_social_democrat_party:0 ""
+TUR_social_democrat_party_long:0 ""
+TUR_social_liberal_party:0 ""
+TUR_social_liberal_party_long:0 ""
+TUR_market_liberal_party:0 ""
+TUR_market_liberal_party_long:0 ""
+TUR_social_conservative_party:0 ""
+TUR_social_conservative_party_long:0 ""
+TUR_authoritarian_democrat_party:0 ""
+TUR_authoritarian_democrat_party_long:0 ""
+TUR_paternal_autocrat_party:0 ""
+TUR_paternal_autocrat_party_long:0 ""
+TUR_national_populist_party:0 ""
+TUR_national_populist_party_long:0 ""
+TUR_valkist_party:0 ""
+TUR_valkist_party_long:0 ""
+
+
+#### Names ####
+
+TUR_internationalist:0 ""
+TUR_internationalist_DEF:0 ""
+TUR_bolshevist:0 ""
+TUR_bolshevist_DEF:0 ""
+TUR_marxist_leninist:0 ""
+TUR_marxist_leninist_DEF:0 ""
+TUR_libertartarian_socialist:0 ""
+TUR_libertartarian_socialist_DEF:0 ""
+TUR_social_democrat:0 ""
+TUR_social_democrat_DEF:0 ""
+TUR_social_liberal:0 ""
+TUR_social_liberal_DEF:0 ""
+TUR_market_liberal:0 ""
+TUR_market_liberal_DEF:0 ""
+TUR_social_conservative:0 ""
+TUR_social_conservative_DEF:0 ""
+TUR_authoritarian_democrat:0 ""
+TUR_authoritarian_democrat_DEF:0 ""
+TUR_paternal_autocrat:0 ""
+TUR_paternal_autocrat_DEF:0 ""
+TUR_national_populist:0 ""
+TUR_national_populist_DEF:0 ""
+TUR_valkist_socialist:0 ""
+TUR_valkist_socialist_DEF:0 ""
+TUR_internationalist_ADJ:0 ""
+TUR_bolshevist_ADJ:0 ""
+TUR_marxist_leninist_ADJ:0 ""
+TUR_libertartarian_socialist_ADJ:0 ""
+TUR_social_democrat_ADJ:0 ""
+TUR_social_liberal_ADJ:0 ""
+TUR_market_liberal_ADJ:0 ""
+TUR_social_conservative_ADJ:0 ""
+TUR_authoritarian_democrat_ADJ:0 ""
+TUR_paternal_autocrat_ADJ:0 ""
+TUR_national_populist_ADJ:0 ""
+TUR_valkist_ADJ:0 ""

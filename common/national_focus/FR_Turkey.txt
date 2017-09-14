@@ -1,0 +1,416 @@
+focus_tree = {
+	id = turkey_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+
+	default = no
+
+
+	##### POLITICAL AFFAIRS 
+
+	focus = {
+		id = TUR_the_fifth_ankara_congress
+		icon = GFX_goal_generic_propaganda
+		x = 5
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### KEEP THE EMPIRE 
+
+	focus = {
+		id = TUR_consolidate_our_rule
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_the_fifth_ankara_congress }
+		mutually_exclusive = { focus = TUR_abolish_the_empire} 
+		x = 8
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_rise_from_the_ashes
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = TUR_education_reform  focus = TUR_demand_constantinople} 
+		x = 8
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### REVANCHISM 
+
+	focus = {
+		id = TUR_revanchism
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = TUR_consolidate_our_rule }
+		mutually_exclusive = { focus = TUR_the_democratic_sultan} 
+		x = 9
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_prepare_for_war
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = TUR_revanchism }
+		x = 9
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_conscript_able_bodied_men
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = TUR_prepare_for_war }
+		x = 9
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_demand_constantinople
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = TUR_conscript_able_bodied_men }
+		x = 9
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### DEMOCRATIC EMPIRE 
+
+	focus = {
+		id = TUR_the_democratic_sultan
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = TUR_consolidate_our_rule }
+		mutually_exclusive = { focus = TUR_revanchism } 
+		x = 7
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_deal_with_corruption
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		prerequisite = { focus = TUR_the_democratic_sultan } 
+		x = 7
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_protect_the_millet_system
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_deal_with_corruption }
+		x = 7
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_education_reform
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = TUR_protect_the_millet_system }
+		x = 7
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### ABOLISH THE EMPIRE 
+
+	focus = {
+		id = TUR_abolish_the_empire
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = TUR_the_fifth_ankara_congress }
+		mutually_exclusive = { focus = TUR_consolidate_our_rule} 
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_a_new_nation
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TUR_unite_all_muslims  focus = TUR_the_turkish_constitution  focus = TUR_the_judiciary } 
+		x = 2
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### THEOCRACY 
+
+	focus = {
+		id = TUR_turkish_theocracy
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = TUR_abolish_the_empire }
+		mutually_exclusive = { focus = TUR_a_democratic_turkey } 
+  		mutually_exclusive = { focus = TUR_ismet_pasas_republicans } 
+		x = 0
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_state_religion
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = TUR_turkish_theocracy }
+		x = 0
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_declare_the_caliphate
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = TUR_state_religion }
+		x = 0
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_unite_all_muslims
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = TUR_declare_the_caliphate }
+		x = 0
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### KEMALISM 
+
+	focus = {
+		id = TUR_ismet_pasas_republicans
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = TUR_abolish_the_empire }
+		mutually_exclusive = { focus = TUR_a_democratic_turkey } 
+  		mutually_exclusive = { focus = TUR_turkish_theocracy } 
+		x = 2
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_embrace_laicism
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TUR_ismet_pasas_republicans }
+		x = 2
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_greek_population_exchange
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = TUR_embrace_laicism }
+		x = 2
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_the_turkish_constitution
+		icon = GFX_goal_OTT_constitution
+		prerequisite = { focus = TUR_greek_population_exchange }
+		x = 2
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### REPUBLICAN-DEMOCRATS 
+
+	focus = {
+		id = TUR_a_democratic_turkey
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = TUR_abolish_the_empire } 
+		mutually_exclusive = { focus = TUR_turkish_theocracy } 
+  		mutually_exclusive = { focus = TUR_ismet_pasas_republicans } 
+		x = 4
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_fair_and_free_elections
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_a_democratic_turkey }
+		x = 4
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_freedom_of_religion
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = TUR_fair_and_free_elections }
+		x = 4
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_the_judiciary
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = TUR_freedom_of_religion }
+		x = 4
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+}
