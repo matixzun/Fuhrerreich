@@ -72,6 +72,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+puppet = LIT
+
 create_country_leader = {
 	name = "Tadeusz Kasprzycki"
 	desc = "POLITICS_TADEUSZ_KASPRZYCKI_DESC"
