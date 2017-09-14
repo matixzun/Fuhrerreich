@@ -1,0 +1,38 @@
+﻿###########################
+# World News Events
+###########################
+
+add_namespace = worldnews
+
+# Abdulmecid assassinated
+news_event = {
+	id = worldnews.1
+	title = worldnews.1.t
+	desc = worldnews.1.d
+	picture = 
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1936.1.13
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	show_major = {
+		NOT = { tag = TUR }
+		OR = {
+			regional_europe_news = yes
+			regional_asia_news = yes
+			regional_middle_east_news = yes
+		}
+	}
+
+	option = {
+		name = worldnews.1.a
+	}
+}

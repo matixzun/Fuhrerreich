@@ -18,6 +18,9 @@ focus_tree = {
 	focus = {
 		id = TUR_the_fifth_ankara_congress
 		icon = GFX_goal_generic_propaganda
+		available = {
+			has_global_flag = SULTAN_ABDULMECID_II_DEATH
+		}
 		x = 5
 		y = 0
 		cost = 10
@@ -25,7 +28,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+
 		}
 	}
 
