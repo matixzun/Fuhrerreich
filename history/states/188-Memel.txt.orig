@@ -17,15 +17,15 @@ state=
 			}
 		}
 <<<<<<< HEAD
-		add_core_of = LIT
-=======
 		add_core_of = POL
->>>>>>> master
+=======
+		add_core_of = LIT
 
 		1939.3.22 = {
 			owner = GER
 			controller = GER
 		}
+>>>>>>> fafb189200e32b8d0d4a3b68bbe0ace37a8d7d06
 	}
 	provinces={
 		3288 

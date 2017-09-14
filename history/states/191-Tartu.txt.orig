@@ -6,10 +6,10 @@ state={
 
 	history={
 <<<<<<< HEAD
-		owner = EST
-=======
 		owner = POL
->>>>>>> master
+=======
+		owner = EST
+>>>>>>> fafb189200e32b8d0d4a3b68bbe0ace37a8d7d06
 		victory_points = {
 			9221 1 
 		}
@@ -22,10 +22,10 @@ state={
 
 		}
 <<<<<<< HEAD
-		add_core_of = EST
-=======
 		add_core_of = POL
->>>>>>> master
+=======
+		add_core_of = EST
+>>>>>>> fafb189200e32b8d0d4a3b68bbe0ace37a8d7d06
 
 	}
 

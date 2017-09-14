@@ -29,11 +29,11 @@ state={
 		}
 		add_core_of = POL
 <<<<<<< HEAD
+=======
 		1938.3.12 = {
 			add_claim_by = GER
 		}
-=======
->>>>>>> master
+>>>>>>> fafb189200e32b8d0d4a3b68bbe0ace37a8d7d06
 	}
 
 	provinces={
