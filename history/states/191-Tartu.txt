@@ -6,7 +6,7 @@ state={
 
 	history={
 <<<<<<< HEAD
-		owner = EST
+		owner = POL
 =======
 		owner = POL
 >>>>>>> master
@@ -22,7 +22,7 @@ state={
 
 		}
 <<<<<<< HEAD
-		add_core_of = EST
+		add_core_of = POL
 =======
 		add_core_of = POL
 >>>>>>> master
