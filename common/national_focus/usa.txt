@@ -1,0 +1,39 @@
+focus_tree = {
+    id = 'usa'
+country = {
+factor = 0    
+modifier = {
+    add = 10
+    tag = usa
+        }
+    }
+    focus = {
+    id = USA_1936_military_reform
+    icon = GFX_generic_allies_build_infantry
+    text = reform_military
+    x = 1
+    y = 1
+    cost = 10
+    ai_will_do = {
+        factor = 1
+    }
+    completion_reward = {
+        army_experience = 10
+        add_political_power = 70
+        }
+    focus = {
+    id = USA_military_service
+    icon = GFX_generic_small_arms
+    text = military_service
+    prerequisite = { focus = USA_1936_military_reform }
+    x = 1
+    y = 2
+    cost = 10
+    ai_will_do = {
+        factor = 1
+        }
+        completion_reward = {
+        add_manpower = 10000
+        }
+    }
+}
