@@ -2,19 +2,19 @@ focus_tree = {
 	id = usa_focus
 	
 	country = {
-		factor = 1
-		tag = USA
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
 	}
-	
-	default = yes
 
-
-	##### Military Tree
+	##### MILITARY
 
 	focus = {
 		id = USA_army_reforms
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		icon = GFX_goal_generic_small_arms
+		x = 3
 		y = 0
 		cost = 10
 
@@ -26,11 +26,12 @@ focus_tree = {
 
 	focus = {
 		id = USA_military_service
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = army_reforms }
+		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 1
 		cost = 10
+
+		prerequisite = { focus = USA_army_reforms }
 
 		completion_reward = {
 			add_manpower = 10000
@@ -39,18 +40,21 @@ focus_tree = {
 
 	focus = {
 		id = USA_naval_expansion
-		icon = GFX_goal_generic_build_nay
-		prerequisite = { focus = army_reforms }
-		x = 5
+		icon = GFX_goal_generic_build_navy
+		x = 3
 		y = 1
 		cost = 10
 
+		prerequisite = { focus = USA_army_reforms }
+
 		completion_reward = {
+			378 = {
 			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = dockyard
 				level = 3
 				instant_build = yes
+				}
 			}
 		}
 	}
@@ -58,23 +62,90 @@ focus_tree = {
 	focus = {
 		id = USA_pilot_training
 		icon = GFX_goal_generic_build_airforce
-		x = 9
+		x = 5
 		y = 1
 		cost = 10
+
+		prerequisite = { focus = USA_army_reforms }
 
 		completion_reward = {
 			air_experience = 10
 		}
 	}
 
-	#### BLACK WEDNESDAY
+	###### BLACK WEDNESDAY
 
 	focus = {
 		id = USA_black_aftermath
-		icon = GFX_goal_generic_construction2
-		x = 10
+		icon = GFX_goal_generic_construct_civilian
+
+		x = 12
 		y = 0
 		cost = 5
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USA_recovery_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 12
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = USA_black_aftermath }
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	##### Free Market Approach for Black Wednesday Recovery
+
+	focus = {
+		id = USA_freemarket_approach
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 10
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = USA_recovery_plan }
+		mutually_exclusive = { focus = USA_balanced_approach }
+		mutually_exclusive = { focus = USA_government_intervention }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = USA_invisible_hand
+		icon = GFX_goal_generic_dangerous_deal
+		x = 10
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = USA_freemarket_approach }
+
+		completion_reward = {
+		
+		}
+	}
+
+	##### Balanced Approach for Black Wednesday Recovery
+
+	focus = {
+		id = USA_balanced_approach
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = USA_recovery_plan }
+		mutually_exclusive = { focus = USA_government_intervention }
+		mutually_exclusive = { focus = USA_freemarket_approach }
 
 		completion_reward = {
 
@@ -82,14 +153,63 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_recovery_plan
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 10 
+		id = USA_too_big_to_fail
+		icon = GFX_goal_generic_production
+		x = 12
 		y = 3
 		cost = 10
 
-		completion reward = {
+		prerequisite = { focus = USA_balanced_approach }
+		
+		completion_reward = {
 
+		}
+	}
+
+	##### Government Intervention for Black Wednesday Recovery
+
+	focus = {
+		id = USA_government_intervention
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = USA_recovery_plan }
+		mutually_exclusive = { focus = USA_balanced_approach }
+		mutually_exclusive = { focus = USA_freemarket_approach }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = USA_new_deal
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = USA_government_intervention }
+
+		completion_reward = {
+
+		}
+	}
+
+	#### Economic recovery
+
+	focus = {
+		id = USA_economic_recovery
+		icon = GFX_goal_generic_the_giant_wakes
+		x = 12
+		y = 4
+		cost = 5
+
+		prerequisite = { focus = USA_new_deal focus = USA_invisible_hand focus = USA_too_big_to_fail }
+		
+		completion_reward = {
 
 		}
 	}
