@@ -54,7 +54,8 @@ continuous_focus_position = { x = 50 y = 1600}
  		prerequisite = { focus = POL_industrial_bill} 
    
   		available_if_capitulated = yes  
- completion_reward = { 
+ 		completion_reward = { 
+ 			country_event = poland.3
  				} 
  }
 
