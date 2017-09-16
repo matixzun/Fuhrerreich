@@ -48,11 +48,13 @@ focus_tree = {
 		prerequisite = { focus = USA_army_reforms }
 
 		completion_reward = {
+			378 = {
 			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = dockyard
 				level = 3
 				instant_build = yes
+				}
 			}
 		}
 	}
@@ -75,27 +77,28 @@ focus_tree = {
 
 	focus = {
 		id = USA_black_aftermath
-		icon = GFX_goal_generic_construction2
-		x = 10
+		icon = GFX_goal_generic_construct_civilian
+
+		x = 12
 		y = 0
 		cost = 5
 
 		completion_reward = {
-
+			add_political_power = 50
 		}
 	}
 
 	focus = {
 		id = USA_recovery_plan
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 10
+		x = 12
 		y = 1
 		cost = 10
 
 		prerequisite = { focus = USA_black_aftermath }
 
 		completion_reward = {
-
+			add_political_power = 50
 		}
 	}
 
@@ -104,15 +107,30 @@ focus_tree = {
 	focus = {
 		id = USA_freemarket_approach
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 7
+		x = 10
 		y = 2
 		cost = 10
 
 		prerequisite = { focus = USA_recovery_plan }
-		mutually_exclusive = { USA_balanced_approach }
+		mutually_exclusive = { focus = USA_balanced_approach }
+		mutually_exclusive = { focus = USA_government_intervention }
 
 		completion_reward = {
+			
+		}
+	}
 
+	focus = {
+		id = USA_invisible_hand
+		icon = GFX_goal_generic_dangerous_deal
+		x = 10
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = USA_freemarket_approach }
+
+		completion_reward = {
+		
 		}
 	}
 
@@ -121,13 +139,28 @@ focus_tree = {
 	focus = {
 		id = USA_balanced_approach
 		icon = GFX_goal_generic_national_unity
-		x = 10
+		x = 12
 		y = 2
 		cost = 10
 
 		prerequisite = { focus = USA_recovery_plan }
 		mutually_exclusive = { focus = USA_government_intervention }
+		mutually_exclusive = { focus = USA_freemarket_approach }
 
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = USA_too_big_to_fail
+		icon = GFX_goal_generic_production
+		x = 12
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = USA_balanced_approach }
+		
 		completion_reward = {
 
 		}
@@ -138,13 +171,44 @@ focus_tree = {
 	focus = {
 		id = USA_government_intervention
 		icon = GFX_goal_generic_political_pressure
-		x = 13
+		x = 14
 		y = 2
 		cost = 10
 
 		prerequisite = { focus = USA_recovery_plan }
 		mutually_exclusive = { focus = USA_balanced_approach }
+		mutually_exclusive = { focus = USA_freemarket_approach }
 
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = USA_new_deal
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = USA_government_intervention }
+
+		completion_reward = {
+
+		}
+	}
+
+	#### Economic recovery
+
+	focus = {
+		id = USA_economic_recovery
+		icon = GFX_goal_generic_the_giant_wakes
+		x = 12
+		y = 4
+		cost = 5
+
+		prerequisite = { focus = USA_new_deal focus = USA_invisible_hand focus = USA_too_big_to_fail }
+		
 		completion_reward = {
 
 		}
