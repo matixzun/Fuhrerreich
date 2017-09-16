@@ -198,3 +198,50 @@ country_event = {
 		set_politics = { ruling_party = social_liberal elections_allowed = no }
 	}
 }
+
+country_event = { 
+	id = tur.6
+	title = tur.6.t
+	desc = tur.6.d
+	picture = GFX_report_event_bose_meeting
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 4 }
+
+	fire_only_once = yes
+
+	option = {
+		name = tur.6.a # Democratic Sultan
+
+		ai_chance = {
+			factor = 35
+		}
+
+		set_global_flag = DEM_SULTAN_VICTORY
+
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.3
+		}
+
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+	}
+
+	option = {
+		name = tur.6.b # Revanchist Sultan
+
+		ai_chance = {
+			factor = 65
+		}
+
+		set_global_flag = REVANCHIST_VICTORY
+
+		add_popularity = {
+			ideology = valkist
+			popularity = 0.3
+		}
+
+		set_politics = { ruling_party = valkist elections_allowed = no }
+	}
+}

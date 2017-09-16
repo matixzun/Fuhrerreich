@@ -9,8 +9,22 @@ ideas = {
 		TUR_political_turmoil = {
 			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
-				political_power_factor = -0.6	# judiciary
-				unity_factor = -0.25			# intel purge
+				political_power_factor = -0.6	
+				unity_factor = -0.25			
+			}
+		}
+
+		TUR_laicism = {
+			picture = generic_intel_bonus
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+
+		TUR_official_religion = {
+			picture = raj_marginalized_muslim_community_angry
+			modifier = {
+				political_power_factor = 0.15
 			}
 		}
 
