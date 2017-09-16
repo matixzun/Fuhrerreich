@@ -16,7 +16,7 @@ focus_tree = {
 	##### POLITICAL AFFAIRS 
 
 	focus = {
-		id = TUR_the_fifth_ankara_congress
+		id = TUR_the_provisional_ankara_congress
 		icon = GFX_goal_generic_propaganda
 		available = {
 			has_global_flag = SULTAN_ABDULMECID_II_DEATH
@@ -40,8 +40,8 @@ focus_tree = {
 		available = {
 			has_global_flag = EMPIRE_REMAINS
 		}
-		prerequisite = { focus = TUR_the_fifth_ankara_congress }
-		mutually_exclusive = { focus = TUR_abolish_the_empire} 
+		prerequisite = { focus = TUR_the_provisional_ankara_congress }
+		mutually_exclusive = { focus = TUR_abolish_the_empire } 
 		x = 8
 		y = 1
 		cost = 10
@@ -49,14 +49,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_political_power = -80
 		}
 	}
 
 	focus = {
 		id = TUR_rise_from_the_ashes
 		icon = GFX_focus_rom_royal_dictatorship
-		prerequisite = { focus = TUR_education_reform  focus = TUR_demand_constantinople} 
+		prerequisite = { focus = TUR_education_reform  focus = TUR_demand_constantinople } 
 		x = 8
 		y = 6
 		cost = 10
@@ -73,8 +73,11 @@ focus_tree = {
 	focus = {
 		id = TUR_revanchism
 		icon = GFX_focus_generic_strike_at_democracy1
+		available = {
+			has_global_flag = REVANCHIST_VICTORY
+		}
 		prerequisite = { focus = TUR_consolidate_our_rule }
-		mutually_exclusive = { focus = TUR_the_democratic_sultan} 
+		mutually_exclusive = { focus = TUR_constitutional_monarchy } 
 		x = 9
 		y = 2
 		cost = 10
@@ -82,7 +85,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_revanchism_tt
 		}
 	}
 
@@ -134,8 +137,11 @@ focus_tree = {
 	##### DEMOCRATIC EMPIRE 
 
 	focus = {
-		id = TUR_the_democratic_sultan
+		id = TUR_constitutional_monarchy
 		icon = GFX_focus_rom_royal_dictatorship
+		available = {
+			has_global_flag = DEM_SULTAN_VICTORY
+		}
 		prerequisite = { focus = TUR_consolidate_our_rule }
 		mutually_exclusive = { focus = TUR_revanchism } 
 		x = 7
@@ -145,14 +151,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_figurehead_tt
 		}
 	}
 
 	focus = {
 		id = TUR_deal_with_corruption
 		icon = GFX_focus_RAJ_clamp_down_on_corruption
-		prerequisite = { focus = TUR_the_democratic_sultan } 
+		prerequisite = { focus = TUR_constitutional_monarchy } 
 		x = 7
 		y = 3
 		cost = 10
@@ -202,7 +208,7 @@ focus_tree = {
 		available = {
 			has_global_flag = EMPIRE_DISSOLVED
 		}
-		prerequisite = { focus = TUR_the_fifth_ankara_congress }
+		prerequisite = { focus = TUR_the_provisional_ankara_congress }
 		mutually_exclusive = { focus = TUR_consolidate_our_rule } 
 		x = 2
 		y = 1
@@ -211,7 +217,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			hidden_effect = {
+				set_cosmetic_tag = TUR_abolish_empire
+			}
+			add_political_power = 100
 		}
 	}
 
@@ -248,7 +257,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_theocracy_tt
+			hidden_effect = {
+				set_cosmetic_tag = TUR_islamist
+			}
+			if = {
+				limit = { has_idea = TUR_political_turmoil }
+				remove_ideas = TUR_political_turmoil
+			}	
 		}
 	}
 
@@ -263,9 +279,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
-		}
-	}
+			add_ideas = TUR_official_religion
+  		}
+	} 
 
 	focus = {
 		id = TUR_declare_the_caliphate
@@ -278,7 +294,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_caliphate_tt
+			hidden_effect = {
+				set_cosmetic_tag = TUR_caliphate
+			}
 		}
 	}
 
@@ -315,7 +334,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_kemalism_tt
+			hidden_effect = {
+				set_cosmetic_tag = TUR_kemalist
+			}
+			if = {
+				limit = { has_idea = TUR_political_turmoil }
+				remove_ideas = TUR_political_turmoil
+			}	
 		}
 	}
 
@@ -330,9 +356,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
-		}
-	}
+			add_ideas = TUR_laicism
+  		}
+	} 
 
 	focus = {
 		id = TUR_greek_population_exchange
@@ -382,7 +408,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_democrat_tt
+			hidden_effect = {
+				set_cosmetic_tag = TUR_democratic
+			}
+			if = {
+				limit = { has_idea = TUR_political_turmoil }
+				remove_ideas = TUR_political_turmoil
+			}	
 		}
 	}
 
@@ -444,7 +477,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_rearmament_tt
 		}
 	}
 
@@ -596,7 +629,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_civilian_tt
 		}
 	}
 

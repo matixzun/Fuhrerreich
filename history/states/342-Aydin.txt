@@ -2,7 +2,7 @@
 state={
 	id=342
 	name="STATE_342" # Edirne ### i forgot the greek name. sorry lads -hummingbird
-	manpower = 362689
+	manpower = 862689
 	resources={
 		chromium=46
 	}

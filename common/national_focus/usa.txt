@@ -2,19 +2,19 @@ focus_tree = {
 	id = usa_focus
 	
 	country = {
-		factor = 1
-		tag = USA
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
 	}
-	
-	default = yes
 
-
-	##### Military Tree
+	##### MILITARY
 
 	focus = {
 		id = USA_army_reforms
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		icon = GFX_goal_generic_small_arms
+		x = 3
 		y = 0
 		cost = 10
 
@@ -26,11 +26,12 @@ focus_tree = {
 
 	focus = {
 		id = USA_military_service
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = army_reforms }
+		icon = GFX_goal_generic_allies_build_infantry
 		x = 1
 		y = 1
 		cost = 10
+
+		prerequisite = { focus = USA_army_reforms }
 
 		completion_reward = {
 			add_manpower = 10000
@@ -39,11 +40,12 @@ focus_tree = {
 
 	focus = {
 		id = USA_naval_expansion
-		icon = GFX_goal_generic_build_nay
-		prerequisite = { focus = army_reforms }
-		x = 5
+		icon = GFX_goal_generic_build_navy
+		x = 3
 		y = 1
 		cost = 10
+
+		prerequisite = { focus = USA_army_reforms }
 
 		completion_reward = {
 			add_extra_state_shared_building_slots = 3
@@ -58,16 +60,18 @@ focus_tree = {
 	focus = {
 		id = USA_pilot_training
 		icon = GFX_goal_generic_build_airforce
-		x = 9
+		x = 5
 		y = 1
 		cost = 10
+
+		prerequisite = { focus = USA_army_reforms }
 
 		completion_reward = {
 			air_experience = 10
 		}
 	}
 
-	#### BLACK WEDNESDAY
+	###### BLACK WEDNESDAY
 
 	focus = {
 		id = USA_black_aftermath
@@ -84,12 +88,64 @@ focus_tree = {
 	focus = {
 		id = USA_recovery_plan
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 10 
-		y = 3
+		x = 10
+		y = 1
 		cost = 10
 
-		completion reward = {
+		prerequisite = { focus = USA_black_aftermath }
 
+		completion_reward = {
+
+		}
+	}
+
+	##### Free Market Approach for Black Wednesday Recovery
+
+	focus = {
+		id = USA_freemarket_approach
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 7
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = USA_recovery_plan }
+		mutually_exclusive = { USA_balanced_approach }
+
+		completion_reward = {
+
+		}
+	}
+
+	##### Balanced Approach for Black Wednesday Recovery
+
+	focus = {
+		id = USA_balanced_approach
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = USA_recovery_plan }
+		mutually_exclusive = { focus = USA_government_intervention }
+
+		completion_reward = {
+
+		}
+	}
+
+	##### Government Intervention for Black Wednesday Recovery
+
+	focus = {
+		id = USA_government_intervention
+		icon = GFX_goal_generic_political_pressure
+		x = 13
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = USA_recovery_plan }
+		mutually_exclusive = { focus = USA_balanced_approach }
+
+		completion_reward = {
 
 		}
 	}
