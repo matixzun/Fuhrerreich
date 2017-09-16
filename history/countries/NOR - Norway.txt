@@ -79,23 +79,49 @@ set_national_unity = 0.7
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 96
+		internationalist = {
+			popularity = 0
 		}
-
-		fascism = {
-			popularity = 2
+		bolshevist = {
+			popularity = 0
 		}
-		
-		communism = {
-			popularity = 2
+		marxist_leninist = {
+			popularity = 0
+		}
+		libertartarian_socialist = {
+			popularity = 4
+		}
+		social_democrat = {
+			popularity = 6
+		}
+		social_liberal = {
+			popularity = 74
+		}
+		market_liberal = {
+			popularity = 10
+		}
+		social_conservative = {
+			popularity = 6
+		}
+		authoritarian_democrat = {
+			popularity = 0
+		}
+		paternal_autocrat = {
+			popularity = 0
+		}
+		national_populist = {
+			popularity = 0
+		}
+		valkist = {
+			popularity = 0
 		}
 	}
 	
-	ruling_party = democratic
-	last_election = "1933.10.16"
-	election_frequency = 36
-	elections_allowed = yes
+	ruling_party = social_liberal
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
 }
 
 1939.1.1 = {
