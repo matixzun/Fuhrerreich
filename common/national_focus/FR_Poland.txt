@@ -1,3 +1,9 @@
+##############################
+# Kingdom of Poland focus tree
+##############################
+# Made by jespertjee
+##############################
+
 focus_tree = {
 	id = Poland_Focus
 
@@ -29,7 +35,9 @@ continuous_focus_position = { x = 50 y = 1600}
 
 		available_if_capitulated = yes  
 
-		completion_reward = {} 
+		completion_reward = {
+			country_event = poland.2
+		} 
   
  }
 

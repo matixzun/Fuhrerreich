@@ -1,15 +1,12 @@
-﻿capital = 2
+capital = 2
 
 oob = "ITA_1936"
 
 set_research_slots = 4
 
 add_ideas = {
-	victor_emmanuel
-	vittoria_mutilata
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
+	italia_irredenta
+	communist_threat
 }
 
 
@@ -43,9 +40,10 @@ set_technology = {
 }
 
 
-set_convoys = 200
-set_national_unity = 0.85
 
+
+set_convoys = 200
+set_national_unity = 0.6
 
 set_politics = {
 
@@ -60,10 +58,10 @@ set_politics = {
             popularity = 0
         }
         libertartarian_socialist = {
-            popularity = 2
+            popularity = 0
         }
         social_democrat = {
-            popularity = 14
+            popularity = 16
         }
         social_liberal = {
             popularity = 0
@@ -72,10 +70,10 @@ set_politics = {
             popularity = 43
         }
         social_conservative = {
-            popularity = 24
+            popularity = 26
         }
         authoritarian_democrat = {
-            popularity = 2
+            popularity = 0
         }
         paternal_autocrat = {
             popularity = 0
@@ -87,34 +85,56 @@ set_politics = {
             popularity = 0
         }
     }
+	
+	ruling_party = market_liberal
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
 
-    ruling_party = market_liberal
-    last_election = "1934.3.26"
-    election_frequency = 60
-    elections_allowed = no
+}
 
 
 
 
 create_country_leader = {
-	name = "Benito Mussolini"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_Italy_Benito_Mussolini.dds"
+	name = "Luigi Einaudi"
+	desc = "POLITICS_LUIGI_EINAUDI_DESC"
+	picture = "Portrait_Italy_Luigi_Einaudi.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = market_liberal_subtype
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Ferruccio Parri"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_italy_ferruccio_parri"
+	name = "Luigi Sturzo"
+	desc = "POLITICS_LUIGI_STURZO_DESC"
+	picture = "Portrait_Italy_Luigi_Sturzo.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_conservative_subtype
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Giuseppe Saragat"
+	desc = "GIUSEPPE_SARAGAT_DESC"
+	picture = "Portrait_Italy_Giuseppe_Saragat.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Antonio Gramsci"
+	desc = "ANTONIO_GRAMSCI_DESC"
+	picture = "Portrait_Italy_Vittorio_Antonio_Gramsci.dds"
+	expire = "1965.1.1"
+	ideology = bolshevist_subtype
+	traits = {
 	}
 }
 
