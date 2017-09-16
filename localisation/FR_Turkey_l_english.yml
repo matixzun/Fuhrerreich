@@ -149,8 +149,8 @@ TUR_paternal_autocrat_party:0 "Kemalistler"
 TUR_paternal_autocrat_party_long:0 "Kemalist Fırkası"
 TUR_national_populist_party:0 "İslamcılar"
 TUR_national_populist_party_long:0 "Osmanlı İslamcı Fırkası"
-TUR_valkist_party:0 ""
-TUR_valkist_party_long:0 ""
+TUR_valkist_party:0 "Selamet-i Osmaniye"
+TUR_valkist_party_long:0 "Selamet-i Osmaniye Fırkası"
 
 
 #### Events ####
@@ -175,8 +175,12 @@ tur.5.b:0 "The Theocrats"
 tur.5.c:0 "The Liberals"
 tur.6.t:0 "The Sultan's successor"
 tur.6.d:0 "-"
-tur.6.a:0 "Figurehead"
-tur.6.b:0 "Monarchy"
+tur.6.a:0 "The Sultan will rule as a figurehead"
+tur.6.b:0 "The Sultan will take an active role as a ruler"
+tur.7.t:0 "The industrial question"
+tur.7.d:0 "Now that we have finally restored order to our nation and managed to consolidate our power, it is time we decided on our industrial direction. Would we be better served bolstering our military industry or our civilian industry?"
+tur.7.a:0 "Military industry!"
+tur.7.b:0 "Civilian industry!"
 
 
 #### Flags ####
@@ -189,6 +193,8 @@ EMPIRE_DISSOLVED:0 "The Ottoman Empire is no more."
 EMPIRE_REMAINS:0 "The Ottoman Empire remains."
 DEM_SULTAN_VICTORY:0 "The Sultan has taken the role of a figurehead."
 REVANCHIST_VICTORY:0 "The Sultan has taken direct control."
+MILITARY_FOCUS:0 "The armaments industry has taken priority."
+CIVILIAN_FOCUS:0 "The civilian industry has taken priority."
 
 
 #### Ideas ####
@@ -199,6 +205,10 @@ TUR_laicism:0 "Secularized Nation"
 TUR_laicism_desc:0 "While the path to secularizing Turkey may not be an easy task, nor will it be a short road, already the reforms we have begun to implement have had a positive effect on the majority of our population. Religious freedoms are now guaranteed to all groups and religion no longer plays a significant role in our politics."
 TUR_official_religion:0 "State Religion"
 TUR_official_religion_desc:0 "We have made it our duty to ensure that religion is involved within the daily lives of our citizens. That way, we can ensure a better and stronger Turkey for the forseeable future."
+TUR_the_phoenix:0 "Rise From the Ashes"
+TUR_the_phoenix_desc:0 "Because of the new reforms implemented, we have managed to gain the trust of our citizens and restore stability to the Ottoman Empire."
+TUR_reformed_nation:0 "A Nation Recreated"
+TUR_reformed_nation_desc:0 "Despite the hardships faced with creating a new Turkish nation, we have managed to reform and redesign our nation for the better. Both faith in the government and stability are at an all time high."
 
 
 #### Tooltips ####
@@ -209,5 +219,5 @@ TUR_kemalism_tt:0 "§RThe once failed ideology of Kemalism will make a comeback.
 TUR_democrat_tt:0 "§RTurkey will liberalize and form a democratic republic.§!\n"
 TUR_civilian_tt:0 "§RAn emphasis will be placed on the civilian industry.§!\n"
 TUR_rearmament_tt:0 "§RAn emphasis will be placed on the military industry.§!\n"
-TUR_revanchism_tt:0 "§RThis will lead to a more aggressive path for the empire.§!\n"
-TUR_figurehead_tt:0 "§RThis will lead the empire to take a moderate path.§!\n"
+TUR_revanchism_tt:0 "§RThis will lead towards a more aggressive path for the empire.§!\n"
+TUR_figurehead_tt:0 "§RThis will lead the empire towards a moderate path.§!\n"
