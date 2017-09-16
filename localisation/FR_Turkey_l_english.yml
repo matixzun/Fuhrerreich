@@ -4,8 +4,8 @@
 
 ### Political Tree ###
 
-TUR_the_fifth_ankara_congress:0 "Fifth Ankara Congress"
-TUR_the_fifth_ankara_congress_desc:0 "The death of Abdulmecid II has thrown the Ottoman Empire into disarray. Many factions are clamouring for change while others are seeking to seize power. This emergency Congress will decide the future of the Ottoman Empire for the upcoming years."
+TUR_the_provisional_ankara_congress:0 "Provisional Ankara Congress"
+TUR_the_provisional_ankara_congress_desc:0 "The death of Abdulmecid II has thrown the Ottoman Empire into disarray. Many factions are clamouring for change while others are seeking to seize power. This emergency Congress will decide the future of the Ottoman Empire for the upcoming years."
 
 ## Keep the Ottoman Empire ##
 
@@ -27,8 +27,8 @@ TUR_demand_constantinople_desc:0 "Constantinople was the former head of the Otto
 
 # Democratic Sultan #
 
-TUR_the_democratic_sultan:0 "The Democratic Sultan"
-TUR_the_democratic_sultan_desc:0 "The way forward is not to make new enemies or restrict the rights and civil liberties of the people. We must ensure that we remain a democratic nation in order to preserve peace and stability within the empire."
+TUR_constitutional_monarchy:0 "Constitutional Monarchy"
+TUR_constitutional_monarchy_desc:0 "The way forward is not to make new enemies or restrict the rights and civil liberties of the people. We must ensure that we remain a democratic nation in order to preserve peace and stability within the empire."
 TUR_deal_with_corruption:0 "Deal with Corruption"
 TUR_deal_with_corruption_desc:0 "The death of the Sultan exposed the weaknesses of the Ottoman Empire. Namely the opportunistic factions seeking to usurp the throne of the Sultan or abolish the empire entirely. These cliques and factions are paralyzing our nation and if we are to reform and liberalize, we must eliminate all corruption within our glorious empire."
 TUR_protect_the_millet_system:0 "Protect the Millet System"
@@ -148,7 +148,7 @@ TUR_authoritarian_democrat_party_long:0 "Selamet-i Osmaniye Fırkası"
 TUR_paternal_autocrat_party:0 "Kemalistler"
 TUR_paternal_autocrat_party_long:0 "Kemalist Fırkası"
 TUR_national_populist_party:0 "İslamcılar"
-TUR_national_populist_party_long:0 "İslamcı Fırkası"
+TUR_national_populist_party_long:0 "Osmanlı İslamcı Fırkası"
 TUR_valkist_party:0 ""
 TUR_valkist_party_long:0 ""
 
@@ -156,7 +156,7 @@ TUR_valkist_party_long:0 ""
 #### Events ####
 
 tur.1.t:0 "The Sultan has been assassinated!"
-tur.1.d:0 "An assassin with unknown motives has just murdered the Sultan! Becuase the Sultan was the only thing keeping our country together, the future is now uncertain and many factions are already clamouring for change or trying to seize power for themselves."
+tur.1.d:0 "An assassin with unknown motives has murdered Sultan Abdulmecid II! The Sultan was the only thing keeping our country together, and with his death the future is now uncertain. The Ottoman Dynasty was already unpopular in the Empire and now, with his death, many factions are clamouring for change or trying to seize power for themselves. We must find a solution soon, or the state may be thrown into chaos..."
 tur.1.a:0 "This does not bode well..."
 tur.2.t:0 "The Ottoman Empire"
 tur.2.d:0 "When the Great War had broken out, the Ottoman Empire had chosen to side with Germany and Austria, the three nations forming the Central Powers. After a disastrous war which saw the Ottomans lose all of their Arabian territories and a large portion of Anatolia, the country had been thrown into disaster. A failed Kemalist Revolt by the former Mustafa Kemal Paşa saw the country sink itself further into instability.\n\nNow, the Ottoman Royal family is deeply unpopular within the country, ruling only with the backing of the Entente powers. Many scheming factions exist within the empire, raring to seize power for themselves, which is now a shell of its former self. To keep these factions at bay, Sultan Abdulmecid II has ruled with an iron fist, effectively rendering the National Assembly useless. However, fractures within the Ottoman Empire are deeply apparent and could threaten to destroy the Sublime Porte, once and for all…"
@@ -173,6 +173,10 @@ tur.5.d:0 "With the dissolution of the Ottoman Empire, a new Turkey has taken it
 tur.5.a:0 "The Kemalists"
 tur.5.b:0 "The Theocrats"
 tur.5.c:0 "The Liberals"
+tur.6.t:0 "The Sultan's successor"
+tur.6.d:0 "-"
+tur.6.a:0 "Figurehead"
+tur.6.b:0 "Monarchy"
 
 
 #### Flags ####
@@ -183,9 +187,27 @@ THEOCRATIC_VICTORY:0 "The Theocrats have taken control."
 KEMALIST_VICTORY:0 "The Kemalists have taken control."
 EMPIRE_DISSOLVED:0 "The Ottoman Empire is no more."
 EMPIRE_REMAINS:0 "The Ottoman Empire remains."
+DEM_SULTAN_VICTORY:0 "The Sultan has taken the role of a figurehead."
+REVANCHIST_VICTORY:0 "The Sultan has taken direct control."
 
 
 #### Ideas ####
 
 TUR_political_turmoil:0 "Political Turmoil"
 TUR_political_turmoil_desc:0 "With the recent assassination of the Entente-backed Sultan Abdulmecid II, stability within the Ottoman Empire is quickly deteriorating. Many factions and groups have their own agenda and wish to seize power for themselves. The death of the Sultan may be the straw that breaks the camel's back and destroys the Ottoman Empire unless we are quick to regain control..."
+TUR_laicism:0 "Secularized Nation"
+TUR_laicism_desc:0 "While the path to secularizing Turkey may not be an easy task, nor will it be a short road, already the reforms we have begun to implement have had a positive effect on the majority of our population. Religious freedoms are now guaranteed to all groups and religion no longer plays a significant role in our politics."
+TUR_official_religion:0 "State Religion"
+TUR_official_religion_desc:0 "We have made it our duty to ensure that religion is involved within the daily lives of our citizens. That way, we can ensure a better and stronger Turkey for the forseeable future."
+
+
+#### Tooltips ####
+
+TUR_theocracy_tt:0 "§RA theocracy will be established.§!\n"
+TUR_caliphate_tt:0 "§RThe new Caliphate shall be created.§!\n"
+TUR_kemalism_tt:0 "§RThe once failed ideology of Kemalism will make a comeback.§!\n"
+TUR_democrat_tt:0 "§RTurkey will liberalize and form a democratic republic.§!\n"
+TUR_civilian_tt:0 "§RAn emphasis will be placed on the civilian industry.§!\n"
+TUR_rearmament_tt:0 "§RAn emphasis will be placed on the military industry.§!\n"
+TUR_revanchism_tt:0 "§RThis will lead to a more aggressive path for the empire.§!\n"
+TUR_figurehead_tt:0 "§RThis will lead the empire to take a moderate path.§!\n"
