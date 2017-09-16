@@ -14,6 +14,8 @@ set_technology = {
 	early_fighter = 1
 }
 
+set_politics = {
+
 	parties = {
 		internationalist = {
 			popularity = 0
@@ -34,10 +36,10 @@ set_technology = {
 			popularity = 4
 		}
 		market_liberal = {
-			popularity = 12
+			popularity = 10
 		}
 		social_conservative = {
-			popularity = 31
+			popularity = 33
 		}
 		authoritarian_democrat = {
 			popularity = 22
