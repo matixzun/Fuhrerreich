@@ -9,6 +9,13 @@ bookmarks = {
 		"---"={
 			history = "OTHER_FUHRERREICH_DESC"
 		}
+		"USA"={
+			history ="USA_FUHRERREICH_DESC"
+			ideology = social_liberal
+			ideas = {
+				sick_man_america
+			}
+		}
 
 		# minors ####
 		"SER"={
