@@ -76,6 +76,54 @@ TUR_freedom_of_religion_desc:0 "The Turkish Republic will ensure that the people
 TUR_the_judiciary:0 "The Judiciary"
 TUR_the_judiciary_desc:0 "While our executive and legislative branches have been clearly defined, the role of the judiciary has not been. We must ensure the independence of our judiciary in order to avoid the corruption that plagued the former Ottoman Empire."
 
+## Industry ##
+
+# Rearmament #
+
+TUR_rearmament:0 "Rearmament"
+TUR_rearmament_desc:0 "As the years pass, the world is becoming more and more unstable. Tensions are beginning to rise and both new and old rivalries are beginning to form. If we are to preserve our place in the world, we must focus on rearmament."
+TUR_konya_military_industry:0 "Konya Military Industry"
+TUR_konya_military_industry_desc:0 "Konya, a central location within our country, is ripe for economic growth and factory building. It is best we begin to create new military factories there."
+TUR_fortify_the_west:0 "Fortify the West"
+TUR_fortify_the_west_desc:0 "To the west, we border Greece, our eternal rival. If we are to protect our lands from the Greek menace, we must make sure to fortify them so that they cannot be conquered."
+TUR_samsun_shipyards:0 "Samsun Shipyards"
+TUR_samsun_shipyards_desc:0 "Samsun, our primary gateway to the Black Sea, will have shipyards created in order to build more ships and, by extension, increase both our naval projection within the Black Sea and bring new jobs to the city."
+TUR_expand_the_capital:0 "Expand the Capital"
+TUR_expand_the_capital_desc:0 "Ankara, despite being our capital, is nearly void of any industry. It would be in our best interest to expand the industrial output of the city. "
+TUR_the_capital_railway:0 "The Capital Railway"
+TUR_the_capital_railway_desc:0 "A railway connecting our capital and its surrounding areas will be extremely crucial to better transport goods and troops."
+TUR_expand_firearm_production:0 "Expand Firearm Production"
+TUR_expand_firearm_production_desc:0 "Needless to say, one of the most important things in war is to make sure that each and every one of your soldiers are equipped with a firearm. It is imperative that we expand our firearm production capacity to arm every soldier with a firearm."
+TUR_southern_fortifications:0 "Southern Fortifications"
+TUR_southern_fortifications_desc:0 "To the south, we border Italy and France. If worst comes to worst, we must ensure that our southern border is defended from any forces the Entente may throw at us."
+TUR_the_sivas_plan:0 "The Sivas Plan"
+TUR_the_sivas_plan_desc:0 "The Sivas Plan is an economic initiative designed to make the area of Sivas our the primary producer of military goods."
+TUR_the_motorized_industry:0 "The Motorized Industry"
+TUR_the_motorized_industry_desc:0 "A big reason for our loss during the Great War was due to the complacency of our military in terms of adopting the new technology and doctrines employed by the rest of Europe. If we are to recreate a world-class military we must make sure to keep our military both modern and ready for any scenario."
+
+#Civilian Industry
+
+TUR_civilian_industry:0 "Civilian Industry"
+TUR_civilian_industry_desc:0 "Due to the devastating effects Black Wednesday has had on our country, unemployment and discontent are both high within our populace. If we are to make an economic recovery, we must begin to undertake a massive economic program to revitalize our economy."
+TUR_government_sponsored_corporations:0 "Government Sponsored Corporations"
+TUR_government_sponsored_corporations_desc:0 "The government has decided to take initiative in creating new corporations to employ the citizens of our nation and, hopefully, end the economic downturn caused by Black Wednesday."
+TUR_northwestern_job_creation:0 "Northwestern Job Creation "
+TUR_northwestern_job_creation_desc:0 "Phase one of our job creation program will be focusing on Northwestern Turkey. Namely, areas such as Izmit, Samsun, and Afyon."
+TUR_resource_extraction_programs:0 "Resource Extraction Programs"
+TUR_resource_extraction_programs_desc:0 "Despite losing the vast majority of our land after the Great War, the Anatolian land is still bountiful and full of natural resources that we can exploit."
+TUR_work_relief_camps:0 "Work Relief Camps"
+TUR_work_relief_camps_desc:0 "While not the most glamorous of jobs, work relief camps will help our less fortunate citizens receive a living wage while helping out the nation."
+TUR_the_national_railway:0 "The National Railway"
+TUR_the_national_railway_desc:0 "The National Railway is an ambitious plan by the government to update the infrastructure of the entirety of our nation. While it may take a long time to accomplish, goods and troops will move across the nation much more efficiently than before."
+TUR_eastern_job_creation:0 "Eastern Job Creation"
+TUR_eastern_job_creation_desc:0 "The eastern part of our nation is extremely underdeveloped in terms of both infrastructure and industry. This area is filled to the brim with citizens who are eager to work. Perhaps if we exploit this, we can increase our productivity..."
+TUR_hire_military_contractors:0 "Hire Military Contractors"
+TUR_hire_military_contractors_desc:0 "Despite our focus on industry, we have neglected the defence industry. It would be best for us to invest in, no matter how small, military goods production and hire military contractors."
+TUR_welfare_programs:0 "Welfare Programs"
+TUR_welfare_programs_desc:0 "The government will set up a welfare system so that, in case of an economic downturn or job loss, citizens within our country can still live relatively comfortably."
+TUR_aircraft_industry:0 "The Aircraft Industry"
+TUR_aircraft_industry_desc:0 "In order to better connect the nation, we should seek to invest in new airports so that domestic flights can be made easier."
+
 
 #### Political Parties ####
 
@@ -108,13 +156,33 @@ TUR_valkist_party_long:0 ""
 #### Events ####
 
 tur.1.t:0 "The Sultan has been assassinated!"
-tur.1.d:0 "An assassin with unknown motives has taken out the Sultan! Becuase the Sultan was the only thing keeping our country together, the future is now uncertain and many factions are already clamouring for change or trying to seize power for themselves."
+tur.1.d:0 "An assassin with unknown motives has just murdered the Sultan! Becuase the Sultan was the only thing keeping our country together, the future is now uncertain and many factions are already clamouring for change or trying to seize power for themselves."
 tur.1.a:0 "This does not bode well..."
+tur.2.t:0 "The Ottoman Empire"
+tur.2.d:0 "When the Great War had broken out, the Ottoman Empire had chosen to side with Germany and Austria, the three nations forming the Central Powers. After a disastrous war which saw the Ottomans lose all of their Arabian territories and a large portion of Anatolia, the country had been thrown into disaster. A failed Kemalist Revolt by the former Mustafa Kemal Paşa saw the country sink itself further into instability.\n\nNow, the Ottoman Royal family is deeply unpopular within the country, ruling only with the backing of the Entente powers. Many scheming factions exist within the empire, raring to seize power for themselves, which is now a shell of its former self. To keep these factions at bay, Sultan Abdulmecid II has ruled with an iron fist, effectively rendering the National Assembly useless. However, fractures within the Ottoman Empire are deeply apparent and could threaten to destroy the Sublime Porte, once and for all…"
+tur.2.a:0 "Oh my!" 
+tur.3.t:0 "Parliament in disarray!"
+tur.3.d:0 "With the recent death of the Sultan, the National Assembly is in disarray! Many factions are attempting to seize power. If we do not resolve this soon, our great nation could potentially collapse!"
+tur.3.a:0 "My God!"
+tur.4.t:0 "Fate of the empire"
+tur.4.d:0 "The recent instability has reached a boiling point. We have been unable to control the infighting between the various factions within the National Assembly. Now the choice remains: does the Ottoman Empire finally meet its ultimate end, or will it prevail through yet another challange?"
+tur.4.a:0 "Dissolve the empire!"
+tur.4.b:0 "We will persevere!"
+tur.5.t:0 "Who will lead Turkey?"
+tur.5.d:0 "With the dissolution of the Ottoman Empire, a new Turkey has taken its place. However the question remains: who will lead the new Turkey?"
+tur.5.a:0 "The Kemalists"
+tur.5.b:0 "The Theocrats"
+tur.5.c:0 "The Liberals"
 
 
 #### Flags ####
 
 SULTAN_ABDULMECID_II_DEATH:0 "Abdulmecid II is dead."
+REPUBLICAN_VICTORY:0 "The Liberals have taken control."
+THEOCRATIC_VICTORY:0 "The Theocrats have taken control."
+KEMALIST_VICTORY:0 "The Kemalists have taken control."
+EMPIRE_DISSOLVED:0 "The Ottoman Empire is no more."
+EMPIRE_REMAINS:0 "The Ottoman Empire remains."
 
 
 #### Ideas ####

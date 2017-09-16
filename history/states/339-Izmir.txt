@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = TUR
+		owner = GRE
 		
 		victory_points = {
 			4112 5 
@@ -24,9 +24,10 @@ state={
 			}
 		}
 		add_core_of = TUR
+		add_core_of = GRE
 	}
 
 	provinces={
-		928 3927 4112 6992 7130 9921 9929 10038 11848 11898 
+		928 3927 4112 6992 7130 9921 9929 10038 11848 11898 9941 11917 10122 12096
 	}
 }

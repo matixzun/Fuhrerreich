@@ -28,7 +28,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			country_event = { id = tur.3 }
 		}
 	}
 
@@ -37,6 +37,9 @@ focus_tree = {
 	focus = {
 		id = TUR_consolidate_our_rule
 		icon = GFX_goal_generic_national_unity
+		available = {
+			has_global_flag = EMPIRE_REMAINS
+		}
 		prerequisite = { focus = TUR_the_fifth_ankara_congress }
 		mutually_exclusive = { focus = TUR_abolish_the_empire} 
 		x = 8
@@ -196,8 +199,11 @@ focus_tree = {
 	focus = {
 		id = TUR_abolish_the_empire
 		icon = GFX_focus_rom_abdicate
+		available = {
+			has_global_flag = EMPIRE_DISSOLVED
+		}
 		prerequisite = { focus = TUR_the_fifth_ankara_congress }
-		mutually_exclusive = { focus = TUR_consolidate_our_rule} 
+		mutually_exclusive = { focus = TUR_consolidate_our_rule } 
 		x = 2
 		y = 1
 		cost = 10
@@ -229,6 +235,9 @@ focus_tree = {
 	focus = {
 		id = TUR_turkish_theocracy
 		icon = GFX_focus_generic_strike_at_democracy2
+		available = {
+			has_global_flag = THEOCRATIC_VICTORY
+		}
 		prerequisite = { focus = TUR_abolish_the_empire }
 		mutually_exclusive = { focus = TUR_a_democratic_turkey } 
   		mutually_exclusive = { focus = TUR_ismet_pasas_republicans } 
@@ -293,6 +302,9 @@ focus_tree = {
 	focus = {
 		id = TUR_ismet_pasas_republicans
 		icon = GFX_focus_generic_support_the_left_right
+		available = {
+			has_global_flag = KEMALIST_VICTORY
+		}
 		prerequisite = { focus = TUR_abolish_the_empire }
 		mutually_exclusive = { focus = TUR_a_democratic_turkey } 
   		mutually_exclusive = { focus = TUR_turkish_theocracy } 
@@ -357,6 +369,9 @@ focus_tree = {
 	focus = {
 		id = TUR_a_democratic_turkey
 		icon = GFX_focus_generic_the_giant_wakes
+		available = {
+			has_global_flag = REPUBLICAN_VICTORY
+		}
 		prerequisite = { focus = TUR_abolish_the_empire } 
 		mutually_exclusive = { focus = TUR_turkish_theocracy } 
   		mutually_exclusive = { focus = TUR_ismet_pasas_republicans } 
@@ -406,6 +421,310 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = TUR_freedom_of_religion }
 		x = 4
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### REARMAMENT
+
+	focus = {
+		id = TUR_rearmament
+		icon = GFX_goal_generic_construct_mil_factory
+		mutually_exclusive = { focus = TUR_civilian_industry } 
+		x = 15
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_konya_military_industry
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = TUR_rearmament }
+		x = 13
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_fortify_the_west
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = TUR_konya_military_industry }
+		x = 11
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_samsun_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = TUR_konya_military_industry }
+		x = 15
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_expand_the_capital
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = TUR_fortify_the_west }
+		x = 12
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_the_capital_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = TUR_samsun_shipyards }
+		x = 14
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_expand_firearm_production
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = TUR_expand_the_capital }
+		x = 12
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_southern_fortifications
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = TUR_expand_firearm_production }
+		x = 11
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_the_sivas_plan
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = TUR_the_capital_railway }
+		x = 14
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_the_motorized_industry
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = TUR_the_sivas_plan }
+		x = 15
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### CIVILIAN INDUSTRY
+
+	focus = {
+		id = TUR_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		mutually_exclusive = { focus = TUR_rearmament } 
+		x = 17
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_government_sponsored_corporations
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = TUR_civilian_industry }
+		x = 19
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_northwestern_job_creation
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = TUR_government_sponsored_corporations }
+		x = 17
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_resource_extraction_programs
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = TUR_government_sponsored_corporations }
+		x = 21
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_work_relief_camps
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = TUR_resource_extraction_programs }
+		x = 20
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_the_national_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = TUR_northwestern_job_creation }
+		x = 18
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_eastern_job_creation
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = TUR_the_national_railway }
+		x = 18
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_hire_military_contractors
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = TUR_eastern_job_creation }
+		x = 17
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_welfare_programs
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = TUR_work_relief_camps }
+		x = 20
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TUR_aircraft_industry
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = TUR_welfare_programs }
+		x = 21
 		y = 5
 		cost = 10
 
