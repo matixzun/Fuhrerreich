@@ -64,3 +64,19 @@ POL_local_leadership:0 "Local Leadership"
 POL_local_leadership_desc:0 ""
 
 ### Events ###
+
+poland.1.t:0 ""
+poland.1.d:0 ""
+poland.1.a:0 ""
+poland.2.t:0 "The Polish Industry Bill"
+poland.2.d:0 "The last few years Poland's industrial legislation hasn't been updated at all, this has had a negative effect on the Polish people and her economy. To fix this the two parties in the Sejm have each submitted a plan. The MOW wants to lower taxes on consumer goods, and build extra civilian factories. While the PSCD wants to subsudise military factories. Which plan should we choose?"
+poland.2.a:0 "Choose the MOW's plan"
+poland.2.b:0 "Choose the PSCD's plan"
+poland.2.c:0 "Veto the bill alltogether!"
+
+#### Ideas ####
+
+POL_MOW_industrial:0 "The MOW's industrial plan"
+POL_MOW_industrial_desc:0 "The MOW's industrial plan, which includes building extra civilian factories and lowering taxes on consumer goods."
+POL_PSCD_industrial:0 "The PSCD's industrial plan"
+POL_PSCD_industrial_desc:0 "The PSCD's industrial plan subsidises militray factories."
