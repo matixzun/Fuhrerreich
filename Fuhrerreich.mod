@@ -1,5 +1,5 @@
 ﻿name="Fuhrerreich Dev Build"
-path="mod/Fuhrerreich/"
+path="mod/Fuhrerreich/Fuhrerreich/"
 tags={
 	"Alternative History"
 	"Events"
