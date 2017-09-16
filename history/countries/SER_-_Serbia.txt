@@ -75,9 +75,9 @@ set_politics = {
 set_national_unity = 0.6
 
 create_country_leader = {
-	name = "Prince Paul"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
+	name = "Alexander I"
+	desc = "POLITICS_Alexander_I_DESC"
+	picture = "Portrait_Serbia_Alexander.dds"
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = {
@@ -201,17 +201,6 @@ create_country_leader = {
 	picture = "Portrait_Serbia_Petar_Stambolic.dds"
 	expire = "1965.1.1"
 	ideology = libertartarian_socialist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Alexander I"
-	desc = "POLITICS_Alexander_I_DESC"
-	picture = "Portrait_Serbia_Alexander.dds"
-	expire = "1936.9.11"
-	ideology = paternal_autocrat_subtype
 	traits = {
 		#
 	}

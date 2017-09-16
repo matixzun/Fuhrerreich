@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = YUG
+		owner = MNT
 		add_core_of = MNT
 		buildings = {
 			infrastructure = 3

@@ -11,7 +11,17 @@ bookmarks = {
 		}
 
 		# minors ####
-		
+		"SER"={
+			minor = yes
+			history = "SER_FUHRERREICH_DESC"
+			ideology = paternal_autocrat_subtype
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
 
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
