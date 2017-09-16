@@ -1,0 +1,24 @@
+### Polish ideas
+
+ideas = {
+##############
+# Country ideas
+##############
+	country = {
+
+		POL_MOW_industrial = {
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.05	
+			}
+		}
+
+		POL_PSCD_industrial = {
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_arms_factory_factor = 0.05	
+			}
+		}
+
+
+}
