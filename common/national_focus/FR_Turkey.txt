@@ -23,7 +23,7 @@ focus_tree = {
 		}
 		x = 5
 		y = 0
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -64,7 +64,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			hidden_effect = {
+				country_event = { id = tur.7 }
+			}
+			add_ideas = TUR_the_phoenix
 		}
 	}
 
@@ -235,7 +238,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			hidden_effect = {
+				country_event = { id = tur.7 }
+			}
+			add_ideas = TUR_reformed_nation
 		}
 	}
 
@@ -469,6 +475,9 @@ focus_tree = {
 	focus = {
 		id = TUR_rearmament
 		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+			has_global_flag = MILITARY_FOCUS
+		}
 		mutually_exclusive = { focus = TUR_civilian_industry } 
 		x = 15
 		y = 0
@@ -478,6 +487,66 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = TUR_rearmament_tt
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -621,6 +690,9 @@ focus_tree = {
 	focus = {
 		id = TUR_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+			has_global_flag = CIVILIAN_FOCUS
+		}
 		mutually_exclusive = { focus = TUR_rearmament } 
 		x = 17
 		y = 0
@@ -630,6 +702,66 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = TUR_civilian_tt
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
