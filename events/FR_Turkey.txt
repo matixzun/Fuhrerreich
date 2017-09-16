@@ -1,6 +1,9 @@
-﻿###########################
+﻿############################
 # Republic of Turkey Events
-###########################
+############################
+# Made by VirtualHummingbird
+############################
+
 add_namespace = tur
 
 # Abdulmecid assassinated
@@ -31,7 +34,9 @@ country_event = {
 				TUR = { NOT = { has_idea = TUR_political_turmoil }}
 			}
 			add_ideas = TUR_political_turmoil
-		}	
+		}
+
+		add_political_power = -250
 
 		create_country_leader = {
 			name = "The National Assembly"
@@ -44,5 +49,152 @@ country_event = {
 		hidden_effect = {
 			random_other_country = { news_event = { id = worldnews.1 days = 1 } }
 		}
+	}
+}
+
+country_event = { #Intro
+	id = tur.2
+	title = tur.2.t
+	desc = tur.2.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	trigger = {
+		tag = TUR
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	option = {
+		name = tur.2.a
+	}
+}
+
+# Parliament in disarray
+country_event = { 
+	id = tur.3
+	title = tur.3.t
+	desc = tur.3.d
+	picture = GFX_report_event_generic_rally_3
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 4 }
+
+	fire_only_once = yes
+
+	option = {
+		name = tur.3.a
+
+		hidden_effect = {
+			country_event = { id = tur.4 }
+		}
+	}	
+}
+
+# Dissolve or keep the empire?
+country_event = { 
+	id = tur.4
+	title = tur.4.t
+	desc = tur.4.d
+	picture = GFX_report_event_generic_rally_3
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 4 }
+
+	fire_only_once = yes
+
+	option = {
+		name = tur.4.a # Dissolve the empire
+
+		ai_chance = {
+			factor = 65
+		}
+
+		set_global_flag = EMPIRE_DISSOLVED
+
+		hidden_effect = {
+			country_event = { id = tur.5 }
+		}
+	}
+
+	option = {
+		name = tur.4.b # The empire remains
+
+		ai_chance = {
+			factor = 35
+		}
+
+		set_global_flag = EMPIRE_REMAINS
+
+		hidden_effect = {
+			country_event = { id = tur.6 }
+		}
+	}
+}
+
+country_event = { 
+	id = tur.5
+	title = tur.5.t
+	desc = tur.5.d
+	picture = GFX_report_event_second_vienna_award_pact
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 4 }
+
+	fire_only_once = yes
+
+	option = {
+		name = tur.5.a # The Kemalists
+
+		ai_chance = {
+			factor = 50
+		}
+
+		set_global_flag = KEMALIST_VICTORY
+
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.3
+		}
+
+		set_politics = { ruling_party = paternal_autocrat elections_allowed = no }
+	}
+
+	option = {
+		name = tur.5.b # The Theocrats
+
+		ai_chance = {
+			factor = 30
+		}
+
+		set_global_flag = THEOCRATIC_VICTORY
+
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.3
+		}
+
+		set_politics = { ruling_party = national_populist elections_allowed = no }
+	}
+
+	option = {
+		name = tur.5.c # Republican-Democrats
+
+		ai_chance = {
+			factor = 20
+		}
+
+		set_global_flag = REPUBLICAN_VICTORY
+
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.3
+		}
+
+		set_politics = { ruling_party = social_liberal elections_allowed = no }
 	}
 }
