@@ -20,7 +20,7 @@ country_event = {
 		date > 1936.01.5
 	}
 
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 3 }
 
 	option = {
 		name = tur.1.a
@@ -225,6 +225,18 @@ country_event = {
 			popularity = 0.3
 		}
 
+		create_country_leader = {
+			name = "Ömer I"
+			desc = "POLITICS_OMER_FARUK_DESC"
+			picture = ""
+			expire = "1965.1.1"
+			ideology = authoritarian_democrat_subtype
+			traits = {
+			
+			}
+	
+		}
+
 		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 	}
 
@@ -242,6 +254,51 @@ country_event = {
 			popularity = 0.3
 		}
 
+		create_country_leader = {
+			name = "Ömer I"
+			desc = "POLITICS_OMER_FARUK_DESC"
+			picture = ""
+			expire = "1965.1.1"
+			ideology = valkist_subtype
+			traits = {
+			
+			}
+	
+		}
+
 		set_politics = { ruling_party = valkist elections_allowed = no }
+	}
+}
+
+country_event = { 
+	id = tur.7
+	title = tur.7.t
+	desc = tur.7.d
+	picture = GFX_report_event_bose_meeting
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 4 }
+
+	fire_only_once = yes
+
+	option = {
+		name = tur.7.a # Military industry
+
+		ai_chance = {
+			factor = 50
+		}
+
+		set_global_flag = MILITARY_FOCUS
+	}
+
+	option = {
+		name = tur.7.b # Civilian industry
+
+		ai_chance = {
+			factor = 50
+		}
+
+		set_global_flag = CIVILIAN_FOCUS
 	}
 }
