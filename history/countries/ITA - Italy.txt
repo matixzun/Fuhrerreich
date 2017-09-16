@@ -147,25 +147,52 @@ set_national_unity = 0.6
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 22
-		}
 
-		fascism = {
-			popularity = 76
-		}
-		
-		communism = {
-			popularity = 2
-		}
-	}
-	
-	ruling_party = fascism
-	last_election = "1934.3.26"
-	election_frequency = 60
-	elections_allowed = no
-}
+set_politics = {
+
+    parties = {
+        internationalist = {
+            popularity = 0
+        }
+        bolshevist = {
+            popularity = 15
+        }
+        marxist_leninist = {
+            popularity = 0
+        }
+        libertartarian_socialist = {
+            popularity = 2
+        }
+        social_democrat = {
+            popularity = 14
+        }
+        social_liberal = {
+            popularity = 0
+        }
+        market_liberal = {
+            popularity = 43
+        }
+        social_conservative = {
+            popularity = 24
+        }
+        authoritarian_democrat = {
+            popularity = 2
+        }
+        paternal_autocrat = {
+            popularity = 0
+        }
+        national_populist = {
+            popularity = 0
+        }
+        valkist = {
+            popularity = 0
+        }
+    }
+
+    ruling_party = market_liberal
+    last_election = "1934.3.26"
+    election_frequency = 60
+    elections_allowed = no
 
 
 
