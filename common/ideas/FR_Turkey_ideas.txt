@@ -1,4 +1,8 @@
-### Turkey ideas
+############################
+# Republic of Turkey Ideas
+############################
+# Made by VirtualHummingbird
+############################
 
 ideas = {
 ##############
@@ -17,14 +21,14 @@ ideas = {
 		TUR_laicism = {
 			picture = generic_intel_bonus
 			modifier = {
-				political_power_factor = -0.1
+				political_power_factor = 0.1
 			}
 		}
 
 		TUR_official_religion = {
 			picture = raj_marginalized_muslim_community_angry
 			modifier = {
-				political_power_factor = -0.15
+				political_power_factor = 0.15
 			}
 		}
 
