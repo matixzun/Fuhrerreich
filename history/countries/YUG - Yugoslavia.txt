@@ -1,6 +1,6 @@
 ﻿capital = 107
 
-oob = "YUG_1936"
+oob = "SER_1936"
 
 set_research_slots = 3
 
@@ -136,59 +136,97 @@ set_technology = {
 set_convoys = 10
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 15
-		}
+    parties = {
+        internationalist = {
+            popularity = 1
+        }
+        bolshevist = {
+            popularity = 0
+        }
+        marxist_leninist = {
+            popularity = 3
+        }
+        libertartarian_socialist = {
+            popularity = 0
+        }
+        social_democrat = {
+            popularity = 2
+        }
+        social_liberal = {
+            popularity = 0
+        }
+        market_liberal = {
+            popularity = 
+        }
+        social_conservative = {
+            popularity = 8
+        }
+        authoritarian_democrat = {
+            popularity = 6
+        }
+        paternal_autocrat = {
+            popularity = 61
+        }
+        national_populist = {
+            popularity = 10
+        }
+        valkist = {
+            popularity = 9
+        }
+    }
 
-		fascism = {
-			popularity = 10
-		}
-		
-		communism = {
-			popularity = 15
-			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 60
-		}
-	}
-	
-	ruling_party = neutrality
-	last_election = "1935.5.3"
-	election_frequency = 36
-	elections_allowed = yes
+    ruling_party = paternal_autocrat
+    last_election = "1935.9.8"
+    election_frequency = 36
+    elections_allowed = no
 }
 
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
-			democratic = { 
-				popularity = 5
-			}
+    parties = {
+        internationalist = {
+            popularity = 4
+        }
+        bolshevist = {
+            popularity = 4
+        }
+        marxist_leninist = {
+            popularity = 5
+        }
+        libertartarian_socialist = {
+            popularity = 0
+        }
+        social_democrat = {
+            popularity = 5
+        }
+        social_liberal = {
+            popularity = 5
+        }
+        market_liberal = {
+            popularity = 1
+        }
+        social_conservative = {
+            popularity = 7
+        }
+        authoritarian_democrat = {
+            popularity = 0
+        }
+        paternal_autocrat = {
+            popularity = 0
+        }
+        national_populist = {
+            popularity = 76
+        }
+        valkist = {
+            popularity = 1
+        }
+    }
 
-			fascism = {
-				popularity = 20
-			}
-			
-			communism = {
-				popularity = 5
-				#banned = no #default is no
-			}
-			
-			neutrality = { 
-				popularity = 60
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1938.12.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-
+    ruling_party = national_populist
+    last_election = "1938.9.8"
+    election_frequency = 36
+    elections_allowed = no
 }
 set_national_unity = 0.6
 
@@ -197,7 +235,29 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = paternal_autocrat
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Prince Paul"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Svetozar Pribićević"
+	desc = "POLITICS_SVETOZAR_PRIBICEVIC_DESC"
+	picture = "Portrait_Serbia_Svetozar_Pribicevic.dds"
+	expire = "1965.1.1"
+	ideology = national_populist
 	traits = {
 		#
 	}
@@ -208,7 +268,7 @@ create_country_leader = {
 	desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = valkist
 	traits = {
 		#
 	}
@@ -219,7 +279,51 @@ create_country_leader = {
 	desc = "POLITICS_MILAN_GROL_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_liberal
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Milan Grol"
+	desc = "POLITICS_MILAN_GROL_DESC"
+	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
+	expire = "1965.1.1"
+	ideology = social_democrat
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Milan Grol"
+	desc = "POLITICS_MILAN_GROL_DESC"
+	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
+	expire = "1965.1.1"
+	ideology = market_liberal
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Dragiša Cvetković"
+	desc = "POLITICS_DRAGISA_CVETKOVIC_DESC"
+	picture = "gfx/leaders/SER/Portrait_Dragisa_Cvetkovic.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Zivorad Jovanovic
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = marxist_leninist
 	traits = {
 		#
 	}
@@ -230,7 +334,40 @@ create_country_leader = {
 	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
 	picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = bolshevist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Josip Broz Tito"
+	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
+	picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+	expire = "1965.1.1"
+	ideology = internationalist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Petar Stambolić"
+	desc = "POLITICS_PETAR_STAMBOLIC_DESC"
+	picture = "Portrait_Serbia_Petar_Stambolic.dds"
+	expire = "1965.1.1"
+	ideology = libertartarian_socialist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alexander I"
+	desc = "POLITICS_Alexander_I_DESC"
+	picture = "Portrait_Serbia_Alexander_I.dds"
+	expire = "1936.9.11"
+	ideology = paternal_autocrat
 	traits = {
 		#
 	}

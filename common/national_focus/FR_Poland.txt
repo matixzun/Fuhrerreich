@@ -12,6 +12,8 @@ focus_tree = {
 
 default = no
 
+continuous_focus_position = { x = 50 y = 1600}
+
 
 #POLITICAL
 
@@ -136,6 +138,7 @@ default = no
  		cost = 10
 
  		prerequisite = { focus = POL_constitutional_amendment } 
+ 		mutually_exclusive = { focus = POL_constitutional_monarchy } 
 
    		available_if_capitulated = yes  
  		completion_reward = { 
@@ -190,5 +193,103 @@ default = no
   					} 
  }
 
- 
+    focus = { 
+		id = POL_constitutional_monarchy
+		icon = GFX_goal_generic_support_democracy 
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x =4
+ 		y =3
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_constitutional_amendment } 
+ 		mutually_exclusive = { focus = POL_guiding_hand } 
+
+   		available_if_capitulated = yes  
+ 		completion_reward = { 
+  					} 
+ }
+
+    focus = { 
+		id = POL_sejm_power
+		icon = GFX_goal_generic_improve_relations
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x =4
+ 		y =4
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_constitutional_monarchy } 
+
+   		available_if_capitulated = yes  
+ 		completion_reward = { 
+  					} 
+ }
+
+    focus = { 
+		id = POL_democracy_for_poles
+		icon = GFX_focus_generic_polish_deal
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x =3
+ 		y =5
+ 		cost = 5
+
+ 		prerequisite = { focus = POL_sejm_power }
+ 		mutually_exclusive = { focus = POL_poland_all }  
+
+   		available_if_capitulated = yes  
+ 		completion_reward = { 
+  					} 
+ }
+
+     focus = { 
+		id = POL_direct_warsaw
+		icon = GFX_goal_generic_political_pressure
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x =3
+ 		y =6
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_democracy_for_poles } 
+
+   		available_if_capitulated = yes  
+ 		completion_reward = { 
+  					} 
+ }
+
+     focus = { 
+		id = POL_poland_all
+		icon = GFX_goal_generic_national_unity
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x =5
+ 		y =5
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_sejm_power }
+ 		mutually_exclusive = { focus = POL_democracy_for_poles } 
+
+   		available_if_capitulated = yes  
+ 		completion_reward = { 
+  					} 
+ }
+
+     focus = { 
+		id = POL_local_leadership
+		icon = GFX_goal_generic_neutrality_focus
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x =5
+ 		y =6
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_poland_all } 
+
+   		available_if_capitulated = yes  
+ 		completion_reward = { 
+  					} 
+ }
+
 }
