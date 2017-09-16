@@ -1,0 +1,19 @@
+idea = {
+	country = {
+
+		sick_man_america = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = -0.015
+				productioon_speed_buildings_factor = -0.030
+			}
+		}
+
+	}
+}
