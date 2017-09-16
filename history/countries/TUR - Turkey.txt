@@ -5,7 +5,11 @@ oob = "TUR_1936"
 set_research_slots = 3
 
 add_ideas = {
-
+	normal_stability
+	civilian_economy
+	export_focus
+	volunteer_only
+	medium_economy
 }
 
 set_technology = {
