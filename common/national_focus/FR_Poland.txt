@@ -1,3 +1,9 @@
+##############################
+# Kingdom of Poland focus tree
+##############################
+# Made by jespertjee
+##############################
+
 focus_tree = {
 	id = Poland_Focus
 

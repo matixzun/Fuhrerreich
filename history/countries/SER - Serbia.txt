@@ -184,7 +184,7 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
-	ideology = paternal_autocrat
+	ideology = paternal_autocrat_subtype
 	traits = {
 		#
 	}
@@ -195,7 +195,7 @@ create_country_leader = {
 	desc = "POLITICS_PRINCE_PAUL_DESC"
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
-	ideology = authoritarian_democrat
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}
@@ -206,7 +206,7 @@ create_country_leader = {
 	desc = "POLITICS_SVETOZAR_PRIBICEVIC_DESC"
 	picture = "Portrait_Serbia_Svetozar_Pribicevic.dds"
 	expire = "1965.1.1"
-	ideology = national_populist
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}
@@ -217,7 +217,7 @@ create_country_leader = {
 	desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
 	expire = "1965.1.1"
-	ideology = valkist
+	ideology = valkist_subtype
 	traits = {
 		#
 	}
@@ -228,7 +228,7 @@ create_country_leader = {
 	desc = "POLITICS_MILAN_GROL_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
 	expire = "1965.1.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		#
 	}
@@ -239,7 +239,7 @@ create_country_leader = {
 	desc = "POLITICS_MILAN_GROL_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
 	expire = "1965.1.1"
-	ideology = social_democrat
+	ideology = social_democrat_subtype
 	traits = {
 		#
 	}
@@ -250,7 +250,7 @@ create_country_leader = {
 	desc = "POLITICS_MILAN_GROL_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
 	expire = "1965.1.1"
-	ideology = market_liberal
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}
@@ -261,7 +261,7 @@ create_country_leader = {
 	desc = "POLITICS_DRAGISA_CVETKOVIC_DESC"
 	picture = "gfx/leaders/SER/Portrait_Dragisa_Cvetkovic.dds"
 	expire = "1965.1.1"
-	ideology = social_conservative
+	ideology = social_conservative_subtype
 	traits = {
 		#
 	}
@@ -272,7 +272,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = marxist_leninist
+	ideology = marxist_leninist_subtype
 	traits = {
 		#
 	}
@@ -283,7 +283,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
 	picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
 	expire = "1965.1.1"
-	ideology = bolshevist
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}
@@ -294,7 +294,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
 	picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
 	expire = "1965.1.1"
-	ideology = internationalist
+	ideology = internationalist_subtype
 	traits = {
 		#
 	}
@@ -305,7 +305,7 @@ create_country_leader = {
 	desc = "POLITICS_PETAR_STAMBOLIC_DESC"
 	picture = "Portrait_Serbia_Petar_Stambolic.dds"
 	expire = "1965.1.1"
-	ideology = libertartarian_socialist
+	ideology = libertartarian_socialist_subtype
 	traits = {
 		#
 	}
@@ -316,7 +316,7 @@ create_country_leader = {
 	desc = "POLITICS_Alexander_I_DESC"
 	picture = "Portrait_Serbia_Alexander.dds"
 	expire = "1936.9.11"
-	ideology = paternal_autocrat
+	ideology = paternal_autocrat_subtype
 	traits = {
 		#
 	}
