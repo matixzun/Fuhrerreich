@@ -2,7 +2,7 @@
 
 oob = "POL"
 
-country_event = { id = pol.1 days = 1 }
+country_event = { id = poland.1 days = 1 }
 set_research_slots = 3
 
 # Starting tech

@@ -48,5 +48,26 @@ ideas = {
 			}
 		}
 
+		TUR_mandatory_conscription = {
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.05
+			}
+		}
+
+		TUR_motorized_research = {
+			modifier = {
+				army_speed_factor = 0.10
+			}
+			picture = FRA_motorized_focus
+		}
+
+		TUR_reformed_education = {
+			modifier = {
+				research_time_factor = -0.05
+			}
+			picture = generic_research_bonus
+		}
+
 
 }

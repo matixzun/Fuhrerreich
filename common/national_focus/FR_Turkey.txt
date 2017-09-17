@@ -16,7 +16,7 @@ focus_tree = {
 	##### POLITICAL AFFAIRS 
 
 	focus = {
-		id = TUR_the_provisional_ankara_congress
+		id = TUR_the_provisional_constantinople_congress
 		icon = GFX_goal_generic_propaganda
 		available = {
 			has_global_flag = SULTAN_ABDULMECID_II_DEATH
@@ -40,7 +40,7 @@ focus_tree = {
 		available = {
 			has_global_flag = EMPIRE_REMAINS
 		}
-		prerequisite = { focus = TUR_the_provisional_ankara_congress }
+		prerequisite = { focus = TUR_the_provisional_constantinople_congress }
 		mutually_exclusive = { focus = TUR_abolish_the_empire } 
 		x = 8
 		y = 1
@@ -56,7 +56,7 @@ focus_tree = {
 	focus = {
 		id = TUR_rise_from_the_ashes
 		icon = GFX_focus_rom_royal_dictatorship
-		prerequisite = { focus = TUR_education_reform  focus = TUR_demand_constantinople } 
+		prerequisite = { focus = TUR_education_reform  focus = TUR_retake_the_west } 
 		x = 8
 		y = 6
 		cost = 10
@@ -89,6 +89,10 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = TUR_revanchism_tt
+			if = {
+				limit = { has_idea = TUR_political_turmoil }
+				remove_ideas = TUR_political_turmoil
+			}	
 		}
 	}
 
@@ -103,7 +107,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = partial_economic_mobilisation
 		}
 	}
 
@@ -118,12 +122,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = TUR_mandatory_conscription
 		}
 	}
 
 	focus = {
-		id = TUR_demand_constantinople
+		id = TUR_retake_the_west
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = TUR_conscript_able_bodied_men }
 		x = 9
@@ -133,7 +137,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			create_wargoal = {
+			type = annex_everything
+			target = GRE
+			}	
 		}
 	}
 
@@ -155,6 +162,10 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = TUR_figurehead_tt
+			if = {
+				limit = { has_idea = TUR_political_turmoil }
+				remove_ideas = TUR_political_turmoil
+			}	
 		}
 	}
 
@@ -199,7 +210,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = TUR_reformed_education
 		}
 	}
 
@@ -211,7 +222,7 @@ focus_tree = {
 		available = {
 			has_global_flag = EMPIRE_DISSOLVED
 		}
-		prerequisite = { focus = TUR_the_provisional_ankara_congress }
+		prerequisite = { focus = TUR_the_provisional_constantinople_congress }
 		mutually_exclusive = { focus = TUR_consolidate_our_rule } 
 		x = 2
 		y = 1
@@ -318,8 +329,23 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
-		}
+			create_wargoal = {
+			type = annex_everything
+			target = SAU
+			}
+			create_wargoal = {
+			type = annex_everything
+			target = IRQ
+			}
+			create_wargoal = {
+			type = annex_everything
+			target = KUR
+			}
+			create_wargoal = {
+			type = annex_everything
+			target = ARM
+			}
+		}	
 	}
 
 	##### KEMALISM 
@@ -510,10 +536,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -540,10 +566,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -561,7 +587,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			346 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								346 = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -591,7 +646,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			355 = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								342 = {
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -606,7 +690,66 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			341 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								341 = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			341 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								341 = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -621,7 +764,87 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			341 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								341 = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			347 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								347 = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			348 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								348 = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -665,8 +888,37 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {
-			
+		ompletion_reward = {
+			349 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								349 = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -681,7 +933,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = TUR_motorized_research
 		}
 	}
 
@@ -725,10 +977,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -755,10 +1007,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
