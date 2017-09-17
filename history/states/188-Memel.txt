@@ -16,16 +16,7 @@ state=
 				naval_base = 1
 			}
 		}
-<<<<<<< HEAD
 		add_core_of = LIT
-=======
-		add_core_of = POL
->>>>>>> master
-
-		1939.3.22 = {
-			owner = GER
-			controller = GER
-		}
 	}
 	provinces={
 		3288 
