@@ -18,6 +18,9 @@ country_event = {
 
 	option = {
 		name = poland.1.a
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
@@ -83,51 +86,51 @@ country_event = {
 		hidden_effect = {
 		if = {
 			limit = {
-				POL = { NOT = { has_country_flag = veto1}}
+				POL = { NOT = { has_country_flag = POL_veto1}}
 			}
-			set_country_flag = veto1
-			}
-		if = {
-			limit = {
-				POL = has_country_flag = veto1
-			}
-			set_country_flag = veto2
+			set_country_flag = POL_veto1
 			}
 		if = {
 			limit = {
-				POL = has_country_flag = veto2
+				POL = has_country_flag = POL_veto1
 			}
-			set_country_flag = veto3
-			}
-		if = {
-			limit = {
-				POL = has_country_flag = veto3
-			}
-			set_country_flag = veto4
+			set_country_flag = POL_veto2
 			}
 		if = {
 			limit = {
-				POL = has_country_flag = veto4
+				POL = has_country_flag = POL_veto2
 			}
-			set_country_flag = veto5
-			}
-		if = {
-			limit = {
-				POL = has_country_flag = veto5
-			}
-			set_country_flag = veto6
+			set_country_flag = POL_veto3
 			}
 		if = {
 			limit = {
-				POL = has_country_flag = veto6
+				POL = has_country_flag = POL_veto3
 			}
-			set_country_flag = veto7
+			set_country_flag = POL_veto4
 			}
 		if = {
 			limit = {
-				POL = has_country_flag = veto7
+				POL = has_country_flag = POL_veto4
 			}
-			set_country_flag = veto8
+			set_country_flag = POL_veto5
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto5
+			}
+			set_country_flag = POL_veto6
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto6
+			}
+			set_country_flag = POL_veto7
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto7
+			}
+			set_country_flag = POL_veto8
 			}
 		}	
 	}
@@ -170,51 +173,137 @@ country_event = {
 		hidden_effect = {
 		if = {
 			limit = {
-				POL = { NOT = { has_country_flag = veto1}}
+				POL = { NOT = { has_country_flag = POL_veto1}}
 			}
-			set_country_flag = veto1
-			}
-		if = {
-			limit = {
-				POL = has_country_flag = veto1
-			}
-			set_country_flag = veto2
+			set_country_flag = POL_veto1
 			}
 		if = {
 			limit = {
-				POL = has_country_flag = veto2
+				POL = has_country_flag = POL_veto1
 			}
-			set_country_flag = veto3
-			}
-		if = {
-			limit = {
-				POL = has_country_flag = veto3
-			}
-			set_country_flag = veto4
+			set_country_flag = POL_veto2
 			}
 		if = {
 			limit = {
-				POL = has_country_flag = veto4
+				POL = has_country_flag = POL_veto2
 			}
-			set_country_flag = veto5
-			}
-		if = {
-			limit = {
-				POL = has_country_flag = veto5
-			}
-			set_country_flag = veto6
+			set_country_flag = POL_veto3
 			}
 		if = {
 			limit = {
-				POL = has_country_flag = veto6
+				POL = has_country_flag = POL_veto3
 			}
-			set_country_flag = veto7
+			set_country_flag = POL_veto4
 			}
 		if = {
 			limit = {
-				POL = has_country_flag = veto7
+				POL = has_country_flag = POL_veto4
 			}
-			set_country_flag = veto8
+			set_country_flag = POL_veto5
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto5
+			}
+			set_country_flag = POL_veto6
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto6
+			}
+			set_country_flag = POL_veto7
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto7
+			}
+			set_country_flag = POL_veto8
+			}
+		}	
+	}
+}
+
+#free speech bill
+
+country_event = { 
+	id = poland.4
+	title = poland.4.t
+	desc = poland.4.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = { days = 1 }
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.4.a
+		ai_chance = {
+			factor = 70
+		}
+		add_political_power = -125
+		custom_effect_tooltip = POL_support_baltics
+		hidden_effect = { 
+			set_country_flag = POL_support_baltics1
+		}
+	}
+	option = {
+		name = poland.4.b
+		
+		ai_chance = {
+			factor = 30
+			}
+		add_political_power = 50
+		custom_effect_tooltip = POL_counteract_baltics
+
+		hidden_effect = {
+		set_country_flag = POL_counteract_baltics1
+		if = {
+			limit = {
+				POL = { NOT = { has_country_flag = POL_veto1}}
+			}
+			set_country_flag = POL_veto2
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto2
+			}
+			set_country_flag = POL_veto4
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto3
+			}
+			set_country_flag = POL_veto5
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto4
+			}
+			set_country_flag = POL_veto6
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto5
+			}
+			set_country_flag = POL_veto7
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto6
+			}
+			set_country_flag = POL_veto8
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto7
+			}
+			set_country_flag = POL_veto9
+			}
+		if = {
+			limit = {
+				POL = has_country_flag = POL_veto8
+			}
+			set_country_flag = POL_veto10
 			}
 		}	
 	}
