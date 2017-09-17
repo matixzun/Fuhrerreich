@@ -1,6 +1,20 @@
 ideas = {
 	country = {
-		italia_irredenta = {
+		ITA_umberto_ii = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				unity_factor = 0.05				
+			}
+		}
+		
+		ITA_italia_irredenta = {
 			
 			
 			allowed = {
@@ -14,7 +28,7 @@ ideas = {
 			}
 		}
 		
-		communist_threat = {
+		ITA_communist_threat = {
 			
 			allowed = {
 				original_tag = "ITA"
@@ -28,6 +42,22 @@ ideas = {
 				unity_factor = -0.15
 			}
 		}
+		
+		ITA_communist_threat_light = {
+			
+			allowed = {
+				original_tag = "ITA"
+		
+				}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.25
+				unity_factor = -0.10
+			}
+		}
+		
 
 		ITA_german_millitary_cooperation_focus = {
 

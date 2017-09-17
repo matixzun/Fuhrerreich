@@ -1,0 +1,98 @@
+##############################
+# Ukraine SSR focus tree
+##############################
+# Made by EastPrussia
+##############################
+
+focus_tree = {
+	id = Ukraine_Focus
+
+	country = {
+		factor=0
+
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+
+default = no
+
+continuous_focus_position = { x = 70 y = 4000 }
+
+#Russo-Ukraine politics
+
+focus = {
+		id = Second_Kerch_Treaties
+		icon = GFX_goal_generic_dangerous_deal
+		x = 20
+		y = 2
+		cost = 7
+		available = {}
+		bypass = {
+			has_country_flag = Kerch_Trials
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+					country_event = {
+							 days=1
+							 id = ukraine.1	
+							 }
+				     }
+		}
+}
+focus = {
+		id = Freedom_at_last
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { focus = Second_Kerch_Treaties }
+		mutually_exclusive = { focus = Continued_Soviet_Support }
+		x = 18
+		y = 4
+		cost = 70
+		available = {}
+		ukraine_puppet = no
+
+focus = {
+		id = Continued_Soviet_Support
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = Second_Kerch_Treaties }
+		mutually_exclusive = { focus = Freedom_at_last }
+		x = 22
+		y = 4
+		cost = 70
+		available = {}
+		ai_will_do = {
+			factor = 10
+				}
+		
+	}
+
+
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

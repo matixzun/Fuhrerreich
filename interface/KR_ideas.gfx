@@ -845,7 +845,7 @@ spriteTypes = {
 		name = "GFX_idea_SRI_sanfedisti"
 		texturefile = "gfx/interface/ideas/ideas/SRI_sanfedisti.dds"
 	}
-	
+
 	########
 	#Generic
 	########

@@ -186,9 +186,9 @@ TUR_paternal_autocrat_DEF:0 "The Ottoman Empire"
 TUR_national_populist:0 "Ottoman State"
 TUR_national_populist_ADJ:0 "Ottoman"
 TUR_national_populist_DEF:0 "The Ottoman State"
-TUR_valkist:0 "Valkist Ottoman State"
+TUR_valkist:0 "Ottoman Empire"
 TUR_valkist_ADJ:0 "Ottoman"
-TUR_valkist_DEF:0 "The Valkist Ottoman State"
+TUR_valkist_DEF:0 "The Ottoman Empire"
 
 # Greece
 GRE_internationalist:0 "People's Hellenic Republic"

@@ -9,16 +9,93 @@ ideas = {
 		POL_MOW_industrial = {
 			picture = generic_production_bonus
 			modifier = {
-				consumer_goods_factor = -0.05	
+				consumer_goods_factor = -0.02	
 			}
 		}
 
 		POL_PSCD_industrial = {
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_arms_factory_factor = 0.05	
+				production_speed_arms_factory_factor = 0.04	
 			}
 		}
+
+		POL_MOW_tax = {
+			picture = neutrality_idea
+			modifier = {
+				consumer_goods_factor = -0.04
+				political_power_gain = -0.3	
+			}
+		}
+
+		POL_PSCD_tax = {
+			picture = neutrality_idea
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		POL_increased_free_speech = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+			}
+		}
+
+		POL_less_free_speech = {
+			picture = GFX_idea_ast_abandon_the_westminster_system
+			modifier = {
+			}
+		}
+
+		POL_equality_for_all = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+			}
+		}
+
+		POL_equality_for_poles = {
+			picture = GFX_idea_ast_abandon_the_westminster_system
+			modifier = {
+			}
+		}
+
+		POL_MOW_army = {
+			picture = GFX_idea_generic_artillery_regiments
+			modifier = {
+			conscription = 0.025
+			}
+			research_bonus = {
+				land_doctrine = -0.25
+				industry = -0.25
+				electronics = -0.25
+				}
+		}
+
+		POL_PSCD_army = {
+			picture = GFX_idea_generic_artillery_regiments
+			modifier = {
+				research_time_factor = -0.06
+			}
+		}
+
+		POL_MOW_navy = {
+			picture = GFX_idea_generic_navy_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.05
+			}
+		}
+
+
+		POL_PSCD_navy = {
+			picture = GFX_idea_generic_navy_bonus
+			modifier = {
+				naval_speed_factor = 0.05
+				navy_submarine_detection_factor = 0.1
+				navy_max_range_factor = 0.05
+			}
+		}
+
 
 
 }

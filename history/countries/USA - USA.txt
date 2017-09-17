@@ -111,7 +111,7 @@ set_politics = {
 }
 
 add_ideas = {
-	sick_man_america
+	USA_sick_man_america
 }
 
 

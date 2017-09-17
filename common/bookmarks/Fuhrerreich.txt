@@ -13,7 +13,38 @@ bookmarks = {
 			history ="USA_FUHRERREICH_DESC"
 			ideology = social_liberal
 			ideas = {
-				sick_man_america
+				USA_sick_man_america
+			}
+		}
+
+		"TUR"={
+			history ="TUR_FUHRERREICH_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				TUR_deal_with_corruption
+				TUR_the_provisional_ankara_congress
+				TUR_declare_the_caliphate
+			}
+		}
+		"SOV"={
+			history ="SOV_FUHRERREICH_DESC"
+			ideology = bolshevist
+			ideas = {
+
+			}
+		}
+		"GER"={
+			history ="GER_FUHRERREICH_DESC"
+			ideology = valkist
+			ideas = {
+
+			}
+		}
+		"POL"={
+			history ="POL_FUHRERREICH_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+
 			}
 		}
 
@@ -21,7 +52,7 @@ bookmarks = {
 		"SER"={
 			minor = yes
 			history = "SER_FUHRERREICH_DESC"
-			ideology = paternal_autocrat_subtype
+			ideology = paternal_autocrat
 			ideas = {
 				
 			}
