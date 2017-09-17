@@ -7,17 +7,17 @@ state={
 		chromium=86
 	}
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = GRE
 		
 		victory_points = {
-			4112 5 
+			4112 10 
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
 			air_base = 2
 			4112 = {
 				naval_base = 5

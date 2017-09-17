@@ -4,8 +4,8 @@
 
 ### Political Tree ###
 
-TUR_the_provisional_ankara_congress:0 "Provisional Ankara Congress"
-TUR_the_provisional_ankara_congress_desc:0 "The death of Abdulmecid II has thrown the Ottoman Empire into disarray. Many factions are clamouring for change while others are seeking to seize power. This emergency Congress will decide the future of the Ottoman Empire for the upcoming years."
+TUR_the_provisional_constantinople_congress:0 "Constantinople Congress"
+TUR_the_provisional_constantinople_congress_desc:0 "The death of Abdulmecid II has thrown the Ottoman Empire into disarray. Many factions are clamouring for change while others are seeking to seize power. This emergency Congress will decide the future of the Ottoman Empire for the upcoming years."
 
 ## Keep the Ottoman Empire ##
 
@@ -22,8 +22,8 @@ TUR_prepare_for_war:0 "Prepare for War"
 TUR_prepare_for_war_desc:0 "If we are to retake our lands, we must ensure that we are prepared to go to war. This means mobilizing our men, producing modern weapons, and expanding the army."
 TUR_conscript_able_bodied_men:0 "Conscript Able-Bodied Men"
 TUR_conscript_able_bodied_men_desc:0 "If we are to go to war for our lands, it is important that the able-bodied men of the Ottoman Empire serve in the army."
-TUR_demand_constantinople:0 "Demand Constantinople"
-TUR_demand_constantinople_desc:0 "Constantinople was the former head of the Ottoman Empire and the cultural and economic centre of our nation. The fact that it is our of our grasp is insulting and undermines our power. Constantinople rightfully belongs to the Ottoman Empire!"
+TUR_retake_the_west:0 "Retake the West"
+TUR_retake_the_west_desc:0 "After our loss during the Great War, the Entente had given Greece Izmir, Bursa, Edirne, and parts of the Antalyan coastline. We must liberate the Turks living there and bring stability to Anatolia!"
 
 # Democratic Sultan #
 
@@ -89,7 +89,7 @@ TUR_fortify_the_west_desc:0 "To the west, we border Greece, our eternal rival. I
 TUR_samsun_shipyards:0 "Samsun Shipyards"
 TUR_samsun_shipyards_desc:0 "Samsun, our primary gateway to the Black Sea, will have shipyards created in order to build more ships and, by extension, increase both our naval projection within the Black Sea and bring new jobs to the city."
 TUR_expand_the_capital:0 "Expand the Capital"
-TUR_expand_the_capital_desc:0 "Ankara, despite being our capital, is nearly void of any industry. It would be in our best interest to expand the industrial output of the city. "
+TUR_expand_the_capital_desc:0 "Constantinople, despite being our capital, is nearly void of any industry. It would be in our best interest to expand the industrial output of the city. "
 TUR_the_capital_railway:0 "The Capital Railway"
 TUR_the_capital_railway_desc:0 "A railway connecting our capital and its surrounding areas will be extremely crucial to better transport goods and troops."
 TUR_expand_firearm_production:0 "Expand Firearm Production"
@@ -101,7 +101,7 @@ TUR_the_sivas_plan_desc:0 "The Sivas Plan is an economic initiative designed to 
 TUR_the_motorized_industry:0 "The Motorized Industry"
 TUR_the_motorized_industry_desc:0 "A big reason for our loss during the Great War was due to the complacency of our military in terms of adopting the new technology and doctrines employed by the rest of Europe. If we are to recreate a world-class military we must make sure to keep our military both modern and ready for any scenario."
 
-#Civilian Industry
+# Civilian Industry #
 
 TUR_civilian_industry:0 "Civilian Industry"
 TUR_civilian_industry_desc:0 "Due to the devastating effects Black Wednesday has had on our country, unemployment and discontent are both high within our populace. If we are to make an economic recovery, we must begin to undertake a massive economic program to revitalize our economy."
@@ -209,6 +209,10 @@ TUR_the_phoenix:0 "Rise From the Ashes"
 TUR_the_phoenix_desc:0 "Because of the new reforms implemented, we have managed to gain the trust of our citizens and restore stability to the Ottoman Empire."
 TUR_reformed_nation:0 "A Nation Recreated"
 TUR_reformed_nation_desc:0 "Despite the hardships faced with creating a new Turkish nation, we have managed to reform and redesign our nation for the better. Both faith in the government and stability are at an all time high."
+TUR_mandatory_conscription:0 "Mandatory Conscription"
+TUR_mandatory_conscription_desc:0 "In order to increase the size of our army, we must turn to conscription. Conscription has been made mandatory for able-bodied men from the ages of eighteen to twenty five."
+TUR_reformed_education:0 "Education Reform"
+TUR_motorized_research:0 "Motorized Industry"
 
 
 #### Tooltips ####
@@ -221,3 +225,5 @@ TUR_civilian_tt:0 "§RAn emphasis will be placed on the civilian industry.§!\n"
 TUR_rearmament_tt:0 "§RAn emphasis will be placed on the military industry.§!\n"
 TUR_revanchism_tt:0 "§RThis will lead towards a more aggressive path for the empire.§!\n"
 TUR_figurehead_tt:0 "§RThis will lead the empire towards a moderate path.§!\n"
+TUR_southern_border:0 "§RForts will be erected on our southern border.§!\n"
+TUR_western_border:0 "§RForts will be erected on our western border.§!\n"

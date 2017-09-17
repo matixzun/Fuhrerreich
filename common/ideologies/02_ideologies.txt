@@ -9,7 +9,7 @@ ideologies = {
 
 	internationalist = {
 		types = {
-		internationalism_subtype = {}
+		internationalist_subtype = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_INTERNATIONALIST_1"

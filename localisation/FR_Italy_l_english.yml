@@ -27,6 +27,17 @@ ITA_national_populist_party_long:0 "Partito d'Azione Rivoluzionaria"
 ITA_valkist_party:0 "FC"
 ITA_valkist_party_long:0 "Fasci di Combattimento"
 
+#### Ideas ####
+
+ ITA_italia_irredenta:0 "Italia Irredenta"
+ ITA_italia_irredenta_desc:0 "Italy united officially in 1861, but their struggle for independence from Austria continued until 1919. Veneto was acquired through a plebiscite in 1866 and the capital Rome was conquered only in 1870. Thanks to the Treaty of London the Italian Nation is now formally completed with the re conquest of Trentino, Istria and Dalmazia from the Austrian-Hungarian empire"
+ ITA_communist_threat:0 "Communist Threat"
+ ITA_communist_threat_desc:0 "Unrest in the Italian Republic has left the country vulnerable to a communist uprising"
+ ITA_umberto_ii:0 "Umberto II"
+ ITA_umberto_ii_desc:0 "Umberto II"
+ ITA_communist_threat_light:0 "Communist Threat"
+ ITA_communist_threat_light:0 "The victory of the Partito Socialdemocratico Italiano in the recent election has calmed downed the more extreme elements of the left wing"
+
 # Italy
 #ITA_internationalist:0 "Italian Socialist Republic"
 #ITA_internationalist_ADJ:0 "Italian"

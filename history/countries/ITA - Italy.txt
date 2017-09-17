@@ -5,8 +5,9 @@ oob = "ITA_1936"
 set_research_slots = 4
 
 add_ideas = {
-	italia_irredenta
-	communist_threat
+	ITA_italia_irredenta
+	ITA_communist_threat
+	ITA_umberto_ii
 }
 
 
@@ -67,10 +68,10 @@ set_politics = {
             popularity = 0
         }
         market_liberal = {
-            popularity = 43
+            popularity = 41
         }
         social_conservative = {
-            popularity = 26
+            popularity = 23
         }
         authoritarian_democrat = {
             popularity = 0
@@ -79,7 +80,7 @@ set_politics = {
             popularity = 0
         }
         national_populist = {
-            popularity = 0
+            popularity = 5
         }
         valkist = {
             popularity = 0
@@ -134,6 +135,16 @@ create_country_leader = {
 	picture = "Portrait_Italy_Vittorio_Antonio_Gramsci.dds"
 	expire = "1965.1.1"
 	ideology = bolshevist_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Amadeo_Aosta"
+	desc = "AMADEO_AOSTA_DESC"
+	picture = "Portrait_Italy_Amadeo_Aosta.dds"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
 	traits = {
 	}
 }

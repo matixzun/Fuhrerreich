@@ -17,6 +17,37 @@ bookmarks = {
 			}
 		}
 
+		"TUR"={
+			history ="TUR_FUHRERREICH_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				TUR_deal_with_corruption
+				TUR_the_provisional_ankara_congress
+				TUR_declare_the_caliphate
+			}
+		}
+		"SOV"={
+			history ="SOV_FUHRERREICH_DESC"
+			ideology = bolshevist
+			ideas = {
+
+			}
+		}
+		"GER"={
+			history ="GER_FUHRERREICH_DESC"
+			ideology = valkist
+			ideas = {
+
+			}
+		}
+		"POL"={
+			history ="POL_FUHRERREICH_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+
+			}
+		}
+
 		# minors ####
 		"SER"={
 			minor = yes

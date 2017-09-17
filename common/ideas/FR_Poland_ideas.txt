@@ -9,14 +9,29 @@ ideas = {
 		POL_MOW_industrial = {
 			picture = generic_production_bonus
 			modifier = {
-				consumer_goods_factor = -0.05	
+				consumer_goods_factor = -0.02	
 			}
 		}
 
 		POL_PSCD_industrial = {
 			picture = generic_production_bonus
 			modifier = {
-				production_speed_arms_factory_factor = 0.05	
+				production_speed_arms_factory_factor = 0.04	
+			}
+		}
+
+		POL_MOW_tax = {
+			picture = neutrality_idea
+			modifier = {
+				consumer_goods_factor = -0.04
+				political_power_gain = -0.3	
+			}
+		}
+
+		POL_PSCD_tax = {
+			picture = neutrality_idea
+			modifier = {
+				consumer_goods_factor = -0.02
 			}
 		}
 

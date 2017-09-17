@@ -13,7 +13,7 @@ state={
 		owner = TUR
 		
 		victory_points = {
-			11747 10 
+			11747 5 
 		}
 		buildings = {
 			infrastructure = 4
