@@ -218,7 +218,7 @@ continuous_focus_position = { x = 50 y = 1600}
  }#Focus for Reclaiming Balkan Lands 
 	focus = { 
 	id = reclaimingbalkanlands 
-	icon = GFX_goal_generic_occypy_states_ongoing_war 
+	icon = GFX_goal_generic_occupy_states_ongoing_war 
 	bypass = {} 
  ai_will_do = { factor = } 
  x = 6
@@ -250,7 +250,7 @@ continuous_focus_position = { x = 50 y = 1600}
  }#Focus for Ikarus 
 	focus = { 
 	id = ikarus 
-	icon = GFX_focus_yug_rogozarski 
+	icon = GFX_focus_YUG_rogozarski 
 	bypass = {} 
  ai_will_do = { factor = } 
  x = 17
@@ -282,7 +282,7 @@ continuous_focus_position = { x = 50 y = 1600}
  }#Focus for Serbian Nationalism 
 	focus = { 
 	id = serbiannationalism 
-	icon = GFX_goal_generic_support_fascism 
+	icon = GFX_goal_support_fascism 
 	bypass = {} 
  ai_will_do = { factor = } 
  x = 6
@@ -298,7 +298,7 @@ continuous_focus_position = { x = 50 y = 1600}
  }#Focus for Drug Tito 
 	focus = { 
 	id = drugtito 
-	icon = GFX_goal_generic_support_communism 
+	icon = GFX_goal_support_communism 
 	bypass = {} 
  ai_will_do = { factor = } 
  x = 8
