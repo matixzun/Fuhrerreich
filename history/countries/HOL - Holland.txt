@@ -104,23 +104,49 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 93
+		internationalist = {
+			popularity = 7
 		}
-
-		fascism = {
+		bolshevist = {
+			popularity = 6
+		}
+		marxist_leninist = {
 			popularity = 4
 		}
-		
-		communism = {
-			popularity = 3
+		libertartarian_socialist = {
+			popularity = 10
+		}
+		social_democrat = {
+			popularity = 20
+		}
+		social_liberal = {
+			popularity = 12
+		}
+		market_liberal = {
+			popularity = 20
+		}
+		social_conservative = {
+			popularity = 21
+		}
+		authoritarian_democrat = {
+			popularity = 0
+		}
+		paternal_autocrat = {
+			popularity = 0
+		}
+		national_populist = {
+			popularity = 0
+		}
+		valkist = {
+			popularity = 0
 		}
 	}
 	
-	ruling_party = democratic
-	last_election = "1933.4.26"
+	ruling_party = social_conservative
+	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
+
 }
 
 set_convoys = 500

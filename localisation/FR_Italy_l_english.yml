@@ -75,3 +75,10 @@ ITA_valkist_party_long:0 "Fasci di Combattimento"
 #ITA_valkist:0 "Italian Empire"
 #ITA_valkist_ADJ:0 "Italian"
 #ITA_valkist_DEF:0 "The Empire of Italy"
+
+### Ideas ###
+
+italia_irredenta:0 "Italia Irredenta"
+italia_irredenta_desc:0 "Italia Irredenta"
+communist_threat:0 "Communist Threat"
+communist_threat_desc:0 "Unrest in the Italian Republic has left the country vulnerable to a communist uprising"

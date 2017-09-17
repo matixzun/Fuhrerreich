@@ -65,7 +65,7 @@ POL_local_leadership_desc:0 ""
 
 ### Events ###
 
-poland.1.t:0 ""
+poland.1.t:0 "`The Kingdom of Poland"
 poland.1.d:0 ""
 poland.1.a:0 ""
 poland.2.t:0 "The Polish Industry Bill"
@@ -73,6 +73,11 @@ poland.2.d:0 "The last few years Poland's industrial legislation hasn't been upd
 poland.2.a:0 "Choose the MOW's plan"
 poland.2.b:0 "Choose the PSCD's plan"
 poland.2.c:0 "Veto the bill alltogether!"
+Poland.3.t:0 "The Tax Reform Bill"
+Poland.3.d:0 "The Polish tax system is outdated and unnecessary complicated, this lead to massive tax evasion and people being taxed rates higher than 100%. The parties in the Sejm have both submitted a plan to fix this mess. The MOW has a proposal which focuses on a slightly progressive system and the PSCD wants to implement a flat tax. Which one should we choose?"
+Poland.3.a:0 "Choose the MOW's plan"
+Poland.3.b:0 "Choose the PSCD's plan"
+Poland.3.c:0 "Veto the bill alltogether"
 
 #### Ideas ####
 

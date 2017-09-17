@@ -111,11 +111,7 @@ set_politics = {
 }
 
 add_ideas = {
-	undisturbed_isolation
-	great_depression
-	disarmed_nation
-	free_trade
-	home_of_the_free
+	sick_man_america
 }
 
 
@@ -137,11 +133,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "William Dudley Pelley"
-	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	name = "Huey Long"
+	desc = "POLITICS_HUEY_LONG_DESC"
+	picture = "Portrait_USA_Huey_Long.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = social_democrat_subtype
 	traits = {
 		
 	}

@@ -89,28 +89,51 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		internationalist = {
+			popularity = 0
+		}
+		bolshevist = {
+			popularity = 0
+		}
+		marxist_leninist = {
+			popularity = 0
+		}
+		libertartarian_socialist = {
+			popularity = 6
+		}
+		social_democrat = {
+			popularity = 4
+		}
+		social_liberal = {
+			popularity = 4
+		}
+		market_liberal = {
+			popularity = 18
+		}
+		social_conservative = {
+			popularity = 25
+		}
+		authoritarian_democrat = {
+			popularity = 30
+		}
+		paternal_autocrat = {
 			popularity = 10
 		}
-
-		fascism = {
-			popularity = 23
+		national_populist = {
+			popularity = 3
 		}
-		
-		communism = {
-			popularity = 2
-		}
-		
-		neutrality = { 
-			popularity = 65
+		valkist = {
+			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1935.6.9"
-	election_frequency = 12
-	elections_allowed = yes # none after offset 1
+	ruling_party = authoritarian_democrat
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
 }
+
 set_national_unity = 0.9
 
 create_country_leader = {

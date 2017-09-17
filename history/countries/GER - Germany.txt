@@ -111,8 +111,8 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Adam Drexler"
-	desc = "POLITICS_ANTON_DREXLER_DESC"
-	picture = "Portrait_Germany_Anton_Drexler.tga"
+	desc = "POLITICS_ADAM_DREXLER_DESC"
+	picture = "Portrait_Germany_Adam_Drexler.tga"
 	expire = "1965.1.1"
 	ideology = valkist_subtype
 	traits = {

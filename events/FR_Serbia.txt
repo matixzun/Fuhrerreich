@@ -1,20 +1,20 @@
-##############################
+﻿##############################
 # Kingdom of Serbia events
 ##############################
 # Created by Terrixfull
 ##############################
 
-add_namespace = ser
+add_namespace = serbia
 
 #Intro
-country_event = {
-        id = ser.1
-        title = ser.1.t
-        desc = ser.1.d
+country_event = { # Intro
+        id = serbia.1
+        title = serbia.1.t
+        desc = serbia.1.d
         picture = GFX_report_event_soviet_soldiers_tank
 
         trigger = {
-                tag = SER
+            tag = SER
         }
 
         mean_time_to_happen = { days = 1 }
@@ -22,6 +22,9 @@ country_event = {
         fire_only_once = yes
 
         option = {
-                name = ser.1.a
+            name = serbia.1.a
         }
 }
+
+
+

@@ -88,27 +88,49 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		internationalist = {
+			popularity = 0
+		}
+		bolshevist = {
+			popularity = 0
+		}
+		marxist_leninist = {
 			popularity = 10
 		}
-
-		fascism = {
-			popularity = 10
+		libertartarian_socialist = {
+			popularity = 5
 		}
-		
-		communism = {
-			popularity = 1
+		social_democrat = {
+			popularity = 80
 		}
-
-		neutrality = {
-			popularity = 79
+		social_liberal = {
+			popularity = 5
+		}
+		market_liberal = {
+			popularity = 0
+		}
+		social_conservative = {
+			popularity = 0
+		}
+		authoritarian_democrat = {
+			popularity = 0
+		}
+		paternal_autocrat = {
+			popularity = 0
+		}
+		national_populist = {
+			popularity = 0
+		}
+		valkist = {
+			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1933.7.1"
-	election_frequency = 36
-	elections_allowed = yes
+	ruling_party = social_democrat
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+
 }
 
 1939.1.1 = {

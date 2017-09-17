@@ -17,27 +17,49 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		neutrality = { 
-			popularity = 48
+		internationalist = {
+			popularity = 0
 		}
-
-		fascism = {
-			popularity = 50
+		bolshevist = {
+			popularity = 10
 		}
-
-		democratic = {
-			popularity = 1
+		marxist_leninist = {
+			popularity = 10
 		}
-		
-		communism = {
-			popularity = 1
+		libertartarian_socialist = {
+			popularity = 0
+		}
+		social_democrat = {
+			popularity = 7
+		}
+		social_liberal = {
+			popularity = 4
+		}
+		market_liberal = {
+			popularity = 10
+		}
+		social_conservative = {
+			popularity = 33
+		}
+		authoritarian_democrat = {
+			popularity = 22
+		}
+		paternal_autocrat = {
+			popularity = 0
+		}
+		national_populist = {
+			popularity = 0
+		}
+		valkist = {
+			popularity = 4
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1930.11.9"
+	ruling_party = authoritarian_democrat
+	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+
 }
 
 set_national_unity = 0.50

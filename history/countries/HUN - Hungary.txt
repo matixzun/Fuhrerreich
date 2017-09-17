@@ -124,25 +124,51 @@ if = {
 }
 
 set_politics = {
+
 	parties = {
-		democratic = { 
-			popularity = 25
+		internationalist = {
+			popularity = 0
 		}
-		fascism = {
-			popularity = 31
+		bolshevist = {
+			popularity = 0
 		}
-		neutrality = {
-			popularity = 44
+		marxist_leninist = {
+			popularity = 12
 		}
-		communism = {
+		libertartarian_socialist = {
+			popularity = 0
+		}
+		social_democrat = {
+			popularity = 0
+		}
+		social_liberal = {
+			popularity = 0
+		}
+		market_liberal = {
+			popularity = 6
+		}
+		social_conservative = {
+			popularity = 45
+		}
+		authoritarian_democrat = {
+			popularity = 22
+		}
+		paternal_autocrat = {
+			popularity = 15
+		}
+		national_populist = {
+			popularity = 0
+		}
+		valkist = {
 			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1935.3.31"
+	ruling_party = social_conservative
+	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
+
 }
 
 #Start Horty as neutral if DOD
