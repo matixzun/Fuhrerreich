@@ -1,0 +1,103 @@
+﻿###########################
+# USA Events
+###########################
+# By Doodle SM
+###########################
+
+add_namespace = usa
+
+# intro
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		USA = { exists = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = usa.1.a
+	}
+}
+
+country_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_report_event_gather_protest
+
+	fire_only_once = yes
+
+	set_country_flag = USA_black_wednesday
+	trigger = {
+		tag = USA
+		USA ={ exists = yes }
+	}
+}
+
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = yes
+
+	trigger = {
+		is_triggered_only = yes
+		tag = USA
+	}
+
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		modifier = {
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = 0.1 instant = yes
+				}
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+	}
+
+	name = usa.3.a
+
+	option = {
+		ai_chance = {
+			base = 0
+		}
+		modifier = {
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = 0.1 instant = yes
+				}
+			}
+		}
+	}
+
+	name = usa.3.b
+
+}

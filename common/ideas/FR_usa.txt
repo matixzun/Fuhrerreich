@@ -1,18 +1,19 @@
 ###########################
 # USA Ideas
 ###########################
-# Made by Doodle SM
+# Made by Ben "Doodle SM" Paris
 ###########################
 
 ideas = {
 	country = {
 
 		USA_sick_man_america = {
-			picture = GFX_idea_generic_king_handled
+			picture = GFX_generic_wall_line
 			modifier = {
 				conscription = -0.015
 				production_speed_buildings_factor = -0.030
 			}
 		}
 	}
+		#USA_black_wednesday
 }
