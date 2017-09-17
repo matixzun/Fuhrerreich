@@ -631,7 +631,87 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_western_border
+			hidden_effect = {
+				# Istanbul
+				341 = {
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 9833
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 9833
+						instant_build = yes
+					}
+				}
+				# Izmit
+				347 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11811
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6871
+						instant_build = yes
+					}
+				}
+				# Ankara
+				49 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3951
+						instant_build = yes
+					}
+				}
+				# Afyon
+				343 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11831
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 856
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 981
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11796
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 10041
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 12013
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -874,7 +954,111 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = TUR_southern_border
+			hidden_effect = {
+				# Afyon
+				343 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 12016
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 784
+						instant_build = yes
+					}
+				}
+				# Konya
+				346 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3788
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6894
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9755
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6807
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9763
+						instant_build = yes
+					}
+				}
+				# Kayseri
+				348 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9830
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 961
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6956
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3921
+						instant_build = yes
+					}
+				}
+				# Sivas
+				349 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3890
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6965
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 9860
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 876
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -933,6 +1117,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				technology = motorised_infantry
+			}
 			add_ideas = TUR_motorized_research
 		}
 	}

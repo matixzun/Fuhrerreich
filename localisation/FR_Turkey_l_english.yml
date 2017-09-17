@@ -212,6 +212,7 @@ TUR_reformed_nation_desc:0 "Despite the hardships faced with creating a new Turk
 TUR_mandatory_conscription:0 "Mandatory Conscription"
 TUR_mandatory_conscription_desc:0 "In order to increase the size of our army, we must turn to conscription. Conscription has been made mandatory for able-bodied men from the ages of eighteen to twenty five."
 TUR_reformed_education:0 "Education Reform"
+TUR_motorized_research:0 "Motorized Industry"
 
 
 #### Tooltips ####
@@ -224,3 +225,5 @@ TUR_civilian_tt:0 "§RAn emphasis will be placed on the civilian industry.§!\n"
 TUR_rearmament_tt:0 "§RAn emphasis will be placed on the military industry.§!\n"
 TUR_revanchism_tt:0 "§RThis will lead towards a more aggressive path for the empire.§!\n"
 TUR_figurehead_tt:0 "§RThis will lead the empire towards a moderate path.§!\n"
+TUR_southern_border:0 "§RForts will be erected on our southern border.§!\n"
+TUR_western_border:0 "§RForts will be erected on our western border.§!\n"
