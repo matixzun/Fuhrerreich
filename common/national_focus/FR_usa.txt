@@ -1,3 +1,9 @@
+##############################
+# United States Focus Tree
+##############################
+# Made by Ben "Doodle SM" Paris
+##############################
+
 focus_tree = {
 	id = usa_focus
 	
@@ -18,6 +24,8 @@ focus_tree = {
 		y = 0
 		cost = 10
 
+		avaliable = {  }
+
 		completion_reward = {
 			army_experience = 5
 
@@ -35,6 +43,20 @@ focus_tree = {
 
 		completion_reward = {
 			add_manpower = 10000
+		}
+	}
+
+	focus = { 
+		id = USA_land_effort
+		icon =
+		x = 1
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = USA_military_service }
+
+		completion_reward = {
+			army_experience = 10
 		}
 	}
 
@@ -210,7 +232,7 @@ focus_tree = {
 		prerequisite = { focus = USA_new_deal focus = USA_invisible_hand focus = USA_too_big_to_fail }
 		
 		completion_reward = {
-
+			country_event = { usa.4 }
 		}
 	}
 
