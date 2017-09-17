@@ -74,6 +74,10 @@ set_politics = {
 
 set_national_unity = 0.6
 
+add_ideas = {
+	
+}
+
 create_country_leader = {
 	name = "Alexander I"
 	desc = "POLITICS_ALEXANDER_I_DESC"
@@ -81,7 +85,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = {
-		#
+		dictator
+		hedonist
 	}
 }
 
@@ -92,7 +97,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = authoritarian_democrat_subtype
 	traits = {
-		#
+		inexperienced_imperialist
 	}
 }
 

@@ -65,19 +65,27 @@ POL_local_leadership_desc:0 ""
 
 ### Events ###
 
-poland.1.t:0 "`The Kingdom of Poland"
-poland.1.d:0 ""
-poland.1.a:0 ""
+poland.1.t:0 "The Kingdom of Poland"
+poland.1.d:0 "temp"
+poland.1.a:0 "temp"
 poland.2.t:0 "The Polish Industry Bill"
 poland.2.d:0 "The last few years Poland's industrial legislation hasn't been updated at all, this has had a negative effect on the Polish people and her economy. To fix this the two parties in the Sejm have each submitted a plan. The MOW wants to lower taxes on consumer goods, and build extra civilian factories. While the PSCD wants to subsudise military factories. Which plan should we choose?"
 poland.2.a:0 "Choose the MOW's plan"
 poland.2.b:0 "Choose the PSCD's plan"
 poland.2.c:0 "Veto the bill alltogether!"
-Poland.3.t:0 "The Tax Reform Bill"
-Poland.3.d:0 "The Polish tax system is outdated and unnecessary complicated, this lead to massive tax evasion and people being taxed rates higher than 100%. The parties in the Sejm have both submitted a plan to fix this mess. The MOW has a proposal which focuses on a slightly progressive system and the PSCD wants to implement a flat tax. Which one should we choose?"
-Poland.3.a:0 "Choose the MOW's plan"
-Poland.3.b:0 "Choose the PSCD's plan"
-Poland.3.c:0 "Veto the bill alltogether"
+poland.3.t:0 "The Tax Reform Bill"
+poland.3.d:0 "The Polish tax system is outdated and unnecessary complicated, this lead to massive tax evasion and people being taxed rates higher than 100%. The parties in the Sejm have both submitted a plan to fix this mess. The MOW has a proposal which focuses on a slightly progressive system and the PSCD wants to implement a flat tax. Which one should we choose?"
+poland.3.a:0 "Choose the MOW's plan"
+poland.3.b:0 "Choose the PSCD's plan"
+poland.3.c:0 "Veto the bill alltogether"
+poland.4.t:0 "The freedom of speech Bill"
+poland.4.d:0 "This bill was proposed by the MOW and the PSCD, this plan wants to implement a universal free speech law for all inhabitants of the kingdom of Poland, not just the Poles. This would make the baltics very happy, but a greater amount of freedom of speech also decreases the status of the monarchy and the monarch. What should we do with the bill?"
+poland.4.a:0 "The Bill passes!"
+poland.4.b:0 "Veto the bill!"
+
+### Custom tooltips ###
+POL_counteract_baltics:0 "This will increase the chance on a Baltic revolution!"
+POL_support_baltics:0 "This will decrease the chance on a Baltic revolution!"
 
 #### Ideas ####
 
@@ -85,3 +93,9 @@ POL_MOW_industrial:0 "The MOW's industrial plan"
 POL_MOW_industrial_desc:0 "The MOW's industrial plan, which includes building extra civilian factories and lowering taxes on consumer goods."
 POL_PSCD_industrial:0 "The PSCD's industrial plan"
 POL_PSCD_industrial_desc:0 "The PSCD's industrial plan subsidises militray factories."
+POL_MOW_tax:0 "The MOW's tax plan"
+POL_MOW_tax_desc:0 "A progressive and fair tax system which makes sure that every Pole pays his share of our nation's cost."
+POL_PSCD_tax:0 "The PSCD's tax plan"
+POL_PSCD_tax_desc:0 "A flat tax that is easy to administrate and equal for all Poles."
+
+

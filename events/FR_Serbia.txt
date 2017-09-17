@@ -7,23 +7,17 @@
 add_namespace = serbia
 
 #Intro
-country_event = { # Intro
-        id = serbia.1
-        title = serbia.1.t
-        desc = serbia.1.d
-        picture = GFX_report_event_soviet_soldiers_tank
+country_event = { 
+    id = serbia.1
+    title = serbia.1.t
+    desc = serbia.1.d
+    picture = GFX_report_event_soviet_soldiers_tank
 
-        trigger = {
-            tag = SER
-        }
+    is_triggered_only = yes
 
-        mean_time_to_happen = { days = 1 }
-
-        fire_only_once = yes
-
-        option = {
-            name = serbia.1.a
-        }
+    option = {
+        name = serbia.1.a
+    }
 }
 
 

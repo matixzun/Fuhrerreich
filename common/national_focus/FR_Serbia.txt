@@ -1,0 +1,507 @@
+##############################
+# Kingdom of Serbia focus tree
+##############################
+# Created by Terrixfull
+##############################
+
+focus_tree = {
+   id = Serbia_Focus
+
+   country = {
+       factor=0
+
+       modifier = {
+           add = 10
+           tag = SER
+        }
+    }
+
+default = no
+
+continuous_focus_position = { x = 50 y = 1600}
+
+
+
+#Industry
+
+#Focus for Rebuilding our Nation 
+	
+focus = { 
+	   id = rebuildingournation 
+	   icon = GFX_goal_generic_construct_infrastructure 
+	   bypass = {} 
+       #ai_will_do = { factor = } 
+       x = 1
+       y = 1 
+       prerequisite = { focus = internalpolitics} 
+       available = {  } 
+       cost = 10  
+  
+       available_if_capitulated = yes  
+ 
+       completion_reward = {
+                107 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+                106 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				108 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+        }
+  
+        
+}
+
+#Focus for Industrial Effort I 
+	       focus = { 
+	          id = industrialefforti 
+	          icon = GFX_goal_generic_consumer_goods 
+	          bypass = {} 
+              ai_will_do = { factor = } 
+              x = 0  
+              y = 2 
+              mutually_exclusive = { focus = militaryefforti} 
+              prerequisite = { focus = rebuildingournation} 
+              available = {  } 
+              cost = 10  
+
+              available_if_capitulated = yes  
+              
+              completion_reward = { 
+             
+          } 
+ }
+
+ #Focus for Industrial Effort II 
+	focus = { 
+	id = industrialeffortii 
+	icon = GFX_goal_generic_construction 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 0 
+ y = 3 
+ mutually_exclusive = { focus = militaryeffortii} 
+ prerequisite = { focus = militaryefforti  focus = militaryefforti} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }
+
+ #Focus for Military Effort II 
+	focus = { 
+	id = militaryeffortii 
+	icon = GFX_goal_generic_construct_mil_factory 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 2
+ y = 3 
+ mutually_exclusive = { focus = industrialeffortii} 
+ prerequisite = { focus = militaryefforti  focus = industrialefforti} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }
+
+ #Focus for Partisans 
+	focus = { 
+	id = partisans 
+	icon = GFX_focus_generic_military_mission 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 8
+ y = 2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = drugtito} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }
+#Focus for Fortification Effort I 
+	focus = { 
+	id = fortificationefforti 
+	icon = GFX_goal_generic_construct_military 
+	bypass = {} 
+                ai_will_do = { factor = } 
+                x = 4
+                y = 1
+                mutually_exclusive = { } 
+                prerequisite = { focus = internalpolitics} 
+                available = {  } 
+                cost = 12  
+ 
+                available_if_capitulated = yes  
+ 
+                completion_reward = { 
+                    107 = {
+				    if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_hungarian
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3609
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11580
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3614
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 614
+							instant_build = yes
+						}
+					}
+				}
+			}
+			106 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_greece
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11856
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 974
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3833
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6886
+							instant_build = yes
+						}
+					}
+				}
+			}
+      } 
+ }
+
+ #Focus for Fortification Effort II 
+	focus = { 
+	id = fortificationeffortii 
+	icon = GFX_goal_generic_fortify_city 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 4
+ y = 2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = fortificationefforti} 
+ available = {  } 
+ cost = 12  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Better Dead than Red 
+	focus = { 
+	id = betterdeadthanred 
+	icon = GFX_focus_generic_support_the_left_right 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 6
+ y = 2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = serbiannationalism} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Army Studies  
+	focus = { 
+	id = armystudies 
+	icon = GFX_goal_generic_small_arms 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 12
+ y = 0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Modifying War Technique 
+	focus = { 
+	id = modifyingwartechnique 
+	icon = GFX_goal_generic_allies_build_infantry 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 10
+ y = 1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = armystudies} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Forming Serbian Army 
+	focus = { 
+	id = formingserbianarmy 
+	icon = GFX_focus_generic_little_entente 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 12
+ y = 1
+ mutually_exclusive = { } 
+ prerequisite = { focus = armystudies} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Mobile Warfare 
+	focus = { 
+	id = mobilewarfare 
+	icon = GFX_goal_generic_army_tanks 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 14
+ y = 1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = armystudies} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Zastava 
+	focus = { 
+	id = zastava 
+	icon = GFX_goal_generic_army_motorized 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 14
+ y = 2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = mobilewarfare} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Balkanski Savez 
+	focus = { 
+	id = balkanskisavez 
+	icon = GFX_goal_generic_major_alliance 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 6
+ y = 3 
+ mutually_exclusive = { } 
+ prerequisite = { focus = betterdeadthanred} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Reclaiming Balkan Lands 
+	focus = { 
+	id = reclaimingbalkanlands 
+	icon = GFX_goal_generic_occupy_states_ongoing_war 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 6
+ y = 4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = balkanskisavez} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Airforce Studies 
+	focus = { 
+	id = airforcestudies 
+	icon = GFX_goal_generic_air_fighter 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 16
+ y = 0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Ikarus 
+	focus = { 
+	id = ikarus 
+	icon = GFX_focus_YUG_rogozarski 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 17
+ y = 1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = airforcestudies} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Internal Politics 
+	focus = { 
+	id = internalpolitics 
+	icon = GFX_goal_generic_neutrality_focus 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 4
+ y = 0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ available = {  } 
+ cost = 15  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Serbian Nationalism 
+	focus = { 
+	id = serbiannationalism 
+	icon = GFX_goal_support_fascism 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 6
+ y = 1 
+ mutually_exclusive = { focus = drugtito} 
+ prerequisite = { focus = internalpolitics} 
+ available = {  } 
+ cost = 3  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Drug Tito 
+	focus = { 
+	id = drugtito 
+	icon = GFX_goal_support_communism 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 8
+ y = 1 
+ mutually_exclusive = { focus = serbiannationalism} 
+ prerequisite = { focus = internalpolitics} 
+ available = {  } 
+ cost = 3  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Military Effort I 
+	focus = { 
+	id = militaryefforti 
+	icon = GFX_goal_generic_construct_mil_factory 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 2
+ y = 2 
+ mutually_exclusive = { focus = industrialefforti} 
+ prerequisite = { focus = rebuildingournation} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Foreign Policy 
+	focus = { 
+	id = foreignpolicy 
+	icon = GFX_goal_generic_position_armies 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 25
+ y = 0 
+ mutually_exclusive = { } 
+ prerequisite = { } 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#Focus for Side With Italy 
+	focus = { 
+	id = şidewithitaly 
+	icon = GFX_goal_molotov_ribbentrop_pact 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 20
+ y = 1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = foreignpolicy} 
+ available = {  } 
+ cost = 10  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }#End of focuses 
+}

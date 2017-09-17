@@ -1,19 +1,18 @@
-idea = {
+###########################
+# USA Ideas
+###########################
+# Made by Doodle SM
+###########################
+
+ideas = {
 	country = {
 
-		sick_man_america = {
-
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
+		USA_sick_man_america = {
+			picture = GFX_idea_generic_king_handled
 			modifier = {
 				conscription = -0.015
-				productioon_speed_buildings_factor = -0.030
+				production_speed_buildings_factor = -0.030
 			}
 		}
-
 	}
 }
