@@ -9,7 +9,7 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	volunteer_only
-	medium_economy
+	normal_popularity
 }
 
 set_technology = {
