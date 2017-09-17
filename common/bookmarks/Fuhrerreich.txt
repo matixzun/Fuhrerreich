@@ -13,7 +13,7 @@ bookmarks = {
 			history ="USA_FUHRERREICH_DESC"
 			ideology = social_liberal
 			ideas = {
-				sick_man_america
+				USA_sick_man_america
 			}
 		}
 
@@ -21,7 +21,7 @@ bookmarks = {
 		"SER"={
 			minor = yes
 			history = "SER_FUHRERREICH_DESC"
-			ideology = paternal_autocrat_subtype
+			ideology = paternal_autocrat
 			ideas = {
 				
 			}

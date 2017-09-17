@@ -26,3 +26,14 @@ USA_national_populist_party:0 ""
 USA_national_populist_party_long:0 ""
 USA_valkist_party:0 ""
 USA_valkist_party_long:0 ""
+
+#### Events ####
+
+usa.1.t:0 "The State of Old Glory"
+usa.1.d:0 "placeholder"
+usa.1.a:0 "We will rise from the rubble."
+
+#### Ideas ####
+
+USA_sick_man_america:0 "Sick Man of the Americas"
+USA_sick_man_america_desc:0 "placeholder"
