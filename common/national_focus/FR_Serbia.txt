@@ -29,9 +29,9 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_consumer_goods 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =0 
- y =2 
- mutually_exclusive = { focus = militarysectori} 
+ x = 0 
+ y = 2 
+ mutually_exclusive = { focus = militaryefforti} 
  prerequisite = { focus = rebuildingournation} 
  available = {  } 
  cost = 10  
@@ -45,10 +45,10 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_construction 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =0 
- y =3 
+ x = 0 
+ y = 3 
  mutually_exclusive = { focus = militaryeffortii} 
- prerequisite = { focus = militarysectori  focus = industrialsectori} 
+ prerequisite = { focus = militaryefforti  focus = militaryefforti} 
  available = {  } 
  cost = 10  
   available_if_capitulated = yes  
@@ -61,42 +61,10 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_construct_mil_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =1 
- y =3 
+ x = 2
+ y = 3 
  mutually_exclusive = { focus = industrialeffortii} 
- prerequisite = { focus = militarysectori  focus = industrialsectori} 
- available = {  } 
- cost = 10  
-  available_if_capitulated = yes  
- completion_reward = { 
-  
- } 
- }#Focus for Military Effort II 
-	focus = { 
-	id = militaryeffortii 
-	icon = GFX_goal_generic_construct_mil_factory 
-	bypass = {} 
- ai_will_do = { factor = } 
- x =1 
- y =3 
- mutually_exclusive = { focus = industrialeffortii} 
- prerequisite = { focus = militarysectori  focus = industrialsectori} 
- available = {  } 
- cost = 10  
-  available_if_capitulated = yes  
- completion_reward = { 
-  
- } 
- }#Focus for Military Effort II 
-	focus = { 
-	id = militaryeffortii 
-	icon = GFX_goal_generic_construct_mil_factory 
-	bypass = {} 
- ai_will_do = { factor = } 
- x =1 
- y =3 
- mutually_exclusive = { focus = industrialeffortii} 
- prerequisite = { focus = militarysectori  focus = industrialsectori} 
+ prerequisite = { focus = militaryefforti  focus = industrialefforti} 
  available = {  } 
  cost = 10  
   available_if_capitulated = yes  
@@ -109,8 +77,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_focus_generic_military_mission 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =4 
- y =2 
+ x = 8
+ y = 2 
  mutually_exclusive = { } 
  prerequisite = { focus = drugtito} 
  available = {  } 
@@ -125,8 +93,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_fortify_city 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =2 
- y =2 
+ x = 4
+ y = 2 
  mutually_exclusive = { } 
  prerequisite = { focus = fortificationefforti} 
  available = {  } 
@@ -141,8 +109,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_focus_generic_support_the_left_right 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =3 
- y =2 
+ x = 6
+ y = 2 
  mutually_exclusive = { } 
  prerequisite = { focus = serbiannationalism} 
  available = {  } 
@@ -157,8 +125,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_small_arms 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =7 
- y =0 
+ x = 12
+ y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
  available = {  } 
@@ -173,8 +141,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_allies_build_infantry 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =6 
- y =1 
+ x = 10
+ y = 1 
  mutually_exclusive = { } 
  prerequisite = { focus = armystudies} 
  available = {  } 
@@ -189,8 +157,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_focus_generic_little_entente 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =7 
- y =1 
+ x = 12
+ y = 1
  mutually_exclusive = { } 
  prerequisite = { focus = armystudies} 
  available = {  } 
@@ -205,8 +173,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_army_tanks 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =8 
- y =1 
+ x = 14
+ y = 1 
  mutually_exclusive = { } 
  prerequisite = { focus = armystudies} 
  available = {  } 
@@ -221,8 +189,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_army_motorized 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =8 
- y =2 
+ x = 14
+ y = 2 
  mutually_exclusive = { } 
  prerequisite = { focus = mobilewarfare} 
  available = {  } 
@@ -237,8 +205,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_major_alliance 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =3 
- y =3 
+ x = 6
+ y = 3 
  mutually_exclusive = { } 
  prerequisite = { focus = betterdeadthanred} 
  available = {  } 
@@ -253,8 +221,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_occypy_states_ongoing_war 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =3 
- y =4 
+ x = 6
+ y = 4 
  mutually_exclusive = { } 
  prerequisite = { focus = balkanskisavez} 
  available = {  } 
@@ -269,8 +237,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_air_fighter 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =10 
- y =0 
+ x = 16
+ y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
  available = {  } 
@@ -285,8 +253,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_focus_yug_rogozarski 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =11 
- y =1 
+ x = 17
+ y = 1 
  mutually_exclusive = { } 
  prerequisite = { focus = airforcestudies} 
  available = {  } 
@@ -301,8 +269,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_neutrality_focus 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =2 
- y =0 
+ x = 4
+ y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
  available = {  } 
@@ -317,8 +285,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_support_fascism 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =3 
- y =1 
+ x = 6
+ y = 1 
  mutually_exclusive = { focus = drugtito} 
  prerequisite = { focus = internalpolitics} 
  available = {  } 
@@ -333,8 +301,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_support_communism 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =4 
- y =1 
+ x = 8
+ y = 1 
  mutually_exclusive = { focus = serbiannationalism} 
  prerequisite = { focus = internalpolitics} 
  available = {  } 
@@ -349,8 +317,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_construct_military 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =2 
- y =1 
+ x = 4
+ y = 1
  mutually_exclusive = { } 
  prerequisite = { focus = internalpolitics} 
  available = {  } 
@@ -365,8 +333,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_construct_infrastructure 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =0 
- y =1 
+ x = 1
+ y = 1 
  mutually_exclusive = { } 
  prerequisite = { focus = internalpolitics} 
  available = {  } 
@@ -381,9 +349,9 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_construct_mil_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =1 
- y =2 
- mutually_exclusive = { focus = industrialsectori} 
+ x = 2
+ y = 2 
+ mutually_exclusive = { focus = industrialefforti} 
  prerequisite = { focus = rebuildingournation} 
  available = {  } 
  cost = 10  
@@ -397,8 +365,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_generic_position_armies 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =15 
- y =0 
+ x = 25
+ y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
  available = {  } 
@@ -413,8 +381,8 @@ continuous_focus_position = { x = 50 y = 1600}
 	icon = GFX_goal_molotov_ribbentrop_pact 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =12 
- y =1 
+ x = 20
+ y = 1 
  mutually_exclusive = { } 
  prerequisite = { focus = foreignpolicy} 
  available = {  } 
