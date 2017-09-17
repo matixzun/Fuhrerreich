@@ -16,7 +16,9 @@ focus_tree = {
 
 	default = no
 	
+################	
 ### Election ###
+################
 	focus = {
 		id = ITA_parliamentary_election
 		icon = GFX_focus_generic_italy_firs
@@ -317,3 +319,122 @@ focus_tree = {
 		}
 	}
 	
+### military seizes control ###
+	focus = {
+		id = ITA_military_parliament
+		x = 15
+		y = 0
+		cost = 10
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+# put Amadeo Aosta in power
+	focus = {
+		id = ITA_savoia_aosta
+		x = 15
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_military_parliament
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = ITA_abolish_parliament
+		x = 15
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_savoia_aosta
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = ITA_military_role
+		x = 15
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_abolish_parliament
+		}
+		
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+### add valkist takeover event 	
+	focus = {
+		id = ITA_install_dictatorship
+		x = 17
+		y = 1
+		cost = 10
+	
+		prerequisite = {
+			focus = ITA_military_parliament
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+		focus = {
+		id = ITA_political_police
+		x = 17
+		y = 2
+		cost = 10
+	
+		prerequisite = {
+			focus = ITA_install_dictatorship
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+		focus = {
+		id = ITA_patria_famiglia
+		x = 17
+		y = 3
+		cost = 10
+	
+		prerequisite = {
+			focus = ITA_political_police
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.10
+		}
+	}
+	
+		focus = {
+		id = ITA_crackdown_opposition
+		x = 16
+		y = 4
+		cost = 10
+	
+		prerequisite = {
+			focus = ITA_military_role
+			focus = ITA_patria_famiglia
+		}
+		
+		completion_reward = {
+			remove_ideas = ITA_communist_threat
+		}
+	}
