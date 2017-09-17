@@ -1,12 +1,11 @@
 ###########################
-# USA Ideas
+# United States Ideas
 ###########################
 # Made by Ben "Doodle SM" Paris
 ###########################
 
 ideas = {
 	country = {
-
 		USA_sick_man_america = {
 			picture = GFX_generic_wall_line
 			modifier = {
@@ -15,5 +14,69 @@ ideas = {
 			}
 		}
 	}
-		#USA_black_wednesday
+	country =  {
+		USA_firearm_production = {
+            allowed = {
+                always = no
+            }
+
+            equipment_bonus = {
+                infantry_equipment = {
+                    build_cost_ic = -0.1 instant = yes
+                }
+                fighter_equipment = {
+                	build_cost_ic = 0.1 instant = yes
+                }
+            }
+
+            removal_cost = -1
+            picture = generic_infantry_bonus
+        }
+    }
+	country =  {
+		USA_fighter_production = {
+            allowed = {
+                always = no
+            }
+
+            equipment_bonus = {
+                infantry_equipment = {
+                    build_cost_ic = 0.1 instant = yes
+                }
+                fighter_equipment = {
+                	build_cost_ic = -0.1 instant = yes
+                }
+            }
+
+            removal_cost = -1
+            picture = idea_generic_fighter_production_diverted
+        }
+    }
+
+    country = {
+    	USA = USA_black_wednesday = {
+    		allowed = {
+    			always  no
+    		}
+    		unity_factor = -0.65
+    		industrial_capacity_factory = -0.30   
+    		consumer_goods_factor = 0.20	
+    		removal_cost = -1
+    		picture = GFX_generic_production_bonus
+    	}
+    }
+
+    country = {
+    	USA_black_wednesday_recovery = {
+    		allowed = {
+    			always = no
+    		}
+    		unity_weekly = 0.0010  
+    		industrial_capacity_factory = -0.30 
+    		consumer_goods_factor = 0.10
+    	}
+
+    	removal_cost = -1
+    	picture = GFX_idea_ast_all_in
+    }
 }
