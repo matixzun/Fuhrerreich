@@ -462,7 +462,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = { id = tur.13 }
 		}
 	}
 

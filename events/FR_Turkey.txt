@@ -420,3 +420,77 @@ country_event = {
 		add_political_power = 60
 	}
 }
+
+# Democratic Elections
+country_event = { 
+	id = tur.13
+	title = tur.13.t
+	desc = tur.13.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 4 }
+
+	fire_only_once = yes
+
+	option = {
+		name = tur.13.a # SocLibs
+
+		ai_chance = {
+			factor = 60
+		}
+
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+
+		set_politics = { ruling_party = social_liberal elections_allowed = no }
+	}
+
+	option = {
+		name = tur.13.b # SocDems
+
+		ai_chance = {
+			factor = 10
+		}
+
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.3
+		}
+
+		set_politics = { ruling_party = social_democrat elections_allowed = no }
+	}
+
+	option = {
+		name = tur.13.c # SoCons
+
+		ai_chance = {
+			factor = 15
+		}
+
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.3
+		}
+
+		set_politics = { ruling_party = social_conservative elections_allowed = no }
+	}
+
+	option = {
+		name = tur.13.e # MarketLibs
+
+		ai_chance = {
+			factor = 15
+		}
+
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.3
+		}
+
+		set_politics = { ruling_party = market_liberal elections_allowed = no }
+	}
+}

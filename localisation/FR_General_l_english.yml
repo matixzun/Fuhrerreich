@@ -1,0 +1,486 @@
+﻿l_english:
+
+### Land Units ###
+garrison:0 "Garrison"
+militia:0 "Militia"
+
+### Interface ###
+minister:1 "Ministers"
+research_production:1 "Companies"
+industrial_concern:1 "Industrial Company"
+weapons_manufacturer:0 "Weapons Manufacturer"
+tank_manufacturer:1 "Heavy Equipment Manufacturer"
+air_naval_manufacturer:0 "Air and Naval Manufacturer"
+POLITICS_NOELECTIONS:0 "Any elections by event."
+can_replace_hog:0 "Can Replace Head Of Government"
+ministers_cannot_be_replaced:0 "Ministers Cannot Be Replaced"
+
+### Skill Level ###
+unskilled:0 "" #(unskilled)
+regular:0 "" #(regular)
+expert:0 "" #(expert)
+blank:0 "" #\n
+
+### Ministers ###
+head_of_government:0 "Head of Government"
+foreign_minister:0 "Foreign Minister"
+economy_minister:0 "Economy Minister"
+security_minister:0 "Security Minister"
+intel_minister:0 "Intel Minister"
+decisions:0 "Decisions"
+naive_optimist:0 "Naive Optimist"
+resource_industrialist:0 "Resource Industrialist"
+mass_assault:0 "School of Mass Combat"
+static_defense:0 "Static Defence Doctrine"
+backstabber:0 "Backroom Backstabber"
+happy_amateur:0 "Happy Amateur"
+corporate_suit:0 "Corporate Suit"
+smiling_oilman:0 "Smiling Oilman"
+silent_workhorse:0 "Silent Workhorse"
+old_general:0 "Old General"
+old_air_marshall:0 "Old Air Marshall"
+totalist_chairman:0 "Totalist Chairman"
+political_powerhouse:0 "Political Powerhouse"
+expansive_imperialist:0 "Stern Imperialist"
+totalist_promoter:0 "Totalist Idol"
+radical_socialist_promoter:0 "Socialist Revolutionary"
+syndicalist_promoter:0 "Syndicalist Union Leader"
+social_democrat_promoter:0 "Socialist Reformist"
+social_liberal_promoter:0 "Progressive Hero"
+market_liberal_promoter:0 "Business Advocate"
+social_conservative_promoter:0 "Staunch Traditionalist"
+authoritarian_democrat_promoter:0 "Authoritarian Constitutionalist"
+paternal_autocrat_promoter:0 "Autocratic Charmer"
+national_populist_promoter:0 "Nationalist Demagogue"
+great_compromiser:0 "Great Compromiser"
+
+### Ideologies ###
+internationalist:0 "Internationalists"
+bolshevist:0 "Bolshevists"
+marxist_leninist:0 "Marxist Leninists"
+libertartarian_socialist:0 "Libertartarian Socialist"
+social_democrat:0 "Social Democrats"
+social_liberal:0 "Social Liberals"
+market_liberal:0 "Market Liberals"
+social_conservative:0 "Social Conservatives"
+authoritarian_democrat:0 "Authoritarian Dem."
+paternal_autocrat:0 "Paternal Autocrats"
+national_populist:0 "National Populists"
+valkist:0 "Valkists"
+
+### Drift ###
+totalist_drift:0 "Daily Totalist support"
+syndicalist_drift:0 "Daily Syndicalist support"
+radical_socialist_drift:0 "Daily Radical Socialist support"
+social_democrat_drift:0 "Daily Social Democrat support"
+market_liberal_drift:0 "Daily Market Liberal support"
+social_conservative_drift:0 "Daily Social Conservative support"
+authoritarian_democrat_drift:0 "Daily Authoritarian Democrat support"
+paternal_autocrat_drift:0 "Daily Paternal Autocrat support"
+national_populist_drift:0 "Daily National Populist support"
+social_liberal_drift:0 "Daily Social Liberal support"
+
+### Banned ###
+totalist_banned:0 "Banned Totalists"
+syndicalist_banned:0 "Banned Syndicalists"
+radical_socialist_banned:0 "Banned Radical Socialists"
+social_democrat_banned:0 "Banned Social Democrats"
+market_liberal_banned:0 "Banned Market Liberals"
+social_conservative_banned:0 "Banned Social Conservatives"
+authoritarian_democrat_banned:0 "Banned Authoritarian Democrats"
+paternal_autocrat_banned:0 "Banned Paternal Autocrats"
+national_populist_banned:0 "Banned National Populists"
+social_liberal_banned:0 "Banned Social Liberals"
+
+### Company Traits ###
+
+### Tank ###
+small_tank_producer_offense_0:0 "Light Tank Manufacturer"
+small_tank_producer_offense_1:0 "Light Tank Manufacturer"
+small_tank_producer_offense_2:0 "Light Tank Manufacturer"
+small_tank_producer_defense_0:0 "Light Tank Manufacturer"
+small_tank_producer_defense_1:0 "Light Tank Manufacturer"
+small_tank_producer_defense_2:0 "Light Tank Manufacturer"
+small_tank_producer_mass_0:0 "Light Tank Manufacturer"
+small_tank_producer_mass_1:0 "Light Tank Manufacturer"
+small_tank_producer_mass_2:0 "Light Tank Manufacturer"
+medium_tank_producer_offense_0:0 "Medium Tank Manufacturer"
+medium_tank_producer_offense_1:0 "Medium Tank Manufacturer"
+medium_tank_producer_offense_2:0 "Medium Tank Manufacturer"
+medium_tank_producer_defense_0:0 "Medium Tank Manufacturer"
+medium_tank_producer_defense_1:0 "Medium Tank Manufacturer"
+medium_tank_producer_defense_2:0 "Medium Tank Manufacturer"
+medium_tank_producer_mass_0:0 "Medium Tank Manufacturer"
+medium_tank_producer_mass_1:0 "Medium Tank Manufacturer"
+medium_tank_producer_mass_2:0 "Medium Tank Manufacturer"
+heavy_tank_producer_offense_0:0 "Heavy Tank Manufacturer"
+heavy_tank_producer_offense_1:0 "Heavy Tank Manufacturer"
+heavy_tank_producer_offense_2:0 "Heavy Tank Manufacturer"
+heavy_tank_producer_defense_0:0 "Heavy Tank Manufacturer"
+heavy_tank_producer_defense_1:0 "Heavy Tank Manufacturer"
+heavy_tank_producer_defense_2:0 "Heavy Tank Manufacturer"
+heavy_tank_producer_mass_0:0 "Heavy Tank Manufacturer"
+heavy_tank_producer_mass_1:0 "Heavy Tank Manufacturer"
+heavy_tank_producer_mass_2:0 "Heavy Tank Manufacturer"
+
+### Air ###
+fighter_producer_offense_0:0 "Fighter Manufacturer"
+fighter_producer_offense_1:0 "Fighter Manufacturer"
+fighter_producer_offense_2:0 "Fighter Manufacturer"
+fighter_producer_defense_0:0 "Fighter Manufacturer"
+fighter_producer_defense_1:0 "Fighter Manufacturer"
+fighter_producer_defense_2:0 "Fighter Manufacturer"
+fighter_producer_mass_0:0 "Fighter Manufacturer"
+fighter_producer_mass_1:0 "Fighter Manufacturer"
+fighter_producer_mass_2:0 "Fighter Manufacturer"
+bomber_producer_offense_0:0 "Heavy Bomber Manufacturer"
+bomber_producer_offense_1:0 "Heavy Bomber Manufacturer"
+bomber_producer_offense_2:0 "Heavy Bomber Manufacturer"
+bomber_producer_defense_0:0 "Heavy Bomber Manufacturer"
+bomber_producer_defense_1:0 "Heavy Bomber Manufacturer"
+bomber_producer_defense_2:0 "Heavy Bomber Manufacturer"
+bomber_producer_mass_0:0 "Heavy Bomber Manufacturer"
+bomber_producer_mass_1:0 "Heavy Bomber Manufacturer"
+bomber_producer_mass_2:0 "Heavy Bomber Manufacturer"
+nav_cas_producer_offense_0:0 "Light Bomber Manufacturer"
+nav_cas_producer_offense_1:0 "Light Bomber Manufacturer"
+nav_cas_producer_offense_2:0 "Light Bomber Manufacturer"
+nav_cas_producer_defense_0:0 "Light Bomber Manufacturer"
+nav_cas_producer_defense_1:0 "Light Bomber Manufacturer"
+nav_cas_producer_defense_2:0 "Light Bomber Manufacturer"
+nav_cas_producer_mass_0:0 "Light Bomber Manufacturer"
+nav_cas_producer_mass_1:0 "Light Bomber Manufacturer"
+nav_cas_producer_mass_2:0 "Light Bomber Manufacturer"
+
+### Arms ###
+motorised_equipment_producer_offense_0:0 "Motorised Equipment Manufacturer"
+motorised_equipment_producer_offense_1:0 "Motorised Equipment Manufacturer"
+motorised_equipment_producer_offense_2:0 "Motorised Equipment Manufacturer"
+motorised_equipment_producer_defense_0:0 "Motorised Equipment Manufacturer"
+motorised_equipment_producer_defense_1:0 "Motorised Equipment Manufacturer"
+motorised_equipment_producer_defense_2:0 "Motorised Equipment Manufacturer"
+motorised_equipment_producer_mass_0:0 "Motorised Equipment Manufacturer"
+motorised_equipment_producer_mass_1:0 "Motorised Equipment Manufacturer"
+motorised_equipment_producer_mass_2:0 "Motorised Equipment Manufacturer"
+infantry_equipment_producer_offense_0:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_offense_1:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_offense_2:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_defense_0:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_defense_1:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_defense_2:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_assualt_0:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_assualt_1:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_assualt_2:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_allround_0:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_allround_1:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_allround_2:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_mass_0:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_mass_1:0 "Infantry Equipment Manufacturer"
+infantry_equipment_producer_mass_2:0 "Infantry Equipment Manufacturer"
+artillery_producer_offense_0:0 "Artillery Manufacturer"
+artillery_producer_offense_1:0 "Artillery Manufacturer"
+artillery_producer_offense_2:0 "Artillery Manufacturer"
+artillery_producer_defense_0:0 "Artillery Manufacturer"
+artillery_producer_defense_1:0 "Artillery Manufacturer"
+artillery_producer_defense_2:0 "Artillery Manufacturer"
+artillery_producer_mass_0:0 "Artillery Manufacturer"
+artillery_producer_mass_1:0 "Artillery Manufacturer"
+artillery_producer_mass_2:0 "Artillery Manufacturer"
+
+### Naval ###
+capital_ship_producer_offense_0:0 "Capital Ship Manufacturer"
+capital_ship_producer_offense_1:0 "Capital Ship Manufacturer"
+capital_ship_producer_offense_2:0 "Capital Ship Manufacturer"
+capital_ship_producer_defense_0:0 "Capital Ship Manufacturer"
+capital_ship_producer_defense_1:0 "Capital Ship Manufacturer"
+capital_ship_producer_defense_2:0 "Capital Ship Manufacturer"
+capital_ship_producer_mass_0:0 "Capital Ship Manufacturer"
+capital_ship_producer_mass_1:0 "Capital Ship Manufacturer"
+capital_ship_producer_mass_2:0 "Capital Ship Manufacturer"
+cruiser_producer_offense_0:0 "Cruiser Manufacturer"
+cruiser_producer_offense_1:0 "Cruiser Manufacturer"
+cruiser_producer_offense_2:0 "Cruiser Manufacturer"
+cruiser_producer_defense_0:0 "Cruiser Manufacturer"
+cruiser_producer_defense_1:0 "Cruiser Manufacturer"
+cruiser_producer_defense_2:0 "Cruiser Manufacturer"
+cruiser_producer_mass_0:0 "Cruiser Manufacturer"
+cruiser_producer_mass_1:0 "Cruiser Manufacturer"
+cruiser_producer_mass_2:0 "Cruiser Manufacturer"
+small_ship_producer_offense_0:0 "Small Ship Manufacturer"
+small_ship_producer_offense_1:0 "Small Ship Manufacturer"
+small_ship_producer_offense_2:0 "Small Ship Manufacturer"
+small_ship_producer_defense_0:0 "Small Ship Manufacturer"
+small_ship_producer_defense_1:0 "Small Ship Manufacturer"
+small_ship_producer_defense_2:0 "Small Ship Manufacturer"
+small_ship_producer_mass_0:0 "Small Ship Manufacturer"
+small_ship_producer_mass_1:0 "Small Ship Manufacturer"
+small_ship_producer_mass_2:0 "Small Ship Manufacturer"
+
+### General Industry ###
+chemical_producer:0 "Chemical Company"
+industrial_manufacturer:0 "Industrial Company"
+electronics_manufacturer:0 "Electronics Manufacturer"
+
+### Theorists ###
+
+### Different stuff ###
+industry_theorist:0 "Industry Theorist"
+nuclear_theorist:0 "Nuclear Theorist"
+rocket_theorist:0 "Rocket Theorist"
+electronic_theorist:0 "Electronic Theorist"
+
+### Doctrines ###
+
+### General ###
+air_doctrine_theorist:0 "Air Doctrine Theorist"
+naval_doctrine_theorist:0 "Naval Doctrine Theorist"
+land_doctrine_theorist:0 "Land Doctrine Theorist"
+
+### Land ###
+supperior_firepower_theorist:0 "Superior Firepower Theorist"
+mobile_warfare_theorist:0 "Mobile Warfare Theorist"
+trench_warfare_theorist:0 "Trench Warfare Theorist"
+mass_assault_theorist:0 "Mass Assault Theorist"
+
+### Air ###
+strategic_destruction_theorist:0 "Strategic Destruction Theorist"
+battlefield_support_theorist:0 "Battlefield Support Theorist"
+operational_integrity_theorist:0 "Operational Integrity Theorist"
+
+### Naval ###
+fleet_in_being_theorist_theorist:0 "Fleet In Being Theorist"
+trade_interdiction_theorist:0 "Trade Interdiction Theorist"
+base_strike_theorist:0 "Base Strike Theorist"
+
+### Unit Type Theorists ###
+
+### Air ###
+aircraft_theorist:0 "Aircraft Production Theorist"
+fighter_theorist:0 "Fighter Theorist"
+heavy_fighter_theorist:0 "Heavy Fighter Theorist"
+cas_theorist:0 "CAS Theorist"
+tac_theorist:0 "Tactical Bomber Theorist"
+strat_theorist:0 "Strategic Bomber Theorist"
+nav_theorist:0 "Naval Bomber Theorist"
+
+### Tanks ###
+tank_theorist:0 "Tank Production Theorist"
+small_tank_theorist:0 "Small Tank Theorist"
+medium_tank_theorist:0 "Medium Tank Theorist"
+heavy_tank_theorist:0 "Heavy Tank Theorist"
+
+### General Arms ###
+arms_theorist:0 "Arms Production Theorist"
+infantry_equipment_theorist:0 "Infantry Equipment Theorist"
+support_equipment_theorist:0 "Support Equipment Theorist"
+art_theorist:0 "Artillery Theorist"
+motorized_theorist:0 "Motorised Equipment Theorist"
+marine_theorist:0 "Marine Equipment Theorist"
+
+### General ###
+fighter_techs:0 "Fighter Tech"
+fighter_techs_research:0 "Fighter Tech Research Time"
+support_tech:0 "Support Tech"
+support_tech_research:0 "Support Tech Research Time"
+
+### Army Command Traits ###
+
+### Land ###
+land_defense_1:0 "Defensive Doctrine"
+land_defense_2:0 "Defensive Doctrine"
+land_defense_3:0 "Defensive Doctrine"
+
+land_offensive_1:0 "Offensive Doctrine"
+land_offensive_2:0 "Offensive Doctrine"
+land_offensive_3:0 "Offensive Doctrine"
+
+mobile_warfare_1:0 "Mobile Warfare"
+mobile_warfare_2:0 "Mobile Warfare"
+mobile_warfare_3:0 "Mobile Warfare"
+
+entrenchment_1:0 "Great War Doctrine"
+entrenchment_2:0 "Great War Doctrine"
+entrenchment_3:0 "Great War Doctrine"
+
+morale_1:0 "Inspiring Leader"
+morale_2:0 "Inspiring Leader"
+morale_3:0 "Inspiring Leader"
+
+organization_1:0 "Strategic Planner"
+organization_2:0 "Strategic Planner"
+organization_3:0 "Strategic Planner"
+
+attrition_1:0 "Careful Planner"
+attrition_2:0 "Careful Planner"
+attrition_3:0 "Careful Planner"
+
+supply_use_1:0 "Logistical Planner"
+supply_use_2:0 "Logistical Planner"
+supply_use_3:0 "Logistical Planner"
+
+### Artillery ###
+artillery_offense_1:0 "Offensive Barrage"
+artillery_offense_2:0 "Offensive Barrage"
+artillery_offense_3:0 "Offensive Barrage"
+
+artillery_defense_1:0 "Defensive Barrage"
+artillery_defense_2:0 "Defensive Barrage"
+artillery_defense_3:0 "Defensive Barrage"
+
+### Infantry ###
+infantry_offense_1:0 "Infantry Charge"
+infantry_offense_2:0 "Infantry Charge"
+infantry_offense_3:0 "Infantry Charge"
+
+infantry_defense_1:0 "Infantry Defence"
+infantry_defense_2:0 "Infantry Defence"
+infantry_defense_3:0 "Infantry Defence"
+
+### Tanks ###
+armored_offense_1:0 "Panzer Charge"
+armored_offense_2:0 "Panzer Charge"
+armored_offense_3:0 "Panzer Charge"
+
+armored_defense_1:0 "Panzer Defence"
+armored_defense_2:0 "Panzer Defence"
+armored_defense_3:0 "Panzer Defence"
+
+### Cavalry ###
+cavalry_offense_1:0 "Cavalry Charge"
+cavalry_offense_2:0 "Cavalry Charge"
+cavalry_offense_3:0 "Cavalry Charge"
+
+cavalry_defense_1:0 "Cavalry Defence"
+cavalry_defense_2:0 "Cavalry Defence"
+cavalry_defense_3:0 "Cavalry Defence"
+
+### Commando ###
+commando_offense_1:0 "Commando Charge"
+commando_offense_2:0 "Commando Charge"
+commando_offense_3:0 "Commando Charge"
+
+commando_defense_1:0 "Commando Defence"
+commando_defense_2:0 "Commando Defence"
+commando_defense_3:0 "Commando Defence"
+
+### XP ###
+army_reform_1:0 "Army Reformer"
+army_reform_2:0 "Army Reformer"
+army_reform_3:0 "Army Reformer"
+
+### Air ###
+concealment_1:0 "Concealment"
+concealment_2:0 "Concealment"
+concealment_3:0 "Concealment"
+
+air_reform_1:0 "Air Reformer"
+air_reform_2:0 "Air Reformer"
+air_reform_3:0 "Air Reformer"
+
+air_safety_1:0 "Air Safety"
+air_safety_2:0 "Air Safety"
+air_safety_3:0 "Air Safety"
+
+air_night_operations_1:0 "Night Operations"
+air_night_operations_2:0 "Night Operations"
+air_night_operations_3:0 "Night Operations"
+
+air_ground_suppression_1:0 "Ground Suppression"
+air_ground_suppression_2:0 "Ground Suppression"
+air_ground_suppression_3:0 "Ground Suppression"
+
+air_weather_1:0 "All-Weather"
+air_weather_2:0 "All-Weather"
+air_weather_3:0 "All-Weather"
+
+air_ace_promoter_1:0 "Positive Heroism"
+air_ace_promoter_2:0 "Positive Heroism"
+air_ace_promoter_3:0 "Positive Heroism"
+
+air_naval_strike_1:0 "Naval Strike"
+air_naval_strike_2:0 "Naval Strike"
+air_naval_strike_3:0 "Naval Strike"
+
+air_bomber_interception_1:0 "Bomber Interception"
+air_bomber_interception_2:0 "Bomber Interception"
+air_bomber_interception_3:0 "Bomber Interception"
+
+air_air_superiority_1:0 "Air Superiority"
+air_air_superiority_2:0 "Air Superiority"
+air_air_superiority_3:0 "Air Superiority"
+
+air_close_air_support_1:0 "Close Air Support"
+air_close_air_support_2:0 "Close Air Support"
+air_close_air_support_3:0 "Close Air Support"
+
+air_strategic_bombing_1:0 "Strategic Bombing"
+air_strategic_bombing_2:0 "Strategic Bombing"
+air_strategic_bombing_3:0 "Strategic Bombing"
+
+air_tactical_bombing_1:0 "Tactical Bombing"
+air_tactical_bombing_2:0 "Tactical Bombing"
+air_tactical_bombing_3:0 "Tactical Bombing"
+
+air_airborne_1:0 "Airborne Assault"
+air_airborne_2:0 "Airborne Assault"
+air_airborne_3:0 "Airborne Assault"
+
+### Naval ###
+navy_chief_naval_aviation_1:0 "Naval Aviation"
+navy_chief_naval_aviation_2:0 "Naval Aviation"
+navy_chief_naval_aviation_3:0 "Naval Aviation"
+
+navy_chief_decisive_battle_1:0 "Decisive Battle Doctrine"
+navy_chief_decisive_battle_2:0 "Decisive Battle Doctrine"
+navy_chief_decisive_battle_3:0 "Decisive Battle Doctrine"
+
+navy_chief_commerce_raiding_1:0 "Commerce Raiding Doctrine"
+navy_chief_commerce_raiding_2:0 "Commerce Raiding Doctrine"
+navy_chief_commerce_raiding_3:0 "Commerce Raiding Doctrine"
+
+navy_chief_reform_1:0 "Naval Reformer"
+navy_chief_reform_2:0 "Naval Reformer"
+navy_chief_reform_3:0 "Naval Reformer"
+
+navy_chief_maneuver_1:0 "Naval Manoeuvre"
+navy_chief_maneuver_2:0 "Naval Manoeuvre"
+navy_chief_maneuver_3:0 "Naval Manoeuvre"
+
+navy_anti_submarine_1:0 "Anti-Submarine"
+navy_anti_submarine_2:0 "Anti-Submarine"
+navy_anti_submarine_3:0 "Anti-Submarine"
+
+navy_naval_air_defense_1:0 "Naval Air Defence"
+navy_naval_air_defense_2:0 "Naval Air Defence"
+navy_naval_air_defense_3:0 "Naval Air Defence"
+
+navy_fleet_logistics_1:0 "Fleet Logistics"
+navy_fleet_logistics_2:0 "Fleet Logistics"
+navy_fleet_logistics_3:0 "Fleet Logistics"
+
+navy_amphibious_assault_1:0 "Amphibious Assault"
+navy_amphibious_assault_2:0 "Amphibious Assault"
+navy_amphibious_assault_3:0 "Amphibious Assault"
+
+navy_submarine_1:0 "Submarine Warfare Doctrine"
+navy_submarine_2:0 "Submarine Warfare Doctrine"
+navy_submarine_3:0 "Submarine Warfare Doctrine"
+
+navy_capital_ship_1:0 "Capital Fleet Doctrine"
+navy_capital_ship_2:0 "Capital Fleet Doctrine"
+navy_capital_ship_3:0 "Capital Fleet Doctrine"
+
+navy_screen_1:0 "Forward Escort Doctrine"
+navy_screen_2:0 "Forward Escort Doctrine"
+navy_screen_3:0 "Forward Escort Doctrine"
+
+navy_carrier_1:0 "Carrier Strike Doctrine"
+navy_carrier_2:0 "Carrier Strike Doctrine"
+navy_carrier_3:0 "Carrier Strike Doctrine"
+
+black_monday:0 "Black Monday"
+
+jet_aircraft_manufacturer:0 "Jet Aircraft Manufacturer"
+
+independent_war:0 "Independent War"
+independent_war_desc:0 "This country is currently in a independent war. It does not want other countries to get involved directly in the war."
