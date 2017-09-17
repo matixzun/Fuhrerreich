@@ -5,7 +5,7 @@
 ##############################
 
 focus_tree = {
-   id = Poland_Focus
+   id = Serbia_Focus
 
    country = {
        factor=0
@@ -22,24 +22,80 @@ continuous_focus_position = { x = 50 y = 1600}
 
 
 
-#Custom focuses start here
-#Focus for Industrial Effort I 
-	focus = { 
-	id = industrialefforti 
-	icon = GFX_goal_generic_consumer_goods 
-	bypass = {} 
- ai_will_do = { factor = } 
- x = 0 
- y = 2 
- mutually_exclusive = { focus = militaryefforti} 
- prerequisite = { focus = rebuildingournation} 
- available = {  } 
- cost = 10  
-  available_if_capitulated = yes  
- completion_reward = { 
+#Industry
+
+#Focus for Rebuilding our Nation 
+	
+focus = { 
+	   id = rebuildingournation 
+	   icon = GFX_goal_generic_construct_infrastructure 
+	   bypass = {} 
+       #ai_will_do = { factor = } 
+       x = 1
+       y = 1 
+       prerequisite = { focus = internalpolitics} 
+       available = {  } 
+       cost = 10  
   
- } 
- }#Focus for Industrial Effort II 
+       available_if_capitulated = yes  
+ 
+       completion_reward = {
+                107 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+                106 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+				108 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+        }
+  
+        
+}
+
+#Focus for Industrial Effort I 
+	       focus = { 
+	          id = industrialefforti 
+	          icon = GFX_goal_generic_consumer_goods 
+	          bypass = {} 
+              ai_will_do = { factor = } 
+              x = 0  
+              y = 2 
+              mutually_exclusive = { focus = militaryefforti} 
+              prerequisite = { focus = rebuildingournation} 
+              available = {  } 
+              cost = 10  
+
+              available_if_capitulated = yes  
+              
+              completion_reward = { 
+             
+          } 
+ }
+
+ #Focus for Industrial Effort II 
 	focus = { 
 	id = industrialeffortii 
 	icon = GFX_goal_generic_construction 
@@ -55,7 +111,9 @@ continuous_focus_position = { x = 50 y = 1600}
  completion_reward = { 
   
  } 
- }#Focus for Military Effort II 
+ }
+
+ #Focus for Military Effort II 
 	focus = { 
 	id = militaryeffortii 
 	icon = GFX_goal_generic_construct_mil_factory 
@@ -71,7 +129,9 @@ continuous_focus_position = { x = 50 y = 1600}
  completion_reward = { 
   
  } 
- }#Focus for Partisans 
+ }
+
+ #Focus for Partisans 
 	focus = { 
 	id = partisans 
 	icon = GFX_focus_generic_military_mission 
@@ -87,7 +147,91 @@ continuous_focus_position = { x = 50 y = 1600}
  completion_reward = { 
   
  } 
- }#Focus for Fortification Effort II 
+ }
+#Focus for Fortification Effort I 
+	focus = { 
+	id = fortificationefforti 
+	icon = GFX_goal_generic_construct_military 
+	bypass = {} 
+                ai_will_do = { factor = } 
+                x = 4
+                y = 1
+                mutually_exclusive = { } 
+                prerequisite = { focus = internalpolitics} 
+                available = {  } 
+                cost = 12  
+ 
+                available_if_capitulated = yes  
+ 
+                completion_reward = { 
+                    107 = {
+				    if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_hungarian
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3609
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11580
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3614
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 614
+							instant_build = yes
+						}
+					}
+				}
+			}
+			106 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_greece
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11856
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 974
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3833
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6886
+							instant_build = yes
+						}
+					}
+				}
+			}
+      } 
+ }
+
+ #Focus for Fortification Effort II 
 	focus = { 
 	id = fortificationeffortii 
 	icon = GFX_goal_generic_fortify_city 
@@ -311,38 +455,6 @@ continuous_focus_position = { x = 50 y = 1600}
  completion_reward = { 
   
  } 
- }#Focus for Fortification Effort I 
-	focus = { 
-	id = fortificationefforti 
-	icon = GFX_goal_generic_construct_military 
-	bypass = {} 
- ai_will_do = { factor = } 
- x = 4
- y = 1
- mutually_exclusive = { } 
- prerequisite = { focus = internalpolitics} 
- available = {  } 
- cost = 12  
-  available_if_capitulated = yes  
- completion_reward = { 
-  
- } 
- }#Focus for Rebuilding our Nation 
-	focus = { 
-	id = rebuildingournation 
-	icon = GFX_goal_generic_construct_infrastructure 
-	bypass = {} 
- ai_will_do = { factor = } 
- x = 1
- y = 1 
- mutually_exclusive = { } 
- prerequisite = { focus = internalpolitics} 
- available = {  } 
- cost = 10  
-  available_if_capitulated = yes  
- completion_reward = { 
-  
- } 
  }#Focus for Military Effort I 
 	focus = { 
 	id = militaryefforti 
@@ -377,7 +489,7 @@ continuous_focus_position = { x = 50 y = 1600}
  } 
  }#Focus for Side With Italy 
 	focus = { 
-	id = sidewithitaly 
+	id = şidewithitaly 
 	icon = GFX_goal_molotov_ribbentrop_pact 
 	bypass = {} 
  ai_will_do = { factor = } 

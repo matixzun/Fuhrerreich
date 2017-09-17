@@ -74,6 +74,10 @@ set_politics = {
 
 set_national_unity = 0.6
 
+add_ideas = {
+	
+}
+
 create_country_leader = {
 	name = "Alexander I"
 	desc = "POLITICS_ALEXANDER_I_DESC"
