@@ -1,0 +1,319 @@
+######################
+# Italy Focus Tree
+######################
+
+focus_tree = {
+	id = italy_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+
+	default = no
+	
+### Election ###
+	focus = {
+		id = ITA_parliamentary_election
+		icon = GFX_focus_generic_italy_firs
+		x = 10
+		y = 0
+		cost = 15
+		
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+	
+### socialist win ###
+	focus = {
+		id = ITA_socialist_win
+		icon = GFX_goal_tripartite_pact
+		x = 7
+		y = 1
+		cost = 1
+		
+		mutually_exclusive = {
+			focus = ITA_liberal_win
+		}
+		
+		prerequisite = {
+			focus = ITA_parliamentary_election
+		}
+		
+		completion_reward = {
+				remove_ideas = ITA_communist_threat
+			}
+		}
+
+# add idea 0.15 PP gain
+	focus = {
+		id = ITA_question_monarchy
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 7
+		y = 2
+		cost = 10
+
+		prerequisite = {
+			focus = ITA_socialist_win
+		}
+		
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+	focus = {
+		id = ITA_repubblica_socialista
+		icon = GFX_goal_tripartite_pact
+		x = 7
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_question_monarchy
+		}
+		
+		completion_reward = {
+			remove_ideas = ITA_umberto_ii
+		}
+	}
+	
+	focus = {
+		id = ITA_collectivize_factories
+		icon = GFX_goal_generic_political_pressure
+		x = 7
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_repubblica_socialista
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+### Liberals win ###
+	focus = {
+		id = ITA_liberal_win
+		icon = GFX_goal_generic_the_giant_wakes
+		x = 9
+		y = 1
+		cost = 1
+		
+		mutually_exclusive = {
+			focus = ITA_socialist_win
+		}
+		
+		prerequisite = {
+			focus = ITA_parliamentary_election
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = ITA_deal_with_the_left
+		x = 9
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_liberal_win
+		}
+		
+		completion_reward = {
+			remove_ideas = ITA_communist_threat
+		}
+	}
+	
+	focus = {
+		id = ITA_economic_reform
+		x = 9
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_deal_with_the_left
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	
+# remove strikers idea
+	focus = {
+		id = ITA_deal_with_strikers
+		x = 9
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_economic_reform
+		}
+		
+		completion_reward = {
+				remove_ideas = ITA_communist_threat
+			}
+		}
+	
+### Leftist Win ###
+	focus = {
+		id = ITA_leftist_coalition
+		x = 11
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_parliamentary_election
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_communist_threat
+				add_idea = ITA_communist_threat_light
+			}
+		}
+	}
+	
+# modify availiable civilian factories
+	focus = {
+		id = ITA_minimum_wage
+		x = 11
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_leftist_coalition
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+# add idea factory output 10%	
+	focus = {
+		id = ITA_women_workforce
+		x = 11
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_minimum_wage
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+# uh idk	
+	focus = {
+		id = ITA_party_reform
+		x = 11
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_women_workforce
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+### Conservatives Win ###
+# add idea workers strike
+	focus = {
+		id = ITA_conservatives_win
+		x = 13
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_parliamentary_election
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = ITA_crush_left
+		x = 13
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_conservatives_win
+		}
+		
+		completion_reward = {
+			remove_ideas = ITA_communist_threat
+		}
+	}
+
+# ask about this one	
+	focus = {
+		id = ITA_dalmation_migration
+		x = 13
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_crush_left
+		}
+		
+		completion_reward = {
+			103 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+# add_opinion_modifier = {
+	focus = {
+		id = ITA_improve_entente
+		x = 13
+		y = 4
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_dalmation_migration
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	

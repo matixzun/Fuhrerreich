@@ -5,11 +5,7 @@ state={
 	state_category = rural
 
 	history={
-<<<<<<< HEAD
 		owner = POL
-=======
-		owner = POL
->>>>>>> master
 		victory_points = {
 			9221 1 
 		}
@@ -21,11 +17,7 @@ state={
 			}
 
 		}
-<<<<<<< HEAD
-		add_core_of = POL
-=======
-		add_core_of = POL
->>>>>>> master
+		add_core_of = EST
 
 	}
 
