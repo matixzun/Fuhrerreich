@@ -38,6 +38,10 @@ country_event = {
 		ai_chance = {
 			factor = 40
 		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.02
+		}
 		add_ideas = POL_MOW_industrial
 		random_owned_controlled_state = {
 			limit = {
@@ -60,7 +64,12 @@ country_event = {
 		ai_chance = {
 			factor = 40
 		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.02
+		}
 		add_ideas = POL_PSCD_industrial
+		
 
 	}
 	option = {
@@ -69,7 +78,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 			}
-		add_political_power = -30
+		add_political_power = -40
 
 		hidden_effect = {
 		if = {
@@ -141,16 +150,14 @@ country_event = {
 		ai_chance = {
 			factor = 40
 		}
-		
-		}
+		add_ideas = POL_MOW_tax
 	}
-}
 	option = {
 		name = poland.3.b
 		ai_chance = {
 			factor = 40
 		}
-
+		add_ideas = POL_PSCD_tax
 	}
 	option = {
 		name = poland.3.c
@@ -158,7 +165,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 			}
-		add_political_power = -30
+		add_political_power = -40
 
 		hidden_effect = {
 		if = {
