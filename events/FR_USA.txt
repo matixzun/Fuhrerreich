@@ -1,0 +1,123 @@
+﻿###########################
+# United States Events
+###########################
+# By Ben "Doodle SM" Paris
+###########################
+
+add_namespace = usa
+
+# intro
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		USA = { exists = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = usa.1.a
+	}
+}
+
+country_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_report_event_gather_protest
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		USA = { exists = yes }
+	}
+}
+
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = GFX_report_event_generic_factory
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+	}
+
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = usa.3.a
+		add_ideas = USA_firearm_production
+	}
+
+	option = {
+		ai_chance = {
+			base = 0
+		}
+		name = usa.3.b
+		add_ideas = USA_fighter_production
+
+	}
+}
+
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_news_event_jouranlists_speech
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+	}
+
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = usa.4.a
+		add_ideas = USA_black_wednesday_recovery
+		remove_ideas = USA_black_wednesday
+	}
+}
+
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_report_event_gathering_protest
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+	}
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = usa.5.a
+		add_ideas = USA_black_wednesday
+	}
+}

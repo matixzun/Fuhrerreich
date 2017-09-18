@@ -86,7 +86,8 @@ continuous_focus_position = { x = 50 y = 1600}
 		prerequisite = { focus = POL_free_speech_bill} 
 
   		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			country_event = poland.5
   					} 
  }
 
@@ -101,6 +102,7 @@ continuous_focus_position = { x = 50 y = 1600}
 
   		available_if_capitulated = yes  
  		completion_reward = { 
+ 			country_event = poland.6
   					} 
  }
 
@@ -117,6 +119,7 @@ continuous_focus_position = { x = 50 y = 1600}
    
   		available_if_capitulated = yes  
  		completion_reward = { 
+ 			country_event = poland.7
  					} 
  }
 
