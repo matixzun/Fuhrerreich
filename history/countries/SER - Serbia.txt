@@ -1,7 +1,7 @@
 ﻿
 capital = 107
 
-oob = "SER"
+oob = "SER_1936"
 
 country_event = { id = serbia.1 days = 1}
 

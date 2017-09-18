@@ -1,7 +1,5 @@
 ﻿division_template = {
 	name = "Pesadijska Divizija"	# Infantry Division	
-	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
-	#	invasion of 1941
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -54,7 +52,7 @@ division_template = {
 
 units = {
 	######## LAND UNITS ########
-	###### Vojska Kraljevine Jugoslavije ######
+	###### Vojska Kraljevine Srbije ######
 	division = {
 		name = "Gardijska Pesadijska Div."  			# Peadijska if we get font support
 		location = 11586
@@ -66,7 +64,7 @@ units = {
 		location = 11586
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		
 
 	}
 	division = {
@@ -74,8 +72,7 @@ units = {
 		location = 11586
 		division_template = "Tenkovski Bataljon"
 		start_experience_factor = 0.3
-		start_equipment_factor = 1
-		force_equipment_variants = { gw_tank_equipment = { owner = "YUG" creator = "FRA" } }
+		force_equipment_variants = { gw_tank_equipment = { owner = "SER" creator = "FRA" } }
 
 	}
 
@@ -85,7 +82,6 @@ units = {
 		location = 3924
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
@@ -95,7 +91,6 @@ units = {
 		location = 907
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -103,7 +98,6 @@ units = {
 		location = 11868
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -111,7 +105,6 @@ units = {
 		location = 11887
 		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
@@ -121,7 +114,6 @@ units = {
 		location = 3614
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
@@ -132,7 +124,6 @@ units = {
 		location = 11581
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
@@ -142,7 +133,6 @@ units = {
 		location = 3631
 		division_template = "Gorska Pesadija"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -150,7 +140,6 @@ units = {
 		location = 11612
 		division_template = "Gorska Pesadija"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -158,7 +147,6 @@ units = {
 		location = 9627
 		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
@@ -169,7 +157,6 @@ units = {
 		location = 6643
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -177,17 +164,15 @@ units = {
 		location = 614
 		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
 	### 2. Armija ###
 	division = {
-		name = "10. 'Bosanska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "10. 'Beogradska' Pesadijska Div."  			# Peadijska if we get font support
 		location = 3627
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -195,18 +180,16 @@ units = {
 		location = 3623
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
 	#### 3. Grupa Vojska ####
 	### 3. Armija ###
 	division = {
-		name = "13. 'Hercegovacka' Pesadijska Div."  		# Peadijska if we get font support
+		name = "13. 'Crnogorska' Pesadijska Div."  		# Peadijska if we get font support
 		location = 833
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -214,7 +197,6 @@ units = {
 		location = 6913
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division = {
@@ -222,7 +204,6 @@ units = {
 		location = 9809
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
@@ -232,7 +213,7 @@ units = {
 		location = 3833
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+	
 
 	}
 	division = {
@@ -240,7 +221,7 @@ units = {
 		location = 11856
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		
 
 	}
 	division = {
@@ -248,42 +229,33 @@ units = {
 		location = 3882
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		
 
 	}
 
 
 	##### NAVAL UNITS #####
-	###### Kraljevska Jugoslovenska Ratna Mornarica (KJRM) ######
+	###### Ratna Mornarica Kraljevine Srbije (RMKS) ######
 	navy = {				
-		name = "Kraljevska Mornarica"			
-		base = 3924
-		location = 3924 # Split
-		ship = { name = "KB Dalmacija" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YUG } } }
-		ship = { name = "KB Dubrovnik" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUG } } }
-		# Podmornica Divizija
-		ship = { name = "KB Hrabri" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YUG } } }				
-		ship = { name = "KB Nebojsa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YUG } } }				
-		ship = { name = "KB Smeli" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YUG } } }				
-		ship = { name = "KB Osvetnik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YUG } } }				
+					
 	}				
 
-}  # Neboja if we get font support
+} 
 
 
-###### Vazduhoplovstvo Vojske Kraljevine Jugoslavije (VVKJ) ######
+###### Zracne Snage Kraljevine Srbije (ZSKS) ######
 air_wings = {
 	107 = {
 		# 1. Vazduhoplovna Brigada -- Dewotine D.1/9/27 fighters
 		fighter_equipment_0 = {
-			owner = "YUG" 
+			owner = "SER" 
 			amount = 48
 		}
 	}
 	104 = {
 		# 2. Vazduhoplovna Brigada  -- Hawker Fury and Ikarus IK-2 fighters
 		fighter_equipment_0 = {
-			owner = "YUG" 
+			owner = "SER" 
 			amount = 48
 		}
 	}
@@ -294,7 +266,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "YUG"
+			creator = "SER"
 		}
 		requested_factories = 1
 		progress = 0.37
@@ -303,7 +275,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "YUG"
+			creator = "SER"
 		}
 		requested_factories = 1
 		progress = 0.76
