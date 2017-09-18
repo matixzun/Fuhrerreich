@@ -96,6 +96,10 @@ poland.7.d:0 "The Polish navy is not what is was in the past, improvements must 
 poland.7.a:0 "Choose the MOW's plan"
 poland.7.b:0 "Choose the PSCD's plan"
 poland.7.c:0 "Veto the bill alltogether"
+poland.8.t:0 "The Constitutional Amendment"
+poland.8.d:0 ""
+poland.8.a:0 "Accept the plan"
+poland.8.b:0 "Another bill, another veto!"
 
 ### Custom tooltips ###
 POL_counteract_baltics:0 "This will increase the chance on a Baltic revolution!"

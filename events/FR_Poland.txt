@@ -1,4 +1,4 @@
-##############################
+﻿##############################
 # Kingdom of Poland events
 ##############################
 # Made by jespertjee
@@ -92,7 +92,7 @@ country_event = {
 			}
 		if = {
 			limit = {
-				 has_country_flag = POL_veto1
+				has_country_flag = POL_veto1
 			}
 			set_country_flag = POL_veto2
 			}
@@ -132,18 +132,7 @@ country_event = {
 			}
 			set_country_flag = POL_veto8
 			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto8
-			}
-			set_country_flag = POL_veto9
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto9
-			}
-			set_country_flag = POL_veto10
-			}
+		
 		}	
 	}
 }
@@ -231,18 +220,7 @@ country_event = {
 			}
 			set_country_flag = POL_veto8
 			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto8
-			}
-			set_country_flag = POL_veto9
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto9
-			}
-			set_country_flag = POL_veto10
-			}
+		
 		}	
 	}
 }
@@ -323,13 +301,7 @@ country_event = {
 			limit = {
 				has_country_flag = POL_veto7
 			}
-			set_country_flag = POL_veto9
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto8
-			}
-			set_country_flag = POL_veto10
+			set_country_flag = POL_veto8
 			}
 		}	
 	}
@@ -411,7 +383,7 @@ country_event = {
 			limit = {
 				has_country_flag = POL_veto7
 			}
-			set_country_flag = POL_veto9
+			set_country_flag = POL_veto8
 			}
 		if = {
 			limit = {
@@ -506,18 +478,7 @@ country_event = {
 			}
 			set_country_flag = POL_veto8
 			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto8
-			}
-			set_country_flag = POL_veto9
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto9
-			}
-			set_country_flag = POL_veto10
-			}
+		
 		}	
 	}
 }
@@ -606,18 +567,49 @@ country_event = {
 			}
 			set_country_flag = POL_veto8
 			}
-		if = {
-			limit = {
+		
+		}	
+	}
+}
+
+country_event = { 
+	id = poland.8
+	title = poland.8.t
+	desc = poland.8.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = { days = 1 }
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.8.a
+		trigger = {
+			NOT = {
+				AND = {
+					has_country_flag = POL_veto6
+					has_country_flag = POL_veto7
+					has_country_flag = POL_veto8
+				}
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+
+	}
+	option = {
+		name = poland.8.b
+		trigger = {
+			OR = {
+				has_country_flag = POL_veto5
+				has_country_flag = POL_veto6
+				has_country_flag = POL_veto7
 				has_country_flag = POL_veto8
 			}
-			set_country_flag = POL_veto9
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto9
-			}
-			set_country_flag = POL_veto10
-			}
-		}	
+		}
+		ai_chance = {
+			factor = 50
+		}
 	}
 }
