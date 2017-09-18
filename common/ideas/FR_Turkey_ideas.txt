@@ -101,5 +101,15 @@ ideas = {
 			}
 		}
 
+		TUR_turkish_constitution = {
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.2
+			}
+
+			picture = OTT_solid_idea
+			
+		}
+
 
 }
