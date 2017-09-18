@@ -106,7 +106,7 @@ country_event = {
 		add_ideas = USA_black_wednesday_recovery
 		remove_ideas = USA_black_wednesday
 	}
-	custom_effect_tooltip = 
+	custom_effect_tooltip =  usa.4.a.tt
 }
 
 country_event = {
