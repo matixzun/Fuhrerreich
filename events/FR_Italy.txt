@@ -33,7 +33,7 @@ country_event = {
 
 	trigger = {
 		tag = ITA
-		focus_progress = { focus = ITA_elc progress > 0.5 }
+		date > 1936.5.0
 	}
 
 	mean_time_to_happen = { days = 20 }
@@ -42,31 +42,32 @@ country_event = {
 	
 	immediate = {
 		# set up the flag starting values
-		set_country_flag = { flag = ITA_elc_max value = 0 }
-		set_country_flag = { flag = ITA_elc_fed value = 0 }
-		set_country_flag = { flag = ITA_elc_aut value = 0 }
+		set_country_flag = { flag = ITA_elc_soc value = 0 }
+		set_country_flag = { flag = ITA_elc_lib value = 0 }
+		set_country_flag = { flag = ITA_elc_sdm value = 0 }
+		set_country_flag = { flag = ITA_elc_con value = 0 }
 	}
 
 	option = {
 		name = italy.1.a
 		ai_chance = { factor = 40 }
-		set_country_flag = ITA_elc_economy_mosley
-		modify_country_flag = { flag = ITA_elc_max value = 1 }
-		add_popularity = { ideology = totalist popularity = 0.05 }
+		set_country_flag = ITA_elc_economy_antonio
+		modify_country_flag = { flag = ITA_elc_soc value = 1 }
+		add_popularity = { ideology = bolshevist popularity = 0.05 }
 	}
 	option = {
 		name = italy.1.b
 		ai_chance = { factor = 30 }
-		set_country_flag = ITA_elc_economy_fem
-		modify_country_flag = { flag = ITA_elc_fed value = 1 }
-		add_popularity = { ideology = syndicalist popularity = 0.05 }
+		set_country_flag = ITA_elc_economy_luigi
+		modify_country_flag = { flag = ITA_elc_lib value = 1 }
+		add_popularity = { ideology = market_liberal popularity = 0.05 }
 	}
 	option = {
 		name = italy.1.c
 		ai_chance = { factor = 30 }
-		set_country_flag = ITA_elc_economy_glais
-		modify_country_flag = { flag = ITA_elc_aut value = 1 }
-		add_popularity = { ideology = radical_socialist popularity = 0.05 }
+		set_country_flag = ITA_elc_economy_giuseppe
+		modify_country_flag = { flag = ITA_elc_sdm value = 1 }
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
 	}
 }
 
@@ -80,11 +81,10 @@ country_event = {
 
 	trigger = {
 		tag = ITA
-		focus_progress = { focus = ITA_elc progress > 0.5 }
 		OR = {
-			has_country_flag = ITA_elc_economy_mosley
-			has_country_flag = ITA_elc_economy_fem
-			has_country_flag = ITA_elc_economy_glais
+			has_country_flag = ITA_elc_economy_antonio
+			has_country_flag = ITA_elc_economy_luigi
+			has_country_flag = ITA_elc_economy_giuseppe
 		}
 	}
 
@@ -95,48 +95,23 @@ country_event = {
 	option = {
 		name = italy.2.a
 		ai_chance = { factor = 35 }
-		set_country_flag = ITA_elc_internal_mosley
-		modify_country_flag = { flag = ITA_elc_max value = 1 }
-		add_popularity = { ideology = totalist popularity = 0.05 }
+		set_country_flag = ITA_elc_internal_antonio
+		modify_country_flag = { flag = ITA_elc_soc value = 1 }
+		add_popularity = { ideology = bolshevist popularity = 0.05 }
 	}
 	option = {
 		name = italy.2.b
 		ai_chance = { factor = 30 }
-		set_country_flag = ITA_elc_internal_fem
-		modify_country_flag = { flag = ITA_elc_fed value = 1 }
-		add_popularity = { ideology = syndicalist popularity = 0.05 }
+		set_country_flag = ITA_elc_internal_luigi
+		modify_country_flag = { flag = ITA_elc_lib value = 1 }
+		add_popularity = { ideology = market_liberal popularity = 0.05 }
 	}
 	option = {
 		name = italy.2.c
 		ai_chance = { factor = 35 }
-		set_country_flag = ITA_elc_internal_glais
-		modify_country_flag = { flag = ITA_elc_aut value = 1 }
-		add_popularity = { ideology = radical_socialist popularity = 0.05 }
-	}
-}
-
-# Defecting Officers
-
-country_event = {
-	id = italy.3
-	title = italy.3.t
-	desc = italy.3.d
-	picture = GFX_report_event_soviet_purge_officers_02
-
-	trigger = {
-		tag = ITA
-		has_completed_focus = ITA_elc_military
-	}
-
-	mean_time_to_happen = { days = 14 }
-
-	fire_only_once = yes
-
-	option = {
-		name = italy.3.a
-		hidden_effect = {
-			set_country_flag = ITA_defecting_officers
-		}
+		set_country_flag = ITA_elc_internal_giuseppe
+		modify_country_flag = { flag = ITA_elc_sdm value = 1 }
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
 	}
 }
 
@@ -150,11 +125,10 @@ country_event = {
 
 	trigger = {
 		tag = ITA
-		focus_progress = { focus = ITA_elc progress > 0.5 }
 		OR = {
-			has_country_flag = ITA_elc_economy_mosley
-			has_country_flag = ITA_elc_economy_fem
-			has_country_flag = ITA_elc_economy_glais
+			has_country_flag = ITA_elc_economy_antonio
+			has_country_flag = ITA_elc_economy_luigi
+			has_country_flag = ITA_elc_economy_giuseppe
 		}
 	}
 
@@ -165,23 +139,23 @@ country_event = {
 	option = {
 		name = italy.4.a
 		ai_chance = { factor = 25 }
-		set_country_flag = ITA_elc_military_mosley
-		modify_country_flag = { flag = ITA_elc_max value = 1 }
-		add_popularity = { ideology = totalist popularity = 0.05 }
+		set_country_flag = ITA_elc_military_antonio
+		modify_country_flag = { flag = ITA_elc_soc value = 1 }
+		add_popularity = { ideology = bolshevist popularity = 0.05 }
 	}
 	option = {
 		name = italy.4.b
 		ai_chance = { factor = 40 }
-		set_country_flag = ITA_elc_military_fem
-		modify_country_flag = { flag = ITA_elc_fed value = 1 }
-		add_popularity = { ideology = syndicalist popularity = 0.05 }
+		set_country_flag = ITA_elc_military_luigi
+		modify_country_flag = { flag = ITA_elc_lib value = 1 }
+		add_popularity = { ideology = market_liberal popularity = 0.05 }
 	}
 	option = {
 		name = italy.4.c
 		ai_chance = { factor = 35 }
-		set_country_flag = ITA_elc_military_glais
-		modify_country_flag = { flag = ITA_elc_aut value = 1 }
-		add_popularity = { ideology = radical_socialist popularity = 0.05 }
+		set_country_flag = ITA_elc_military_giuseppe
+		modify_country_flag = { flag = ITA_elc_sdm value = 1 }
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
 	}
 }
 
@@ -197,9 +171,9 @@ country_event = {
 		tag = ITA
 		focus_progress = { focus = ITA_elc progress > 0.5 }
 		OR = {
-			has_country_flag = ITA_elc_economy_mosley
-			has_country_flag = ITA_elc_economy_fem
-			has_country_flag = ITA_elc_economy_glais
+			has_country_flag = ITA_elc_economy_antonio
+			has_country_flag = ITA_elc_economy_luigi
+			has_country_flag = ITA_elc_economy_giuseppe
 		}
 	}
 
@@ -210,60 +184,31 @@ country_event = {
 	option = {
 		name = italy.5.a
 		ai_chance = { factor = 30 }
-		set_country_flag = ITA_elc_foreign_mosley
-		modify_country_flag = { flag = ITA_elc_max value = 1 }
-		add_popularity = { ideology = totalist popularity = 0.05 }
+		set_country_flag = ITA_elc_foreign_antonio
+		modify_country_flag = { flag = ITA_elc_soc value = 1 }
+		add_popularity = { ideology = bolshevist popularity = 0.05 }
 	}
 	option = {
 		name = italy.5.b
 		ai_chance = { factor = 40 }
-		set_country_flag = ITA_elc_foreign_fem
-		modify_country_flag = { flag = ITA_elc_fed value = 1 }
-		add_popularity = { ideology = syndicalist popularity = 0.05 }
+		set_country_flag = ITA_elc_foreign_luigi
+		modify_country_flag = { flag = ITA_elc_lib value = 1 }
+		add_popularity = { ideology = market_liberal popularity = 0.05 }
 	}
 	option = {
 		name = italy.5.c
 		ai_chance = { factor = 30 }
-		set_country_flag = ITA_elc_foreign_glais
-		modify_country_flag = { flag = ITA_elc_aut value = 1 }
-		add_popularity = { ideology = radical_socialist popularity = 0.05 }
+		set_country_flag = ITA_elc_foreign_giuseppe
+		modify_country_flag = { flag = ITA_elc_sdm value = 1 }
+		add_popularity = { ideology = social_democrat popularity = 0.05 }
 	}
 }
 
 ### New Chairman
 
-# The Resignation of Philip Snowden
-
-country_event = {
-	id = italy.6
-	title = italy.6.t
-	desc = italy.6.d
-	picture = GFX_report_crowd_in_prague
-
-	trigger = {
-		tag = ITA
-		has_country_leader = { name = "Philip Snowden" }
-		has_completed_focus = ITA_elc_economy
-		has_completed_focus = ITA_elc_internal
-		has_completed_focus = ITA_elc_military
-		has_completed_focus = ITA_elc_foreign
-		NOT = { has_country_flag = philip_snowden_resigns }
-	}
-
-	mean_time_to_happen = { days = 7 }
-
-	fire_only_once = yes
-
-	option = {
-		name = italy.6.a
-		add_political_power = -50
-		set_country_flag = philip_snowden_resigns
-	}
-}
-
 ### Majority governments
 
-# Mosley wins
+# Socialist wins
 
 country_event = {
 	id = italy.7
@@ -273,39 +218,63 @@ country_event = {
 
 	trigger = {
 		tag = ITA
-		has_country_flag = philip_snowden_resigns
-		has_country_flag = { flag = ITA_elc_max value > 2 }
+		has_country_flag = { flag = ITA_elc_soc value > 2 }
 	}
 
 	mean_time_to_happen = { days = 2 }
 
 	fire_only_once = yes
-	
-	immediate = {
-		clr_country_flag = philip_snowden_resigns
-	}
 
 	option = {
 		name = italy.7.a
 		set_politics = {
-			ruling_party = totalist
+			ruling_party = bolshevist
 		}
 		hidden_effect = {
 			create_country_leader = {
-				name = "Oswald Mosley"
-				desc = "ITA_mosley_desc"
-				picture = "Portrait_ITAland_Oswald_Mosley.tga"
+				name = "Antonio Gramsci"
+				desc = "ANTONIO_GRAMSCI_DESC"
+				picture = "Portrait_Italy_Vittorio_Antonio_Gramsci.dds"
 				expire = "1965.1.1"
-				ideology = totalist_subtype
+				ideology = bolshevist_subtype
 				traits = { }
 			}
-			set_country_flag = mosley_chairman
+			set_country_flag = antonio_chairman
 			ITA = {
 				country_event = { id = italy.101 days = 14 }
 			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.24 days = 2 }
+				news_event = { id = itanews.1 days = 2 }
+			}
+		}
+	}
+	
+	option = {
+		name = italy.7.b
+		set_politics = {
+			ruling_party = valkist
+		}
+			add_popularity = {
+				ideology = valkist popularity = 0.40 
+		}
+		hidden_effect = {
+			create_country_leader = {
+				name = "Italo Balbo"
+				desc = "ITALO_BALBO_DESC"
+				picture = "Portrait_Italy_Italo_Balbo.dds"
+				expire = "1965.1.1"
+				ideology = valkist_subtype
+				traits = {
+				}
+			}
+			set_country_flag = italo_chairman
+			ITA = {
+				country_event = { id = italy.101 days = 14 }
+			}
+			random_country = {
+				limit = { NOT = { TAG = ITA } }
+				news_event = { id = itanews.1 days = 2 }
 			}
 		}
 	}
@@ -322,7 +291,7 @@ country_event = {
 	trigger = {
 		tag = ITA
 		has_country_flag = philip_snowden_resigns
-		has_country_flag = { flag = ITA_elc_aut value > 2 }
+		has_country_flag = { flag = ITA_elc_sdm value > 2 }
 	}
 
 	mean_time_to_happen = { days = 2 }
@@ -370,7 +339,7 @@ country_event = {
 	trigger = {
 		tag = ITA
 		has_country_flag = philip_snowden_resigns
-		has_country_flag = { flag = ITA_elc_fed value > 2 }
+		has_country_flag = { flag = ITA_elc_lib value > 2 }
 	}
 
 	mean_time_to_happen = { days = 2 }
@@ -446,9 +415,9 @@ country_event = {
 		tag = ITA
 		has_country_flag = philip_snowden_resigns
 		AND = {
-			has_country_flag = { flag = ITA_elc_max value > 1 }
-			has_country_flag = { flag = ITA_elc_fed value < 2 }
-			has_country_flag = { flag = ITA_elc_aut value < 2 }
+			has_country_flag = { flag = ITA_elc_soc value > 1 }
+			has_country_flag = { flag = ITA_elc_lib value < 2 }
+			has_country_flag = { flag = ITA_elc_sdm value < 2 }
 		}
 	}
 
@@ -499,9 +468,9 @@ country_event = {
 		tag = ITA
 		has_country_flag = philip_snowden_resigns
 		AND = {
-			has_country_flag = { flag = ITA_elc_aut value > 1 }
-			has_country_flag = { flag = ITA_elc_fed value < 2 }
-			has_country_flag = { flag = ITA_elc_max value < 2 }
+			has_country_flag = { flag = ITA_elc_sdm value > 1 }
+			has_country_flag = { flag = ITA_elc_lib value < 2 }
+			has_country_flag = { flag = ITA_elc_soc value < 2 }
 		}
 	}
 
@@ -552,9 +521,9 @@ country_event = {
 		tag = ITA
 		has_country_flag = philip_snowden_resigns
 		AND = {
-			has_country_flag = { flag = ITA_elc_fed value > 1 }
-			has_country_flag = { flag = ITA_elc_aut value < 2 }
-			has_country_flag = { flag = ITA_elc_max value < 2 }
+			has_country_flag = { flag = ITA_elc_lib value > 1 }
+			has_country_flag = { flag = ITA_elc_sdm value < 2 }
+			has_country_flag = { flag = ITA_elc_soc value < 2 }
 		}
 	}
 
@@ -627,9 +596,9 @@ country_event = {
 	trigger = {
 		tag = ITA
 		has_country_flag = philip_snowden_resigns
-		has_country_flag = { flag = ITA_elc_fed value < 3 }
-		has_country_flag = { flag = ITA_elc_aut value < 3 }
-		has_country_flag = { flag = ITA_elc_max value < 3 }
+		has_country_flag = { flag = ITA_elc_lib value < 3 }
+		has_country_flag = { flag = ITA_elc_sdm value < 3 }
+		has_country_flag = { flag = ITA_elc_soc value < 3 }
 	}
 
 	mean_time_to_happen = { days = 2 }
