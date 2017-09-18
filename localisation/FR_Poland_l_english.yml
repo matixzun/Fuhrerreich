@@ -131,5 +131,9 @@ POL_MOW_navy:0 "The MOW's Navy plan"
 POL_MOW_navy_desc:0 "This plan improves the ability of our battleship's to fight."
 POL_PSCD_navy:0 "The PSCD's Navy plan"
 POL_PSCD_navy_desc:0 "This plan improves our whole navy's ability to fight."
+POL_constitutional_monarchy:0 "Becoming a Constitutional Monarchy"
+POL_constitutional_monarchy_desc:0 "The kingdom of Poland is slowly transitioning into a Constitutional Monarchy"
+POL_absolute_monarchy:0 "Becoming an Absolute Monarchy"
+POL_absolute_monarchy_desc:0 "The kingdom of Poland is slowly transitioning into an Absolute Monarchy"
 
 

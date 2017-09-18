@@ -62,7 +62,7 @@ ideas = {
 		POL_MOW_army = {
 			picture = GFX_idea_generic_artillery_regiments
 			modifier = {
-			conscription = 0.025
+			conscription = 0.015
 			}
 			research_bonus = {
 				land_doctrine = -0.25
@@ -96,6 +96,23 @@ ideas = {
 			}
 		}
 
+		POL_constitutional_monarchy = {
+			picture = GFX_idea_generic_pp_unity_bonus
+			modifier = {
+			}
+		}
 
+		POL_absolute_monarchy = {
+			picture = GFX_idea_FRA_scw_intervention_republicans_focus
+			modifier = {
+			}
+		}
+
+		POL_kings_men = {
+			picture = GFX_idea_FRA_national_mobilization_focus
+			modifier = {
+				conscription = 0.015
+			}
+		}
 
 }
