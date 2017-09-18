@@ -86,39 +86,9 @@ country_event = {
 		hidden_effect = {
 		if = {
 			limit = {
-				 NOT = { has_country_flag = POL_veto1}
+				has_country_flag = POL_veto7
 			}
-			set_country_flag = POL_veto1
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto1
-			}
-			set_country_flag = POL_veto2
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto2
-			}
-			set_country_flag = POL_veto3
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto3
-			}
-			set_country_flag = POL_veto4
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto4
-			}
-			set_country_flag = POL_veto5
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto5
-			}
-			set_country_flag = POL_veto6
+			set_country_flag = POL_veto8
 			}
 		if = {
 			limit = {
@@ -128,9 +98,39 @@ country_event = {
 			}
 		if = {
 			limit = {
-				has_country_flag = POL_veto7
+				has_country_flag = POL_veto5
 			}
-			set_country_flag = POL_veto8
+			set_country_flag = POL_veto6
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto4
+			}
+			set_country_flag = POL_veto5
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto3
+			}
+			set_country_flag = POL_veto4
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto2
+			}
+			set_country_flag = POL_veto3
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto1
+			}
+			set_country_flag = POL_veto2
+			}
+		if = {
+			limit = {
+				 NOT = { has_country_flag = POL_veto1}
+			}
+			set_country_flag = POL_veto1
 			}
 		
 		}	
@@ -174,39 +174,9 @@ country_event = {
 		hidden_effect = {
 		if = {
 			limit = {
-				 NOT = { has_country_flag = POL_veto1}
+				has_country_flag = POL_veto7
 			}
-			set_country_flag = POL_veto1
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto1
-			}
-			set_country_flag = POL_veto2
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto2
-			}
-			set_country_flag = POL_veto3
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto3
-			}
-			set_country_flag = POL_veto4
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto4
-			}
-			set_country_flag = POL_veto5
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto5
-			}
-			set_country_flag = POL_veto6
+			set_country_flag = POL_veto8
 			}
 		if = {
 			limit = {
@@ -216,9 +186,39 @@ country_event = {
 			}
 		if = {
 			limit = {
-				has_country_flag = POL_veto7
+				has_country_flag = POL_veto5
 			}
-			set_country_flag = POL_veto8
+			set_country_flag = POL_veto6
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto4
+			}
+			set_country_flag = POL_veto5
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto3
+			}
+			set_country_flag = POL_veto4
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto2
+			}
+			set_country_flag = POL_veto3
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto1
+			}
+			set_country_flag = POL_veto2
+			}
+		if = {
+			limit = {
+				 NOT = { has_country_flag = POL_veto1}
+			}
+			set_country_flag = POL_veto1
 			}
 		
 		}	
@@ -263,37 +263,7 @@ country_event = {
 		set_country_flag = POL_counteract_baltics1
 		if = {
 			limit = {
-				 NOT = { has_country_flag = POL_veto1}
-			}
-			set_country_flag = POL_veto2
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto2
-			}
-			set_country_flag = POL_veto4
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto3
-			}
-			set_country_flag = POL_veto5
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto4
-			}
-			set_country_flag = POL_veto6
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto5
-			}
-			set_country_flag = POL_veto7
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto6
+				has_country_flag = POL_veto7
 			}
 			set_country_flag = POL_veto8
 			}
@@ -303,6 +273,49 @@ country_event = {
 			}
 			set_country_flag = POL_veto8
 			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto6
+			}
+			set_country_flag = POL_veto8
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto5
+			}
+			set_country_flag = POL_veto7
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto4
+			}
+			set_country_flag = POL_veto6
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto3
+			}
+			set_country_flag = POL_veto5
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto2
+			}
+			set_country_flag = POL_veto4
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto1
+			}
+			set_country_flag = POL_veto3
+			}
+		if = {
+			limit = {
+				 NOT = { has_country_flag = POL_veto1}
+			}
+			set_country_flag = POL_veto2
+			}
+		
 		}	
 	}
 }
@@ -345,37 +358,7 @@ country_event = {
 		set_country_flag = POL_counteract_baltics2
 		if = {
 			limit = {
-				 NOT = { has_country_flag = POL_veto1}
-			}
-			set_country_flag = POL_veto2
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto2
-			}
-			set_country_flag = POL_veto4
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto3
-			}
-			set_country_flag = POL_veto5
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto4
-			}
-			set_country_flag = POL_veto6
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto5
-			}
-			set_country_flag = POL_veto7
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto6
+				has_country_flag = POL_veto7
 			}
 			set_country_flag = POL_veto8
 			}
@@ -387,9 +370,45 @@ country_event = {
 			}
 		if = {
 			limit = {
-				has_country_flag = POL_veto8
+				has_country_flag = POL_veto6
 			}
-			set_country_flag = POL_veto10
+			set_country_flag = POL_veto8
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto5
+			}
+			set_country_flag = POL_veto7
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto4
+			}
+			set_country_flag = POL_veto6
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto3
+			}
+			set_country_flag = POL_veto5
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto2
+			}
+			set_country_flag = POL_veto4
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto1
+			}
+			set_country_flag = POL_veto3
+			}
+		if = {
+			limit = {
+				 NOT = { has_country_flag = POL_veto1}
+			}
+			set_country_flag = POL_veto2
 			}
 		}	
 	}
@@ -432,39 +451,9 @@ country_event = {
 		hidden_effect = {
 		if = {
 			limit = {
-				 NOT = { has_country_flag = POL_veto1}
+				has_country_flag = POL_veto7
 			}
-			set_country_flag = POL_veto1
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto1
-			}
-			set_country_flag = POL_veto2
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto2
-			}
-			set_country_flag = POL_veto3
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto3
-			}
-			set_country_flag = POL_veto4
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto4
-			}
-			set_country_flag = POL_veto5
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto5
-			}
-			set_country_flag = POL_veto6
+			set_country_flag = POL_veto8
 			}
 		if = {
 			limit = {
@@ -474,9 +463,39 @@ country_event = {
 			}
 		if = {
 			limit = {
-				has_country_flag = POL_veto7
+				has_country_flag = POL_veto5
 			}
-			set_country_flag = POL_veto8
+			set_country_flag = POL_veto6
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto4
+			}
+			set_country_flag = POL_veto5
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto3
+			}
+			set_country_flag = POL_veto4
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto2
+			}
+			set_country_flag = POL_veto3
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto1
+			}
+			set_country_flag = POL_veto2
+			}
+		if = {
+			limit = {
+				 NOT = { has_country_flag = POL_veto1}
+			}
+			set_country_flag = POL_veto1
 			}
 		
 		}	
@@ -521,39 +540,9 @@ country_event = {
 		hidden_effect = {
 		if = {
 			limit = {
-				 NOT = { has_country_flag = POL_veto1}
+				has_country_flag = POL_veto7
 			}
-			set_country_flag = POL_veto1
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto1
-			}
-			set_country_flag = POL_veto2
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto2
-			}
-			set_country_flag = POL_veto3
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto3
-			}
-			set_country_flag = POL_veto4
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto4
-			}
-			set_country_flag = POL_veto5
-			}
-		if = {
-			limit = {
-				has_country_flag = POL_veto5
-			}
-			set_country_flag = POL_veto6
+			set_country_flag = POL_veto8
 			}
 		if = {
 			limit = {
@@ -563,9 +552,39 @@ country_event = {
 			}
 		if = {
 			limit = {
-				has_country_flag = POL_veto7
+				has_country_flag = POL_veto5
 			}
-			set_country_flag = POL_veto8
+			set_country_flag = POL_veto6
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto4
+			}
+			set_country_flag = POL_veto5
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto3
+			}
+			set_country_flag = POL_veto4
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto2
+			}
+			set_country_flag = POL_veto3
+			}
+		if = {
+			limit = {
+				has_country_flag = POL_veto1
+			}
+			set_country_flag = POL_veto2
+			}
+		if = {
+			limit = {
+				 NOT = { has_country_flag = POL_veto1}
+			}
+			set_country_flag = POL_veto1
 			}
 		
 		}	
@@ -593,6 +612,7 @@ country_event = {
 				}
 			}
 		}
+		add_ideas = POL_constitutional_monarchy
 		ai_chance = {
 			factor = 50
 		}
@@ -608,6 +628,7 @@ country_event = {
 				has_country_flag = POL_veto8
 			}
 		}
+		add_ideas = POL_absolute_monarchy
 		ai_chance = {
 			factor = 50
 		}
