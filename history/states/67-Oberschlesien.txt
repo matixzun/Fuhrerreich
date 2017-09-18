@@ -2,23 +2,25 @@
 state={
 	id=67
 	name="STATE_67"
-	manpower = 1402591
 	resources={
-		steel=60
-		aluminium=20
+		steel=60.000
+		aluminium=20.000
 	}
-	
-	state_category = city
 
 	history={
 		owner = POL
 		buildings = {
 			infrastructure = 6
+
 		}
 		add_core_of = POL
+
 	}
 
 	provinces={
-		479 9457 11467 13205
+		479 9457 11467 
 	}
+	manpower=1402591
+	buildings_max_level_factor=1.000
+	state_category=city
 }
