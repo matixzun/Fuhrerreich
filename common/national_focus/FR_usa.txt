@@ -321,7 +321,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_military_economics
-		icon = GFX_generic_construct_mil_factory
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 20
 		y = 1
 		cost = 10
@@ -344,13 +344,26 @@ focus_tree = {
 		id = USA_militaristic_industrial_choice
 		icon = GFX_goal_generic_build_tank
 		x = 20
-		y = 1
+		y = 2
 		cost = 10
 
 		prerequisite = { focus = USA_military_economics }
 
 		completion_reward = { 
 			country_event = { usa.3 }
+			}
+		}
+
+	focus = {
+		id = USA_military_industry_contracts
+		icon = 
+		x = 20
+		y = 3
+
+		prerequisite = { focus = USA_milistaristic_industrial_choice }
+
+		completion_reward = {
+
 		}
 	}
 }

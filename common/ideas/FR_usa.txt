@@ -74,9 +74,8 @@ ideas = {
     		unity_weekly = 0.0010  
     		industrial_capacity_factory = -0.30 
     		consumer_goods_factor = 0.10
+    		removal_cost = -1
+    		picture = GFX_idea_ast_all_in
     	}
-
-    	removal_cost = -1
-    	picture = GFX_idea_ast_all_in
     }
 }
