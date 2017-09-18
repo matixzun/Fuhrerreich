@@ -153,9 +153,12 @@ continuous_focus_position = { x = 50 y = 1600}
 
  		prerequisite = { focus = POL_constitutional_amendment } 
  		mutually_exclusive = { focus = POL_constitutional_monarchy } 
+ 		available = { has_idea = POL_absolute_monarchy }
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			set_politics = { ruling_party = paternal_autocrat elections_allowed = no }
+ 			add_popularity = { ideology = paternal_autocrat popularity = 0.35 } 
   					} 
  }
 
@@ -171,7 +174,13 @@ continuous_focus_position = { x = 50 y = 1600}
  		prerequisite = { focus = POL_guiding_hand } 
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			add_popularity = { ideology = social_democratic popularity = -0.05 } 
+ 			add_popularity = { ideology = social_liberal popularity = -0.05 } 
+ 			add_popularity = { ideology = market_liberal popularity = -0.05 }  
+ 			add_popularity = { ideology = social_conservative popularity = -0.05 } 
+ 			add_popularity = { ideology = authoritarian_democrat popularity = -0.05 }
+ 			add_political_power = 100
   					} 
  }
 
@@ -187,7 +196,8 @@ continuous_focus_position = { x = 50 y = 1600}
  		prerequisite = { focus = POL_disband_sejm } 
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			add_ideas = POL_kings_men 
   					} 
  }
 
@@ -203,7 +213,8 @@ continuous_focus_position = { x = 50 y = 1600}
  		prerequisite = { focus = POL_kings_men } 
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			add_ideas = POL_ojczyzna_guard_idea
   					} 
  }
 
@@ -218,6 +229,7 @@ continuous_focus_position = { x = 50 y = 1600}
 
  		prerequisite = { focus = POL_constitutional_amendment } 
  		mutually_exclusive = { focus = POL_guiding_hand } 
+ 		available = { has_idea = POL_constitutional_monarchy }
 
    		available_if_capitulated = yes  
  		completion_reward = { 
