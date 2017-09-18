@@ -41,7 +41,7 @@ usa.4.d:0 "The Market and the economy has stabilized from the help of our Presid
 usa.4.a:0 "The American Titan has arrived."
 usa.5.t:0 "Black Wednesday"
 usa.5.d:0 "The market has collapsed along a lot of people's jobs!" 
-usa.5.a:0 "Now is the worst time."
+usa.5.a:0 "This had to happen now!?"
 
 #### Ideas ####
 
@@ -55,3 +55,7 @@ USA_black_wednesday:0 "Black Wednesday"
 USA_black_wednesday_desc:0 "We are affected by the stock market collapse!"
 USA_black_wednesday_recovery:0 "Black Wednesday Recovery"
 USA_black_wednesday_recovery_desc:0 "The economy is back on track."
+
+#### Tooltips ####
+
+usa.4.a.tt:0 "We have recovered from Black Wednesday!"
