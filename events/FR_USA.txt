@@ -45,6 +45,13 @@ country_event = {
 		tag = USA
 		USA = { exists = yes }
 	}
+
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = usa.2.a
+	}
 }
 
 country_event = {
@@ -82,7 +89,7 @@ country_event = {
 	id = usa.4
 	title = usa.4.t
 	desc = usa.4.d
-	picture = GFX_news_event_jouranlists_speech
+	picture = GFX_news_event_journalists_speech
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -99,6 +106,7 @@ country_event = {
 		add_ideas = USA_black_wednesday_recovery
 		remove_ideas = USA_black_wednesday
 	}
+	custom_effect_tooltip = 
 }
 
 country_event = {

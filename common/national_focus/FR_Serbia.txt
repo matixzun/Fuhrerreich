@@ -652,7 +652,7 @@ focus = {
                 set_rule = { can_create_factions = yes }
                 create_faction = "Balkanski Savez"
                 hidden_effect = {
-					news_event = { hours = 6 id = news.177 }
+					news_event = { hours = 6 id = news.1 }
 				}     
 	          }			  
  } 

@@ -4,8 +4,9 @@
 # Made by Ben "Doodle SM" Paris
 ##############################
 
-focus_tree = {
-	id = usa_focus
+focus_tree = { 
+
+id = usa_focus
 	
 	country = {
 		factor = 0
@@ -24,7 +25,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 
-		avaliable = {  }
+		available = {  }
 
 		completion_reward = {
 			army_experience = 5
@@ -232,7 +233,7 @@ focus_tree = {
 		prerequisite = { focus = USA_new_deal focus = USA_invisible_hand focus = USA_too_big_to_fail }
 		
 		completion_reward = {
-			country_event = { usa.4 }
+			
 		}
 	}
 
@@ -364,6 +365,5 @@ focus_tree = {
 
 		completion_reward = {
 
-		}
+		} 
 	}
-}

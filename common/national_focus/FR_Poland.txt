@@ -138,6 +138,7 @@ continuous_focus_position = { x = 50 y = 1600}
 
    		available_if_capitulated = yes  
  		completion_reward = { 
+ 			country_event = poland.8
   					} 
  }
 

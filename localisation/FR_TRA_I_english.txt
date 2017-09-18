@@ -1,0 +1,6 @@
+1_english
+
+#### Ideas ####
+
+TRA_political_isolation:0 "Political Isolation"
+TRA_political_isolation_desc:0 "The Romanians were promised the territory of Transylvania during The Great war, but the Entente decided instead to grand us our independance. While we are forever greatful for this independance, it has left us politically isolated. Both the Hungarians and Romanians are looking to reclaim their lost land, and the Entente is slowly losing interest in keeping an independant Transylvanian state alive."
