@@ -1,8 +1,8 @@
 ######################
 # Italy Focus Tree	 #
-######################
-# By Drowse and Elia Esposito
-
+##############################
+# By Drowse and Elia Esposito#
+##############################
 
 focus_tree = {
 	id = italy_focus
