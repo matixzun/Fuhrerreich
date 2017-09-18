@@ -22,7 +22,7 @@ continuous_focus_position = { x = 50 y = 1600}
 
 
 
-#Industry
+### Industry ###
 
 #Focus for Rebuilding our Nation 
 	
@@ -90,8 +90,50 @@ focus = {
 
               available_if_capitulated = yes  
               
+        complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = SER_industrial_effort_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+        }
               completion_reward = { 
-             
+                 random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SER_industrial_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SER_industrial_effort_2IC
+			}
           } 
  }
 
@@ -107,9 +149,115 @@ focus = {
  prerequisite = { focus = militaryefforti  focus = militaryefforti} 
  available = {  } 
  cost = 10  
-  available_if_capitulated = yes  
- completion_reward = { 
   
+  available_if_capitulated = yes  
+ 
+  complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = SER_industrial_effort_2_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+}
+  completion_reward = { 
+           random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SER_industrial_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SER_industrial_effort_2_2IC
+			}
+ } 
+ }
+ #Focus for Military Effort I 
+	focus = { 
+	id = militaryefforti 
+	icon = GFX_goal_generic_construct_mil_factory 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 2
+ y = 2 
+ mutually_exclusive = { focus = industrialefforti} 
+ prerequisite = { focus = rebuildingournation} 
+ available = {  } 
+ cost = 10  
+  
+  available_if_capitulated = yes 
+
+  complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = SER_military_effort_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+}
+ 
+         completion_reward = { 
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SER_military_effort_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SER_military_effort_2IC
+			}
  } 
  }
 
@@ -125,8 +273,54 @@ focus = {
  prerequisite = { focus = militaryefforti  focus = industrialefforti} 
  available = {  } 
  cost = 10  
+  
   available_if_capitulated = yes  
- completion_reward = { 
+ 
+      complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = SER_military_effort_2_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+}
+ 
+         completion_reward = { 
+            random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SER_military_effort_2_2IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SER_military_effort_2_2IC
+			}
   
  } 
  }
@@ -243,11 +437,77 @@ focus = {
  prerequisite = { focus = fortificationefforti} 
  available = {  } 
  cost = 12  
-  available_if_capitulated = yes  
- completion_reward = { 
   
+  available_if_capitulated = yes  
+ 
+     completion_reward = { 
+           107 = {
+				    if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_hungarian
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3609
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11580
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3614
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 614
+							instant_build = yes
+						}
+					}
+				}
+			}
+			106 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_greece
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11856
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 974
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3833
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6886
+							instant_build = yes
+						}
+					}
+				}
+			}
  } 
- }#Focus for Better Dead than Red 
+ }
+ #Focus for Better Dead than Red 
 	focus = { 
 	id = betterdeadthanred 
 	icon = GFX_focus_generic_support_the_left_right 
@@ -353,13 +613,51 @@ focus = {
  y = 3 
  mutually_exclusive = { } 
  prerequisite = { focus = betterdeadthanred} 
- available = {  } 
- cost = 10  
-  available_if_capitulated = yes  
- completion_reward = { 
-  
+ available = {  
+      is_puppet = no
+      is_in_faction = no
+      NOT = {
+          BUL = {
+              AND = {
+                  is_in_faction = no
+              }
+          }
+      }
+      has_government = valkist
+	  has_government = national_populist
+	  BUL = {
+	      exists = yes
+	      has_government = valkist
+	      has_government = national_populist
+	  }
+	  NOT = { has_war_with = BUL}
+ }
+ bypass = {
+     is_in_faction_with = BUL
  } 
- }#Focus for Reclaiming Balkan Lands 
+ cost = 10  
+  
+  available_if_capitulated = yes  
+  
+  completion_reward = { 
+              if = {
+				limit = {
+					BUL = { 
+						is_subject = no
+						NOT = { has_war_with = SER }
+						is_in_faction = no
+					}
+				}
+				BUL = { country_event = serbia.2 }
+                set_rule = { can_create_factions = yes }
+                create_faction = "Balkanski Savez"
+                hidden_effect = {
+					news_event = { hours = 6 id = news.177 }
+				}     
+	          }			  
+ } 
+ }
+ #Focus for Reclaiming Balkan Lands 
 	focus = { 
 	id = reclaimingbalkanlands 
 	icon = GFX_goal_generic_occupy_states_ongoing_war 
@@ -387,11 +685,83 @@ focus = {
  prerequisite = { } 
  available = {  } 
  cost = 10  
+ 
   available_if_capitulated = yes  
- completion_reward = { 
-  
+ 
+  complete_tooltip = {
+			air_experience = 25
+			if = { limit = { has_country_flag = aviation_effort_AB }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}			
+		}
+  completion_reward = { 
+      air_experience = 25
+
+      air_experience = 25
+
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					ROOT = { set_country_flag = aviation_effort_AB }
+				}
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
  } 
- }#Focus for Ikarus 
+ }
+ #Focus for Ikarus 
 	focus = { 
 	id = ikarus 
 	icon = GFX_focus_YUG_rogozarski 
@@ -423,7 +793,8 @@ focus = {
  completion_reward = { 
   
  } 
- }#Focus for Serbian Nationalism 
+ } 
+ #Focus for Serbian Nationalism 
 	focus = { 
 	id = serbiannationalism 
 	icon = GFX_goal_support_fascism 
@@ -433,13 +804,36 @@ focus = {
  y = 1 
  mutually_exclusive = { focus = drugtito} 
  prerequisite = { focus = internalpolitics} 
- available = {  } 
+ available = {
+    OR = {
+				has_government = valkist
+				has_government = national_populist
+				has_government = paternal_autocrat
+				has_government = authoritarian_democrat
+			}
+}			
  cost = 3  
-  available_if_capitulated = yes  
- completion_reward = { 
   
+  available_if_capitulated = yes  
+
+  ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = valkist
+				    has_government = national_populist
+				    has_government = paternal_autocrat
+				    has_government = authoritarian_democrat
+				}
+			}
+   }
+  completion_reward = { 
+         add_ideas = nationalism
  } 
- }#Focus for Drug Tito 
+ }
+ #Focus for Drug Tito 
 	focus = { 
 	id = drugtito 
 	icon = GFX_goal_support_communism 
@@ -449,29 +843,45 @@ focus = {
  y = 1 
  mutually_exclusive = { focus = serbiannationalism} 
  prerequisite = { focus = internalpolitics} 
- available = {  } 
- cost = 3  
-  available_if_capitulated = yes  
- completion_reward = { 
+ available = {
+    if = {
+				limit = { original_tag = CHI }
+				has_government = communism
+				else = {
+					OR = {
+						has_government = authoritarian_democrat
+						has_government = paternal_autocrat
+						has_government = libertartarian_socialist
+						has_government = marxist_leninist
+						has_government = bolshevist
+						has_government = internationalist
+					}
+				}
+			}
+		} 
+  cost = 3  
   
- } 
- }#Focus for Military Effort I 
-	focus = { 
-	id = militaryefforti 
-	icon = GFX_goal_generic_construct_mil_factory 
-	bypass = {} 
- ai_will_do = { factor = } 
- x = 2
- y = 2 
- mutually_exclusive = { focus = industrialefforti} 
- prerequisite = { focus = rebuildingournation} 
- available = {  } 
- cost = 10  
-  available_if_capitulated = yes  
- completion_reward = { 
+  available_if_capitulated = yes
+
+  ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+						has_government = libertartarian_socialist
+						has_government = marxist_leninist
+						has_government = bolshevist
+						has_government = internationalist
+				}
+			}			
+		}
   
+  completion_reward = { 
+     add_ideas = internationalism
  } 
- }#Focus for Foreign Policy 
+ }
+ #Focus for Foreign Policy 
 	focus = { 
 	id = foreignpolicy 
 	icon = GFX_goal_generic_position_armies 
@@ -489,7 +899,7 @@ focus = {
  } 
  }#Focus for Side With Italy 
 	focus = { 
-	id = şidewithitaly 
+	id = sidewithitaly 
 	icon = GFX_goal_molotov_ribbentrop_pact 
 	bypass = {} 
  ai_will_do = { factor = } 
