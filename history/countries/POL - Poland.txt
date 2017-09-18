@@ -96,6 +96,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Tadeusz Kasprzycki"
+	desc = "POLITICS_TADEUSZ_KASPRZYCKI_DESC"
+	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+
 create_field_marshal = {
 	name = "Władysław Sikorski"
 	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"

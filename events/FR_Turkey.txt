@@ -322,7 +322,7 @@ country_event = {
 	option = {
 		name = tur.8.a
 
-		hidden_effect = { TUR = { country_event = { id = tur.9 days = 1 }}}
+		hidden_effect = { GRE = { country_event = { id = tur.9 days = 1 }}}
 	}
 }
 
