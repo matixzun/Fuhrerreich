@@ -113,7 +113,6 @@ serbia.4.t:0 "[From.GetName] Refuses Serbian Alliance"
 serbia.4.d:0 ""
 serbia.4.a:0 "They will regret this."
 
-<<<<<<< HEAD
 ### Serbia News ###
 
 news.1.t:0 "Balkan Alliance"
@@ -122,7 +121,7 @@ news.1.a:0 "Don't come crying to us later, then!"
 news.1.b:0 "S vjerom u Boga za kralja i otadžbinu!"
 news.1.c:0 "New powderkeg of Europe!"
 news.1.e:0 "Balkan must unite against Hungarian occupators!"
-=======
+
 ### News ###
 
 serbia.news.1.t:0 "Balkan Alliance"
