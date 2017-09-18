@@ -1,6 +1,8 @@
 ######################
-# Italy Focus Tree
-######################
+# Italy Focus Tree	 #
+##############################
+# By Drowse and Elia Esposito#
+##############################
 
 focus_tree = {
 	id = italy_focus
@@ -16,10 +18,12 @@ focus_tree = {
 
 	default = no
 	
+################	
 ### Election ###
+################
 	focus = {
 		id = ITA_parliamentary_election
-		icon = GFX_focus_generic_italy_firs
+		icon = GFX_focus_generic_italy_first
 		x = 10
 		y = 0
 		cost = 15
@@ -32,7 +36,7 @@ focus_tree = {
 ### socialist win ###
 	focus = {
 		id = ITA_socialist_win
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_generic_soviet_politics
 		x = 7
 		y = 1
 		cost = 1
@@ -69,7 +73,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_repubblica_socialista
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_generic_join_comintern
 		x = 7
 		y = 3
 		cost = 10
@@ -85,7 +89,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_collectivize_factories
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 7
 		y = 4
 		cost = 10
@@ -109,7 +113,7 @@ focus_tree = {
 ### Liberals win ###
 	focus = {
 		id = ITA_liberal_win
-		icon = GFX_goal_generic_the_giant_wakes
+		icon = GFX_focus_generic_the_giant_wakes
 		x = 9
 		y = 1
 		cost = 1
@@ -129,6 +133,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_deal_with_the_left
+		icon = GFX_goal_tripartite_pact
 		x = 9
 		y = 2
 		cost = 10
@@ -144,6 +149,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_economic_reform
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 9
 		y = 3
 		cost = 10
@@ -167,6 +173,7 @@ focus_tree = {
 # remove strikers idea
 	focus = {
 		id = ITA_deal_with_strikers
+		icon = GFX_goal_generic_forceful_treaty
 		x = 9
 		y = 4
 		cost = 10
@@ -183,6 +190,7 @@ focus_tree = {
 ### Leftist Win ###
 	focus = {
 		id = ITA_leftist_coalition
+		icon = GFX_goal_tfv_burn_the_royal_portraits
 		x = 11
 		y = 1
 		cost = 10
@@ -202,6 +210,7 @@ focus_tree = {
 # modify availiable civilian factories
 	focus = {
 		id = ITA_minimum_wage
+		icon = GFX_goal_generic_consumer_goods
 		x = 11
 		y = 2
 		cost = 10
@@ -218,6 +227,7 @@ focus_tree = {
 # add idea factory output 10%	
 	focus = {
 		id = ITA_women_workforce
+		icon = GFX_IRE_women_industry
 		x = 11
 		y = 3
 		cost = 10
@@ -234,6 +244,7 @@ focus_tree = {
 # uh idk	
 	focus = {
 		id = ITA_party_reform
+		icon = GFX_goal_generic_intelligence_exchange
 		x = 11
 		y = 4
 		cost = 10
@@ -251,6 +262,7 @@ focus_tree = {
 # add idea workers strike
 	focus = {
 		id = ITA_conservatives_win
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 13
 		y = 1
 		cost = 10
@@ -266,6 +278,7 @@ focus_tree = {
 	
 	focus = {
 		id = ITA_crush_left
+		icon = GFX_goal_generic_war_with_comintern
 		x = 13
 		y = 2
 		cost = 10
@@ -282,6 +295,7 @@ focus_tree = {
 # ask about this one	
 	focus = {
 		id = ITA_dalmation_migration
+		icon = GFX_goal_generic_construct_infrastructure
 		x = 13
 		y = 3
 		cost = 10
@@ -304,6 +318,7 @@ focus_tree = {
 # add_opinion_modifier = {
 	focus = {
 		id = ITA_improve_entente
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 13
 		y = 4
 		cost = 10
@@ -317,3 +332,130 @@ focus_tree = {
 		}
 	}
 	
+### military seizes control ###
+	focus = {
+		id = ITA_military_parliament
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 15
+		y = 0
+		cost = 10
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+# put Amadeo Aosta in power
+	focus = {
+		id = ITA_savoia_aosta
+		icon = GFX_focus_generic_home_defense
+		x = 15
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_military_parliament
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = ITA_abolish_parliament
+		icon = GFX_goal_generic_forceful_treaty
+		x = 15
+		y = 2
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_savoia_aosta
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = ITA_military_role
+		icon = GFX_goal_generic_small_arms
+		x = 15
+		y = 3
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_abolish_parliament
+		}
+		
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+### add valkist takeover event 	
+	focus = {
+		id = ITA_install_dictatorship
+		icon = GFX_goal_generic_attack_allies
+		x = 17
+		y = 1
+		cost = 10
+	
+		prerequisite = {
+			focus = ITA_military_parliament
+		}
+		
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	
+		focus = {
+		id = ITA_political_police
+		icon = GFX_goal_generic_propaganda
+		x = 17
+		y = 2
+		cost = 10
+	
+		prerequisite = {
+			focus = ITA_install_dictatorship
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+		focus = {
+		id = ITA_patria_famiglia
+		icon = GFX_goal_rhineland
+		x = 17
+		y = 3
+		cost = 10
+	
+		prerequisite = {
+			focus = ITA_political_police
+		}
+		
+		completion_reward = {
+			add_national_unity = 0.10
+		}
+	}
+	
+		focus = {
+		id = ITA_crackdown_opposition
+		icon = GFX_goal_generic_forceful_treaty
+		x = 16
+		y = 4
+		cost = 10
+	
+		prerequisite = {
+			focus = ITA_military_role
+			focus = ITA_patria_famiglia
+		}
+		
+		completion_reward = {
+			remove_ideas = ITA_communist_threat
+		}
+	}
