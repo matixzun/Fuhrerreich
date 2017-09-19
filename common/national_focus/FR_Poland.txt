@@ -213,7 +213,8 @@ continuous_focus_position = { x = 50 y = 1600}
  		prerequisite = { focus = POL_kings_men } 
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			add_ideas = POL_ojczyzna_guard_idea
   					} 
  }
 

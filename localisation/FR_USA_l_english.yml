@@ -30,8 +30,8 @@ USA_valkist_party_long:0 ""
 #### Events ####
 
 usa.1.t:0 "The State of Old Glory"
-usa.1.d:0 "placeholder"
-usa.1.a:0 "We will rise from the rubble."
+usa.1.d:0 "At the end of the Great War, the United States stood among the victors. Our victory was pyrrhic, directly followed by the Great Depression and overextension. The American military has stagnated and hungry vulture states in the south are waiting to reclaim their territory. Will the bastion of North American democracy be able to weather the coming storm?"
+usa.1.a:0 "We will rise from our failures of the Great War."
 usa.3.t:0 "The Military Industry"
 usa.3.d:0 "placeholder"
 usa.3.a:0 "guns"
@@ -46,7 +46,7 @@ usa.5.a:0 "This had to happen now!?"
 #### Ideas ####
 
 USA_sick_man_america:0 "Sick Man of the Americas"
-USA_sick_man_america_desc:0 "At the end of the Great War, the United States stood among the victors. Our victory was pyrrhic, directly followed by the Great Depression and overextension. The American military has stagnated and hungry vulture states in the south are waiting to reclaim their territory. Will the bastion of North American democracy be able to weather the coming storm?"
+USA_sick_man_america_desc:0 "The United States of America is at stagnated point in history, with many of the United States citizens worried about the future ahead of them."
 USA_firearm_production:0 "Springfield Armory"
 USA_firearm_production_desc:0 "The Springfield Armory has been funded to help produce firearms for our soldiers."
 USA_fighter_production:0 "North American Aviation"
@@ -55,6 +55,8 @@ USA_black_wednesday:0 "Black Wednesday"
 USA_black_wednesday_desc:0 "We are affected by the stock market collapse!"
 USA_black_wednesday_recovery:0 "Black Wednesday Recovery"
 USA_black_wednesday_recovery_desc:0 "The economy is back on track."
+USA_failed_offensive:0 "Failure of the Château-Thierry Counteroffensive"
+USA_failed_offensive_desc:0 "The Château-Thierry Counteroffensive was a plan devised by French in order to break through the German lines in France during the Great War. However, it is the largest US military disaster so far in American history."
 
 #### Tooltips ####
 

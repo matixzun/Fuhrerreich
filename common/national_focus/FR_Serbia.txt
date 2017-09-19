@@ -8,7 +8,7 @@ focus_tree = {
    id = Serbia_Focus
 
    country = {
-       factor=0
+       factor = 0
 
        modifier = {
            add = 10
@@ -146,7 +146,7 @@ focus = {
  x = 0 
  y = 3 
  mutually_exclusive = { focus = militaryeffortii} 
- prerequisite = { focus = militaryefforti  focus = militaryefforti} 
+ prerequisite = { focus = militaryefforti  focus = industrialefforti} 
  available = {  } 
  cost = 10  
   
@@ -432,7 +432,7 @@ focus = {
 	bypass = {} 
  ai_will_do = { factor = } 
  x = 4
- y = 2 
+ y = 2
  mutually_exclusive = { } 
  prerequisite = { focus = fortificationefforti} 
  available = {  } 
@@ -507,6 +507,76 @@ focus = {
 			}
  } 
  }
+ #Focus for Fortification Effort III
+	focus = { 
+	id = fortificationeffortiii
+	icon = GFX_goal_generic_fortify_city 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 4
+ y = 3
+ mutually_exclusive = { } 
+ prerequisite = { focus = fortificationeffortii} 
+ available = {  } 
+ cost = 20
+  
+  available_if_capitulated = yes  
+ 
+     completion_reward = { 
+           108 = {
+				    if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_romania
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 9756
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 630
+							instant_build = yes
+						}
+					}
+				}
+			}
+			107 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_romania
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 6634
+							instant_build = yes
+						}
+					}
+				}
+			}
+ } 
+ }
+ #Focus for Foreign Investators 
+	focus = { 
+	id = foreigninvestators 
+	icon = GFX_goal_generic_production2 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x =1 
+ y =4 
+ mutually_exclusive = { } 
+ prerequisite = { focus = industrialeffortii focus = militaryeffortii} 
+ available = {  } 
+ cost = 5  
+  available_if_capitulated = yes  
+ completion_reward = { 
+  
+ } 
+ }
+
  #Focus for Better Dead than Red 
 	focus = { 
 	id = betterdeadthanred 
@@ -616,24 +686,31 @@ focus = {
  available = {  
       is_puppet = no
       is_in_faction = no
+
       NOT = {
           BUL = {
               AND = {
-                  is_in_faction = no
+                  is_in_faction = yes
+                  is_faction_leader = no
               }
           }
       }
-      has_government = valkist
-	  has_government = national_populist
+              OR = {
+	 		     has_government = valkist
+	             has_government = national_populist
+	 			}
+              
 	  BUL = {
 	      exists = yes
-	      has_government = valkist
-	      has_government = national_populist
-	  }
-	  NOT = { has_war_with = BUL}
- }
+	      OR = {
+	 		     has_government = valkist
+	             has_government = national_populist
+	      }
+	  }           NOT = { has_war_with = BUL}
+  }
  bypass = {
      is_in_faction_with = BUL
+     is_faction_leader = yes
  } 
  cost = 10  
   
@@ -653,10 +730,31 @@ focus = {
                 create_faction = "Balkanski Savez"
                 hidden_effect = {
 					news_event = { hours = 6 id = news.1 }
-				}     
+				}   
 	          }			  
- } 
+  } 
  }
+ #Focus for Plan of Greater Serbia 
+	focus = { 
+	      id = planofgreaterserbia 
+	      icon = GFX_goal_generic_attack_allies 
+	      bypass = {} 
+          ai_will_do = { factor = } 
+          x = 4 
+          y = 4
+          mutually_exclusive = { } 
+          prerequisite = { focus = balkanskisavez  focus = militaryeffortii  focus = fortificationeffortii} 
+          available = {    
+          date > 1937.1.1
+          }
+          cost = 10 
+          available_if_capitulated = yes  
+ 
+       completion_reward = { 
+  
+       } 
+ }
+
  #Focus for Reclaiming Balkan Lands 
 	focus = { 
 	id = reclaimingbalkanlands 
@@ -664,9 +762,9 @@ focus = {
 	bypass = {} 
  ai_will_do = { factor = } 
  x = 6
- y = 4 
+ y = 5
  mutually_exclusive = { } 
- prerequisite = { focus = balkanskisavez} 
+ prerequisite = { focus = balkanskisavez focus = planofgreaterserbia} 
  available = {  } 
  cost = 10  
   available_if_capitulated = yes  
@@ -679,7 +777,7 @@ focus = {
 	icon = GFX_goal_generic_air_fighter 
 	bypass = {} 
  ai_will_do = { factor = } 
- x = 16
+ x = 17
  y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
@@ -705,8 +803,6 @@ focus = {
 			}			
 		}
   completion_reward = { 
-      air_experience = 25
-
       air_experience = 25
 
 			if = {
@@ -881,13 +977,51 @@ focus = {
      add_ideas = internationalism
  } 
  }
+ #Focus for Internationalism
+ focus = {
+		id = internationalism
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = partisans }
+		mutually_exclusive = {}
+		available = {}
+		x = 8
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+             every_other_country = {
+				limit = {
+					NOT = { tag = SER }
+					NOT = { has_war_with = SER }
+                    OR = {
+                         has_government = internationalist
+                         has_government = bolshevist
+                         has_government = marxist_leninist
+                         has_government = libertartarian_socialist
+                    }
+                    OR = {
+						capital_scope = {
+								is_on_continent = europe
+						}
+						capital_scope = {
+								is_on_continent = asia
+						}
+					
+                    }
+                }
+              add_opinion_modifier = { target = SER modifier = 0.5}  
+             }
+		}
+}
  #Focus for Foreign Policy 
 	focus = { 
 	id = foreignpolicy 
 	icon = GFX_goal_generic_position_armies 
 	bypass = {} 
  ai_will_do = { factor = } 
- x = 25
+ x = 22
  y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
@@ -897,7 +1031,8 @@ focus = {
  completion_reward = { 
   
  } 
- }#Focus for Side With Italy 
+ }
+ #Focus for Side With Italy 
 	focus = { 
 	id = sidewithitaly 
 	icon = GFX_goal_molotov_ribbentrop_pact 
@@ -913,5 +1048,63 @@ focus = {
  completion_reward = { 
   
  } 
- }#End of focuses 
+ }
+ #Focus for Side With Germany 
+	focus = { 
+	id = sidewithgermany
+	icon = 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 22
+ y = 1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = foreignpolicy} 
+ available = {  } 
+ cost = 10  
+  
+  available_if_capitulated = yes  
+  
+  completion_reward = { 
+  
+ } 
+}
+#Sending Minister of Foreign Affairs
+	focus = { 
+	id = sendingministerofforeignaffairs
+	icon = 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 22
+ y = 2 
+ mutually_exclusive = { } 
+ prerequisite = { focus = sidewithgermany} 
+ available = {  } 
+ cost = 10  
+  
+  available_if_capitulated = yes  
+  
+  completion_reward = { 
+  
+ } 
+}
+#Focus for Side With Russia
+	focus = { 
+	id = sidewithrussia
+	icon = 
+	bypass = {} 
+ ai_will_do = { factor = } 
+ x = 24
+ y = 1 
+ mutually_exclusive = { } 
+ prerequisite = { focus = foreignpolicy} 
+ available = {  } 
+ cost = 10  
+  
+  available_if_capitulated = yes  
+  
+  completion_reward = { 
+  
+ } 
+}
+ #End of focuses 
 }
