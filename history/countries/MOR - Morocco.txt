@@ -23,7 +23,6 @@ oob = "MOR_1936"
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_plant = 1
-	}
 }
 
 add_ideas = {
@@ -72,7 +71,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = social_conservative
+	ruling_party = social_conservative_subtype
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
