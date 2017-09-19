@@ -112,3 +112,58 @@ create_country_leader = {
 	}
 	
 }
+
+## Field Marshals
+
+create_field_marshal = {
+	name = "Osman Fuad Efendi"
+	picture = "Portrait_Turkey_Osman_Fuad.tga"
+	id = 680
+	traits = {
+		offensive_doctrine
+		inspirational_leader
+	}
+	skill = 4
+}
+
+## Corps Commanders
+
+create_corps_commander = {
+	name = "İsmail Hakkı Paşa"
+	picture = "Portrait_Turkey_Ismail_Hakki.tga"
+	traits = {
+		winter_specialist
+		commando
+	}
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Ömer Faruk Efendi"
+	picture = "Portrait_Turkey_Omer_Faruk.tga"
+	traits = {
+	}
+	skill = 2
+}
+
+## Navy Leaders
+
+create_navy_leader = {
+	name = "İbrahim Paşa"
+	id = 674
+	picture = "Portrait_Turkey_Ibrahim_Aski.tga"
+	traits = {
+		spotter
+		old_guard_navy
+	}
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mahmud Muhtar Paşa"
+	picture = "Portrait_Turkey_Mahmud_Muhtar.tga"
+	traits = {
+		seawolf
+	}
+	skill = 1
+}

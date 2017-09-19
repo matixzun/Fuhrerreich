@@ -14,7 +14,7 @@
 	}
 }
 division_template = {
-	name = "Dağ Tugayı" 				# Mountain Brigade
+	name = "Dag Tugayi" 				# Mountain Brigade
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -26,7 +26,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Boğazı Tugay" 				# Fortress Brigade - garrison brigade, lower experience and equipment
+	name = "Bogazi Tugay" 				# Fortress Brigade - garrison brigade, lower experience and equipment
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -50,5 +50,161 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
 		cavalry = { x = 1 y = 3 }
+	}
+}
+
+units = {
+	######## LAND UNITS ########
+	##### Türk Ordusu #####
+	division = {
+		name = "14. Süvari Tümeni"
+		location = 9833
+		division_template = "Süvari Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	## VI. Kolordu ##
+	division = {
+		name = "7. Piyade Tümeni"
+		location = 9833
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	### Birinci Ordu ###
+	division = {
+		name = "24. Piyade Tümeni"
+		location = 6995
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	## IV. Kolordu ##
+	division = {
+		name = "8. Piyade Tümeni"
+		location = 3876
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "1. Dag Tugayi"
+		location = 919
+		division_template = "Dag Tugayi" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	### Ikinci Ordu Ordu ###
+	## V. Kolordu ##
+	division = {
+		name = "5. Piyade Tümeni"
+		location = 9811
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	### Üçüncüsü Ordu ###
+	## VIII. Kolordu ##
+	division = {
+		name = "15. Piyade Tümeni"
+		location = 856
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	## IX. Kolordu ##
+	division = {
+		name = "9. Piyade Tümeni"
+		location = 919
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "1. Süvari Tümeni"
+		location = 3982
+		division_template = "Süvari Tümeni" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+	##### NAVAL UNITS #####
+	### Osmanlı Donanmasi ###
+	navy = {				
+		name = "Osmanlı Donanmasi"			
+		base = 9833 
+		location = 9833 # Istanbul
+		ship = { name = "OİG Yavuz" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = TUR } } }			
+		ship = { name = "OİG Mecidiye" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TUR } } }
+		ship = { name = "OİG Hamidiye" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TUR } } }
+		ship = { name = "OİG Peyk" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+		ship = { name = "OİG Berk" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+		ship = { name = "OİG Kocatepe" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
+		ship = { name = "OİG Adatepe" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
+		ship = { name = "OİG Zafer" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
+		ship = { name = "OİG Tinaztepe" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
+	}				
+	navy = {				
+		name = "Filotilla Denizalti Kücük"			
+		base = 11894 
+		location = 11894 # Samsun
+		ship = { name = "OİG Birinci Inönü" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR } } }		
+		ship = { name = "OİG Ikinci Inönü" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR } } }		
+		ship = { name = "OİG Dumlupinar" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR version_name = "Dumlupinar Class" } } }
+		ship = { name = "OİG Sakarya" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR version_name = "Dumlupinar Class" } } }
+		ship = { name = "OİG Gür" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR version_name = "Dumlupinar Class" } } }
+	}				
+}
+
+
+### Air Wings ###
+air_wings = {
+	##### Osmanlı Hava Kuvvetleri #####
+	49 = { 
+		# 1. Havacilik Alay -- Curtiss F11C Hawk II fighters (technically CAG fighters)
+		fighter_equipment_0 = {
+			owner = "TUR" 
+			amount = 45
+		}
+		# 2. Havacilik Alay -- Letov S.16T light bombers
+		CAS_equipment_1 = {
+			owner = "TUR" 
+			amount = 16
+		}
+	}
+}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.43
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 100
 	}
 }

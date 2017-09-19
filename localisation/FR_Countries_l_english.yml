@@ -1,7 +1,7 @@
 ﻿l_english:
 
 ############
-#  EUROPE  #
+#  EUROPE  #  ### thanks for including Turkey in Europe lads -Humming ###
 ############
 
 # Poland
@@ -1075,7 +1075,7 @@ CHI_national_populist_ADJ:0 "Chinese"
 CHI_national_populist_DEF:0 "Zhongguo"
 CHI_valkist:0 "Heavenly State"
 CHI_valkist_ADJ:0 "Chinese"
-CHI_valkist_DEF:0 "The Heavenly State of China
+CHI_valkist_DEF:0 "The Heavenly State of China"
 
 #Chinese Soviet Republic
 PRC_internationalist:0 "Chinese Soviet Republic"
@@ -1113,4 +1113,4 @@ PRC_national_populist_ADJ:0 "Chinese"
 PRC_national_populist_DEF:0 "Zhongguo"
 PRC_valkist:0 "Heavenly State"
 PRC_valkist_ADJ:0 "Chinese"
-PRC_valkist_DEF:0 "The Heavenly State of China
+PRC_valkist_DEF:0 "The Heavenly State of China"

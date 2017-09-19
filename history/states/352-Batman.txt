@@ -4,12 +4,17 @@ state={
 	name="STATE_352" # Van
 	manpower = 395490
 
-	state_category = rural
+	state_category = town
 
 	history={
 		owner = KUR
+
+		victory_points = {
+			4512 1
+		}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
 		}
 		add_core_of = TUR
 		add_core_of = KUR

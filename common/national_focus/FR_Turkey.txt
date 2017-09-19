@@ -180,7 +180,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			country_event = { id = tur.14 }
 		}
 	}
 
@@ -195,7 +195,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = TUR_religious_plurality
 		}
 	}
 
