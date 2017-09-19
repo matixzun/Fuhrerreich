@@ -1,7 +1,7 @@
 
-capital = 551
+capital = 461
 
-oob = "SUD_1936"
+oob = "MOR_1936"
 
 # Starting tech
 	set_technology = {
@@ -50,16 +50,16 @@ set_politics = {
 			popularity = 10
 		}
 		social_liberal = {
-			popularity = 60
+			popularity = 15
 		}
 		market_liberal = {
-			popularity = 0
+			popularity = 5
 		}
 		social_conservative = {
-			popularity = 10
+			popularity = 40
 		}
 		authoritarian_democrat = {
-			popularity = 0
+			popularity = 100
 		}
 		paternal_autocrat = {
 			popularity = 0
@@ -72,7 +72,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = social_liberal
+	ruling_party = social_conservative
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -80,9 +80,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Ismail al-Azhari"
-	desc = "POLITICS_ISMAIL_AL_AZAHRI_DESC"
-	picture = "gfx/leaders/SUD/Portrait_SUD_Ismail_al-Azhari.dds"
+	name = "PLACEHOLDER"
+	desc = "PLACEHOLDER_desc"
+	picture = "gfx/leaders/PLACEHOLDER"
 	expire = "1965.1.1"
 	ideology = social_liberal
 	traits = {
