@@ -1,5 +1,9 @@
 ﻿l_english:
 
+############
+#  EUROPE  #
+############
+
 # Poland
 POL_internationalist:0 "Polish Socialist Republic"
 POL_internationalist_ADJ:0 "Socialist Polish"
@@ -950,6 +954,10 @@ LAT_valkist:0 "Valkist Latvia"
 LAT_valkist_ADJ:0 "Valkist Latvian"
 LAT_valkist_DEF:0 "The Valkist Empire of Latvia"
 
+############
+# AMERICAS #
+############
+
 #United States of America
 USA_internationalist:0 "United American Communes"
 USA_internationalist_ADJ:0 "American"
@@ -988,3 +996,82 @@ USA_valkist:0 "Valkist America"
 USA_valkist_ADJ:0 "Valkist American"
 USA_valkist_DEF:0 "The Valkist Empire of America"
 
+########
+# ASIA #
+########
+
+#Nationalist China
+CHI_internationalist:0 "Chinese Soviet Republic"
+CHI_internationalist_ADJ:0 "Chinese"
+CHI_internationalist_DEF:0 "The Chinese Soviet Republic"
+CHI_bolshevist:0 "Chinese Soviet Republic"
+CHI_bolshevist_ADJ:0 "Chinese"
+CHI_bolshevist_DEF:0 "The Chinese Soviet Republic"
+CHI_marxist_leninist:0 "Chinese Soviet Republic"
+CHI_marxist_leninist_ADJ:0 "Chinese"
+CHI_marxist_leninist_DEF:0 "The Chinese Soviet Republic"
+CHI_libertartarian_socialist:0 "Chinese Soviet Republic"
+CHI_libertartarian_socialist_ADJ:0 "Chinese"
+CHI_libertartarian_socialist_DEF:0 "The Chinese Soviet Republic"
+CHI_social_democrat:0 "Republic of China"
+CHI_social_democrat_ADJ:0 "Chinese"
+CHI_social_democrat_DEF:0 "The Republic of China"
+CHI_social_liberal:0 "Republic of China"
+CHI_social_liberal_ADJ:0 "Chinese"
+CHI_social_liberal_DEF:0 "The Republic of China"
+CHI_market_liberal:0 "Republic of China"
+CHI_market_liberal_ADJ:0 "Chinese"
+CHI_market_liberal_DEF:0 "The Republic of China"
+CHI_social_conservative:0 "Republic of China"
+CHI_social_conservative_ADJ:0 "Chinese"
+CHI_social_conservative_DEF:0 "The Republic of China"
+CHI_authoritarian_democrat:0 "Republic of China"
+CHI_authoritarian_democrat_ADJ:0 "Chinese"
+CHI_authoritarian_democrat_DEF:0 "The Republic of China"
+CHI_paternal_autocrat:0 "Beiyang China"
+CHI_paternal_autocrat_ADJ:0 "Chinese"
+CHI_paternal_autocrat_DEF:0 "Beiyang China"
+CHI_national_populist:0 "Zhongguo"
+CHI_national_populist_ADJ:0 "Chinese"
+CHI_national_populist_DEF:0 "Zhongguo"
+CHI_valkist:0 "Heavenly State"
+CHI_valkist_ADJ:0 "Chinese"
+CHI_valkist_DEF:0 "The Heavenly State of China
+
+#Chinese Soviet Republic
+PRC_internationalist:0 "Chinese Soviet Republic"
+PRC_internationalist_ADJ:0 "Chinese"
+PRC_internationalist_DEF:0 "The Chinese Soviet Republic"
+PRC_bolshevist:0 "Chinese Soviet Republic"
+PRC_bolshevist_ADJ:0 "Chinese"
+PRC_bolshevist_DEF:0 "The Chinese Soviet Republic"
+PRC_marxist_leninist:0 "Chinese Soviet Republic"
+PRC_marxist_leninist_ADJ:0 "Chinese"
+PRC_marxist_leninist_DEF:0 "The Chinese Soviet Republic"
+PRC_libertartarian_socialist:0 "Chinese Soviet Republic"
+PRC_libertartarian_socialist_ADJ:0 "Chinese"
+PRC_libertartarian_socialist_DEF:0 "The Chinese Soviet Republic"
+PRC_social_democrat:0 "Republic of China"
+PRC_social_democrat_ADJ:0 "Chinese"
+PRC_social_democrat_DEF:0 "The Republic of China"
+PRC_social_liberal:0 "Republic of China"
+PRC_social_liberal_ADJ:0 "Chinese"
+PRC_social_liberal_DEF:0 "The Republic of China"
+PRC_market_liberal:0 "Republic of China"
+PRC_market_liberal_ADJ:0 "Chinese"
+PRC_market_liberal_DEF:0 "The Republic of China"
+PRC_social_conservative:0 "Republic of China"
+PRC_social_conservative_ADJ:0 "Chinese"
+PRC_social_conservative_DEF:0 "The Republic of China"
+PRC_authoritarian_democrat:0 "Republic of China"
+PRC_authoritarian_democrat_ADJ:0 "Chinese"
+PRC_authoritarian_democrat_DEF:0 "The Republic of China"
+PRC_paternal_autocrat:0 "Beiyang China"
+PRC_paternal_autocrat_ADJ:0 "Chinese"
+PRC_paternal_autocrat_DEF:0 "Beiyang China"
+PRC_national_populist:0 "Zhongguo"
+PRC_national_populist_ADJ:0 "Chinese"
+PRC_national_populist_DEF:0 "Zhongguo"
+PRC_valkist:0 "Heavenly State"
+PRC_valkist_ADJ:0 "Chinese"
+PRC_valkist_DEF:0 "The Heavenly State of China
