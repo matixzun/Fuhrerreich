@@ -1,4 +1,4 @@
-
+﻿
 capital = 461
 
 oob = "MOR_1936"
@@ -24,7 +24,6 @@ oob = "MOR_1936"
 		synth_oil_experiments = 1
 		oil_plant = 1
 	}
-}
 
 add_ideas = {
 	volunteer_only
@@ -59,7 +58,7 @@ set_politics = {
 			popularity = 40
 		}
 		authoritarian_democrat = {
-			popularity = 100
+			popularity = 10
 		}
 		paternal_autocrat = {
 			popularity = 0
@@ -84,7 +83,7 @@ create_country_leader = {
 	desc = "PLACEHOLDER_desc"
 	picture = "gfx/leaders/PLACEHOLDER"
 	expire = "1965.1.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		
 	}
