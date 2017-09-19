@@ -112,6 +112,7 @@ set_politics = {
 
 add_ideas = {
 	USA_sick_man_america
+	USA_failed_offensive
 }
 
 

@@ -5,40 +5,40 @@
 ###########################
 
 ideas = {
+
 	country = {
 		USA_sick_man_america = {
-			picture = GFX_generic_wall_line
+
+        	picture = GFX_generic_wall_line
+
 			modifier = {
 				conscription = -0.015
 				production_speed_buildings_factor = -0.030
 			}
 		}
-	}
-	country =  {
-		USA_firearm_production = {
-            allowed = {
-                always = no
-            }
 
-            equipment_bonus = {
-                infantry_equipment = {
-                    build_cost_ic = -0.1 instant = yes
-                }
-                fighter_equipment = {
-                	build_cost_ic = 0.1 instant = yes
-                }
-            }
+	USA_firearm_production = {
 
-            removal_cost = -1
-            picture = generic_infantry_bonus
+        allowed = {
+            always = no
         }
-    }
-	country =  {
-		USA_fighter_production = {
-            allowed = {
-                always = no
-            }
 
+        equipment_bonus = {
+            infantry_equipment = {
+                build_cost_ic = -0.1 instant = yes
+                }
+            fighter_equipment = {
+                build_cost_ic = 0.1 instant = yes
+            }
+        }
+        picture = GFX_generic_infantry_bonus
+    }
+
+	USA_fighter_production = {
+        allowed = {
+            always = no
+        }
+        modifier = {
             equipment_bonus = {
                 infantry_equipment = {
                     build_cost_ic = 0.1 instant = yes
@@ -47,35 +47,35 @@ ideas = {
                 	build_cost_ic = -0.1 instant = yes
                 }
             }
-
-            removal_cost = -1
-            picture = idea_generic_fighter_production_diverted
         }
+
+        picture = GFX_idea_generic_fighter_production_diverted
     }
 
-    country = {
-    	USA = USA_black_wednesday = {
-    		allowed = {
-    			always  no
-    		}
-    		unity_factor = -0.65
+    USA_black_wednesday = {
+    	allowed = {
+    		always = no
+    	}
+        modifier = {
+    		unity_factor = -0.025
     		industrial_capacity_factory = -0.30   
     		consumer_goods_factor = 0.20	
-    		removal_cost = -1
-    		picture = GFX_generic_production_bonus
-    	}
+        }
+
+        picture = GFX_generic_production_bonus
     }
 
-    country = {
-    	USA_black_wednesday_recovery = {
-    		allowed = {
-    			always = no
+    USA_black_wednesday_recovery = {
+
+    	allowed = {
+    		always = no
     		}
+        modifier = {
     		unity_weekly = 0.0010  
-    		industrial_capacity_factory = -0.30 
+    		industrial_capacity_factory = -0.15
     		consumer_goods_factor = 0.10
-    		removal_cost = -1
-    		picture = GFX_idea_ast_all_in
-    	}
+            }
+        picture = GFX_idea_ast_all_in
     }
+
 }

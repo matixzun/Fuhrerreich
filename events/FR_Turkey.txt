@@ -46,6 +46,15 @@ country_event = {
 			ideology = authoritarian_democrat_subtype
 			traits = {}
 		}
+
+		create_country_leader = {
+			name = "The National Assembly"
+			desc = "NATIONAL_ASSEMBLY_DESC"
+			picture = "Portrait_Turkey_National_Assembly.tga"
+			expire = "1965.1.1"
+			ideology = valkist_subtype
+			traits = {}
+		}
 		hidden_effect = {
 			random_other_country = { news_event = { id = worldnews.1 days = 1 } }
 		}

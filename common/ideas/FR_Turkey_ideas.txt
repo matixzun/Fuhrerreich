@@ -13,7 +13,7 @@ ideas = {
 		TUR_political_turmoil = {
 			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
-				political_power_factor = 0.6	
+				political_power_factor = -0.6	
 				unity_factor = -0.25			
 			}
 		}
@@ -109,6 +109,35 @@ ideas = {
 
 			picture = OTT_solid_idea
 			
+		}
+
+		TUR_mobilization = {
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
+		TUR_planning_our_battles
+			picture = general_staff
+			modifier = {
+				planning_speed = 0.05
+				max_planning = 0.10
+			}
+		}
+
+		TUR_supply_our_army
+			picture = generic_license_production
+			modifier = {
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		TUR_quality_training
+			picture = generic_infantry_bonus
+			modifier = {
+				army_org_Factor = 0.05
+			}
 		}
 
 

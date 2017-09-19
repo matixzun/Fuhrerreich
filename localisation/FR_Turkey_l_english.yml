@@ -125,6 +125,61 @@ TUR_aircraft_industry:0 "The Aircraft Industry"
 TUR_aircraft_industry_desc:0 "In order to better connect the nation, we should seek to invest in new airports so that domestic flights can be made easier."
 
 
+## Armed Forces ##
+
+# Ottoman Army #
+
+TUR_the_ottoman_army:0 "The Ottoman Army"
+TUR_the_ottoman_army_desc:0 "The Ottoman Army has not seen sweeping reforms in a rather long time and has been behind its European counterparts in every way imaginable. If we are to prevent a loss such as the one endured during the Great War, we must ensure that the quality of our armed forces is top notch."
+TUR_a_new_doctrine:0 "A New Doctrine"
+TUR_a_new_doctrine_desc:0 "With the passing of the years comes the evolution of warfare. The first step to modernizing our army would be to choose a doctrine and follow that."
+TUR_superior_firepower:0 "Superior Firepower"
+TUR_superior_firepower_desc:0 "Military goods are cheap; manpower is not. The superior firepower doctrine advocates for the use of producing more military goods such as bullets and guns instead of needlessly sacrificing manpower."
+TUR_mass_assault:0 "Mass Assault"
+TUR_mass_assault_desc:0 "The mass assault doctrine advocates for the use of raw manpower in order to overwhelm the enemy and gain victory."
+TUR_blitzkrieg:0 "Blitzkrieg"
+TUR_blitzkrieg_desc:0 "Blitzkrieg, or lightning warfare, advocates for the use of mechanized infantry and tanks as to overwhelm the enemy with superior speeds and quickly capture territory."
+TUR_grand_battleplan:0 "Grand Battleplan"
+TUR_grand_battleplan_desc:0 "The grand battleplan doctrine is a doctrine that remains from the Great War. Advocating for the extensive planning of all battles, it will help us prepare and account for each and every scenario."
+TUR_invest_in_artillery:0 "Invest in Artillery"
+TUR_invest_in_artillery_desc:0 "Artillery has proven its worth during the Great War. Able to reach places that infantry equipment could never, it was a crucial aspect of fighting the war. We should look to invest in it."
+TUR_planned_mobilization:0 "Planned Mobilization"
+TUR_planned_mobilization_desc:0 "In order to better mobilize the reserve forces of the Ottoman Army, we must make sure to better and more quickly prepare troops and military goods."
+TUR_creation_of_tanks:0 "Creation of Tanks"
+TUR_creation_of_tanks_desc:0 "In 1916, the British had invented the tanks and used them during the Great War. They had proved their worth by being extremely resilient. We should continue to research tank technology."
+TUR_emphasis_on_planning:0 "Emphasis on Planning"
+TUR_emphasis_on_planning_desc:0 "A great emphasis will be placed on preparation before and during battles, where officers and other NCOs will focus on planning and accounting for each and every scenario."
+TUR_amphibious_warfare:0 "Amphibious Warfare"
+TUR_amphibious_warfare_desc:0 "We should use amphibious warfare to our advantage by incorporating elements of the navy into the armed forces."
+TUR_aerial_warfare:0 "Aerial Warfare"
+TUR_aerial_warfare_desc:0 "Using both planes and special types of paratroopers to land our forces in enemy territory will be beneficial as it will help us catch our enemy off guard."
+TUR_mountainous_warfare:0 "Mountainous Warfare"
+TUR_mountainous_warfare_desc:0 "Creating and training troops that are able to fight in mountainous terrain is a necessity. Especially with the mountainous region of Anatolia."
+
+# Turkish Land Forces #
+
+TUR_turkish_land_forces:0 "Turkish Land Forces"
+TUR_turkish_land_forces_desc:0 "With the dissolution of the Ottoman Empire, it is time we reorganized the Turkish Land Forces to make it a truly fit and modern fighting force."
+TUR_supply_our_troops:0 "Supply our Troops"
+TUR_supply_our_troops_desc:0 "If we are to ensure that our army is both modern and effective, we must make sure that each and every single one of our troops are supplied."
+TUR_tank_research:0 "Tank Research"
+TUR_tank_research_desc:0 "Both resilient and able to move at speeds once unknown, it is important that we invest in tanks as the Blitzkrieg doctrine is quickly becoming relevant to the new age of warfare."
+TUR_motorized_infantry_research:0 "Motorized Infantry Research"
+TUR_motorized_infantry_research_desc:0 "Motorized infantry is crucial in that it provides protection from enemy fire and can help transfer our troops from one place to another at swift speeds."
+TUR_infantry_equipment_research:0 "Infantry Equipment Research"
+TUR_infantry_equipment_research_desc:0 "It is important that we focus on upgrading and modernizing our infantry equipment. That way, we will have an army fit for the post-Great War era."
+TUR_artillery_research:0 "Artillery Research"
+TUR_artillery_research_desc:0 "We cannot always rush headlong into the arms of the enemy and expect to win. To reach distances that may have once been out of our reach, we must make sure to invest in artillery weaponry."
+TUR_quality_training:0 "Quality Training"
+TUR_quality_training_desc:0 "Whereas the Russian Red Army may rely on overwhelming manpower, the United States Army on weapons, and the German Army on speed, we shall rely on the quality of our men to guide us to victory."
+TUR_mobile_warfare_doctrine:0 "Mobile Warfare Doctrine"
+TUR_mobile_warfare_doctrine_desc:0 "By using speed, we can catch our enemies off guard and seize all important assets, effectively cutting them off."
+TUR_turkish_military_academy:0 "Turkish Military Academy"
+TUR_turkish_military_academy_desc:0 "The Turkish Military Academy, established in 1834 and located in Istanbul, will be given government funds to help further our armed forces research."
+TUR_the_reformation_of_the_army:0 "The Reformation of the Army"
+TUR_the_reformation_of_the_army_desc:0 "The emphases placed on weapons research, new doctrines, and research institutes have modernized our army and made us ready for any challenge we may have to face. "
+
+
 #### Political Parties ####
 
 TUR_internationalist_party:0 "Ahali Fırkası"
@@ -243,6 +298,10 @@ TUR_welfare:0 "Welfare Programs"
 TUR_religious_freedoms:0 "Religious Freedoms"
 TUR_religious_freedoms_desc:0 "In order to ensure equality and freedom for everybody, the Turkish Republic will make sure to uphold religious freedom laws."
 TUR_turkish_constitution:0 "The Turkish Constitution"
+TUR_mobilization:0 "Planned Mobilization"
+TUR_mobilization_desc:0 "Men and supplies that belong in the army reserves are now ready on demand, making it easier for us to mobilize our forces."
+TUR_planning_our_battles:0 "Planning our Battles"
+TUR_supply_our_army:0 "Supplying Our Troops"
 
 
 #### Tooltips ####
