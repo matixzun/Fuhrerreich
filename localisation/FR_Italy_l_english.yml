@@ -30,13 +30,13 @@ ITA_valkist_party_long:0 "Fasci di Combattimento"
 #### Ideas ####
 
  ITA_italia_irredenta:0 "Italia Irredenta"
- ITA_italia_irredenta_desc:0 "Italy united officially in 1861, but their struggle for independence from Austria continued until 1919. Veneto was acquired through a plebiscite in 1866 and the capital Rome was conquered only in 1870. Thanks to the Treaty of London the Italian Nation is now formally completed with the re conquest of Trentino, Istria and Dalmazia from the Austrian-Hungarian empire"
+ ITA_italia_irredenta_desc:0 "Italy united officially in 1861, but their struggle for independence from Austria continued until 1919. Veneto was acquired through a plebiscite in 1866 and the capital Rome was conquered only in 1870. Thanks to the Treaty of London the Italian Nation is now formally completed with the re conquest of Trentino, Istria and Dalmazia from the Austro-Hungarian empire"
  ITA_communist_threat:0 "Communist Threat"
- ITA_communist_threat_desc:0 "Unrest in the Italian Republic has left the country vulnerable to a communist uprising"
+ ITA_communist_threat_desc:0 "Unrest in the Italian Republic has left the country vulnerable to a communist uprising. If this threat is ignored, we may see large scale Communist revolts or even a Coup in our glorious Kingdom."
  ITA_umberto_ii:0 "Umberto II"
- ITA_umberto_ii_desc:0 "Umberto II"
+ ITA_umberto_ii_desc:0 "Umberto II, the current King of Italy, is seen as a strong figure in his people's eyes. Umberto's brother, Victor Emmanuel III abdicated the throne during the Red Biennium, and it fell upon Umberto to lead the Italian people through a troubling time. Now Umberto must protect his people once more against the rising threats of the world."
  ITA_communist_threat_light:0 "Communist Threat"
- ITA_communist_threat_light_desc:0 "The victory of the Partito Socialdemocratico Italiano in the recent election has calmed downed the more extreme elements of the left wing"
+ ITA_communist_threat_light_desc:0 "The victory of the Partito Socialdemocratico Italiano in the recent election has calmed downed the more extreme elements of the left wing. We may now be able to breath easy, knowing the redshirts are no longer at our doorstep waiting for a moment of weakness to strike."
  
  #### Events ####
  
