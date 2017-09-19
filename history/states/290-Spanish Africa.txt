@@ -22,7 +22,9 @@ state={
 			12100 = {
 				naval_base = 3
 			}
+
 		}
+		add_core_of = MOR
 	}
 
 	provinces={

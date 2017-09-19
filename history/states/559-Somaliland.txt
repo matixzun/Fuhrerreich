@@ -18,6 +18,7 @@ state=
 				naval_base = 2
 			}
 		}
+		add_core_of = SOM
 	}
 	provinces=
 	{
