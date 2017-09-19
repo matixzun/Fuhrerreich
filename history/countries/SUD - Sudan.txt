@@ -84,7 +84,7 @@ create_country_leader = {
 	desc = "POLITICS_ISMAIL_AL_AZAHRI_DESC"
 	picture = "gfx/leaders/SUD/Portrait_SUD_Ismail_al-Azhari.dds"
 	expire = "1965.1.1"
-	ideology = social_liberal_subtype
+	ideology = social_liberal
 	traits = {
 		
 	}

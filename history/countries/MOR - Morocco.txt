@@ -1,4 +1,4 @@
-
+﻿
 capital = 461
 
 oob = "MOR_1936"
@@ -23,7 +23,7 @@ oob = "MOR_1936"
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_plant = 1
-}
+	}
 
 add_ideas = {
 	volunteer_only
@@ -71,7 +71,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = social_conservative_subtype
+	ruling_party = social_conservative
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = "PLACEHOLDER_desc"
 	picture = "gfx/leaders/PLACEHOLDER"
 	expire = "1965.1.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		
 	}
