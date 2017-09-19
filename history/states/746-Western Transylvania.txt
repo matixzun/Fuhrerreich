@@ -3,6 +3,7 @@ state={
 	id=746
 	name="STATE_746"
 	manpower = 240000
+	buildings_max_level_factor=1.000
 	
 	state_category = plains
 	impassable = no
