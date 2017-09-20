@@ -56,3 +56,28 @@ ideas = {
 				internationalist = 0.1
 			}
 		}
+
+		indoctrination_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = libertartarian_socialist
+					has_government = marxist_leninist
+					has_government = bolshevist
+					has_government = internationalist
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				unity_factor = 0.10
+			}
+		}
