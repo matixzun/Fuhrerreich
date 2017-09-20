@@ -288,7 +288,7 @@ focus_tree = {
 		x = 16
 		y = 1 
 
-		prerequisite = { USA_civilian_efforts }
+		prerequisite = { focus = USA_civilian_efforts }
 
 		completion_reward = {
 			random_owned_controlled_state = {
