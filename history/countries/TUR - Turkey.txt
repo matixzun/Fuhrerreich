@@ -141,6 +141,16 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ömer Faruk Efendi"
 	picture = "Portrait_Turkey_Omer_Faruk.tga"
+	id = 550
+	traits = {
+	}
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Mustafa Fevzi Paşa"
+	id = 679
+	picture = "Portrait_Turkey_Mustafa_Fevzi.tga"
 	traits = {
 	}
 	skill = 2
