@@ -698,3 +698,40 @@ country_event = {
 		}
 	}
 }
+
+country_event = { 
+	id = poland.9
+	title = poland.9.t
+	desc = poland.9.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = { days = 1 }
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.9.a
+		set_country_flag = POL_democracy
+		add_political_power = -150
+		ai_chance = {
+			factor = 30
+		}
+
+	}
+	option = {
+		name = poland.9.b
+		set_country_flag = POL_democracy_soon
+		add_political_power = -50
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = poland.9.c
+		set_country_flag = POL_two_party_state
+		add_political_power = 50
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
