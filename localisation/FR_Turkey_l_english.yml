@@ -180,6 +180,28 @@ TUR_the_reformation_of_the_army:0 "The Reformation of the Army"
 TUR_the_reformation_of_the_army_desc:0 "The emphases placed on weapons research, new doctrines, and research institutes have modernized our army and made us ready for any challenge we may have to face. "
 
 
+## Turkish/Ottoman Navy ##
+
+TUR_the_ottoman_navy:0 "The Ottoman Navy"
+TUR_the_ottoman_navy_desc:0 "Our once great navy has been on a continuous decline ever since the 19th century. If we are to protect our nation and assert sovereignty over the Straits and the Black Sea, we must ensure that our navy is strong."
+TUR_turkish_naval_forces:0 "Turkish Naval Forces"
+TUR_turkish_naval_forces_desc:0 "Whereas the Ottoman Navy had declined and, eventually, crumbled due to the lack of funds, we will make sure that our navy is both a modern fighting force and is well funded."
+TUR_orthodox_tactics:0 "Orthodox Tactics"
+TUR_orthodox_tactics_desc:0 "While there has been talk of the use of a new type of warship called the aircraft carrier, we know that battleships are the ships to rule the sea. It would be best to stick with what we know."
+TUR_the_new_tactics:0 "The New Tactics"
+TUR_the_new_tactics_desc:0 "With the end of the Great War, new warships that are being dubbed aircraft carries have emerged. Combing airplanes with naval warfare, they allow aerial power projection from the sea."
+TUR_destroyer_research:0 "Destroyer Research"
+TUR_destroyer_research_desc:0 "Destroyers are both durable and manoeuvrable ships that are used to defend the main vessels, convoys, and battle groups. We should look into creating more of them."
+TUR_battleship_research:0 "Battleship Research"
+TUR_battleship_research_desc:0 "The most powerful type of warship, battleships are equipped with large guns and can destroy even the most well defended of enemies."
+TUR_submarine_research:0 "Submarine Research"
+TUR_submarine_research_desc:0 "Submarines are relatively cheap and easy to mass produce. In addition, they can be used to disrupt enemy shipping lanes."
+TUR_carrier_research:0 "Carrier Research"
+TUR_carrier_research_desc:0 "Carriers are warships that serve primarily to base naval airplanes. If we want to dominate both the seas and skies wherever we are, we should begin building them."
+TUR_new_dockyards:0 "New Dockyards"
+TUR_new_dockyards_desc:0 "In order to expand our ship production capabilities, it is important we construct more dockyards."
+
+
 #### Political Parties ####
 
 TUR_internationalist_party:0 "Ahali Fırkası"
