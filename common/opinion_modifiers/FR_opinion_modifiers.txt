@@ -1,0 +1,4 @@
+opinion_modifiers = {
+	SER_internationalism = { value = 40}
+	SER_montenegro_annexation_rejected = { value = -40}
+}
