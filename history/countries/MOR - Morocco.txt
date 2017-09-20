@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = "PLACEHOLDER_desc"
 	picture = "gfx/leaders/PLACEHOLDER"
 	expire = "1965.1.1"
-	ideology = social_liberal_subtype
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}
