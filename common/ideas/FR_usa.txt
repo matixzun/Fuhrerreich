@@ -6,10 +6,11 @@
 
 ideas = {
 
-	country = {
-		USA_sick_man_america = {
+    country = {
 
-        	picture = GFX_generic_wall_line
+	   USA_sick_man_america = {
+
+        	picture = idea_generic_wall_line
 
 			modifier = {
 				conscription = -0.015
@@ -17,65 +18,82 @@ ideas = {
 			}
 		}
 
-	USA_firearm_production = {
+	   USA_firearm_production = {
 
-        allowed = {
-            always = no
-        }
+            picture = idea_generic_infantry_bonus
 
-        equipment_bonus = {
-            infantry_equipment = {
-                build_cost_ic = -0.1 instant = yes
+                allowed = {
+                    always = no
+                }
+
+            equipment_bonus = {
+                infantry_equipment = {
+                    build_cost_ic = -0.1 instant = yes
                 }
             fighter_equipment = {
                 build_cost_ic = 0.1 instant = yes
             }
         }
-        picture = GFX_generic_infantry_bonus
     }
 
-	USA_fighter_production = {
-        allowed = {
-            always = no
+	   USA_fighter_production = {
+
+            picture = idea_generic_fighter_production_diverted
+
+            allowed = {
+                always = no
         }
-        modifier = {
-            equipment_bonus = {
-                infantry_equipment = {
-                    build_cost_ic = 0.1 instant = yes
-                }
-                fighter_equipment = {
-                	build_cost_ic = -0.1 instant = yes
+
+            modifier = {
+                equipment_bonus = {
+                    infantry_equipment = {
+                        build_cost_ic = 0.1 instant = yes
+                    }
+                    fighter_equipment = {
+                	   build_cost_ic = -0.1 instant = yes
+                    }
                 }
             }
         }
 
-        picture = GFX_idea_generic_fighter_production_diverted
-    }
+        USA_black_wednesday = {
 
-    USA_black_wednesday = {
-    	allowed = {
-    		always = no
-    	}
-        modifier = {
-    		unity_factor = -0.025
-    		industrial_capacity_factory = -0.30   
-    		consumer_goods_factor = 0.20	
+            picture = generic_production_bonus
+
+    	   allowed = {
+    	       always = no
+    	   }
+
+            modifier = {
+    		  unity_factor = -0.025
+    		  industrial_capacity_factory = -0.30   
+    		  consumer_goods_factor = 0.20	
+            }
         }
 
-        picture = GFX_generic_production_bonus
-    }
+        USA_black_wednesday_recovery = {
 
-    USA_black_wednesday_recovery = {
+            picture = generic_disjointed_gov
 
-    	allowed = {
-    		always = no
+    	   allowed = {
+    		  always = no
     		}
-        modifier = {
-    		unity_weekly = 0.0010  
-    		industrial_capacity_factory = -0.15
-    		consumer_goods_factor = 0.10
-            }
-        picture = GFX_idea_ast_all_in
-    }
 
+            modifier = {
+    		  unity_weekly = 0.010  
+    		  industrial_capacity_factory = -0.15
+    		  consumer_goods_factor = 0.10
+            }
+        }   
+
+        USA_failed_offensive = {
+
+            picture = idea_generic_war_preparation
+
+            modifier = {
+                training_time_army_factor = 0.15
+                army_attack_factor = -0.25
+            }
+        }
+    }
 }
