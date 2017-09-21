@@ -24,12 +24,14 @@ focus_tree = {
 	focus = {
 		id = ITA_parliamentary_election
 		icon = GFX_focus_generic_italy_first
+		available = { always = no }
+		bypass = { has_country_flag = ITA_election }
 		x = 10
 		y = 0
 		cost = 15
 		
 		completion_reward = {
-			add_political_power = -50
+			add_political_power = 0
 		}
 	}
 	
@@ -37,13 +39,11 @@ focus_tree = {
 	focus = {
 		id = ITA_socialist_win
 		icon = GFX_focus_generic_soviet_politics
+		available = { always = no }
+		bypass = { has_country_flag = antonio_chairman }
 		x = 7
 		y = 1
 		cost = 1
-		
-		mutually_exclusive = {
-			focus = ITA_liberal_win
-		}
 		
 		prerequisite = {
 			focus = ITA_parliamentary_election
@@ -114,6 +114,8 @@ focus_tree = {
 	focus = {
 		id = ITA_liberal_win
 		icon = GFX_focus_generic_the_giant_wakes
+		available = { always = no }
+		bypass = { has_country_flag = luigi_chairman }
 		x = 9
 		y = 1
 		cost = 1
@@ -187,10 +189,12 @@ focus_tree = {
 			}
 		}
 	
-### Leftist Win ###
+### Social Democrats ###
 	focus = {
 		id = ITA_leftist_coalition
 		icon = GFX_goal_tfv_burn_the_royal_portraits
+		available = { always = no }
+		bypass = { has_country_flag = giuseppe_chairman }
 		x = 11
 		y = 1
 		cost = 10
@@ -263,6 +267,8 @@ focus_tree = {
 	focus = {
 		id = ITA_conservatives_win
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		available = { always = no }
+		bypass = { has_country_flag = struzo_chairman }
 		x = 13
 		y = 1
 		cost = 10
@@ -336,12 +342,14 @@ focus_tree = {
 	focus = {
 		id = ITA_military_parliament
 		icon = GFX_focus_generic_strike_at_democracy1
+		available = { always = no }
+		bypass = { has_country_flag = italo_chairman }
 		x = 15
 		y = 0
 		cost = 10
 		
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 0
 		}
 	}
 	
@@ -349,6 +357,8 @@ focus_tree = {
 	focus = {
 		id = ITA_savoia_aosta
 		icon = GFX_focus_generic_home_defense
+		available = { always = no }
+		bypass = { has_country_flag = amadeo_chairman }
 		x = 15
 		y = 1
 		cost = 10
@@ -398,6 +408,8 @@ focus_tree = {
 	focus = {
 		id = ITA_install_dictatorship
 		icon = GFX_goal_generic_attack_allies
+		available = { always = no }
+		bypass = { has_country_flag = italo_chairman2 }
 		x = 17
 		y = 1
 		cost = 10

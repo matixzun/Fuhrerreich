@@ -74,6 +74,11 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	POL_baltic_unrest
+	limited_conscription
+}
+
 create_country_leader = {
 	name = "Tadeusz Kasprzycki"
 	desc = "POLITICS_TADEUSZ_KASPRZYCKI_DESC"

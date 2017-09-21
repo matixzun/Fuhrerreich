@@ -21,7 +21,7 @@ focus_tree = {
 	focus = {
 		id = USA_army_reforms
 		icon = GFX_goal_generic_small_arms
-		x = 3
+		x = 5
 		y = 0
 		cost = 10
 
@@ -50,7 +50,7 @@ focus_tree = {
 	focus = { 
 		id = USA_land_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
+		x = 1
 		y = 2
 		cost = 10
 
@@ -58,6 +58,19 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = USA_light_tanks
+		icon = GFX_goal_generic_army_tanks
+		x = 1
+		y = 3
+
+		prerequisite = { focus = USA_land_effort }
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.4 uses = 1 category = cat_light_armor }
 		}
 	}
 
@@ -83,6 +96,26 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_north_baja_expansion
+		x = 3
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = USA_naval_expansion }
+
+		completion_reward = {
+			743 = {
+				add_building_consturction = {
+					type = naval_base
+					province = 1892
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = USA_pilot_training
 		icon = GFX_goal_generic_build_airforce
 		x = 5
@@ -101,10 +134,11 @@ focus_tree = {
 	focus = {
 		id = USA_black_aftermath
 		icon = GFX_goal_generic_construct_civilian
-
-		x = 12
+		x = 9
 		y = 0
 		cost = 10
+
+		available = { has_country_flag = USA_black_wednesday }
 
 		completion_reward = {
 			add_political_power = 100
@@ -114,7 +148,7 @@ focus_tree = {
 	focus = {
 		id = USA_recovery_plan
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 12
+		x = 9
 		y = 1
 		cost = 10
 
@@ -130,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = USA_freemarket_approach
 		icon = GFX_goal_generic_positive_trade_relations
-		x = 10
+		x = 8
 		y = 2
 		cost = 10
 
@@ -146,7 +180,7 @@ focus_tree = {
 	focus = {
 		id = USA_invisible_hand
 		icon = GFX_goal_generic_dangerous_deal
-		x = 10
+		x = 8
 		y = 3
 		cost = 10
 
@@ -162,7 +196,7 @@ focus_tree = {
 	focus = {
 		id = USA_balanced_approach
 		icon = GFX_goal_generic_national_unity
-		x = 12
+		x = 10
 		y = 2
 		cost = 10
 
@@ -178,7 +212,7 @@ focus_tree = {
 	focus = {
 		id = USA_too_big_to_fail
 		icon = GFX_goal_generic_production
-		x = 12
+		x = 10
 		y = 3
 		cost = 10
 
@@ -194,7 +228,7 @@ focus_tree = {
 	focus = {
 		id = USA_government_intervention
 		icon = GFX_goal_generic_political_pressure
-		x = 14
+		x = 12
 		y = 2
 		cost = 10
 
@@ -210,7 +244,7 @@ focus_tree = {
 	focus = {
 		id = USA_new_deal
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 14
+		x = 12
 		y = 3
 		cost = 10
 
@@ -226,7 +260,7 @@ focus_tree = {
 	focus = {
 		id = USA_economic_recovery
 		icon = GFX_goal_generic_the_giant_wakes
-		x = 12
+		x = 10
 		y = 4
 		cost = 5
 
@@ -242,7 +276,7 @@ focus_tree = {
 	focus = {
 		id = USA_economic_revival
 		icon = GFX_goal_generic_construct_civilian
-		x = 18
+		x = 15
 		y = 0
 		cost = 10
 
@@ -264,7 +298,7 @@ focus_tree = {
 	focus = {
 		id = USA_civilian_efforts
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 16
+		x = 14
 		y = 1
 		cost = 10
 
@@ -285,10 +319,10 @@ focus_tree = {
 	focus = {
 		id = USA_civilian_efforts2
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 16
-		y = 1 
+		x = 14
+		y = 2
 
-		prerequisite = { USA_civilian_efforts }
+		prerequisite = { focus = USA_civilian_efforts }
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -305,8 +339,8 @@ focus_tree = {
 	focus = {
 		id = USA_military_economics
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 20
-		y = 1
+		x = 16
+		y = 2
 		cost = 10
 
 		prerequisite = { focus = USA_economic_revival }
@@ -326,8 +360,8 @@ focus_tree = {
 	focus = {
 		id = USA_militaristic_industrial_choice
 		icon = GFX_goal_generic_build_tank
-		x = 20
-		y = 2
+		x = 16
+		y = 3
 		cost = 10
 
 		prerequisite = { focus = USA_military_economics }
@@ -340,13 +374,13 @@ focus_tree = {
 	focus = {
 		id = USA_military_industry_contracts
 		icon = GFX_goal_generic_construct_military
-		x = 20
-		y = 3
+		x = 16
+		y = 4
 
-		prerequisite = { focus = USA_milistaristic_industrial_choice }
+		prerequisite = { focus = USA_militaristic_industrial_choice }
+		prerequisite = { focus = USA_civilian_efforts2 }
 
 		completion_reward = {
-
+			country_event = { usa.6 }
 		} 
 	}
-}

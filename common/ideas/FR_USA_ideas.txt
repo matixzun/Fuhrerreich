@@ -10,7 +10,7 @@ ideas = {
 
 	   USA_sick_man_america = {
 
-        	picture = idea_generic_wall_line
+        	picture = generic_wall_line
 
 			modifier = {
 				conscription = -0.015
@@ -20,7 +20,7 @@ ideas = {
 
 	   USA_firearm_production = {
 
-            picture = idea_generic_infantry_bonus
+            picture = generic_infantry_bonus
 
                 allowed = {
                     always = no
@@ -38,7 +38,7 @@ ideas = {
 
 	   USA_fighter_production = {
 
-            picture = idea_generic_fighter_production_diverted
+            picture = generic_fighter_production_diverted
 
             allowed = {
                 always = no
@@ -88,11 +88,33 @@ ideas = {
 
         USA_failed_offensive = {
 
-            picture = idea_generic_war_preparation
+            picture = generic_war_preparation
 
             modifier = {
                 training_time_army_factor = 0.15
                 army_attack_factor = -0.25
+            }
+        }
+
+        USA_tank_primacy = {
+
+        picture = generic_acquire_tanks
+
+        modifier = {
+            equipment_bonus = {
+                light_tank_equipment = {
+                    build_cost_ic = -0.1 instant = yes
+                    }
+                }
+            }
+        }
+
+        USA_fix_const_speed = {
+
+        picture = generic_production_bonus
+
+        modifier = {
+            roduction_speed_buildings_factor = 0.030  
             }
         }
     }

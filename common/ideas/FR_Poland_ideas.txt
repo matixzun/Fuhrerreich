@@ -122,4 +122,13 @@ ideas = {
 				army_core_defence_factor = 0.1
 			}
 		}
+
+		POL_baltic_unrest = {
+			picture = GFX_idea_FRA_matignon_agreements
+			modifier = {
+				conscription = -0.01
+				consumer_goods_factor = -0.05
+				political_power_gain = -0.7
+			}
+		}
 }
