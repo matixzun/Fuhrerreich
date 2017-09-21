@@ -1,0 +1,54 @@
+﻿l_english:
+
+#### Ideas ####
+
+HUN_transylvanian_promise_broken:0 "Transylvanian Promise Broken"
+HUN_transylvanian_promise_broken_desc:0 "The Entente promised we would remain in control of our Transylvanian holdings after the dissolution of the Austro-Hungarian Empire despite rumors of the Romanians desiring the land. Yet we have been betrayed, and our promise broken. We cannot trust the Entente again without proper reperations on their behalf, perhaps an ultimatum to Transylvania by them will be sufficiant..."
+HUN_communist_dissent:0 "Communist Dissent"
+HUN_communist_dissent_desc:0 "Large swaths of communists have been pouring into Hungary over the years. Now they believe they can overthrow our supreme government! This threat must be wiped out before they take any action against us, lest the Hungarian people be any more divided than they already are."
+
+###Focus###
+
+###POLITICAL###
+HUN_internal_focus:0 "Internal Focus"
+HUN_internal_focus_desc:0 "Ever since the dissolution of the Austro-Hungarian Empire we have been politically unstable, it is far overdue that we stabalize our nation for the forseeable future."
+HUN_external_focus:0 "External Focus"
+HUN_external_focus_desc:0 "The World around is grows ever more unstable by the day. With the new regime in Germany and the weakening Entente powers, we must be fully capable of making diplomatic decisions if we are to survive this troubling time."
+HUN_pressure_bosnia:0 "Pressure Bosnia"
+HUN_pressure_bosnia_desc:0 "The Balkan powderkeg can never be allowed to reignite. Taking the Bosnains under our wing will ensure that no conflict ever arises over the area again."
+HUN_communist_threat:0 "Address the Communists"
+HUN_communist_threat_desc:0 "The Communists in our nation may be vitriolic in nature, but they are willing to sit down and speak with us. It's time we addrss this issue before something far worse occurs."
+HUN_commie_compromise:0 "A Far Compromise"
+HUN_commie_compromise_desc:0 "It's clear the Communists have no intention of peacefully leaving our nation, perhaps a territorial concession where they can freely settle will appease them."
+HUN_forced_deportation:0 "Forced Deportation"
+HUN_forced_deportation_desc:0 "We will not stand for Communists wreaking havoc inside our nation! We will kick these beasts out of our land, or kill them where they stand."
+HUN_transylvanian_question:0 "The Transylvanian Question"
+HUN_Transylvanian_question_desc:0 "Transylvania was wrongfully stolen from us by the treacherous Entente. It is time for them to right their wrong, or we will take matters into our own hands."
+HUN_live_in_peace:0 "Live and let live"
+HUN_live_in_peace_desc:0 "Perhaps it's better to let the Transylvanians live free. They act as a good buffer state between the Romanians and us, and it removes a lot of angry Romanians from our lands."
+HUN_split_transylvania:0 "Partitian Transylvania"
+HUN_split_transylvania_desc:0 "The Romanian and Hungarian people have never gotten along, but perhaps we can come to an agreement on the Transylvanian issue. Splitting the state may be able to satisfy both parties."
+HUN_annex_transylvania:0 "Annex Transylvania"
+HUN_annex_transylvania_desc:0 "The time has come, we will march on Cluj and reintegrate our former territories. The Hungarians trapped in Transylvania cry out for rescue, and we must answer the call."
+HUN_croatian_question:0 "The Croatian Question"
+HUN_croatian_question_desc:0 "Our territories in Slavonia have long been a point of hot political discussion and dissent, it is timne we address this issue as settle it once and for all."
+HUN_slavonian_puppet:0 "A Slavonian Puppet"
+HUN_slavonian_puppet_desc:0 "The Croats in Slavonia have recently been clamouring for more autonomy. With rising tensions in the Balkans, it would be best to give them what they demand."
+
+###INDUSTRY###
+HUN_industry_revival:0 "Industrial Revival"
+HUN_industrial_revival_desc:0 "The Hungarian Industry has never been famed for either its size or its efficiancy, the time has come to institute new projects that will change this worldwide perception."
+HUN_dockyards_1:0 "Begin the Horthy Project"
+HUN_dockyards_1_desc:0 "Miklós Horthy was a great Admiral of the Austro-Hungarian Navy. With our reclaimed coastline, it is time we restore our navy to its former glory."
+HUN_dockyards_2:0 "Expand the Horthy Project"
+HUN_dockyards_2_desc:0 "We have made great advances in our naval output since beginning the Horthy Project, we must take full advantage of this and further expand the project."
+HUN_arms_industry_1:0 "Begin the Danube Project"
+HUN_arms_industry_1_desc:0 "The Hungarian Army is severly lacking in equipment, we must resolve this supply shortage if we are to have a competant military force."
+HUN_arms_industry_2:0 "Expand the Danube Project"
+HUN_arms_industry_2_desc:0 "Our supply issues have been mostly resolved, now we must go further and make advancments in military output."
+HUN_industry_9:0 "A Revived Industry"
+HUN_industry_9_desc:0 "Despite doubts that the Hungarian industry would ever be able to succeed, we have become an industrial powerhouse for our size, and we have learned many great things from this experiment."
+HUN_civ_industry_1:0 "Begin the Alfold Project"
+HUN_civ_industry_1_desc:0 "Civilian industry cannot be understated in its importance to the war effor, increasing the size and output of these factories will make us a formidible power in the region."
+HUN_civ_industry_2:0 "Expand the Alfold Project"
+HUN_arms_industry_2_desc "Hungarian civilian factories have ramped up their size and production, but we cannot stop here. Larger, and more numerous factories will be able to provide for the whole nation."

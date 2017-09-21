@@ -53,7 +53,7 @@ set_politics = {
             popularity = 0
         }
         bolshevist = {
-            popularity = 15
+            popularity = 16
         }
         marxist_leninist = {
             popularity = 0
@@ -62,16 +62,16 @@ set_politics = {
             popularity = 0
         }
         social_democrat = {
-            popularity = 16
+            popularity = 21
         }
         social_liberal = {
             popularity = 0
         }
         market_liberal = {
-            popularity = 41
+            popularity = 36
         }
         social_conservative = {
-            popularity = 23
+            popularity = 22
         }
         authoritarian_democrat = {
             popularity = 0

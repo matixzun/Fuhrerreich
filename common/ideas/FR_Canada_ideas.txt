@@ -1,0 +1,154 @@
+################
+# Canada Ideas
+################
+# Made by CIA
+################
+
+## Canada Ideas ##
+ideas = {
+
+	## Canada Ideas ##
+
+	country = {
+
+		CAN_dbs_idea = { #The DBS
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				monthly_population = 0.05
+				industrial_capacity_factory = 0.05
+			}
+			picture = GFX_goal_generic_intelligence_exchange
+			removal_cost = -1
+		}
+		
+		CAN_stats_idea = { #StatsCan
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				monthly_population = 0.1
+				industrial_capacity_factory = 0.1
+			}
+			picture = GFX_goal_generic_intelligence_exchange
+			removal_cost = -1
+		}
+
+		CAN_nrma_idea = { #National Resource Mobilization Act
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				unity_factor = -0.05
+				conscription = 0.5
+			}
+			picture = GFX_goal_generic_forceful_treaty
+			removal_cost = -1
+		}
+		
+		CAN_wma_idea = { #The War Measures Act
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				unity_factor = -0.05
+				political_power_gain = 0.75
+			}
+			picture = GFX_goal_generic_attack_allies
+			removal_cost = -1
+		}
+		
+		CAN_rcmp_idea = { #Mounties Expansion
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				enemy_partisan_effect = -0.3
+				foreign_subversive_activites = -0.3
+				bolshevist_drift = -0.01
+				internationalist_drift = -0.01
+				marxist_leninist_drift = -0.01
+				valkist_drift = -0.01
+			}
+			picture = GFX_goal_generic_political_pressure
+			removal_cost = -1
+		}
+		
+		CAN_recdrive_idea = { #Recruitment Drive
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				conscription = 0.025
+			}
+			picture = GFX_focus_generic_little_entente
+			removal_cost = -1
+		}
+		
+		CAN_anglo_idea = { #Anglo Conscription
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				conscription_factor = 0.25
+			}
+			picture = GFX_goal_tfv_can_compromise_with_quebec
+			removal_cost = -1
+		}
+
+		
+		CAN_cco_idea = { #Canada Carries On
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				unity_factor = 0.05
+				training_time_army_factor = -0.10
+				conscription_factor = 0.15
+			}
+			picture = generic_pp_unity_bonus
+			removal_cost = -1
+		}
+
+		
+		CAN_relief_idea = { #Relief Camps
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				political_power_gain = -0.05
+			}
+			picture = GFX_goal_generic_construction
+			removal_cost = -1
+		}
+
+		
+		CAN_char_idea = { #The Charlottes Program
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_gain = -0.05
+				monthly_population = 0.2
+			}
+			picture = GFX_goal_generic_improve_relations
+			removal_cost = -1
+		}
+
+		
+		CAN_tes_idea = { #Tank Emplacement Strategy
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				category_all_armor = {
+				defense = 0.20
+				}
+			}
+			picture = GFX_goal_generic_construct_military
+			removal_cost = -1
+		}
+
+		CAN_modern_idea = { #Modern Supply Lines
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				supply_consumption_factor = -0.2
+			}
+			picture = GFX_goal_generic_army_motorized
+			removal_cost = -1
+		}
+
+
+		

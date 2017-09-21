@@ -19,9 +19,12 @@ bookmarks = {
 			history = "TUR_FUHRERREICH_DESC"
 			ideology = authoritarian_democrat
 			ideas = {
-				TUR_deal_with_corruption
+				
+			}
+			focuses = {
+				TUR_retake_the_west
+				TUR_the_provisional_constantinople_congress
 				TUR_the_turkish_constitution
-				TUR_the_ottoman_army
 			}
 		}
 
@@ -59,12 +62,28 @@ bookmarks = {
 			history = "SER_FUHRERREICH_DESC"
 			ideology = paternal_autocrat
 			ideas = {
-				
+				starting_idea1
+				starting_idea2
+				starting_idea3
 			}
 			focuses = {
 				balkanskisavez
 				planofgreaterserbia
 				formingserbianarmy
+			}
+		}
+
+		"CAN"={
+			minor = yes
+			history = "CAN_FUHRERREICH_DESC"
+			ideology = internationalist
+			ideas = {
+				
+			}
+			focuses = {
+				CAN_black_wednesday_initiatives
+				CAN_canada_carries_on
+				CAN_curries_firepower_primacy
 			}
 		}
 

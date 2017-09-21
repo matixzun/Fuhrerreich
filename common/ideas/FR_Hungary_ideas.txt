@@ -1,0 +1,30 @@
+#############################
+# Republic of Hungary Ideas #
+#############################
+# Made by Darknight1342     #
+#############################
+
+
+ideas = {
+##############
+# Country ideas
+##############
+	country = {
+
+		HUN_transylvanian_promise_broken = {
+			picture = anti_soviet_pact
+			modifier = {
+				improve_relations_maintain_cost_factor = 0.75	
+				unity_factor = -0.10			
+			}
+		}
+		
+		HUN_communist_dissent = {
+			picture = home_of_revolution
+			modifier = {
+				marxist_leninist_drift = 0.03
+			}	
+		}
+
+	}
+}

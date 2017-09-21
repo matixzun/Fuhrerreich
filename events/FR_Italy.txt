@@ -26,6 +26,28 @@ country_event = {
 }
 
 country_event = {
+	id = italy.1
+	title = italy.1.t
+	desc = italy.1.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = ITA
+		date > 1936.3.0
+	}
+
+	mean_time_to_happen = { days = 10 }
+
+	fire_only_once = yes
+	
+	option = {
+		name = italy.1.a
+		add_political_power = 50
+		set_country_flag = ITA_election
+		}
+	}
+
+country_event = {
 	id = italy.2
 	title = italy.2.t
 	desc = italy.2.d
@@ -33,10 +55,10 @@ country_event = {
 
 	trigger = {
 		tag = ITA
-		date > 1936.6.0
+		has_country_flag = ITA_election 
 	}
 
-	mean_time_to_happen = { days = 20 }
+	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
 	
@@ -46,12 +68,11 @@ country_event = {
 		set_country_flag = { flag = ITA_elc_lib value = 0 }
 		set_country_flag = { flag = ITA_elc_sdm value = 0 }
 		set_country_flag = { flag = ITA_elc_con value = 0 }
-		set_country_flag = { flag = ITA_elc_pnt value = 0 }
 	}
 
 	option = {
 		name = italy.2.a
-		ai_chance = { factor = 40 }
+		ai_chance = { factor = 15 }
 		set_country_flag = ITA_elc_economy_antonio
 		modify_country_flag = { flag = ITA_elc_soc value = 1 }
 		add_popularity = { ideology = bolshevist popularity = 0.05 }
@@ -70,6 +91,13 @@ country_event = {
 		modify_country_flag = { flag = ITA_elc_sdm value = 1 }
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
 	}
+	option = {
+		name = italy.2.e
+		ai_chance = { factor = 25 }
+		set_country_flag = ITA_elc_economy_sturzo
+		modify_country_flag = { flag = ITA_elc_con value = 1 }
+		add_popularity = { ideology = social_conservative popularity = 0.05 }
+	}
 }
 
 # Internal policy
@@ -86,19 +114,19 @@ country_event = {
 			has_country_flag = ITA_elc_economy_antonio
 			has_country_flag = ITA_elc_economy_luigi
 			has_country_flag = ITA_elc_economy_giuseppe
+			has_country_flag = ITA_elc_economy_sturzo
 		}
 	}
 
-	mean_time_to_happen = { days = 5 }
+	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
 
 	option = {
 		name = italy.3.a
-		ai_chance = { factor = 35 }
+		ai_chance = { factor = 15 }
 		set_country_flag = ITA_elc_internal_antonio
 		modify_country_flag = { flag = ITA_elc_soc value = 1 }
-		modify_country_flag = { flag = ITA_elc_pnt value = 1 }
 		add_popularity = { ideology = bolshevist popularity = 0.05 }
 	}
 	option = {
@@ -106,16 +134,21 @@ country_event = {
 		ai_chance = { factor = 30 }
 		set_country_flag = ITA_elc_internal_luigi
 		modify_country_flag = { flag = ITA_elc_lib value = 1 }
-		modify_country_flag = { flag = ITA_elc_pnt value = 1 }
 		add_popularity = { ideology = market_liberal popularity = 0.05 }
 	}
 	option = {
 		name = italy.3.c
-		ai_chance = { factor = 35 }
+		ai_chance = { factor = 30 }
 		set_country_flag = ITA_elc_internal_giuseppe
 		modify_country_flag = { flag = ITA_elc_sdm value = 1 }
-		modify_country_flag = { flag = ITA_elc_pnt value = 1 }
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
+	}
+	option = {
+		name = italy.3.e
+		ai_chance = { factor = 25 }
+		set_country_flag = ITA_elc_internal_sturzo
+		modify_country_flag = { flag = ITA_elc_con value = 1 }
+		add_popularity = { ideology = social_conservative popularity = 0.05 }
 	}
 }
 
@@ -130,39 +163,44 @@ country_event = {
 	trigger = {
 		tag = ITA
 		OR = {
-			has_country_flag = ITA_elc_economy_antonio
-			has_country_flag = ITA_elc_economy_luigi
-			has_country_flag = ITA_elc_economy_giuseppe
+			has_country_flag = ITA_elc_internal_antonio
+			has_country_flag = ITA_elc_internal_luigi
+			has_country_flag = ITA_elc_internal_giuseppe
+			has_country_flag = ITA_elc_internal_sturzo
 		}
 	}
 
-	mean_time_to_happen = { days = 5 }
+	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
 
 	option = {
 		name = italy.4.a
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 15 }
 		set_country_flag = ITA_elc_military_antonio
 		modify_country_flag = { flag = ITA_elc_soc value = 1 }
-		modify_country_flag = { flag = ITA_elc_pnt value = 1 }
 		add_popularity = { ideology = bolshevist popularity = 0.05 }
 	}
 	option = {
 		name = italy.4.b
-		ai_chance = { factor = 40 }
+		ai_chance = { factor = 30 }
 		set_country_flag = ITA_elc_military_luigi
 		modify_country_flag = { flag = ITA_elc_lib value = 1 }
-		modify_country_flag = { flag = ITA_elc_pnt value = 1 }
 		add_popularity = { ideology = market_liberal popularity = 0.05 }
 	}
 	option = {
 		name = italy.4.c
-		ai_chance = { factor = 35 }
+		ai_chance = { factor = 30 }
 		set_country_flag = ITA_elc_military_giuseppe
 		modify_country_flag = { flag = ITA_elc_sdm value = 1 }
-		modify_country_flag = { flag = ITA_elc_pnt value = 1 }
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
+	}
+	option = {
+		name = italy.4.e
+		ai_chance = { factor = 25 }
+		set_country_flag = ITA_elc_military_sturzo
+		modify_country_flag = { flag = ITA_elc_con value = 1 }
+		add_popularity = { ideology = social_conservative popularity = 0.05 }
 	}
 }
 
@@ -176,32 +214,30 @@ country_event = {
 
 	trigger = {
 		tag = ITA
-		focus_progress = { focus = ITA_elc progress > 0.5 }
 		OR = {
-			has_country_flag = ITA_elc_economy_antonio
-			has_country_flag = ITA_elc_economy_luigi
-			has_country_flag = ITA_elc_economy_giuseppe
+			has_country_flag = ITA_elc_military_antonio
+			has_country_flag = ITA_elc_military_luigi
+			has_country_flag = ITA_elc_military_giuseppe
+			has_country_flag = ITA_elc_military_sturzo
 		}
 	}
 
-	mean_time_to_happen = { days = 10 }
+	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
 
 	option = {
 		name = italy.5.a
-		ai_chance = { factor = 30 }
+		ai_chance = { factor = 15 }
 		set_country_flag = ITA_elc_foreign_antonio
 		modify_country_flag = { flag = ITA_elc_soc value = 1 }
-		modify_country_flag = { flag = ITA_elc_pnt value = 1 }
 		add_popularity = { ideology = bolshevist popularity = 0.05 }
 	}
 	option = {
 		name = italy.5.b
-		ai_chance = { factor = 40 }
+		ai_chance = { factor = 30 }
 		set_country_flag = ITA_elc_foreign_luigi
 		modify_country_flag = { flag = ITA_elc_lib value = 1 }
-		modify_country_flag = { flag = ITA_elc_pnt value = 1 }
 		add_popularity = { ideology = market_liberal popularity = 0.05 }
 	}
 	option = {
@@ -209,173 +245,22 @@ country_event = {
 		ai_chance = { factor = 30 }
 		set_country_flag = ITA_elc_foreign_giuseppe
 		modify_country_flag = { flag = ITA_elc_sdm value = 1 }
-		modify_country_flag = { flag = ITA_elc_pnt value = 1 }
 		add_popularity = { ideology = social_democrat popularity = 0.05 }
+	}
+	option = {
+		name = italy.5.e
+		ai_chance = { factor = 25 }
+		set_country_flag = ITA_elc_foreign_sturzo
+		modify_country_flag = { flag = ITA_elc_con value = 1 }
+		add_popularity = { ideology = social_conservative popularity = 0.05 }
 	}
 }
 
-### New Chairman
+### Election results
 
 ### Majority governments
 
 # Socialist wins
-
-country_event = {
-	id = italy.7
-	title = italy.7.t
-	desc = italy.7.d
-	picture = GFX_report_event_election_vote
-
-	trigger = {
-		tag = ITA
-		has_country_flag = { flag = ITA_elc_soc value > 2 }
-	}
-
-	mean_time_to_happen = { days = 2 }
-
-	fire_only_once = yes
-
-	option = {
-		name = italy.7.a
-		set_politics = {
-			ruling_party = bolshevist
-		}
-		hidden_effect = {
-			create_country_leader = {
-				name = "Antonio Gramsci"
-				desc = "ANTONIO_GRAMSCI_DESC"
-				picture = "Portrait_Italy_Vittorio_Antonio_Gramsci.dds"
-				expire = "1965.1.1"
-				ideology = bolshevist_subtype
-				traits = { }
-			}
-			set_country_flag = antonio_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
-			random_country = {
-				limit = { NOT = { TAG = ITA } }
-				news_event = { id = itanews.1 days = 2 }
-			}
-		}
-	}
-	
-	option = {
-		name = italy.7.b
-		set_politics = {
-			ruling_party = valkist
-		}
-			add_popularity = {
-				ideology = valkist popularity = 0.40 
-		}
-		hidden_effect = {
-			create_country_leader = {
-				name = "Italo Balbo"
-				desc = "ITALO_BALBO_DESC"
-				picture = "Portrait_Italy_Italo_Balbo.dds"
-				expire = "1965.1.1"
-				ideology = valkist_subtype
-				traits = {
-				}
-			}
-			set_country_flag = italo_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
-			random_country = {
-				limit = { NOT = { TAG = ITA } }
-				news_event = { id = itanews.1 days = 2 }
-			}
-		}
-	}
-}
-
-# Social democrats win
-
-country_event = {
-	id = italy.8
-	title = italy.8.t
-	desc = italy.8.d
-	picture = GFX_report_event_election_vote
-
-	trigger = {
-		tag = ITA
-		has_country_flag = { flag = ITA_elc_sdm value > 2 }
-	}
-
-	mean_time_to_happen = { days = 2 }
-
-	fire_only_once = yes
-
-	option = {
-		name = italy.8.a
-		set_politics = {
-			ruling_party = social_democrat
-		}
-		hidden_effect = {
-			create_country_leader = {
-			name = "Giuseppe Saragat"
-			desc = "GIUSEPPE_SARAGAT_DESC"
-			picture = "Portrait_Italy_Giuseppe_Saragat.dds"
-			expire = "1965.1.1"
-			ideology = social_democrat_subtype
-			traits = {
-			}
-		}
-			set_country_flag = giuseppe_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
-			random_country = {
-				limit = { NOT = { TAG = ITA } }
-				news_event = { id = itanews.3 days = 2 }
-			}
-		}
-	}
-}
-
-# Market Liberals
-
-country_event = {
-	id = italy.9
-	title = italy.9.t
-	desc = italy.9.d
-	picture = GFX_report_event_election_vote
-
-	trigger = {
-		tag = ITA
-		has_country_flag = { flag = ITA_elc_lib value > 2 }
-	}
-
-	mean_time_to_happen = { days = 2 }
-
-	fire_only_once = yes
-
-	option = {
-		name = italy.9.a
-		retire_country_leader = yes
-		set_politics = { ruling_party = market_liberal }
-		create_country_leader = {
-			name = "Luigi Einaudi"
-			desc = "POLITICS_LUIGI_EINAUDI_DESC"
-			picture = "Portrait_Italy_Luigi_Einaudi.dds"
-			expire = "1965.1.1"
-			ideology = market_liberal_subtype
-			traits = {
-			}
-		}
-		hidden_effect = {
-			set_country_flag = luigi_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
-			random_country = {
-				limit = { NOT = { TAG = ITA } }
-				news_event = { id = itanews.4 days = 2 }
-			}
-		}
-	}
-}
 
 ### Minority governments
 
@@ -393,10 +278,17 @@ country_event = {
 			has_country_flag = { flag = ITA_elc_soc value > 1 }
 			has_country_flag = { flag = ITA_elc_lib value < 2 }
 			has_country_flag = { flag = ITA_elc_sdm value < 2 }
+			has_country_flag = { flag = ITA_elc_con value < 2 }
+			}
+		OR = {
+			has_country_flag = ITA_elc_foreign_antonio
+			has_country_flag = ITA_elc_foreign_luigi
+			has_country_flag = ITA_elc_foreign_giuseppe
+			has_country_flag = ITA_elc_foreign_sturzo
 		}
 	}
 
-	mean_time_to_happen = { days = 2 }
+	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
 
@@ -422,7 +314,7 @@ country_event = {
 			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.24 days = 2 }
+				news_event = { id = worldnews.24 days = 1 }
 			}
 		}
 	}
@@ -451,7 +343,7 @@ country_event = {
 			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = itanews.1 days = 2 }
+				news_event = { id = itanews.1 days = 1 }
 			}
 		}
 	}
@@ -471,8 +363,20 @@ country_event = {
 			has_country_flag = { flag = ITA_elc_sdm value > 1 }
 			has_country_flag = { flag = ITA_elc_lib value < 2 }
 			has_country_flag = { flag = ITA_elc_soc value < 2 }
+			has_country_flag = { flag = ITA_elc_con value < 2 }
+			}
+		OR = {
+			has_country_flag = ITA_elc_foreign_antonio
+			has_country_flag = ITA_elc_foreign_luigi
+			has_country_flag = ITA_elc_foreign_giuseppe
+			has_country_flag = ITA_elc_foreign_sturzo
 		}
 	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
 
 	option = {
 		name = italy.8.a
@@ -495,7 +399,7 @@ country_event = {
 			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.25 days = 2 }
+				news_event = { id = worldnews.25 days = 1 }
 			}
 		}
 	}
@@ -515,10 +419,17 @@ country_event = {
 			has_country_flag = { flag = ITA_elc_lib value > 1 }
 			has_country_flag = { flag = ITA_elc_sdm value < 2 }
 			has_country_flag = { flag = ITA_elc_soc value < 2 }
+			has_country_flag = { flag = ITA_elc_con value < 2 }
+		}
+		OR = {
+			has_country_flag = ITA_elc_foreign_antonio
+			has_country_flag = ITA_elc_foreign_luigi
+			has_country_flag = ITA_elc_foreign_giuseppe
+			has_country_flag = ITA_elc_foreign_sturzo
 		}
 	}
 
-	mean_time_to_happen = { days = 2 }
+	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
 
@@ -541,7 +452,60 @@ country_event = {
 			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.26 days = 2 }
+				news_event = { id = worldnews.26 days = 1 }
+			}
+		}
+	}
+}
+
+# Social Conservatives wins
+
+country_event = {
+	id = italy.15
+	title = italy.15.t
+	desc = italy.15.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+		tag = ITA
+		AND = {
+			has_country_flag = { flag = ITA_elc_con value > 1 }
+			has_country_flag = { flag = ITA_elc_sdm value < 2 }
+			has_country_flag = { flag = ITA_elc_soc value < 2 }
+			has_country_flag = { flag = ITA_elc_lib value < 2 }
+		}
+		OR = {
+			has_country_flag = ITA_elc_foreign_antonio
+			has_country_flag = ITA_elc_foreign_luigi
+			has_country_flag = ITA_elc_foreign_giuseppe
+			has_country_flag = ITA_elc_foreign_sturzo
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	option = {
+		name = italy.15.a
+		set_politics = { ruling_party = social_conservative }
+		create_country_leader = {
+			name = "Luigi Sturzo"
+			desc = "POLITICS_LUIGI_STURZO_DESC"
+			picture = "Portrait_Italy_Luigi_Sturzo.dds"
+			expire = "1965.1.1"
+			ideology = social_conservative_subtype
+			traits = {
+			}
+		}
+		hidden_effect = {
+			set_country_flag = struzo_chairman
+			ITA = {
+				country_event = { id = italy.101 days = 14 }
+			}
+			random_country = {
+				limit = { NOT = { TAG = ITA } }
+				news_event = { id = worldnews.26 days = 1 }
 			}
 		}
 	}
@@ -557,15 +521,59 @@ country_event = {
 
 	trigger = {
 		tag = ITA
-		date > 1936.7.20
+		AND = {
+			has_country_flag = { flag = ITA_elc_lib value < 3 }
+			has_country_flag = { flag = ITA_elc_sdm value < 3 }
+			has_country_flag = { flag = ITA_elc_soc value < 3 }
+			has_country_flag = { flag = ITA_elc_con value < 3 }
+		}
+		OR = {
+		AND = {
+			has_country_flag = { flag = ITA_elc_lib value < 2 }
+			has_country_flag = { flag = ITA_elc_sdm value < 2 }
+			has_country_flag = { flag = ITA_elc_soc value < 2 }
+			has_country_flag = { flag = ITA_elc_con value < 2 }
+		}
+		AND = {
+			has_country_flag = { flag = ITA_elc_lib value > 1 }
+			has_country_flag = { flag = ITA_elc_sdm value > 1 }
+		}
+		AND = {
+			has_country_flag = { flag = ITA_elc_lib value > 1 }
+			has_country_flag = { flag = ITA_elc_soc value > 1 }
+		}
+		AND = {
+			has_country_flag = { flag = ITA_elc_lib value > 1 }
+			has_country_flag = { flag = ITA_elc_con value > 1 }
+		}
+		AND = {
+			has_country_flag = { flag = ITA_elc_sdm value > 1 }
+			has_country_flag = { flag = ITA_elc_soc value > 1 }
+		}
+		AND = {
+			has_country_flag = { flag = ITA_elc_sdm value > 1 }
+			has_country_flag = { flag = ITA_elc_con value > 1 }
+		}
+		AND = {
+			has_country_flag = { flag = ITA_elc_soc value > 1 }
+			has_country_flag = { flag = ITA_elc_con value > 1 }
+		}
+	}
+		OR = {
+		has_country_flag = ITA_elc_foreign_giuseppe
+		has_country_flag = ITA_elc_foreign_luigi
+		has_country_flag = ITA_elc_foreign_antonio
+		has_country_flag = ITA_elc_foreign_sturzo
+	}
 		NOT = {
 		has_country_flag = { flag = lugi_chairman }
 		has_country_flag = { flag = giuseppe_chairman }
 		has_country_flag = { flag = antonio_chairman }
+		has_country_flag = { flag = struzo_chairman }
 		}
 	}
 
-	mean_time_to_happen = { days = 2 }
+	mean_time_to_happen = { days = 1 }
 
 	fire_only_once = yes
 
@@ -591,7 +599,59 @@ country_event = {
 		hidden_effect = {
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.90 days = 2 }
+				news_event = { id = worldnews.90 days = 1 }
+			}
+		}
+	}
+}
+
+### Military handover
+country_event = {
+	id = italy.16
+	title = italy.16.t
+	desc = italy.16.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+		tag = ITA
+		has_country_flag = { flag = italo_chairman }
+		}
+
+	mean_time_to_happen = { days = 15 }
+
+	fire_only_once = yes
+
+	option = {
+		name = italy.16.a
+		
+		hidden_effect = {
+			set_country_flag = italo_chairman2
+		}
+	}
+	
+	option = {
+		name = italy.16.b
+		set_politics = { ruling_party = paternal_autocrat }
+		add_popularity = {
+		ideology = paternal_autocrat popularity = 0.40 
+		ideology = valkist popularity = -0.30 }
+		create_country_leader = {
+			name = "Amadeo Aosta"
+			desc = "AMADEO_AOSTA_DESC"
+			picture = "Portrait_Italy_Amadeo_Aosta.dds"
+			expire = "1965.1.1"
+			ideology = paternal_autocrat_subtype
+			traits = {
+			}
+		}
+		hidden_effect = {
+			set_country_flag = Amadeo_chairman
+			ITA = {
+				country_event = { id = italy.101 days = 14 }
+			}
+			random_country = {
+				limit = { NOT = { TAG = ITA } }
+				news_event = { id = worldnews.26 days = 1 }
 			}
 		}
 	}
