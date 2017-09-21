@@ -72,7 +72,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = social_liberals
+	ruling_party = social_liberal
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -82,9 +82,9 @@ set_politics = {
 create_country_leader = {
 	name = "Ismail al-Azhari"
 	desc = "POLITICS_ISMAIL_AL_AZAHRI_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Asia_Generic_1.dds"
+	picture = "gfx/leaders/SUD/Portrait_SUD_Ismail_al-Azhari.dds"
 	expire = "1965.1.1"
-	ideology = social_liberal
+	ideology = social_liberal_subtype
 	traits = {
 		
 	}

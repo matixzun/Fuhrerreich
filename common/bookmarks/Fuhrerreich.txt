@@ -6,11 +6,8 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "GER"
 
-		"---"={
-			history = "OTHER_FUHRERREICH_DESC"
-		}
 		"USA"={
-			history ="USA_FUHRERREICH_DESC"
+			history = "USA_FUHRERREICH_DESC"
 			ideology = social_liberal
 			ideas = {
 				USA_sick_man_america
@@ -19,37 +16,61 @@ bookmarks = {
 		}
 
 		"TUR"={
-			history ="TUR_FUHRERREICH_DESC"
+			history = "TUR_FUHRERREICH_DESC"
 			ideology = authoritarian_democrat
 			ideas = {
-				TUR_deal_with_corruption
-				TUR_the_provisional_ankara_congress
-				TUR_declare_the_caliphate
+				
+			}
+			focuses = {
+				TUR_retake_the_west
+				TUR_the_provisional_constantinople_congress
+				TUR_the_turkish_constitution
 			}
 		}
+
 		"SOV"={
-			history ="SOV_FUHRERREICH_DESC"
+			history = "SOV_FUHRERREICH_DESC"
 			ideology = bolshevist
 			ideas = {
 
 			}
 		}
+
 		"GER"={
-			history ="GER_FUHRERREICH_DESC"
+			history = "GER_FUHRERREICH_DESC"
 			ideology = valkist
 			ideas = {
 
 			}
 		}
+
 		"POL"={
-			history ="POL_FUHRERREICH_DESC"
+			history = "POL_FUHRERREICH_DESC"
 			ideology = authoritarian_democrat
 			ideas = {
 
 			}
 		}
 
+		"---"={
+			history = "OTHER_FUHRERREICH_DESC"
+		}
+
 		# minors ####
+		"CAN"={
+			minor = yes
+			history = "CAN_FUHRERREICH_DESC"
+			ideology = internationalist
+			ideas = {
+				
+			}
+			focuses = {
+				CAN_black_wednesday_initiatives
+				CAN_canada_carries_on
+				CAN_curries_firepower_primacy
+			}
+		}
+
 		"SER"={
 			minor = yes
 			history = "SER_FUHRERREICH_DESC"
@@ -58,7 +79,9 @@ bookmarks = {
 				
 			}
 			focuses = {
-				
+				balkanskisavez
+				planofgreaterserbia
+				formingserbianarmy
 			}
 		}
 

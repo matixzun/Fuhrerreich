@@ -79,3 +79,117 @@ country_event = {
 		name = serbia.4.a
 	}
 }
+# Annexation of Montenegro is acomplished
+country_event = {
+	id = serbia.5
+	title = serbia.5.t
+	desc = serbia.5.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = serbia.5.a
+		105 = {
+			if = {
+				limit = { is_owned_by = MNT }
+				add_core_of = SER
+			}
+		}		
+
+		annex_country = { target = MNT transfer_troops = yes }
+		add_political_power = 50
+		add_named_threat = { threat = 2 name = serbia.5.t }
+		set_country_flag = SER_annexed
+		news_event = { hours = 6 id = news.2 }
+	}
+}
+
+# Serbia Demands Montenegro
+country_event = {
+	id = serbia.6
+	title = serbia.6.t
+	desc = serbia.6.d
+	picture = GFX_report_event_hitler_parade
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = serbia.6.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				SER = { has_army_size = { size < 5 } }
+			}
+			modifier = {
+				add = 100
+				SER = { has_army_size = { size > 10 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = SER
+			}
+		}
+		SER = {
+			country_event = { hours = 2 id = serbia.5 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { # Refuse
+		name = serbia.6.b
+		ai_chance = {
+			base = 10			
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				SER = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				SER = { has_army_size = { size < 5 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = SER }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = SER
+				}
+				factor = 5
+			}
+		}
+		SER = {
+			add_opinion_modifier = { target = ROOT modifier = SER_montenegro_annexation_rejected }
+			country_event = { hours = 2 id = serbia.7 }
+			if = { limit = { is_in_faction_with = MNT }
+				remove_from_faction = MNT
+			}
+		}
+	}
+}
+
+# Montenegro Refuses
+country_event = {
+	id = serbia.7
+	title = serbia.7.t
+	desc = serbia.7.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = serbia.7.a
+		add_state_claim = 105
+		create_wargoal = {
+			type = take_state_focus
+			target = MNT
+			generator = { 105 }
+		}
+	}
+}

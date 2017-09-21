@@ -180,7 +180,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			country_event = { id = tur.14 }
 		}
 	}
 
@@ -195,7 +195,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = TUR_religious_plurality
 		}
 	}
 
@@ -2263,6 +2263,295 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
+		}
+	}
+
+	##### TURKISH/OTTOMAN NAVY
+
+	focus = {
+		id = TUR_the_ottoman_navy
+		icon = GFX_goal_generic_navy_battleship
+		available = {
+			has_global_flag = EMPIRE_REMAINS
+		}
+		mutually_exclusive = { focus = TUR_turkish_naval_forces }
+		x = 41
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 30
+		}
+	}
+
+	focus = {
+		id = TUR_turkish_naval_forces
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available = {
+			has_global_flag = EMPIRE_DISSOLVED
+		}
+		mutually_exclusive = { focus = TUR_the_ottoman_navy }
+		x = 43
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 30
+		}
+	}
+
+	focus = {
+		id = TUR_orthodox_tactics
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = TUR_the_ottoman_navy focus = TUR_turkish_naval_forces }
+		mutually_exclusive = { focus = TUR_the_new_tactics }
+		x = 40
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 3
+				category = fleet_in_being_tree
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_the_new_tactics
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = TUR_the_ottoman_navy focus = TUR_turkish_naval_forces }
+		mutually_exclusive = { focus = TUR_orthodox_tactics }
+		x = 44
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_destroyer_research
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = TUR_orthodox_tactics }
+		x = 39
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_battleship_research
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = TUR_orthodox_tactics }
+		x = 41
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_submarine_research
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = TUR_the_new_tactics }
+		x = 45
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_carrier_research
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = TUR_the_new_tactics }
+		x = 43
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_new_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = TUR_the_ottoman_navy focus = TUR_turkish_naval_forces }
+		x = 42
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}			
 		}
 	}
 

@@ -239,13 +239,29 @@ country_event = {
 		create_country_leader = {
 			name = "Ömer I"
 			desc = "POLITICS_OMER_FARUK_DESC"
-			picture = ""
+			picture = "Portrait_Turkey_Omer_Faruk.tga"
 			expire = "1965.1.1"
 			ideology = authoritarian_democrat_subtype
 			traits = {
 			
 			}
 	
+		}
+
+		create_country_leader = {
+			name = "Ömer I"
+			desc = "POLITICS_OMER_FARUK_DESC"
+			picture = "Portrait_Turkey_Omer_Faruk.tga"
+			expire = "1965.1.1"
+			ideology = valkist_subtype
+			traits = {
+			
+			}
+	
+		}
+
+		hidden_effect = {
+			remove_unit_leader = 550
 		}
 
 		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
@@ -262,19 +278,27 @@ country_event = {
 
 		add_popularity = {
 			ideology = valkist
-			popularity = 0.3
+			popularity = 0.4
 		}
 
 		create_country_leader = {
-			name = "Ömer I"
-			desc = "POLITICS_OMER_FARUK_DESC"
-			picture = ""
+			name = "Osman IV"
+			desc = "POLITICS_OSMAN_FUAD_DESC"
+			picture = "Portrait_Turkey_Osman_Fuad.tga"
 			expire = "1965.1.1"
 			ideology = valkist_subtype
-			traits = {
-			
-			}
-	
+		}
+
+		create_country_leader = {
+			name = "Osman IV"
+			desc = "POLITICS_OSMAN_FUAD_DESC"
+			picture = "Portrait_Turkey_Osman_Fuad.tga"
+			expire = "1965.1.1"
+			ideology = authoritarian_democrat_subtype
+		}
+
+		hidden_effect = {
+			remove_unit_leader = 680
 		}
 
 		set_politics = { ruling_party = valkist elections_allowed = no }
@@ -502,4 +526,34 @@ country_event = {
 
 		set_politics = { ruling_party = market_liberal elections_allowed = no }
 	}
+}
+
+# Purging corruption
+country_event = { 
+	id = tur.14
+	title = tur.14.t
+	desc = tur.14.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 4 }
+
+	fire_only_once = yes
+
+	option = {
+		name = tur.14.a 
+
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.07
+		}
+
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.1
+		}
+
+	}
+
 }

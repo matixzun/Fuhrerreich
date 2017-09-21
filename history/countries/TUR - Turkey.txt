@@ -112,3 +112,101 @@ create_country_leader = {
 	}
 	
 }
+
+create_country_leader = {
+	name = "Mehmed Cavid Bey"
+	desc = "POLITICS_MEHMET_CAVID_DESC"
+	picture = "Portrait_Turkey_Mehmed_Cavid.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		
+	}
+	
+}
+
+create_country_leader = {
+	name = "Mahir Bey"
+	desc = "POLITICS_MAHIR_CAYAN_DESC"
+	picture = "Portrait_Turkey_Mahir_Cayan.tga"
+	expire = "1965.1.1"
+	ideology = marxist_leninist_subtype
+	traits = {
+		
+	}
+	
+}
+
+## Field Marshals
+
+create_field_marshal = {
+	name = "Osman Fuad Efendi"
+	picture = "Portrait_Turkey_Osman_Fuad.tga"
+	id = 680
+	traits = {
+		offensive_doctrine
+		inspirational_leader
+	}
+	skill = 4
+}
+
+## Corps Commanders
+
+create_corps_commander = {
+	name = "İsmail Hakkı Paşa"
+	picture = "Portrait_Turkey_Ismail_Hakki.tga"
+	traits = {
+		winter_specialist
+		commando
+	}
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Ömer Faruk Efendi"
+	picture = "Portrait_Turkey_Omer_Faruk.tga"
+	id = 550
+	traits = {
+	}
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Mustafa Fevzi Paşa"
+	id = 679
+	picture = "Portrait_Turkey_Mustafa_Fevzi.tga"
+	traits = {
+	}
+	skill = 2
+}
+
+## Navy Leaders
+
+create_navy_leader = {
+	name = "Hüseyin Rauf Paşa"
+	picture = "Portrait_Turkey_Huseyin_Rauf.tga"
+	traits = {
+		superior_tactician
+	}
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "İbrahim Paşa"
+	id = 674
+	picture = "Portrait_Turkey_Ibrahim_Aski.tga"
+	traits = {
+		spotter
+		old_guard_navy
+	}
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mahmud Muhtar Paşa"
+	picture = "Portrait_Turkey_Mahmud_Muhtar.tga"
+	traits = {
+		seawolf
+	}
+	skill = 1
+}

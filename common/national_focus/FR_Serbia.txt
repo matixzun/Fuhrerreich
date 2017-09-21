@@ -342,6 +342,23 @@ focus = {
   
  } 
  }
+ #Focus for Indoctrination
+focus = {
+		id = indoctrination
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = internationalism }
+		x = 8
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = indoctrination_focus
+			add_political_power = 150
+		}
+	}
+
 #Focus for Fortification Effort I 
 	focus = { 
 	id = fortificationefforti 
@@ -570,12 +587,25 @@ focus = {
  mutually_exclusive = { } 
  prerequisite = { focus = industrialeffortii focus = militaryeffortii} 
  available = {  } 
- cost = 5  
+ cost = 10
   available_if_capitulated = yes  
  completion_reward = { 
   
  } 
  }
+ #Focus for Extra Research Slot II
+ focus = {
+		id = extraresearchslotii
+		icon = GFX_focus_research
+		prerequisite = { focus = foreigninvestators }
+		x = 1
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
 
  #Focus for Better Dead than Red 
 	focus = { 
@@ -593,7 +623,8 @@ focus = {
  completion_reward = { 
   
  } 
- }#Focus for Army Studies  
+ }
+ #Focus for Army Studies  
 	focus = { 
 	id = armystudies 
 	icon = GFX_goal_generic_small_arms 
@@ -607,9 +638,16 @@ focus = {
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
-  
+  	army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
  } 
- }#Focus for Modifying War Technique 
+ }
+ #Focus for Modifying War Technique 
 	focus = { 
 	id = modifyingwartechnique 
 	icon = GFX_goal_generic_allies_build_infantry 
@@ -623,9 +661,16 @@ focus = {
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
-  
- } 
- }#Focus for Forming Serbian Army 
+  	add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		} 
+ }
+ #Focus for Forming Serbian Army 
 	focus = { 
 	id = formingserbianarmy 
 	icon = GFX_focus_generic_little_entente 
@@ -655,7 +700,12 @@ focus = {
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
-  
+  add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
  } 
  }#Focus for Zastava 
 	focus = { 
@@ -671,7 +721,11 @@ focus = {
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
-  
+ 	add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				technology = motorised_infantry
+    }
  } 
  }#Focus for Balkanski Savez 
 	focus = { 
@@ -734,6 +788,19 @@ focus = {
 	          }			  
   } 
  }
+ #Focus for Extra Research Slot I
+focus = {
+		id = extraresearchsloti
+		icon = GFX_focus_research
+		prerequisite = { focus = balkanskisavez }
+		x = 6
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
  #Focus for Plan of Greater Serbia 
 	focus = { 
 	      id = planofgreaterserbia 
@@ -743,9 +810,9 @@ focus = {
           x = 4 
           y = 4
           mutually_exclusive = { } 
-          prerequisite = { focus = balkanskisavez  focus = militaryeffortii  focus = fortificationeffortii} 
+          prerequisite = { focus = fortificationeffortiii } 
           available = {    
-          date > 1937.1.1
+          date > 1938.1.1
           }
           cost = 10 
           available_if_capitulated = yes  
@@ -755,7 +822,7 @@ focus = {
        } 
  }
 
- #Focus for Reclaiming Balkan Lands 
+ #Focus for Reclaiming Balkan Lands
 	focus = { 
 	id = reclaimingbalkanlands 
 	icon = GFX_goal_generic_occupy_states_ongoing_war 
@@ -764,14 +831,84 @@ focus = {
  x = 6
  y = 5
  mutually_exclusive = { } 
- prerequisite = { focus = balkanskisavez focus = planofgreaterserbia} 
+ prerequisite = { focus = extraresearchsloti } 
  available = {  } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
   
  } 
- }#Focus for Airforce Studies 
+ }
+ #Focus for Serbia Demands Montenegro
+focus = {
+		id = serbiademandsmontenegro
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = reclaimingbalkanlands focus = planofgreaterserbia }
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 200000 }
+		}
+		cancel = {
+				is_puppet = yes
+		}
+		cancel_if_invalid = no
+		x = 6
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1938.1.1
+			}
+		}
+
+		bypass = {
+			MNT = {
+				OR = {
+					is_puppet = yes
+					exists = no 
+					}
+				}
+			}
+
+		completion_reward = {
+			army_experience = 10
+			if = {
+				limit = {
+					country_exists = MNT
+					MNT = {
+						has_civil_war = no
+						OR = {
+							owns_state = 105
+						}
+					}
+				}
+
+				MNT = {
+					country_event = serbia.6
+				}				
+			}
+
+			if = {
+				limit = {
+					105 = {
+						owner = {
+							NOT = {
+								tag = MNT
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 105
+			}
+		}
+	}
+
+ #Focus for Airforce Studies 
 	focus = { 
 	id = airforcestudies 
 	icon = GFX_goal_generic_air_fighter 
@@ -871,7 +1008,18 @@ focus = {
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
-  
+  add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
  } 
  }#Focus for Internal Politics 
 	focus = { 
@@ -1011,7 +1159,7 @@ focus = {
 					
                     }
                 }
-              add_opinion_modifier = { target = SER modifier = 0.5}  
+              add_opinion_modifier = { target = SER modifier = SER_internationalism}  
              }
 		}
 }
@@ -1035,7 +1183,7 @@ focus = {
  #Focus for Side With Italy 
 	focus = { 
 	id = sidewithitaly 
-	icon = GFX_goal_molotov_ribbentrop_pact 
+	icon = GFX_focus_HOL_deal_with_right
 	bypass = {} 
  ai_will_do = { factor = } 
  x = 20
@@ -1052,7 +1200,7 @@ focus = {
  #Focus for Side With Germany 
 	focus = { 
 	id = sidewithgermany
-	icon = 
+	icon = GFX_goal_molotov_ribbentrop_pact 
 	bypass = {} 
  ai_will_do = { factor = } 
  x = 22
@@ -1090,7 +1238,7 @@ focus = {
 #Focus for Side With Russia
 	focus = { 
 	id = sidewithrussia
-	icon = 
+	icon = GFX_focus_HOL_deal_with_left
 	bypass = {} 
  ai_will_do = { factor = } 
  x = 24

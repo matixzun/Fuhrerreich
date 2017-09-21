@@ -89,7 +89,7 @@ country_event = {
 	id = usa.4
 	title = usa.4.t
 	desc = usa.4.d
-	picture = GFX_news_event_journalists_speech
+	picture = GFX_report_event_generic_rally
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -104,6 +104,7 @@ country_event = {
 		}
 		name = usa.4.a
 		add_ideas = USA_black_wednesday_recovery
+		set_country_flag = USA_black_wednesday_recovery
 		remove_ideas = USA_black_wednesday
 	}
 	custom_effect_tooltip =  usa.4.a.tt
@@ -127,5 +128,34 @@ country_event = {
 		}
 		name = usa.5.a
 		add_ideas = USA_black_wednesday
+		set_country_flag = USA_black_wednesday
+	}
+}
+
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+	fire_only_once
+
+	trigger = {
+		tag = USA
+	}
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = usa.6.a
+		add_ideas = USA_tank_primacy
+	}
+	option = {
+		ai_chance = {
+			base = 0
+		}
+		name = usa.6.b
+		add_ideas = USA_fix_const_speed
 	}
 }

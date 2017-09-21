@@ -232,7 +232,8 @@ continuous_focus_position = { x = 50 y = 1600}
  		available = { has_idea = POL_constitutional_monarchy }
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			country_event = poland.9
   					} 
  }
 
@@ -248,7 +249,8 @@ continuous_focus_position = { x = 50 y = 1600}
  		prerequisite = { focus = POL_constitutional_monarchy } 
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			add_political_power = 100
   					} 
  }
 
@@ -265,7 +267,9 @@ continuous_focus_position = { x = 50 y = 1600}
  		mutually_exclusive = { focus = POL_poland_all }  
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+   		custom_effect_tooltip = POL_democracy_for_poles_tooltip
+ 		completion_reward = {
+ 			set_country_flag = POL_democracy_for_poles
   					} 
  }
 

@@ -39,7 +39,7 @@ country_event = {
 	option = {
 		name = poland.2.a
 		ai_chance = {
-			factor = 40
+			factor = 37
 		}
 		add_popularity = {
 			ideology = authoritarian_democrat
@@ -65,7 +65,7 @@ country_event = {
 	option = {
 		name = poland.2.b
 		ai_chance = {
-			factor = 40
+			factor = 37
 		}
 		add_popularity = {
 			ideology = social_conservative
@@ -77,9 +77,13 @@ country_event = {
 	}
 	option = {
 		name = poland.2.c
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.02
+		}
 		
 		ai_chance = {
-			factor = 20
+			factor = 36
 			}
 		add_political_power = -40
 
@@ -152,24 +156,36 @@ country_event = {
 	option = {
 		name = poland.3.a
 		ai_chance = {
-			factor = 40
+			factor = 37
 		}
 		add_ideas = POL_MOW_tax
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.02
+		}
 	}
 	option = {
 		name = poland.3.b
 		ai_chance = {
-			factor = 40
+			factor = 37
 		}
 		add_ideas = POL_PSCD_tax
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.02
+		}
 	}
 	option = {
 		name = poland.3.c
 		
 		ai_chance = {
-			factor = 20
+			factor = 36
 			}
 		add_political_power = -40
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.02
+		}
 
 		hidden_effect = {
 		if = {
@@ -240,10 +256,18 @@ country_event = {
 	option = {
 		name = poland.4.a
 		ai_chance = {
-			factor = 70
+			factor = 40
 		}
 		add_political_power = -150
 		add_ideas = POL_increased_free_speech
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.02
+		}
 		custom_effect_tooltip = POL_support_baltics
 
 		hidden_effect = { 
@@ -254,10 +278,14 @@ country_event = {
 		name = poland.4.b
 		
 		ai_chance = {
-			factor = 30
+			factor = 60
 			}
 		add_political_power = 50
 		add_ideas = POL_less_free_speech
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.04
+		}
 		custom_effect_tooltip = POL_counteract_baltics
 		hidden_effect = {
 		set_country_flag = POL_counteract_baltics1
@@ -335,10 +363,18 @@ country_event = {
 	option = {
 		name = poland.5.a
 		ai_chance = {
-			factor = 70
+			factor = 40
 		}
 		add_political_power = -150
 		add_ideas = POL_equality_for_all
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.02
+		}
 		custom_effect_tooltip = POL_support_baltics
 		hidden_effect = { 
 			set_country_flag = POL_support_baltics2
@@ -348,10 +384,14 @@ country_event = {
 		name = poland.5.b
 		
 		ai_chance = {
-			factor = 30
+			factor = 60
 			}
 		add_political_power = 50
 		add_ideas = POL_equality_for_poles
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.04
+		}
 		custom_effect_tooltip = POL_counteract_baltics
 
 		hidden_effect = {
@@ -429,24 +469,36 @@ country_event = {
 	option = {
 		name = poland.6.a
 		ai_chance = {
-			factor = 40
+			factor = 37
 		}
 		add_ideas = POL_MOW_army
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.02
+		}
 	}
 	option = {
 		name = poland.6.b
 		ai_chance = {
-			factor = 40
+			factor = 37
 		}
 		add_ideas = POL_PSCD_army
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.02
+		}
 	}
 	option = {
 		name = poland.6.c
 		
 		ai_chance = {
-			factor = 20
+			factor = 36
 			}
 		add_political_power = -40
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.02
+		}
 
 		hidden_effect = {
 		if = {
@@ -518,24 +570,36 @@ country_event = {
 	option = {
 		name = poland.7.a
 		ai_chance = {
-			factor = 40
+			factor = 37
 		}
 		add_ideas = POL_MOW_navy
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.02
+		}
 	}
 	option = {
 		name = poland.7.b
 		ai_chance = {
-			factor = 40
+			factor = 37
 		}
 		add_ideas = POL_PSCD_navy
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.02
+		}
 	}
 	option = {
 		name = poland.7.c
 		
 		ai_chance = {
-			factor = 20
+			factor = 36
 			}
 		add_political_power = -40
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.02
+		}
 
 		hidden_effect = {
 		if = {
@@ -614,7 +678,7 @@ country_event = {
 		}
 		add_ideas = POL_constitutional_monarchy
 		ai_chance = {
-			factor = 50
+			factor = 25
 		}
 
 	}
@@ -629,6 +693,43 @@ country_event = {
 			}
 		}
 		add_ideas = POL_absolute_monarchy
+		ai_chance = {
+			factor = 75
+		}
+	}
+}
+
+country_event = { 
+	id = poland.9
+	title = poland.9.t
+	desc = poland.9.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = { days = 1 }
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.9.a
+		set_country_flag = POL_democracy
+		add_political_power = -150
+		ai_chance = {
+			factor = 30
+		}
+
+	}
+	option = {
+		name = poland.9.b
+		set_country_flag = POL_democracy_soon
+		add_political_power = -50
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = poland.9.c
+		set_country_flag = POL_two_party_state
+		add_political_power = 50
 		ai_chance = {
 			factor = 50
 		}
