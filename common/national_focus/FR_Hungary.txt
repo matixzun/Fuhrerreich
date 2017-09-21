@@ -10,7 +10,6 @@ focus_tree = {
 	default = no
 	focus = {
 		id = HUN_internal_focus
-		text = Internal Focus
 		icon = GFX_goal_generic_defence
 		cost = 10.00
 		x = 9
@@ -19,7 +18,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_external_focus
-		text = External Focus
 		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
 		x = 13
@@ -28,7 +26,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_pressure_bosnia
-		text = Pressure Bosnia
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		mutually_exclusive = {
@@ -40,7 +37,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_industry_revival
-		text = Industrial Revival
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10.00
 		x = 24
@@ -49,7 +45,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_communist_threat
-		text = Address the Communists
 		icon = GFX_focus_generic_soviet_politics
 		cost = 10.00
 		prerequisite = {
@@ -61,7 +56,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_commie_compromise
-		text = A compromise
 		icon = GFX_goal_generic_major_alliance
 		cost = 10.00
 		prerequisite = {
@@ -76,7 +70,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_forced_deportation
-		text = Forced Deportation
 		icon = GFX_goal_generic_CAS
 		cost = 10.00
 		prerequisite = {
@@ -91,7 +84,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_Transylvanian_question
-		text = The Transylvanian Question
 		icon = GFX_goal_generic_major_alliance
 		cost = 10.00
 		prerequisite = {
@@ -103,7 +95,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_live_in_peace
-		text = Live and let live
 		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 10.00
 		prerequisite = {
@@ -119,7 +110,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_split_transylvania
-		text = Split Transylvania
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 10.00
 		prerequisite = {
@@ -135,7 +125,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_annex_transylvania
-		text = Annex Transylvania
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {
@@ -151,7 +140,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_coratian_question
-		text = The Croatian Question
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		prerequisite = {
@@ -163,7 +151,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_slavonian_puppet
-		text = A Slavonian Puppet
 		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
@@ -178,7 +165,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_dockyards_1
-		text = Begin The Horthy Project
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		prerequisite = {
@@ -190,7 +176,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_dockyards_2
-		text = Expand The Horthy Project
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		prerequisite = {
@@ -202,7 +187,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_arms_industry_1
-		text = Begin The Danube Project
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
@@ -214,7 +198,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_arms_industry_2
-		text = Expand The Danube Project
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
@@ -226,7 +209,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_industry_9
-		text = A Revided Industry
 		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
 		prerequisite = {
@@ -244,7 +226,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_civ_industry_1
-		text = Begin The Alfold Project
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
@@ -256,7 +237,6 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_civ_industry_2
-		text = Expand the Alfold Project
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
