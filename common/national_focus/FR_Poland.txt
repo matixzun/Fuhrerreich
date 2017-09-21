@@ -261,7 +261,7 @@ continuous_focus_position = { x = 50 y = 1600}
  		
  		x =3
  		y =5
- 		cost = 5
+ 		cost = 10
 
  		prerequisite = { focus = POL_sejm_power }
  		mutually_exclusive = { focus = POL_poland_all }  
