@@ -57,6 +57,22 @@ bookmarks = {
 		}
 
 		# minors ####
+		"SER"={
+			minor = yes
+			history = "SER_FUHRERREICH_DESC"
+			ideology = paternal_autocrat
+			ideas = {
+				starting_idea1
+				starting_idea2
+				starting_idea3
+			}
+			focuses = {
+				balkanskisavez
+				planofgreaterserbia
+				formingserbianarmy
+			}
+		}
+
 		"CAN"={
 			minor = yes
 			history = "CAN_FUHRERREICH_DESC"
@@ -68,20 +84,6 @@ bookmarks = {
 				CAN_black_wednesday_initiatives
 				CAN_canada_carries_on
 				CAN_curries_firepower_primacy
-			}
-		}
-
-		"SER"={
-			minor = yes
-			history = "SER_FUHRERREICH_DESC"
-			ideology = paternal_autocrat
-			ideas = {
-				
-			}
-			focuses = {
-				balkanskisavez
-				planofgreaterserbia
-				formingserbianarmy
 			}
 		}
 

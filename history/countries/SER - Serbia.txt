@@ -79,7 +79,7 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Alexander I"
+	name = "King Alexander I"
 	desc = "POLITICS_ALEXANDER_I_DESC"
 	picture = "Portrait_Serbia_Alexander.dds"
 	expire = "1965.1.1"
