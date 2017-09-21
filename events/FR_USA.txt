@@ -131,3 +131,31 @@ country_event = {
 		set_country_flag = USA_black_wednesday
 	}
 }
+
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+	fire_only_once
+
+	trigger = {
+		tag = USA
+	}
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = usa.6.a
+		add_ideas = USA_tank_primacy
+	}
+	option = {
+		ai_chance = {
+			base = 0
+		}
+		name = usa.6.b
+		add_ideas = USA_fix_const_speed
+	}
+}
