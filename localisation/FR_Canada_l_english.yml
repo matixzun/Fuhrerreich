@@ -1,0 +1,168 @@
+﻿l_english:
+
+#### Focus Tree ####
+
+### Internal Affairs ###
+
+CAN_canadas_fair_domain:0 "Canada's fair Domain"
+CAN_canadas_fair_domain_desc:0 "We fought in the hell that was the Great War. We fought in the trenches, we fought in the fields, we fought from the Artillery batteries, in the skies and in the early armoured beasts that are now known as Tanks. Despite all our fighting we never earned any more Autonomy, and still are firmly under Britannia's wing. We always expected to remain a Dominion, however we believed that London would recognize our efforts and at least compensate us in some way. Perhaps we can use these recent memories to leverage some reforms..."
+CAN_canada_carries_on:0 "Canada Carries On"
+CAN_canada_carries_on_desc:0 "The National Film Board of Canada has requested additional funding in order to create a series of Propaganda short films. The films will cover a wild range of topics, ranging from simply encouraging men to join the Army to in-depth training videos to demonstrate how certain types of equipment are to be handled."
+CAN_nrma:0 "NRMA"
+CAN_nrma_desc:0 "The National Resource Mobilization Act is a very unpopular proposition to say the least. It involves conscription across the entire Country and employment regulations for young men that are eligible for Military Service. This will surely help us operate at peak efficiency and assist us in the War effort; however it will also upset the population."
+CAN_the_war_measures_act:0 "The War Measures Act"
+CAN_the_war_measures_act_desc:0 "The last time the War Measures act was invoked was during the Great War. It shall be invoked again. The War measures act will grant us sweeping powers and allow the suspension of Civil Liberties and personal freedoms. With this, we will be able to completely and utterly dedicate ourselves to the war."
+CAN_anglo_conscription:0 "Anglo Conscription"
+CAN_anglo_conscription_desc:0 "We have learned in the Great War that the Quebecois would rather fight as free men than fight as Conscripts. Instead of Conscripting from Quebec, we will conduct large scale propaganda efforts instead. Conscription will only take place in Anglo-Canada."
+CAN_increase_recruitment_efforts:0 "Increase Recruitment efforts"
+CAN_increase_recruitment_efforts_desc:0 "Every man that can should serve in the Canadian Corps. We can never have enough volunteers, and at the moment we are lacking some. Expanding our propaganda campaign will hopefully lead to an influx of volunteers."
+CAN_nra_program:0 "NRA Program"
+CAN_nra_program_desc:0 "The National Research Association will be formed to keep us technologically modern and one step ahead of our enemies."
+CAN_radar:0 "R.A.D.A.R"
+CAN_radar_desc:0 "With the advent of the R.A.D.A.R electronic warfare has evolved immensely. In short it's a device that is able to detect objects from large distances."
+
+### Industry ###
+
+CAN_fund_oil_exploitation:0 "Fund Oil Exploitation"
+CAN_fund_oil_exploitation_desc:0 "Alberta has large deposits of Oil, ripe for exploitation. Our economic boom has permitted us to continue to fund extraction of large portions of resources within Canada, and this is no exception. Additionally; a member of the Empire also being able to export large quantities of Oil to Britain herself would have immeasurable value for both parties."
+CAN_black_wednesday_initiatives:0 "Black Wednesday Initiatives"
+CAN_black_wednesday_initiatives_desc:0 "Our period of Economic prosperity is over... For now. This ripples of tragedy has struck us, which was only to be predicted. However it is not over for Canada. We will persevere. And we will tell the Public that we will persevere, and how we intend on doing it."
+CAN_expand_the_dbs:0 "Expand the D.B.S"
+CAN_expand_the_dbs_desc:0 "The Dominion Bureau of Statistics (Or D.B.S for short) was formed in 1918 in accordance with the Statistics Act. They are responsible for holding censuses within the Nation; however don't do anything outside of that. The D.B.S would be much more useful if we expanded its responsibility to also include the production of Population statistics, Economic statistics and more.
+# (Note, gains national spirit 'The DBS' which grants +5% monthly population growth, +5% factory output)
+CAN_statistics_canada:0 "Statistics Canada"
+CAN_statistics_canada_desc:0 "Now with our newfound independence; the D.B.S shall be reformed into Statistics Canada, with even further expansion."
+# Removes national spirit 'The DBS'
+CAN_expand_the_rcmp:0 "Expand the RCMP"
+CAN_expand_the_rcmp_desc:0 "The Royal Canadian Mounted Police hold a legacy in Canada. There is little they were incapable of doing and they have accomplished many admirable tasks. They are also responsible for infiltrating and dismantling Political Groups that might be considered dangerous to Canada. As the name might imply, many of them are Pro-British, and what exactly they might consider dangerous to Canada could end up becoming subjective."
+CAN_polycorp:0 "PolyCorp"
+CAN_polycorp_desc:0 "PolyCorp, or more formally known as Polymer Corporation, will allow us to produce rubber locally instead of relying on overseas trade. Whilst it is unlikely that the other members of the Empire will import Nylon or synthetic rubber, at least it will allow us to become more self-sufficient. "
+CAN_mines_in_the_iron_range:0 "Mines in the Iron range"
+CAN_mines_in_the_iron_range_desc:0 "For a long time, the Americans have had mines on their side of the Iron range and it has been incredibly profitable for them, as they are some of the most Iron rich areas in North America currently. However the Iron range stretches into Northern Ontario... Who's to say we can't capitalize on what's rightfully ours?"
+CAN_inglis_arms:0 "Inglis Arms"
+CAN_inglis_arms_desc:0 "John Inglis and Company, commonly known as simply Inglis, has specialized in producing arms since 1859; before the remaining North American Colonies were Federated into the Dominion of Canada. Funding them in building new factories is a necessary move in ensuring the continued production of Military supplies and combating unemployment."
+CAN_long_branch_arsenal:0 "Long Branch Arsenal"
+CAN_long_branch_arsenal_desc:0 "A few of our ministers put forward an idea, which is to form a Crown Corporation under the name 'Small Arms Limited'; who would operate a newly constructed facility that would be known as Long Branch Arsenal."
+CAN_found_new_crown_corporations:0 "Found new Crown Corporations"
+CAN_found_new_crown_corporations_desc:0 "By founding new Corporations which are state-run, we will be able to more freely intervene in this crisis. Some may dislike us for showing market favouritism towards these Crown Corporations, but as long as the number of unemployed is dropping there shouldn't be much of a problem."
+CAN_canadian_pacific_railway:0 "Canadian Pacific Railway"
+CAN_canadian_pacific_railway_desc:0 "The Canadian Pacific Railway took over 4 years to build, ending in 1885. It was a costly but valuable investment, it connected the West and East of Canada and reduced division between the two.  Expansion of the railway should be a priority and Government headed initiative. "
+CAN_relief_camps:0 "Relief Camps"
+CAN_relief_camps_desc:0 "The Red Tories have put forward an interesting but morally vague idea. The proposition is state administered 'Work Relief Camps'. These camps are intended to grant more job opportunities to the Populace, however the truth lies a little bit deeper than that. The average camp worker would perform menial, tiresome, labour intensive tasks. They'd be provided with food, shelter, and warmth while employed in the camp but with very poor pay. "
+CAN_additional_research_teams:0 "Additional Research Teams"
+CAN_additional_research_teams_desc:0 "As any Western Nation should, it is required that with utmost effort we keep up-to-date with all Industrial and Military innovations."
+CAN_the_charlottes_program:0 "The Charlottes Program"
+CAN_the_charlottes_program_desc:0 "The Charlottes Program is a plan to encourage population growth across Canada and to attract immigration from Britain and mainland Europe. This endeavour will allow us to populate our empty nation at a much quicker rate than previous."
+CAN_black_wednesday_recovery:0 "Black Wednesday Recovery"
+CAN_black_wednesday_recovery_desc:0 "After much toil, we have endured and recovered from the crash that shook the globe. Our economy is not nearly as booming as it was before, but that will change with time. For now, the Canadian economy is out of the gutter, and striding towards a new Golden Era."
+
+### Army ###
+
+CAN_spearhead_of_the_empire:0 "'Spearhead of the Empire'"
+CAN_spearhead_of_the_empire_desc:0 "In the Great War the Canadian Corps earned a large amount of prestige due to the effectiveness of Canadian Soldiers. Canadians became a constant pain for the Germans who considered them a stubborn and unyielding enemy. By no means is the Canadian Military outdated; however with prestige comes responsibility. And in our case the responsibility is keeping the Royal Canadian Army a highly elite and disciplined force."
+
+## Crerar's Path ##
+
+CAN_crerars_lightning_warfare:0 "Crerar's Lightning Warfare"
+CAN_crerars_lightning_warfare_desc:0 "Harry Crerar is a less popular but nonetheless respected General in the Canadian Army. Quickly climbing the Ranks in the Great War he ended up being amazed at the efficiency Armoured warfare was able to root out enemy positions. An advocate of increased Armoured production and phasing out Leg-Infantry; Crerar not so subtly hints at a new type of Warfare revolving around speed and armoured beasts."
+CAN_army_of_mobility:0 "Army of Mobility"
+CAN_army_of_mobility_desc:0 "Many believe that Leg Infantry will be the core of any army. For their own they may be correct, however we will take the initiative in this new age of warfare. Our Army will be one of the first to adopt this Military thought, and one of the first to actually follow it."
+CAN_local_pattern_light_tanks:0 "Local Pattern Light Tanks"
+CAN_local_pattern_light_tanks_desc:0 ""
+CAN_tank_emplacement_stratagy:0 "Tank Emplacement Stratagy"
+CAN_tank_emplacement_stratagy_desc:0 "By getting our combat engineers to 'Hull-down' our tanks to act as temporary bunkers; we can drastically increase their defensiveness."
+CAN_modernized_supply_lines:0 "Modernized Supply Lines"
+CAN_modernized_supply_lines_desc:0 "Everyone will at some point or another adopt the use of vehicles for supply transport. We did this, but we also have highly competent Quartermasters and Logistic specialists which allows us to cut down on supply consumption."
+CAN_armor_innovations:0 "Armor Innovations"
+CAN_armor_innovations_desc:0 "We are not blind when it comes to the performance difference between Medium and Light tanks and Heavy tanks. After much discussion in the Canadian Corps, it was agreed that we need to broaden our range of Armor in service."
+CAN_school_of_movement:0 "School of Movement"
+CAN_school_of_movement_desc:0 "Our Doctrine revolving around Tanks and Mobile Infantry is now developed. Now that we have a solid base of a Doctrine we can refine its further development."
+
+## Currie's Path ##
+
+CAN_curries_firepower_primacy:0 "Currie's Firepower Primacy"
+CAN_curries_firepower_primacy_desc:0 "Arthur Currie is a highly decorated General of the Canadian Army. He is certainly a Military genius and one of the best Military leaders our nation has known. His reputation in the Great war revolved around his extensive use of Artillery support and creeping barrages. Unsurprisingly, this is also what he used at the core of his developed doctrine."
+CAN_reequip_our_soldiers:0 "Reequip our Soldiers"
+CAN_reequip_our_soldiers_desc:0 ""
+CAN_modernize_the_rrca:0 "Modernize the RRCA"
+CAN_modernize_the_rrca_desc:0 "The Royal Regiment of Canadian Artillery is still equipped with QF-18 Pounders. Perhaps it's time we modernize them and reequip them with newer QF-25 Pounders. After all, Artillery is an integral part of our Doctrine now."
+CAN_adopt_assault_tanks:0 "Adopt Assault Tanks"
+CAN_adopt_assault_tanks_desc:0 "'Assault tanks' have been pitched by some of the more Armor oriented generals in our Military, most notably Harry Crerar. He theorizes the development of moderately Armored tanks that would be able to provide both direct and indirect fire support to assist Infantry."
+CAN_field_aid_and_field_support:0 "Field Aid & Field Support"
+CAN_field_aid_and_field_support_desc:0 "War is a horrible experience for the average soldier. There are too many situations in which a man dies when he could've been saved given the proper care. The Canadian Corps has agreed that Field Hospitals and other Support elements should be firmly integrated into our Army."
+CAN_air_army_cooperation:0 "Air-Army Cooperation"
+CAN_air_army_cooperation_desc:0 "Close Air Support is an incredibly useful tool, by using Close Air Support in coordination to the extent we use regular Artillery guns; we will have an unstoppable amount of firepower."
+CAN_school_of_shock:0 "School of Shock"
+CAN_school_of_shock_desc:0 "Our reputation as Shock-Troops now reaches further than simply the effectiveness of our men. Now our entire military doctrine revolves around Artillery, Firepower, and Elite Infantry. With our doctrine's base established; we will be able to further develop on it."
+
+### Navy ###
+
+CAN_improve_maritime_dockyards:0 "Improve Maritime Dockyards"
+CAN_improve_maritime_dockyards_desc:0 "The western Maritimes are still booming thanks to their cod-fishing industry. Expansion of Dockyards to kick start large-scale naval production is a priority."
+CAN_pacific_dockyards:0 "Pacific Dockyards"
+CAN_pacific_dockyards_desc:0 "(WIP, Fuck state stuff)"
+
+## Light Fleet ##
+
+CAN_anti_submarine_effort:0 "Anti-Submarine Effort"
+CAN_anti_submarine_effort_desc:0 "Submarine attacks on supply or troop-laden convoys is a very real threat. The research and production of Submarine Destroyers is encouraged to combat this."
+CAN_carrier_focus:0 "Carrier Focus"
+CAN_carrier_focus_desc:0 ""
+CAN_light_fleet:0 "Light Fleet"
+CAN_light_fleet_desc:0 ""
+
+## Heavy Fleet ##
+
+CAN_new_naval_command:0 "New Naval Command"
+CAN_new_naval_command_desc:0 ""
+CAN_floating_forts:0 "Floating Forts"
+CAN_floating_forts_desc:0 "Battleships have been the Kings of the Seas for as long as anyone can remember. Commissioning of these 'Floating Forts' will safeguard our nation."
+CAN_heavy_fleet:0 "Heavy Fleet"
+CAN_heavy_fleet_desc:0 ""
+
+### Air Force ###
+
+CAN_rcaf_reorganization:0 "RCAF Reorganization"
+CAN_rcaf_reorganization_desc:0 "The RCAF has been drastically undercut during peacetime. Most of the Military funding went towards the Canadian Corps with the remainders going to the Royal Canadian Navy. We knew that the war in the air would become a very influential part of warfare, it's time we rived the RCAF."
+CAN_new_service_fighters:0 "New Service Fighters"
+CAN_new_service_fighters_desc:0 "Fighters; an integral part of any Airforce. It is with fighters we start the development of the modernized RCAF."
+CAN_naval_air_coordination:0 "Naval-Air Coordination"
+CAN_naval_air_coordination_desc:0 "Cooperation between Airforces and Navies nowadays is incredibly important; especially with the advent of Carriers. We need to ensure the production of Naval Bombers for use in assisting the Navy."
+CAN_bomber_designs:0 "Bomber Designs"
+CAN_bomber_designs_desc:0 "Bombers will play a very important part in the next Great war as they are capable of reducing entire cities to rubble given support and proper numbers. It isn't even a question. We need them."
+CAN_billy_bishop_program:0 "Billy Bishop Program"
+CAN_billy_bishop_program_desc:0 "The Billy Bishop Program is aptly named, as it was devised by Billy Bishop himself. The program calls for newer, more creative Airforce staff to encourage a new School of Thought when it comes to Air Warfare."
+CAN_modern_fighters:0 "Modern Fighters"
+CAN_modern_fighters_desc:0 ""
+CAN_new_aircraft_variants:0 "New Aircraft Variants"
+CAN_new_aircraft_variants_desc:0 "Our designs are certainly fine. But we should start to experiment with creating new variants of existing aircrafts. There's no such thing as not being able to improve."
+CAN_doctrinal_refinement:0 "Doctrinal Refinement"
+CAN_doctrinal_refinement_desc:0 "The Billy Bishop Program has brought many fresh ideas to the RCAF and has helped us develop our Aerial Doctrine. With many younger minds to work with, we can more fully refine our Doctrine."
+
+
+#### Political Parties ####
+
+CAN_internationalist_party:0 "CPC"
+CAN_internationalist_party_long:0 "Pacifist branch of the CPC"
+CAN_bolshevist_party:0 "CPC"
+CAN_bolshevist_party_long:0 "Communist Party of Canada"
+CAN_marxist_leninist_party:0 "CPC"
+CAN_marxist_leninist_party_long:0 "Marxist-Leninist branch of the CPC"
+CAN_libertartarian_socialist_party:0 "SPC"
+CAN_libertartarian_socialist_party_long:0 "Socialist Party of Canada"
+CAN_social_democrat_party:0 "CCF"
+CAN_social_democrat_party_long:0 "Co-operative Commonwealth Federation"
+CAN_social_liberal_party:0 "Progressives"
+CAN_social_liberal_party_long:0 "Liberal-Progressive Party"
+CAN_market_liberal_party:0 "Liberals"
+CAN_market_liberal_party_long:0 "Liberal Party of Canada"
+CAN_social_conservative_party:0 "Red Tories"
+CAN_social_conservative_party_long:0 "Unionist Party of Canada"
+CAN_authoritarian_democrat_party:0 "Nationalists"
+CAN_authoritarian_democrat_party_long:0 "National-Militarist Coalition"
+CAN_paternal_autocrat_party:0 "Loyalists"
+CAN_paternal_autocrat_party_long:0 "Loyalists of Britannia Party"
+CAN_national_populist_party:0 "SoCreds"
+CAN_national_populist_party_long:0 "Social Credit Party"
+CAN_valkist_party:0 "CBP"
+CAN_valkist_party_long:0 "Canadian Brotherhood Party"
