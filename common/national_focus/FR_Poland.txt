@@ -335,9 +335,7 @@ continuous_focus_position = { x = 50 y = 1600}
  		y = 7
  		cost = 10
 
- 		prerequisite = { focus = POL_local_leadership }
- 		prerequisite = { focus = POL_direct_warsaw } 
- 		prerequisite = { focus = POL_ojczyzna_guard } 
+ 		prerequisite = { focus = POL_local_leadership focus = POL_direct_warsaw focus = POL_ojczyzna_guard}
 
    		available_if_capitulated = yes  
  		completion_reward = {
@@ -345,21 +343,18 @@ continuous_focus_position = { x = 50 y = 1600}
 			limit = {
 				 has_idea = POL_king_men
 				}
-			}
 			country_event = poland.10
 			}
 			if = {
 			limit = {
 				 has_country_flag = POL_democracy
 				}
-			}
 			country_event = poland.11
 			}
 			if = {
 			limit = {
 				 has_country_flag = POL_democracy_soon
 				}
-			}
 			country_event = poland.12
 			}
 			if = {
@@ -367,7 +362,6 @@ continuous_focus_position = { x = 50 y = 1600}
 				 has_country_flag = POL_two_party_state
 			}
 			country_event = poland.13
-			}
   		} 
    }
 }
