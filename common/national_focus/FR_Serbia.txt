@@ -1046,7 +1046,39 @@ focus = {
 			set_country_flag = SER_internal_politics_started
         }
         completion_reward = {
-               
+           custom_effect_tooltip = serbia.2_tt
+
+           if = {
+             limit = {
+                AND = {
+                  has_country_flag = no_solution
+                  has_country_flag = populists_gain_power
+                }
+             }
+             add_timed_idea = { king_alexander_assassination_plot
+                 idea = king_alexander_assassination_plot
+                 days = 400
+             }
+             hidden_effect = {
+               country_event = { id = serbia.11 days = 40 }
+             }
+           }
+
+           if = {
+             limit = {
+                OR = {
+                  has_country_flag = no_solution
+                  has_country_flag = populists_gain_power
+                }
+             }
+             add_timed_idea = { king_alexander_assassination_plot
+                 idea = king_alexander_assassination_plot
+                 days = 400
+             }
+             hidden_effect = {
+               country_event = { id = serbia.11 days = 100 }
+             }
+           }
         }
  } 
  #Focus for Serbian Nationalism 

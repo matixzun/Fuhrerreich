@@ -53,7 +53,7 @@ ideas = {
 				#justify_war_goal_time = -0.25
 				marxist_leninist_drift = 0.1
 				bolshevist_drift = 0.1
-				internationalist = 0.1
+				internationalist_drift = 0.1
 			}
 		}
 
@@ -162,4 +162,34 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.03
 			}
+		}
+
+		partialreconstruction = {
+		   
+		   picture = 
+
+		   removal_cost = -1
+
+		   allowed = {
+		         always = no
+		   }
+		   modifier = {
+		      industrial_capacity_factory = -0.10
+		   }
+		}
+
+		king_alexander_assassination_plot = {
+		  
+		  picture = 
+
+          removal_cost = -1
+
+          allowed = {
+              always = no
+          }
+          modifier = {
+             national_populist_drift = 0.4
+			 valkist_drift = 0.2
+			 paternal_autocrat_drift = -0.1
+          }
 		}
