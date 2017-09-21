@@ -62,6 +62,8 @@ POL_poland_all:0 "A Poland for All"
 POL_poland_all_desc:0 ""
 POL_local_leadership:0 "Local Leadership"
 POL_local_leadership_desc:0 ""
+POL_a_new_poland:0 "A New Poland"
+POL_a_new_poland_desc:0 ""
 
 ### Events ###
 
@@ -146,6 +148,10 @@ POL_king_men_desc:0 ""
 POL_ojczyzna_guard_idea:0 "The Ojczyzna Guard"
 POL_ojczyzna_guard_idea_desc:0 ""
 POL_baltic_unrest:0 "Baltic unrest"
-POL_baltic_unrest_desc:0 "Unrest in the Baltics damage our nation"
+POL_baltic_unrest_desc:0 "Unrest in the Baltics damage our nation."
+POL_direct_rule:0 "Direct rule from warsaw"
+POL_direct_rule_desc:0 "Direct rule from warsaw."
+POL_local_leadership:0 "Local Leadership"
+POL_local_leadership_desc:0 "Local Leadership ensures that the Polish people are more united and more willing to die for their country."
 
 

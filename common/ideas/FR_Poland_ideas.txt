@@ -127,8 +127,23 @@ ideas = {
 			picture = FRA_matignon_agreements
 			modifier = {
 				conscription = -0.01
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.5
+			}
+		}
+
+		POL_direct_rule = {
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
 				consumer_goods_factor = -0.05
-				political_power_gain = -0.7
+			}
+		}
+
+		POL_local_leadership = {
+			picture = generic_central_management
+			modifier = {
+				unity_factor = 0.10
+				non_core_manpower = 0.10
 			}
 		}
 }
