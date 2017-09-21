@@ -164,7 +164,7 @@ continuous_focus_position = { x = 50 y = 1600}
 
  focus = { 
 		id = POL_disband_sejm
-		icon = GFX_focus_SAF_colonialist_crusade 
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade 
  		ai_will_do = { factor = 10 } 
  		
  		x =1
@@ -220,7 +220,7 @@ continuous_focus_position = { x = 50 y = 1600}
 
     focus = { 
 		id = POL_constitutional_monarchy
-		icon = GFX_goal_generic_support_democracy 
+		icon = GFX_goal_support_democracy 
  		ai_will_do = { factor = 10 } 
  		
  		x =4
