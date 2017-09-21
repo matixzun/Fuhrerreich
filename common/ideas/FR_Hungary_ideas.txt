@@ -17,10 +17,12 @@ ideas = {
 				unity_factor = -0.10			
 			}
 		}
+		
 		HUN_communist_dissent = {
 			picture = home_of_revolution
 			modifier = {
 				marxist-leninist_drift = 0.03
 			}	
 		}
+
 }
