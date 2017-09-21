@@ -114,7 +114,7 @@ ideas = {
         picture = generic_production_bonus
 
         modifier = {
-            roduction_speed_buildings_factor = 0.030  
+            production_speed_buildings_factor = 0.030  
             }
         }
     }
