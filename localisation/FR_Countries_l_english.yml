@@ -1113,6 +1113,10 @@ PRC_national_populist_ADJ:0 "Chinese"
 PRC_national_populist_DEF:0 "Zhongguo"
 PRC_valkist:0 "Heavenly State"
 PRC_valkist_ADJ:0 "Chinese"
+<<<<<<< HEAD
+PRC_valkist_DEF:0 "The Heavenly State of China"
+=======
+>>>>>>> Updated localization - 9/18/17
 PRC_valkist_DEF:0 "The Heavenly State of China"
 
 ##########
