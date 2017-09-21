@@ -370,7 +370,7 @@ focus = {
                 mutually_exclusive = { } 
                 prerequisite = { focus = internalpolitics} 
                 available = {  } 
-                cost = 12  
+                cost = 10
  
                 available_if_capitulated = yes  
  
@@ -453,7 +453,7 @@ focus = {
  mutually_exclusive = { } 
  prerequisite = { focus = fortificationefforti} 
  available = {  } 
- cost = 12  
+ cost = 10
   
   available_if_capitulated = yes  
  
@@ -535,7 +535,7 @@ focus = {
  mutually_exclusive = { } 
  prerequisite = { focus = fortificationeffortii} 
  available = {  } 
- cost = 20
+ cost = 12
   
   available_if_capitulated = yes  
  
@@ -814,11 +814,14 @@ focus = {
           available = {    
           date > 1938.1.1
           }
-          cost = 10 
+          cost = 8
           available_if_capitulated = yes  
  
        completion_reward = { 
-  
+          add_ideas = nacertanije
+          hidden_effect = {
+             news_event = { hours = 6 id = news.3 }
+          }
        } 
  }
 
@@ -836,7 +839,7 @@ focus = {
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
-  
+        
  } 
  }
  #Focus for Serbia Demands Montenegro
@@ -1021,22 +1024,30 @@ focus = {
 				technology = heavy_fighter3
 			}
  } 
- }#Focus for Internal Politics 
+ }
+ #Focus for Internal Politics 
 	focus = { 
 	id = internalpolitics 
 	icon = GFX_goal_generic_neutrality_focus 
 	bypass = {} 
- ai_will_do = { factor = } 
+ ai_will_do = { factor = 10 
+ } 
  x = 4
  y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
  available = {  } 
- cost = 15  
-  available_if_capitulated = yes  
- completion_reward = { 
+ cost = 30
   
- } 
+        available_if_capitulated = yes  
+        
+        select_effect = {
+			country_event = { id = serbia.8 days = 1 }
+			set_country_flag = SER_internal_politics_started
+        }
+        completion_reward = {
+               
+        }
  } 
  #Focus for Serbian Nationalism 
 	focus = { 

@@ -59,7 +59,9 @@ bookmarks = {
 			history = "SER_FUHRERREICH_DESC"
 			ideology = paternal_autocrat
 			ideas = {
-				
+				starting_idea1
+				starting_idea2
+				starting_idea3
 			}
 			focuses = {
 				balkanskisavez
