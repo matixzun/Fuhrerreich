@@ -28,6 +28,9 @@ focus_tree = {
 		id = HUN_pressure_bosnia
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
+		prerequisite = {
+			focus = HUN_coratian_question
+		}
 		mutually_exclusive = {
 			focus = HUN_slavonian_puppet
 		}
@@ -66,7 +69,8 @@ focus_tree = {
 		}
 		x = 7
 		y = 2
-
+		completion_reward = {
+             remove_ideas = HUN_commie_compromose
 	}
 	focus = {
 		id = HUN_forced_deportation
@@ -80,7 +84,8 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
-
+		completion_reward = {
+             remove_ideas = HUN_commie_compromose
 	}
 	focus = {
 		id = HUN_Transylvanian_question
