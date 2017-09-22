@@ -52,3 +52,9 @@ HUN_civ_industry_1:0 "Begin the Alfold Project"
 HUN_civ_industry_1_desc:0 "Civilian industry cannot be understated in its importance to the war effor, increasing the size and output of these factories will make us a formidible power in the region."
 HUN_civ_industry_2:0 "Expand the Alfold Project"
 HUN_arms_industry_2_desc "Hungarian civilian factories have ramped up their size and production, but we cannot stop here. Larger, and more numerous factories will be able to provide for the whole nation."
+
+###Events###
+
+hun.1.t:0 "The Status of Hungary"
+hun.1.d:0 "At the dawn of the great war, Hungary was one half of the Austro-Hungarian Empire. Having fought for independance in 1948, and proper representation in 1867, the Hungarian people have proven themselves to be nothing but resiliant. Though the Hungarians lost The Great War, we were spared the worst of the damages. Rumors of a peace treaty being held at Trianon would have destroyed the modern Hungarian state and thrown its people into chaos. Still, the region of Transylvania was wrongly stolen by the Entente and now lies independant, mocking its neighbors. What path will Hungary take? What fate lies for the Magyar people?"
+hun.1.a:0 "Exciting stuff!"
