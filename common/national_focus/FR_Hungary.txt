@@ -35,7 +35,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = HUN_coratian_question
+			focus = HUN_croatian_question
 		}
 		mutually_exclusive = {
 			focus = HUN_slavonian_puppet
@@ -140,6 +140,9 @@ focus_tree = {
 			focus = HUN_annex_transylvania
 			focus = HUN_live_in_peace
 		}
+		prerequisite = {
+			focus = HUN_external_focus
+		}
 		x = 13
 		y = 2
 
@@ -175,7 +178,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
-			focus = HUN_coratian_question
+			focus = HUN_croatian_question
 		}
 		mutually_exclusive = {
 			focus = HUN_pressure_bosnia
