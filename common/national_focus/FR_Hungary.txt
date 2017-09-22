@@ -214,6 +214,7 @@ focus_tree = {
             instant_build = yes
 			}
 		}
+		}
 	}
 	focus = {
 		id = HUN_dockyards_2
@@ -245,6 +246,7 @@ focus_tree = {
             instant_build = yes
 			}
 		}
+		}
 	}
 	focus = {
 		id = HUN_arms_industry_1
@@ -271,6 +273,7 @@ focus_tree = {
             instant_build = yes
 			}
         }
+		}
 	}
 	focus = {
 		id = HUN_arms_industry_2
@@ -297,6 +300,7 @@ focus_tree = {
             instant_build = yes
 			}
         }
+		}
 	}
 	focus = {
 		id = HUN_industry_9
@@ -347,6 +351,7 @@ focus_tree = {
             instant_build = yes
 			}
         }
+		}
 	}
 	focus = {
 		id = HUN_civ_industry_2
