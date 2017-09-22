@@ -70,7 +70,8 @@ focus_tree = {
 		x = 7
 		y = 2
 		completion_reward = {
-             remove_ideas = HUN_commie_compromose
+            remove_ideas = HUN_commie_compromose
+		}
 	}
 	focus = {
 		id = HUN_forced_deportation
