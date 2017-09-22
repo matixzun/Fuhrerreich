@@ -128,7 +128,7 @@ ideas = {
 			modifier = {
 				conscription = -0.01
 				consumer_goods_factor = 0.05
-				political_power_gain = -0.5
+				political_power_gain = -0.9
 			}
 		}
 

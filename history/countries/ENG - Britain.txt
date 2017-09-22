@@ -742,26 +742,3 @@ create_equipment_variant = {
 		ship_armor_upgrade = 1
 	}
 }
-
-1939.1.1 = {
-	create_equipment_variant = {
-		name = "Tribal Class"
-		type = destroyer_2
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "Edinburgh Class"
-		type = light_cruiser_2
-		upgrades = {
-			ship_reliability_upgrade = 3
-			ship_engine_upgrade = 3
-			ship_gun_upgrade = 3
-			ship_anti_air_upgrade = 3
-		}
-	}
-}
