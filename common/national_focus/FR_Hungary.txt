@@ -14,7 +14,10 @@ focus_tree = {
 		cost = 10.00
 		x = 9
 		y = 0
-
+		
+		completion_reward = {
+			add_political_power = 150 
+		}
 	}
 	focus = {
 		id = HUN_external_focus
@@ -22,7 +25,10 @@ focus_tree = {
 		cost = 10.00
 		x = 13
 		y = 0
-
+		
+		completion_reward = {
+			add_political_power = 550 
+		}
 	}
 	focus = {
 		id = HUN_pressure_bosnia
@@ -70,7 +76,7 @@ focus_tree = {
 		x = 7
 		y = 2
 		completion_reward = {
-            remove_ideas = { HUN_commie_compromise }
+            remove_ideas = { HUN_communist_dissent }
 		}
 	}
 	focus = {
@@ -86,7 +92,7 @@ focus_tree = {
 		x = 9
 		y = 2
 		completion_reward = {
-            remove_ideas = { HUN_commie_compromose }
+            remove_ideas = { HUN_communist_dissent }
 		}
 	}
 	focus = {
@@ -174,17 +180,42 @@ focus_tree = {
 		id = HUN_dockyards_1
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
+		available = {
+		any_owned_state = { 
+                is_coastal = yes 
+			}
+}
 		prerequisite = {
 			focus = HUN_industry_revival
 		}
 		x = 22
 		y = 1
-
+		completion_reward = {
+		random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                building = arms_factory
+                size > 0
+                include_locked = yes
+				is_coastal = yes
+                }
+            }
+            add_extra_state_shared_building_slots = 3
+            add_building_construction = {
+            type = industrial_complex
+            level = 3
+            instant_build = yes
+        }
+    }
 	}
 	focus = {
 		id = HUN_dockyards_2
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
+		available = {
+		any_owned_state = { 
+                is_coastal = yes 
+			}
 		prerequisite = {
 			focus = HUN_dockyards_1
 		}
