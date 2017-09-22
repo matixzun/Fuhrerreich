@@ -141,7 +141,7 @@ focus_tree = {
 			focus = HUN_live_in_peace
 		}
 		prerequisite = {
-			focus = HUN_external_focus
+			focus = HUN_transylvanian_question
 		}
 		x = 13
 		y = 2
