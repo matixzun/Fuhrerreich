@@ -175,7 +175,7 @@ continuous_focus_position = { x = 50 y = 1600}
 
    		available_if_capitulated = yes  
  		completion_reward = {
- 			add_popularity = { ideology = social_democratic popularity = -0.05 } 
+ 			add_popularity = { ideology = social_democrat popularity = -0.05 } 
  			add_popularity = { ideology = social_liberal popularity = -0.05 } 
  			add_popularity = { ideology = market_liberal popularity = -0.05 }  
  			add_popularity = { ideology = social_conservative popularity = -0.05 } 
@@ -197,7 +197,7 @@ continuous_focus_position = { x = 50 y = 1600}
 
    		available_if_capitulated = yes  
  		completion_reward = {
- 			add_ideas = POL_kings_men 
+ 			add_ideas = POL_king_men 
   					} 
  }
 
@@ -261,15 +261,15 @@ continuous_focus_position = { x = 50 y = 1600}
  		
  		x =3
  		y =5
- 		cost = 5
+ 		cost = 10
 
  		prerequisite = { focus = POL_sejm_power }
  		mutually_exclusive = { focus = POL_poland_all }  
 
    		available_if_capitulated = yes  
-   		custom_effect_tooltip = POL_democracy_for_poles_tooltip
  		completion_reward = {
  			set_country_flag = POL_democracy_for_poles
+ 			custom_effect_tooltip  = POL_democracy_for_poles_tooltip
   					} 
  }
 
@@ -285,7 +285,8 @@ continuous_focus_position = { x = 50 y = 1600}
  		prerequisite = { focus = POL_democracy_for_poles } 
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			add_ideas = POL_direct_rule
   					} 
  }
 
@@ -302,7 +303,9 @@ continuous_focus_position = { x = 50 y = 1600}
  		mutually_exclusive = { focus = POL_democracy_for_poles } 
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			set_country_flag = POL_poland_all
+ 			custom_effect_tooltip = POL_democracy_for_all_tooltip 
   					} 
  }
 
@@ -318,8 +321,47 @@ continuous_focus_position = { x = 50 y = 1600}
  		prerequisite = { focus = POL_poland_all } 
 
    		available_if_capitulated = yes  
- 		completion_reward = { 
+ 		completion_reward = {
+ 			add_ideas = POL_local_leadership
   					} 
  }
 
+      focus = { 
+		id = POL_a_new_poland
+		icon = GFX_goal_generic_major_alliance
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 3
+ 		y = 7
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_local_leadership focus = POL_direct_warsaw focus = POL_ojczyzna_guard}
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			if = {
+			limit = {
+				 has_idea = POL_king_men
+				}
+			country_event = poland.10
+			}
+			if = {
+			limit = {
+				 has_country_flag = POL_democracy
+				}
+			country_event = poland.11
+			}
+			if = {
+			limit = {
+				 has_country_flag = POL_democracy_soon
+				}
+			country_event = poland.12
+			}
+			if = {
+			limit = {
+				 has_country_flag = POL_two_party_state
+			}
+			country_event = poland.13
+  		} 
+   }
 }

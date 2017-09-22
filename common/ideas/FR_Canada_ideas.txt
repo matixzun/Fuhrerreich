@@ -134,7 +134,7 @@ ideas = {
 			modifier = {
 				category_all_armor = {
 				defense = 0.20
-				}
+					}
 			}
 			picture = GFX_goal_generic_construct_military
 			removal_cost = -1

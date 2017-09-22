@@ -1,0 +1,256 @@
+focus_tree = {
+	id = FR_Hungary
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HUN
+		}
+	}
+	default = no
+	focus = {
+		id = HUN_internal_focus
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		x = 9
+		y = 0
+
+	}
+	focus = {
+		id = HUN_external_focus
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		x = 13
+		y = 0
+
+	}
+	focus = {
+		id = HUN_pressure_bosnia
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_coratian_question
+		}
+		mutually_exclusive = {
+			focus = HUN_slavonian_puppet
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = HUN_industry_revival
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		x = 24
+		y = 0
+
+	}
+	focus = {
+		id = HUN_communist_threat
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_internal_focus
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = HUN_commie_compromise
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_communist_threat
+		}
+		mutually_exclusive = {
+			focus = HUN_forced_deportation
+		}
+		x = 7
+		y = 2
+		completion_reward = {
+            remove_ideas = { HUN_commie_compromise }
+		}
+	}
+	focus = {
+		id = HUN_forced_deportation
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_communist_threat
+		}
+		mutually_exclusive = {
+			focus = HUN_commie_compromise
+		}
+		x = 9
+		y = 2
+		completion_reward = {
+            remove_ideas = { HUN_commie_compromose }
+		}
+	}
+	focus = {
+		id = HUN_Transylvanian_question
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_external_focus
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = HUN_live_in_peace
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_Transylvanian_question
+		}
+		mutually_exclusive = {
+			focus = HUN_split_transylvania
+			focus = HUN_annex_transylvania
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = HUN_split_transylvania
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_Transylvanian_question
+		}
+		mutually_exclusive = {
+			focus = HUN_annex_transylvania
+			focus = HUN_live_in_peace
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = HUN_annex_transylvania
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_Transylvanian_question
+		}
+		mutually_exclusive = {
+			focus = HUN_split_transylvania
+			focus = HUN_live_in_peace
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = HUN_coratian_question
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_external_focus
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = HUN_slavonian_puppet
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_coratian_question
+		}
+		mutually_exclusive = {
+			focus = HUN_pressure_bosnia
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = HUN_dockyards_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_industry_revival
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = HUN_dockyards_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_dockyards_1
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = HUN_arms_industry_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_industry_revival
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = HUN_arms_industry_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_arms_industry_1
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = HUN_industry_9
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_arms_industry_2
+		}
+		prerequisite = {
+			focus = HUN_dockyards_2
+		}
+		prerequisite = {
+			focus = HUN_civ_industry_2
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = HUN_civ_industry_1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_industry_revival
+		}
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = HUN_civ_industry_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_civ_industry_1
+		}
+		x = 26
+		y = 2
+
+	}
+}

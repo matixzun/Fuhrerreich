@@ -200,6 +200,12 @@ country_event = {
 	title = serbia.8.t
 	desc = serbia.8.d
 	picture = 
+	
+	trigger = {
+		tag = SER
+	}
+	
+	fire_only_once = yes
 
 	is_triggered_only = yes
 

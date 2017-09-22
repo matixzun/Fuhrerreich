@@ -19,7 +19,7 @@ state={
 
 		}
 		add_core_of = MEX
-		add_claim_of = USA
+		add_claim_by = USA
 
 	}
 

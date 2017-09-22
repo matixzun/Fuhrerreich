@@ -12,14 +12,16 @@ country_event = {
 	id = poland.1
 	title = poland.1.t
 	desc = poland.1.d
-	picture = GFX_report_event_soviet_soldiers_tank
+	picture = GFX_report_event_election_vote
+
+	mean_time_to_happen = { days = 1 }
 
 	is_triggered_only = yes
 
 	option = {
 		name = poland.1.a
 		ai_chance = {
-			factor = 100
+			factor = 50
 		}
 	}
 }
@@ -733,5 +735,313 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
+	}
+}
+
+country_event = { 
+	id = poland.10
+	title = poland.10.t
+	desc = poland.10.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = { days = 1 }
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.10.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 50
+
+	}
+}
+
+country_event = { 
+	id = poland.11
+	title = poland.11.t
+	desc = poland.11.d
+	picture = GFX_report_event_election_vote
+
+	mean_time_to_happen = { days = 1 }
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.11.a
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = social_democrat popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = social_democrat elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+
+	}
+	option = {
+		name = poland.11.b
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = social_liberal elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+	}
+	option = {
+		name = poland.11.c
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = market_liberal popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = market_liberal elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+	}
+	option = {
+		name = poland.11.e
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = social_conservative elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+	}
+	option = {
+		name = poland.11.f
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = authoritarian_democrat elections_allowed = no
+			}
+
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+	}
+}
+
+country_event = { 
+	id = poland.12
+	title = poland.12.t
+	desc = poland.12.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = { days = 1 }
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.12.a
+		ai_chance = {
+			factor = 50
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = social_conservative elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+	}
+	option = {
+		name = poland.12.b
+		ai_chance = {
+			factor = 50
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = authoritarian_democrat elections_allowed = no
+			}
+
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+	}
+}
+
+country_event = { 
+	id = poland.13
+	title = poland.13.t
+	desc = poland.13.d
+	picture = GFX_report_event_generic_read_write
+
+	mean_time_to_happen = { days = 1 }
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.13.a
+		ai_chance = {
+			factor = 50
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = social_conservative elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.13 days = 1460 }
+		}
+
+	}
+	option = {
+		name = poland.13.b
+		ai_chance = {
+			factor = 50
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = authoritarian_democrat elections_allowed = no
+			}
+
+		hidden_effect = {
+			country_event = { id = poland.13 days = 1460 }
+		}
+
+	}
+}
+
+country_event = { 
+	id = poland.14
+	title = poland.14.t
+	desc = poland.14.d
+	picture = GFX_report_event_election_vote
+
+	mean_time_to_happen = { days = 1 }
+
+	is_triggered_only = yes
+
+	option = {
+		name = poland.14.a
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = social_democrat popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = social_democrat elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+
+	}
+	option = {
+		name = poland.14.b
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = social_liberal popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = social_liberal elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+	}
+	option = {
+		name = poland.14.c
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = market_liberal popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = market_liberal elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+	}
+	option = {
+		name = poland.14.e
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = social_conservative popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = social_conservative elections_allowed = no
+			}
+		add_political_power = 50
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
+	}
+	option = {
+		name = poland.14.f
+		ai_chance = {
+			factor = 100
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat popularity = 0.2
+		}
+		set_politics = {
+				ruling_party = authoritarian_democrat elections_allowed = no
+			}
+
+		hidden_effect = {
+			country_event = { id = poland.14 days = 1460 }
+		}
+
 	}
 }

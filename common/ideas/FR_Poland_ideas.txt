@@ -42,7 +42,7 @@ ideas = {
 		}
 
 		POL_less_free_speech = {
-			picture = GFX_idea_ast_abandon_the_westminster_system
+			picture = ast_abandon_the_westminster_system
 			modifier = {
 			}
 		}
@@ -54,13 +54,13 @@ ideas = {
 		}
 
 		POL_equality_for_poles = {
-			picture = GFX_idea_ast_abandon_the_westminster_system
+			picture = ast_abandon_the_westminster_system
 			modifier = {
 			}
 		}
 
 		POL_MOW_army = {
-			picture = GFX_idea_generic_artillery_regiments
+			picture = generic_artillery_regiments
 			modifier = {
 			conscription = 0.015
 			}
@@ -72,14 +72,14 @@ ideas = {
 		}
 
 		POL_PSCD_army = {
-			picture = GFX_idea_generic_artillery_regiments
+			picture = generic_artillery_regiments
 			modifier = {
 				research_time_factor = -0.06
 			}
 		}
 
 		POL_MOW_navy = {
-			picture = GFX_idea_generic_navy_bonus
+			picture = generic_navy_bonus
 			modifier = {
 				navy_capital_ship_attack_factor = 0.05
 				navy_capital_ship_defence_factor = 0.05
@@ -88,7 +88,7 @@ ideas = {
 
 
 		POL_PSCD_navy = {
-			picture = GFX_idea_generic_navy_bonus
+			picture = generic_navy_bonus
 			modifier = {
 				naval_speed_factor = 0.05
 				navy_submarine_detection_factor = 0.1
@@ -97,26 +97,26 @@ ideas = {
 		}
 
 		POL_constitutional_monarchy = {
-			picture = GFX_idea_generic_pp_unity_bonus
+			picture = generic_pp_unity_bonus
 			modifier = {
 			}
 		}
 
 		POL_absolute_monarchy = {
-			picture = GFX_idea_FRA_scw_intervention_republicans_focus
+			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
 			}
 		}
 
 		POL_king_men = {
-			picture = GFX_idea_FRA_national_mobilization_focus
+			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
 				conscription = 0.015
 			}
 		}
 
 		POL_ojczyzna_guard_idea = {
-			picture = GFX_idea_FRA_army_of_aggression_focus
+			picture = FRA_army_of_aggression_focus
 			modifier = {
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
@@ -124,11 +124,26 @@ ideas = {
 		}
 
 		POL_baltic_unrest = {
-			picture = GFX_idea_FRA_matignon_agreements
+			picture = FRA_matignon_agreements
 			modifier = {
 				conscription = -0.01
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.9
+			}
+		}
+
+		POL_direct_rule = {
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
 				consumer_goods_factor = -0.05
-				political_power_gain = -0.7
+			}
+		}
+
+		POL_local_leadership = {
+			picture = generic_central_management
+			modifier = {
+				unity_factor = 0.10
+				non_core_manpower = 0.10
 			}
 		}
 }
