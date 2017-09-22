@@ -28,7 +28,7 @@ focus_tree = {
 		bypass = { has_country_flag = ITA_election }
 		x = 10
 		y = 0
-		cost = 15
+		cost = 10
 		
 		completion_reward = {
 		}
@@ -42,7 +42,7 @@ focus_tree = {
 		bypass = { has_country_flag = antonio_chairman }
 		x = 7
 		y = 1
-		cost = 1
+		cost = 10
 		
 		prerequisite = {
 			focus = ITA_parliamentary_election
@@ -101,7 +101,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_idea = ITA_factories_collectivised
+			add_ideas = ITA_factories_collectivised
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -128,7 +128,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_idea = ITA_socialist_strike
+			add_ideas = ITA_socialist_strike
 		}
 	}
 	
@@ -144,8 +144,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			remove_ideas = ITA_communist_threat
-			add_idea = ITA_wage_light
+			swap_ideas = {
+				remove_idea = ITA_communist_threat
+				add_idea = ITA_wage_light
+			}
 		}
 	}
 	
@@ -161,7 +163,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		add_idea = ITA_eco_reform
+		add_ideas = ITA_eco_reform
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -225,7 +227,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_idea = ITA_wage_regular
+			add_ideas = ITA_wage_regular
 		}
 	}
 
@@ -242,7 +244,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_idea = ITA_work_women
+			add_ideas = ITA_work_women
 		}
 	}
 	
@@ -282,7 +284,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = ITA_socialist_strike
 		}
 	}
 	
@@ -299,7 +301,8 @@ focus_tree = {
 		
 		completion_reward = {
 			remove_ideas = ITA_communist_threat
-			add_idea = ITA_left_crush
+			remove_ideas = ITA_socialist_strike
+			add_ideas = ITA_left_crush
 		}
 	}
 
@@ -365,7 +368,6 @@ focus_tree = {
 		cost = 10
 		
 		completion_reward = {
-			add_political_power = 0
 		}
 	}
 	
@@ -384,7 +386,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_political_power = 100
 		}
 	}
 	
@@ -400,7 +401,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_idea = ITA_parliament_nomore
+			add_ideas = ITA_parliament_nomore
 		}
 	}
 	
@@ -416,7 +417,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_idea = ITA_mil_role
+			add_ideas = ITA_mil_role
 		}
 	}
 	
@@ -450,7 +451,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_idea = ITA_parliament_nomore
+			add_ideas = ITA_parliament_nomore
 			add_national_unity = 0.10
 		}
 	}
@@ -467,7 +468,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_idea = ITA_dio_patria
+			add_ideas = ITA_dio_patria
 		}
 	}
 	
