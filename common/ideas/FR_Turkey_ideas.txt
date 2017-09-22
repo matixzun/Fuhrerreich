@@ -33,7 +33,11 @@ ideas = {
 		}
 
 		TUR_the_phoenix = {
+
+			removal_cost = -1
+
 			picture = AST_abandon_the_westminster_system
+			
 			modifier = {
 				unity_factor = 0.10
 				drift_defence_factor = 0.25
@@ -161,6 +165,28 @@ ideas = {
 			modifier = {
 				non_core_manpower = 0.05
 				drift_defence_factor = 0.15
+			}
+		}
+
+		TUR_light_aircraft = {
+
+			removal_cost = -1
+
+			picture = generic_air_research
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+		}
+
+		TUR_heavy_aircraft = {
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			research_bonus = {
+				air_equipment = 0.10
 			}
 		}
 

@@ -2557,4 +2557,185 @@ focus_tree = {
 		}
 	}
 
+	##### OTTOMAN/TURKISH AIR FORCE
+
+	focus = {
+		id = TUR_the_turkish_air_force
+		icon = GFX_goal_generic_air_production
+		available = {
+			has_global_flag = EMPIRE_DISSOLVED
+		}
+		mutually_exclusive = { focus = TUR_the_ottoman_air_force }
+		x = 49
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 35
+		}
+	}
+
+	focus = {
+		id = TUR_the_ottoman_air_force
+		icon = GFX_goal_generic_air_doctrine
+		available = {
+			has_global_flag = EMPIRE_REMAINS
+		}
+		mutually_exclusive = { focus = TUR_the_turkish_air_force }
+		x = 51
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 35
+		}
+	}
+
+	focus = {
+		id = TUR_fighter_focus
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = TUR_the_turkish_air_force focus = TUR_the_ottoman_air_force }
+		mutually_exclusive = { focus = TUR_bomber_focus }
+		x = 48
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_bomber_focus
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = TUR_the_turkish_air_force focus = TUR_the_ottoman_air_force }
+		mutually_exclusive = { focus = TUR_fighter_focus }
+		x = 52
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_close_air_support_focus
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = TUR_fighter_focus }
+		x = 47
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_heavy_aircraft_industry
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = TUR_bomber_focus }
+		x = 51
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = TUR_heavy_aircraft
+		}
+	}
+
+	focus = {
+		id = TUR_light_aircraft_industry
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = TUR_fighter_focus }
+		x = 49
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = TUR_light_aircraft
+		}
+	}
+
+	focus = {
+		id = TUR_naval_aircraft_focus
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = TUR_bomber_focus }
+		x = 53
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = TUR_aerial_doctrines
+		icon = GFX_focus_YUG_rogozarski
+		prerequisite = { focus = TUR_light_aircraft_industry focus = TUR_heavy_aircraft_industry } 
+		x = 50
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 3
+				category = air_doctrine
+			}			
+		}
+	}
+
 }
