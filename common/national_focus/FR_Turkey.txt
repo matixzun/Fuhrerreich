@@ -233,6 +233,8 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				set_cosmetic_tag = TUR_abolish_empire
+				remove_unit_leader = 680
+				remove_unit_leader = 550
 			}
 			add_political_power = 100
 		}

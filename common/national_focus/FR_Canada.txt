@@ -609,6 +609,7 @@ focus_tree = {
 		id = CAN_crerars_lightning_warfare
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = CAN_spearhead_of_the_empire }
+		mutually_exclusive = { focus = CAN_curries_firepower_primacy }
 		x = 26
 		y = 1
 		cost = 10
@@ -741,6 +742,7 @@ focus_tree = {
 		id = CAN_curries_firepower_primacy
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CAN_spearhead_of_the_empire }
+		mutually_exclusive = { focus = CAN_crerars_lightning_warfare }
 		x = 33
 		y = 1
 		cost = 10
@@ -928,7 +930,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			navy_experience = 5
 			add_tech_bonus = { 
   				bonus = 0.5  
  				uses = 1  
@@ -1028,7 +1030,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			navy_experience = 5
 			add_tech_bonus = {
 				bonus = 0.5  
  				uses = 1  
