@@ -51,7 +51,7 @@ HUN_industry_9_desc:0 "Despite doubts that the Hungarian industry would ever be 
 HUN_civ_industry_1:0 "Begin the Alfold Project"
 HUN_civ_industry_1_desc:0 "Civilian industry cannot be understated in its importance to the war effor, increasing the size and output of these factories will make us a formidible power in the region."
 HUN_civ_industry_2:0 "Expand the Alfold Project"
-HUN_arms_industry_2_desc "Hungarian civilian factories have ramped up their size and production, but we cannot stop here. Larger, and more numerous factories will be able to provide for the whole nation."
+HUN_arms_industry_2_desc:0 "Hungarian civilian factories have ramped up their size and production, but we cannot stop here. Larger, and more numerous factories will be able to provide for the whole nation."
 
 ###Events###
 
