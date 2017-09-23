@@ -230,7 +230,11 @@ country_event = {
 	desc = serbia.9.d
 	picture = 
 
+<<<<<<< HEAD
+	is_triggered_only = yes
+=======
     is_triggered_only = yes
+>>>>>>> master
 
 	trigger = {
 		AND = {
@@ -286,6 +290,8 @@ country_event = {
 	title = serbia.10.t
 	desc = serbia.10.d
 	picture = 
+
+	is_triggered_only = yes
 	
 	trigger = {
 		AND = {

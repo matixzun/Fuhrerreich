@@ -20,7 +20,7 @@ set_politics = {
 			popularity = 0
 		}
 		
-		bloshevist = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}

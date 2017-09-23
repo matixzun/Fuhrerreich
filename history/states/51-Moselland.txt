@@ -2,7 +2,7 @@
 state={
 	id=51
 	name="STATE_51"
-	manpower = 6144743
+	manpower = 4144743
 	resources={
 		steel=54
 	}
@@ -15,9 +15,7 @@ state={
 		victory_points = {
 			6469 10 
 		}
-		victory_points = {
-			587 5 
-		}
+
 		buildings = {
 			infrastructure = 8
 			arms_factory = 4
@@ -31,7 +29,7 @@ state={
 	}
 
 	provinces={
-		529 587 3444 3512 3547 6469 6570 9482 9522 
+		529 3512 6469 6570 9482 
 	}
 	
 }
