@@ -16,7 +16,7 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 75
 		}
 	}
 	focus = {
@@ -27,7 +27,7 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-			add_political_power = 100 
+			add_political_power = 75
 		}
 	}
 	focus = {
@@ -42,6 +42,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 2
+		completion_reward = {
+			set_country_flag = croats_appeased
+		}
 
 	}
 	focus = {
@@ -113,7 +116,7 @@ focus_tree = {
 		x = 13
 		y = 1
 		  completion_reward = {
-            country_event = { id = hun.1 }
+            add_political_power = 25
         }
 	}
 	focus = {
@@ -171,6 +174,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 1
+		completion_reward = {
+		add_political_power = 25
+		}
 
 	}
 	focus = {
@@ -185,7 +191,9 @@ focus_tree = {
 		}
 		x = 17
 		y = 2
-
+		completion_reward = {
+			set_country_flag = croats_appeased
+		}
 	}
 	focus = {
 		id = HUN_dockyards_1
@@ -271,7 +279,6 @@ focus_tree = {
             instant_build = yes
 			}
         }
-		}
 	}
 	focus = {
 		id = HUN_arms_industry_2
@@ -288,7 +295,6 @@ focus_tree = {
                 building = arms_factory
                 size > 2
                 include_locked = yes
-                }
             }
             add_extra_state_shared_building_slots = 2
             add_building_construction = {
@@ -296,7 +302,7 @@ focus_tree = {
             level = 2
             instant_build = yes
 			}
-        }
+		}
 		}
 	}
 	focus = {
@@ -347,7 +353,6 @@ focus_tree = {
             instant_build = yes
 			}
         }
-		}
 	}
 	focus = {
 		id = HUN_civ_industry_2
