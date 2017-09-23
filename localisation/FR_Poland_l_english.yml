@@ -64,6 +64,16 @@ POL_local_leadership:0 "Local Leadership"
 POL_local_leadership_desc:0 ""
 POL_a_new_poland:0 "A New Poland"
 POL_a_new_poland_desc:0 ""
+POL_the_baltic_question:0 "The Baltic Question"
+POL_the_baltic_question_desc:0 ""
+POL_crush_upstarts:0 "Crush the Upstarts"
+POL_crush_upstarts_desc:0 ""
+POL_destroy_wolves:0 "Destroy the Iron Wolves"
+POL_destroy_wolves_desc:0 ""
+POL_crush_aizsargi:0 "Crush the Aizsargi"
+POL_crush_aizsargi_desc:0 ""
+POL_defense_league:0 "The Defense Leage must fall"
+POL_defense_league_desc:0 ""
 
 ### Events ###
 
@@ -137,6 +147,12 @@ poland.14.f:0 "The MOW wins!"
 POL_counteract_baltics:0 "This will increase the chance of a Baltic revolution!"
 POL_support_baltics:0 "This will decrease the chance of a Baltic revolution!"
 POL_democracy_for_poles_tooltip:0 "Will increase the chance and strength of a Baltic uprising"
+POL_democracy_for_all_tooltip:0 "Will decrease the chance and strength of a Baltic uprising"
+POL_fate_baltics:0 "It is time to decide the fate of the baltics...."
+POL_crush_upstarts1:0 "Temporarily make the rebellion have a bigger chance to fire earlier..."
+POL_destroy_wolves1:0 "Makes Lithuania weaker in case of a revolt"
+POL_crush_aizsargi1:0 "Makes Latvia weaker in case of a revolt"
+POL_defense_league1:0 "Makes Estonia weaker in case of a revolt, "
 
 #### Ideas ####
 

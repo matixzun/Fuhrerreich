@@ -18,7 +18,7 @@ focus_tree = {
 
 default = no
 
-continuous_focus_position = { x = 50 y = 1600}
+continuous_focus_position = { x = 0 y = 8}
 
 
 #POLITICAL
@@ -364,4 +364,97 @@ continuous_focus_position = { x = 50 y = 1600}
 			country_event = poland.13
   		} 
    }
+}
+
+      focus = { 
+		id = POL_the_baltic_question
+		icon = GFX_goal_generic_forceful_treaty
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 10
+ 		y = 8
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_a_new_poland}
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			custom_effect_tooltip = POL_fate_baltics
+   				}
+}
+
+      focus = { 
+		id = POL_crush_upstarts
+		icon = GFX_goal_generic_forceful_treaty
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 8
+ 		y = 9
+ 		cost = 10
+
+ 		available = {
+ 			has_government = paternal_autocrat
+ 			}
+ 		prerequisite = { focus = POL_the_baltic_question}
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			custom_effect_tooltip = POL_crush_upstarts1
+ 			add_political_power = -50
+ 			set_country_flag = POL_crush1
+   				}
+}
+
+      focus = { 
+		id = POL_destroy_wolves
+		icon = GFX_goal_generic_wolf_pack
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 8
+ 		y = 10
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_crush_upstarts}
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			set_country_flag = POL_crush2
+ 			custom_effect_tooltip = POL_destroy_wolves1
+   				}
+}
+
+      focus = { 
+		id = POL_crush_aizsargi
+		icon = GFX_goal_demand_sudetenland
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 8
+ 		y = 11
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_destroy_wolves}
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			set_country_flag = POL_crush3
+ 			custom_effect_tooltip = POL_crush_aizsargi1
+   				}
+}
+
+      focus = { 
+		id = POL_defense_league
+		icon = GFX_goal_continuous_suppression
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 8
+ 		y = 12
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_crush_aizsargi}
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			set_country_flag = POL_crush4
+ 			custom_effect_tooltip = POL_defense_league1
+   				}
 }
