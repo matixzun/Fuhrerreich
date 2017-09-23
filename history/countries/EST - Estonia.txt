@@ -21,24 +21,31 @@ set_politics = {
 
 	parties = {
 		social_democrat = { 
-			popularity = 20
+			popularity = 6
 		}
 
 		national_populist = {
-			popularity = 15
+			popularity = 0
+		}
+
+		marxist_leninst = {
+			popularity = 3
+		}
+
+		internationalist = {
+			popularity = 3
 		}
 		
 		bolshevist = {
-			popularity = 5
-			#banned = no #default is no
+			popularity = 88
 		}
 		
 		authoritarian_democrat = { 
-			popularity = 60
+			popularity = 0
 		}
 	}
 	
-	ruling_party = authoritarian_democrat
+	ruling_party = bolshevist
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no

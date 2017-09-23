@@ -12,7 +12,6 @@ state={
 
 	history={
 		owner = RHI
-		victory_points = { 11435 10 }
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
@@ -23,7 +22,7 @@ state={
 	}
 
 	provinces={
-		563 3423 3558 9575 11435 11470 11494 11531 11547 6444 11560
+		563 3423 3558 9575 11531 11547 11560
 	}
 	
 	

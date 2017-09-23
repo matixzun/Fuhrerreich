@@ -229,6 +229,10 @@ SAU = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
+BAL = {
+	color = rgb { 50 135 175 }
+	color_ui = rgb { 99 204 254 }
+}
 SIA = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }

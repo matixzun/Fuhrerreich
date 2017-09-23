@@ -1,0 +1,30 @@
+
+state={
+	id=746
+	name="STATE_746"
+	manpower = 5022339
+	resources={
+		steel=52
+		aluminium=24
+	}
+	
+	state_category = large_city
+
+	history={
+		owner = RHI
+		victory_points = { 587 5 }
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+
+		}
+		add_core_of = RHI
+
+	}
+
+	provinces={
+		587 3444 3547 9522 11435 11470 11494
+	}
+	
+	
+}
