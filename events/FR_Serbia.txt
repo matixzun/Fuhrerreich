@@ -278,7 +278,6 @@ country_event = {
 	    custom_effect_tooltip = serbia.1_tt
 	    add_political_power = 200
 	}  
-
 }
 
 # Internal Politics - Something is happening
@@ -340,6 +339,22 @@ country_event = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
           }
-    }
-
+     add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.10
+		create_country_leader = {
+	        name = "Prince Paul"
+	        desc = "POLITICS_PRINCE_PAUL_DESC"
+	        picture = "Portrait_Yugoslavia_Prince_Paul.dds"
+	        expire = "1965.1.1"
+	        ideology = paternal_autocrat_subtype
+	        traits = {
+		         inexperienced_imperialist
+	        }
+        }
+     }
+        #SER = {
+           #news_event = { }
+        #}
   }
+}

@@ -1042,6 +1042,9 @@ focus = {
 			country_event = { id = serbia.8 days = 1 }
 			country_event = { id = serbia.9 days = 70 }
 			country_event = { id = serbia.10 days = 150 }
+            add_ideas = {
+               king_alexander_assassination_plot
+            } 
         }
         completion_reward = {
            custom_effect_tooltip = serbia.2_tt
