@@ -1,7 +1,11 @@
-l_english:
+﻿l_english:
 
 #### Events ####
 
 worldnews.1.t:0 "The Assassination of Abdulmecid II"
-worldnews.1.d:0 "On this day, the 13th of January, 1936, Sultan Abdulmecid II was very suddenly shot and killed by an unknown assailant! The local Gendarmerie were unable to react in time to save the Sultan, killing the assailant only after the fatal shot that left the Sultan dead. Despite the unpopularity of the Ottoman dynasty after the Great War, Sultan Abdulmecid II and the rest of the Ottoman Royal Family were backed by the Entente powers and kept the empire relatively stable. With the death of the Sultan, uncertainty now rules Turkey."
+worldnews.1.d:0 "On this day, the 13th of January, 1936, Sultan Abdulmecid II was very suddenly shot and killed by an unknown assailant! The local Gendarmerie were unable to react in time to save the Sultan, killing the assailant only after the fatal shot that left the Sultan dead. Despite the unpopularity of the Ottoman dynasty after the Great War, Sultan Abdulmecid II and the rest of the Ottoman Royal Family were backed by the Entente powers and kept the empire relatively stable. With the death of the Sultan, uncertainty now rules within the Ottoman Empire."
 worldnews.1.a:0 "How terrifying!"
+###
+worldnews.2.t:0 "Black Wednesday.
+worldnews.2.d:0 "For quite some time now, the London Stock Exchange had been on the decline. Nobody could have denied the new worldwide recession that was taking place. What they couldn't have predicted, however, was the complete and utter collapse of the London Stock Exchange. By the hour currency is losing value at an extreme rate, and a loaf of bread in Central London now costs an estimated $1700. The entire world has been paralyzed by this tragedy, and already weakened states now face the prospect of complete and utter collapse. Some nations are already hard at work to reverse the effects of the newly dubbed 'Black Wednesday' but it is doubtful that the worlds nations will be able to recover without some extreme measures being taken. Will this upset the already delecate balence of the world?"
+worldnews.2.a:0 "God help us all..."

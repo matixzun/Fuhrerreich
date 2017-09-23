@@ -53,20 +53,26 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 33
 		}
 
-#		fascism = {
+#		national_populist = {
 #		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 33
 		}
-		neutrality = {
+		authoritarian_democrat = {
 			popularity = 34
 		}
 	}
+	
+	ruling_party = authoritarian_democrat
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+
 }
 
 create_country_leader = {
@@ -74,7 +80,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = social_conservative
 	traits = {
 		
 	}
@@ -85,7 +91,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_malaya_shenton_thomas"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = social_conservative
 	traits = {
 		
 	}
@@ -96,7 +102,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1953.3.1"
-	ideology = marxism
+	ideology = bolshevist
 	traits = {
 		
 	}
@@ -107,7 +113,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
 	expire = "1953.3.1"
-	ideology = moderatism
+	ideology = authoritarian_democrat
 	traits = {
 		
 	}

@@ -26,21 +26,31 @@ set_convoys = 25
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
+		social_conservative = {
 			popularity = 10
 		}
 		
-		communism = {
+		market_liberal = {
+			popularity = 0
+		}
+
+		national_populist = {
+			popularity = 10
+		}
+		
+		bolshevist = {
 			popularity = 30
 		}
-		neutrality = {
+		authoritarian_democrat = {
 			popularity = 50
 		}
 	}
+	
+	ruling_party = authoritarian_democrat
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+
 }
 
 create_country_leader = {
@@ -48,7 +58,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
 	expire = "1953.3.1"
-	ideology = socialism #Marhaenism his own unique mix of stuff
+	ideology = authoritarian_democrat_subtype #Marhaenism his own unique mix of stuff
 	traits = {
 		
 	}
@@ -59,7 +69,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_indonesia_at_van_starkenborgh"
 	expire = "1953.3.1"
-	ideology = conservatism 
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}
@@ -70,7 +80,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1953.3.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		
 	}
@@ -81,7 +91,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
 	expire = "1953.3.1"
-	ideology = fascism_ideology # except for no connection to catholicism, this party perfectly fits into falangism 
+	ideology = national_populist_subtype # except for no connection to catholicism, this party perfectly fits into falangism 
 	traits = {
 		
 	}
@@ -92,7 +102,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
 	expire = "1953.3.1"
-	ideology = moderatism
+	ideology = market_liberal_subtype
 	traits = {
 		
 	}

@@ -13,26 +13,24 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_democrat = {
 			popularity = 0
-			banned = yes
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 80
 		}
 		
-		communism = {
+		bloshevist = {
 			popularity = 0
-			banned = yes
 		}
 
-		neutrality = {
+		authoritarian_democrat = {
 			popularity = 20
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = national_populist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -43,7 +41,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
-	ideology = rexism
+	ideology = national_populist_subtype
 	traits = {
 		warrior_code
 	}

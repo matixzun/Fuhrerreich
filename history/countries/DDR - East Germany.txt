@@ -49,15 +49,15 @@ set_national_unity = 0.7
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 30
 		}
 
-		fascism = {
+		valkism = {
 			popularity = 10
 		}
 		
-		communism = {
+		marxist_leninist = {
 			popularity = 60
 			banned = no #default is no
 		}
@@ -79,7 +79,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = valkism_subtype
 	traits = {
 		political_dancer		
 	}
@@ -90,7 +90,7 @@ create_country_leader = {
 #	desc = ""
 #	picture = "Portrait_Germany_Konrad_Adenauer.dds"
 #	expire = "1965.1.1"
-#	ideology = conservatism
+#	ideology = social_conservative_subtype
 #	traits = {
 #	}
 #}
@@ -100,7 +100,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELM_PIECK_DESC"	 
 	picture = gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = marxist_leninist_subtype
 	traits = {
 		stalins_puppet
 		exiled

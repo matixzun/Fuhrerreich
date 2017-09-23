@@ -1040,43 +1040,19 @@ focus = {
         
         select_effect = {
 			country_event = { id = serbia.8 days = 1 }
-			set_country_flag = SER_internal_politics_started
+			country_event = { id = serbia.9 days = 70 }
+			country_event = { id = serbia.10 days = 150 }
+            add_ideas = {
+               king_alexander_assassination_plot
+            } 
         }
         completion_reward = {
            custom_effect_tooltip = serbia.2_tt
-
-           if = {
-             limit = {
-                AND = {
-                  has_country_flag = no_solution
-                  has_country_flag = populists_gain_power
-                }
-             }
-             add_timed_idea = {
-                 idea = king_alexander_assassination_plot
-                 days = 400
-             }
-             hidden_effect = {
-               country_event = { id = serbia.11 days = 40 }
-             }
+           hidden_effect = {
+            country_event = { id = serbia.11 days = 1 }
            }
 
-           if = {
-             limit = {
-                OR = {
-                  has_country_flag = no_solution
-                  has_country_flag = populists_gain_power
-                }
-             }
-             add_timed_idea = {
-                 idea = king_alexander_assassination_plot
-                 days = 400
-             }
-             hidden_effect = {
-               country_event = { id = serbia.11 days = 100 }
-             }
-           }
-        }
+  }
  } 
  #Focus for Serbian Nationalism 
 	focus = { 
@@ -1086,7 +1062,7 @@ focus = {
  ai_will_do = { factor = } 
  x = 6
  y = 1 
- mutually_exclusive = { focus = drugtito} 
+ mutually_exclusive = { focus = drugtito } 
  prerequisite = { focus = internalpolitics} 
  available = {
     OR = {

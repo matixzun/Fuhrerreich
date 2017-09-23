@@ -13,21 +13,21 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 98
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 2
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = market_liberal
 	last_election = "1932.2.14"
 	election_frequency = 48
 	elections_allowed = yes
@@ -38,7 +38,7 @@ create_country_leader = {
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}

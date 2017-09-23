@@ -15,25 +15,25 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 30
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 0
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 
-		neutrality = {
+		authoritarian_democrat = {
 			popularity = 70
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1931.2.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = "POLITICS_JORGE_UBICO_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_6.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}

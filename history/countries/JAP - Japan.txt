@@ -87,21 +87,21 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 0
 		}
 
-		fascism = {
+		authoritarian_democrat = {
 			popularity = 100
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -112,7 +112,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.1"
-	ideology = fascism_ideology
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		warrior_code
 	}
@@ -123,7 +123,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_kyuichi_tokuda"
 	expire = "1989.1.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 	}
 }
@@ -133,7 +133,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_tetsu_katayama"
 	expire = "1989.1.1"
-	ideology = liberalism
+	ideology = market_liberal_subtype
 	traits = {
 	}
 }

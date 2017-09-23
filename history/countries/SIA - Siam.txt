@@ -20,25 +20,25 @@ set_convoys = 15
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 0
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 20
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = {
+		authoritarian_democrat = {
 			popularity = 80
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -49,7 +49,7 @@ create_country_leader = {
 	desc = "POLITICS_PHRAYA_PHAHON_DESC"
 	picture = "Portrait_Siam_Phraya_Phahon.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}

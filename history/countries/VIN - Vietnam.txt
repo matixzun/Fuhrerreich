@@ -43,26 +43,26 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 35
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 15
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 15
 		}
-		neutrality = {
+		market_liberal = {
 			popularity = 35
 		}
 	}
 
-	ruling_party = democratic
+	ruling_party = social_conservative
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 #NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
@@ -72,7 +72,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
 	expire = "1953.3.1"
-	ideology = fascism_ideology 
+	ideology = national_populist_subtype
 	traits = {
 		
 	}
@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
 	expire = "1953.3.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		
 	}
@@ -94,7 +94,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}
@@ -105,7 +105,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = moderatism
+	ideology = market_liberal_subtype
 	traits = {
 		
 	}

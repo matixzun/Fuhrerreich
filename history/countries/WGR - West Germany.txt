@@ -49,15 +49,15 @@ set_national_unity = 0.7
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 80
 		}
 
-		fascism = {
+		valkist = {
 			popularity = 10
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 10
 			banned = no #default is no
 		}
@@ -79,7 +79,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = valkist_subtype
 	traits = {
 	}
 }
@@ -89,7 +89,7 @@ create_country_leader = {
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 	}
 }

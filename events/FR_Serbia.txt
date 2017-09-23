@@ -230,17 +230,16 @@ country_event = {
 	desc = serbia.9.d
 	picture = 
 
+    is_triggered_only = yes
+
 	trigger = {
+		AND = {
 	     tag = SER
 	     NOT = { has_completed_focus = internalpolitics }
-	     focus_progress = {
-	            focus = internalpolitics
-	            progress > 0.50
-	     }
+		}
 	}
-	mean_time_to_happen = {
-	        days = 1
-	}
+	
+	fire_only_once = yes
 
 	option = {
 	     ai_chance = {
@@ -278,11 +277,7 @@ country_event = {
 		}	
 	    custom_effect_tooltip = serbia.1_tt
 	    add_political_power = 200
-	    hidden_effect = {
-	    set_country_flag = no_solution
-	    }
 	}  
-
 }
 
 # Internal Politics - Something is happening
@@ -293,25 +288,19 @@ country_event = {
 	picture = 
 	
 	trigger = {
-		tag = SER
-		NOT = { has_completed_focus = internalpolitics }
-		focus_progress = {
-			focus = internalpolitics
-			progress > 0.75
+		AND = {
+			tag = SER
+			NOT = { has_completed_focus = internalpolitics }
 		}
 	}
+	
+	fire_only_once = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 
 	option = {
 	  ai_chance = {
 	     factor = 30
-	     modifier = {
-	         factor = 0
-	         has_country_flag = no_solution
-	     }
 	  }
 	  name = serbia.10.a
 	  remove_ideas = starting_idea3
@@ -320,22 +309,13 @@ country_event = {
 	option = {
 	   ai_chance {
 	      factor = 30
-	      modifier = {
-	         factor = 80
-	         NOT = {
-	         has_country_flag = no_solution
-	         }
 	      }
-	   }
-	   name = serbia.10.b
+	     name = serbia.10.b
 	     add_popularity = {
 				ideology = national_populist
 				popularity = 0.10
 		}		
 	   add_country_leader_trait = inexperienced_imperialist
-	   hidden effect = {
-	   set_country_flag = populists_gain_power
-	   }
     }
 }
 
@@ -355,10 +335,26 @@ country_event = {
 	option = {
 		name = serbia.11.a
 		kill_country_leader = yes
-    }
-
-    set_politics = {
+          set_politics = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
-    }
+          }
+     add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.10
+		create_country_leader = {
+	        name = "Prince Paul"
+	        desc = "POLITICS_PRINCE_PAUL_DESC"
+	        picture = "Portrait_Yugoslavia_Prince_Paul.dds"
+	        expire = "1965.1.1"
+	        ideology = paternal_autocrat_subtype
+	        traits = {
+		         inexperienced_imperialist
+	        }
+        }
+     }
+        #SER = {
+           #news_event = { }
+        #}
   }
+}

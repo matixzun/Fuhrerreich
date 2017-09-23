@@ -43,7 +43,7 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = {
 			popularity = 25
 		}
 
@@ -51,13 +51,19 @@ set_politics = {
 #		
 #		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 35
 		}
-		neutrality = {
+		authoritarian_democrat = {
 			popularity = 40
 		}
 	}
+	
+	ruling_party = authoritarian_democrat
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+
 }
 
 create_country_leader = {
@@ -65,7 +71,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	expire = "1953.3.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		
 	}
@@ -76,7 +82,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = despotism
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		
 	}
@@ -87,7 +93,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}

@@ -23,16 +23,20 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		fascism = { 
+		valkist = { 
 			popularity = 33
 		}
-		neutrality = { 
+		paternal_autocrat = { 
 			popularity = 33
 		}		
-		communism = {
+		marxist_leninist = {
 			popularity = 34
 		}
 	}
+	ruling_party = paternal_autocrat
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -40,7 +44,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = fascism_ideology
+	ideology = valkist_subtype
 	traits = {
 		
 	}
@@ -51,7 +55,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1953.3.1"
-	ideology = oligarchism
+	ideology = paternal_autocrat_subtype
 	traits = {
 		
 	}
@@ -62,7 +66,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1953.3.1"
-	ideology = leninism
+	ideology = marxist_leninist_subtype
 	traits = {
 		
 	}

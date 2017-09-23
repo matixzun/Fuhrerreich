@@ -29,10 +29,8 @@ CAN_black_wednesday_initiatives:0 "Black Wednesday Initiatives"
 CAN_black_wednesday_initiatives_desc:0 "Our period of Economic prosperity is over... For now. This ripples of tragedy has struck us, which was only to be predicted. However it is not over for Canada. We will persevere. And we will tell the Public that we will persevere, and how we intend on doing it."
 CAN_expand_the_dbs:0 "Expand the D.B.S"
 CAN_expand_the_dbs_desc:0 "The Dominion Bureau of Statistics (Or D.B.S for short) was formed in 1918 in accordance with the Statistics Act. They are responsible for holding censuses within the Nation; however don't do anything outside of that. The D.B.S would be much more useful if we expanded its responsibility to also include the production of Population statistics, Economic statistics and more.
-# (Note, gains national spirit 'The DBS' which grants +5% monthly population growth, +5% factory output)
 CAN_statistics_canada:0 "Statistics Canada"
 CAN_statistics_canada_desc:0 "Now with our newfound independence; the D.B.S shall be reformed into Statistics Canada, with even further expansion."
-# Removes national spirit 'The DBS'
 CAN_expand_the_rcmp:0 "Expand the RCMP"
 CAN_expand_the_rcmp_desc:0 "The Royal Canadian Mounted Police hold a legacy in Canada. There is little they were incapable of doing and they have accomplished many admirable tasks. They are also responsible for infiltrating and dismantling Political Groups that might be considered dangerous to Canada. As the name might imply, many of them are Pro-British, and what exactly they might consider dangerous to Canada could end up becoming subjective."
 CAN_polycorp:0 "PolyCorp"

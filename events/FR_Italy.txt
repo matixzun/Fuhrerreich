@@ -446,7 +446,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			set_country_flag = lugi_chairman
+			set_country_flag = luigi_chairman
 			ITA = {
 				country_event = { id = italy.101 days = 14 }
 			}
@@ -633,7 +633,8 @@ country_event = {
 		name = italy.16.b
 		set_politics = { ruling_party = paternal_autocrat }
 		add_popularity = {
-		ideology = paternal_autocrat popularity = 0.40 
+		ideology = paternal_autocrat popularity = 0.40 }
+		add_popularity = {
 		ideology = valkist popularity = -0.30 }
 		create_country_leader = {
 			name = "Amadeo Aosta"

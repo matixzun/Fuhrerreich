@@ -15,24 +15,24 @@ set_country_flag = monroe_doctrine
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_democrat = { 
 			popularity = 0
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 0
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		authoritarian_democrat = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes
@@ -43,7 +43,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
 	picture = "Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
 	expire = "1965.1.1"
-	ideology = despotism # liberalism, personally, but puppet for military
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}
@@ -54,7 +54,7 @@ create_country_leader = {
 	desc = "POLITICS_OSCAR_UNZAGA_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = falangism
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}
