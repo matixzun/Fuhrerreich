@@ -230,14 +230,12 @@ country_event = {
 	desc = serbia.9.d
 	picture = 
 
+    is_triggered_only = yes
+
 	trigger = {
 		AND = {
 	     tag = SER
 	     NOT = { has_completed_focus = internalpolitics }
-	     focus_progress = {
-	            focus = internalpolitics
-	            progress > 0.25
-			}
 		}
 	}
 	
@@ -279,9 +277,6 @@ country_event = {
 		}	
 	    custom_effect_tooltip = serbia.1_tt
 	    add_political_power = 200
-	    hidden_effect = {
-	    set_country_flag = no_solution
-	    }
 	}  
 
 }
@@ -297,22 +292,16 @@ country_event = {
 		AND = {
 			tag = SER
 			NOT = { has_completed_focus = internalpolitics }
-			focus_progress = {
-				focus = internalpolitics
-				progress > 0.75
-			}
 		}
 	}
 	
 	fire_only_once = yes
 
+	is_triggered_only = yes
+
 	option = {
 	  ai_chance = {
 	     factor = 30
-	     modifier = {
-	         factor = 0
-	         has_country_flag = no_solution
-	     }
 	  }
 	  name = serbia.10.a
 	  remove_ideas = starting_idea3
@@ -321,22 +310,13 @@ country_event = {
 	option = {
 	   ai_chance {
 	      factor = 30
-	      modifier = {
-	         factor = 80
-	         NOT = {
-	         has_country_flag = no_solution
-	         }
 	      }
-	   }
-	   name = serbia.10.b
+	     name = serbia.10.b
 	     add_popularity = {
 				ideology = national_populist
 				popularity = 0.10
 		}		
 	   add_country_leader_trait = inexperienced_imperialist
-	   hidden effect = {
-	   set_country_flag = populists_gain_power
-	   }
     }
 }
 
@@ -356,10 +336,10 @@ country_event = {
 	option = {
 		name = serbia.11.a
 		kill_country_leader = yes
-    }
-
-    set_politics = {
+          set_politics = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
+          }
     }
+
   }
