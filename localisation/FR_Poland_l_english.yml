@@ -74,6 +74,15 @@ POL_crush_aizsargi:0 "Crush the Aizsargi"
 POL_crush_aizsargi_desc:0 ""
 POL_defense_league:0 "The Defense Leage must fall"
 POL_defense_league_desc:0 ""
+POL_restart_the_economy:0 "Restart the Economy"
+POL_restart_the_economy_desc:0 ""
+POL_protect_the_consumer:0 "Protect the consumer"
+POL_protect_the_consumer_desc:0 ""
+POL_subsudise_local_industries:0 "Subsudise local Industries"
+POL_subsudise_local_industries_desc:0 ""
+POL_encourage_domestic_industry:0 "Encourage domestic Industry"
+POL_encourage_domestic_industry_desc:0 ""
+
 
 ### Events ###
 

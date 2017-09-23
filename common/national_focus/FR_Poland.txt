@@ -18,7 +18,7 @@ focus_tree = {
 
 default = no
 
-continuous_focus_position = { x = 0 y = 8}
+continuous_focus_position = { x = 0 y = 1300}
 
 
 #POLITICAL
@@ -458,3 +458,74 @@ continuous_focus_position = { x = 0 y = 8}
  			custom_effect_tooltip = POL_defense_league1
    				}
 }
+
+
+
+
+      focus = { 
+		id = POL_restart_the_economy
+		icon = GFX_goal_continuous_non_factory_construct
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 9
+ 		y = 0
+ 		cost = 10
+
+ 		prerequisite = {}
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      focus = { 
+		id = POL_protect_the_consumer
+		icon = GFX_goal_generic_consumer_goods
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 7
+ 		y = 1
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_restart_the_economy }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      focus = { 
+		id = POL_subsudise_local_industries
+		icon = GFX_goal_generic_construct_civilian
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 7
+ 		y = 1
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_protect_the_consumer }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      focus = { 
+		id = POL_encourage_domestic_industry
+		icon = GFX_goal_generic_construct_civilian
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 7
+ 		y = 1
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_subsudise_local_industries }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+
+
+
