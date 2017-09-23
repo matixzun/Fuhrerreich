@@ -1,6 +1,6 @@
 ﻿capital = 13
 
-oob = "EST_1936"
+oob = "BAL_1936"
 
 set_research_slots = 3
 
@@ -21,31 +21,24 @@ set_politics = {
 
 	parties = {
 		social_democrat = { 
-			popularity = 6
+			popularity = 20
 		}
 
 		national_populist = {
-			popularity = 0
-		}
-
-		marxist_leninst = {
-			popularity = 3
-		}
-
-		internationalist = {
-			popularity = 3
+			popularity = 15
 		}
 		
 		bolshevist = {
-			popularity = 88
+			popularity = 5
+			#banned = no #default is no
 		}
 		
 		authoritarian_democrat = { 
-			popularity = 0
+			popularity = 60
 		}
 	}
 	
-	ruling_party = bolshevist
+	ruling_party = authoritarian_democrat
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
