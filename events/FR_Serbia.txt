@@ -121,6 +121,7 @@ country_event = {
 	  trigger = {
 	    has_country_flag = serbia_demands_montenegro
 	  }
+	}
 	
 	option = { # Accept
 		name = serbia.6.a
