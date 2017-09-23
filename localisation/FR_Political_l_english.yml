@@ -137,8 +137,8 @@ fr.political.23.d:0 "Our current government contains a Minister of a different i
 fr.political.23.a:0 "There is nothing we can do."
 fr.political.23.b:0 "Use our influence to revert his efforts."
 
-KR_different_ideology:0 "Different Ideology"
-KR_similar_ideology:0 "Similar Ideology"
-KR_same_ideology:0 "Same Ideology"
+FR_different_ideology:0 "Different Ideology"
+FR_similar_ideology:0 "Similar Ideology"
+FR_same_ideology:0 "Same Ideology"
 same_ruling_party:0 "Base"
 different_party_types:0 "Base"

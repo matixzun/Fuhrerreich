@@ -140,6 +140,22 @@ CAN_doctrinal_refinement:0 "Doctrinal Refinement"
 CAN_doctrinal_refinement_desc:0 "The Billy Bishop Program has brought many fresh ideas to the RCAF and has helped us develop our Aerial Doctrine. With many younger minds to work with, we can more fully refine our Doctrine."
 
 
+#### Ideas ####
+
+CAN_dbs_idea:0 "Dominion Bureau of Statistics"
+CAN_stats_idea:0 "Statistics Canada"
+CAN_nrma_idea:0 "National Resources Mobilization Act"
+CAN_wma_idea:0 "War Measures Act"
+CAN_rcmp_idea:0 "RCMP Expansion"
+CAN_recdrive_idea:0 "Recruitment Drive"
+CAN_anglo_idea:0 "Anglo-Canadian Conscription"
+CAN_cco_idea:0 "Canada Carries On"
+CAN_relief_idea:0 "Work Relief Camps"
+CAN_char_idea:0 "Charlottes Program"
+CAN_tes_idea:0 "Tanks Emplacement Strategy"
+CAN_modern_idea:0 "Modern Supply Lines"
+
+
 #### Political Parties ####
 
 CAN_internationalist_party:0 "CPC"

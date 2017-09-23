@@ -202,6 +202,28 @@ TUR_new_dockyards:0 "New Dockyards"
 TUR_new_dockyards_desc:0 "In order to expand our ship production capabilities, it is important we construct more dockyards."
 
 
+## Turkish/Ottoman Air Force ##
+
+TUR_the_turkish_air_force:0 "The Turkish Air Force"
+TUR_the_turkish_air_force_desc:0 "The Turkish Air Force is neither large nor modern. Reforming it should be a top priority."
+TUR_the_ottoman_air_force:0 "The Ottoman Air Force"
+TUR_the_ottoman_air_force_desc:0 "During the Great War, efforts were made to modernize the Ottoman Air Force, or the Ottoman Aviation Squadrons. Unfortunately, our efforts were cut short because of our loss and subsequent occupation by the Entente powers. It is time we finally complete the reformation required to modernize our air force."
+TUR_fighter_focus:0 "Fighter Focus"
+TUR_fighter_focus_desc:0 "If we are to control the skies and combat enemy planes, we must invest time and money into building new fighters."
+TUR_bomber_focus:0 "Bomber Focus"
+TUR_bomber_focus_desc:0 "Bombers, by nature, are designed to attack both sea and land targets. This means enemy ships, troops, or even supply lines can all be attacked. Building them would be a great boon during wartime."
+TUR_close_air_support_focus:0 "Close Air Support Focus"
+TUR_close_air_support_focus_desc:0 "Close air support planes are designed to attack hostile forces in order to assist our own. To keep manpower losses at a minimum, we should invest in this technology."
+TUR_heavy_aircraft_industry:0 "Heavy Aircraft Industry"
+TUR_heavy_aircraft_industry_desc:0 "Increasing the efficiency of heavy aircraft production will be paramount to the Imperial war effort."
+TUR_light_aircraft_industry:0 "Light Aircraft Industry"
+TUR_light_aircraft_industry_desc:0 "In order to improve our production of light aircrafts, we should focus our full attention on the production of new light aircrafts."
+TUR_naval_aircraft_focus:0 "Naval Aircraft Focus"
+TUR_naval_aircraft_focus_desc:0 "Combined with carriers, naval aircrafts can be used to reach to nearly any part of the world."
+TUR_aerial_doctrines:0 "Aerial Doctrines"
+TUR_aerial_doctrines_desc:0 "Adopting new doctrines to decide the strategy of our air force will be important to increase both efficiency and co-ordination between our forces."
+
+
 #### Political Parties ####
 
 TUR_internationalist_party:0 "Ahali Fırkası"
@@ -236,7 +258,7 @@ tur.1.t:0 "The Sultan has been assassinated!"
 tur.1.d:0 "An assassin with unknown motives has murdered Sultan Abdulmecid II! The Sultan was the only thing keeping our country together, and with his death the future is now uncertain. The Ottoman Dynasty was already unpopular in the Empire and now, with his death, many factions are clamouring for change or trying to seize power for themselves. We must find a solution soon, or the state may be thrown into chaos..."
 tur.1.a:0 "This does not bode well..."
 tur.2.t:0 "The Ottoman Empire"
-tur.2.d:0 "When the Great War had broken out, the Ottoman Empire had chosen to side with Germany and Austria, the three nations forming the Central Powers. After a disastrous war which saw the Ottomans lose all of their Arabian territories and a large portion of Anatolia, the country had been thrown into disaster. A failed Kemalist Revolt by the former Mustafa Kemal Paşa saw the country sink itself further into instability.\n\nNow, the Ottoman Royal family is deeply unpopular within the country, ruling only with the backing of the Entente powers. Many scheming factions exist within the empire, raring to seize power for themselves, which is now a shell of its former self. To keep these factions at bay, Sultan Abdulmecid II has ruled with an iron fist, effectively rendering the National Assembly useless. However, fractures within the Ottoman Empire are deeply apparent and could threaten to destroy the Sublime Porte, once and for all…"
+tur.2.d:0 "When the Great War had broken out, the Ottoman Empire had chosen to side with Germany and Austria, the three nations forming the Central Powers. After a disastrous war, which saw the Ottomans lose all of their Arabian territories and a large portion of Anatolia, the country had been thrown into disaster. A failed Kemalist Revolt by the former Mustafa Kemal Paşa saw the country sink itself further into instability.\n\nNow, the Ottoman Royal family is deeply unpopular within the country, ruling only with the backing of the Entente powers. Many scheming factions exist within the empire, raring to seize power for themselves, which is now a shell of its former self. To keep these factions at bay, Sultan Abdulmecid II has ruled with an iron fist, effectively rendering the National Assembly useless. However, fractures within the Ottoman Empire are deeply apparent and could threaten to destroy the Sublime Porte, once and for all..."
 tur.2.a:0 "Oh my!" 
 tur.3.t:0 "Parliament in disarray!"
 tur.3.d:0 "With the recent death of the Sultan, the National Assembly is in disarray! Many factions are attempting to seize power. If we do not resolve this soon, our great nation could potentially collapse!"
@@ -329,6 +351,8 @@ TUR_planning_our_battles:0 "Planning Our Battles"
 TUR_supply_our_army:0 "Supplying Our Troops"
 TUR_religious_plurality:0 "The Millet System"
 TUR_religious_plurality_desc:0 "The Millet System within the Ottoman Empire grants religious freedom to all of our minorities and ensures a more harmonious society. If we are to maintain our stability, we must ensure that the Millet System stays protected."
+TUR_light_aircraft:0 "Light Aircraft Industry"
+TUR_heavy_aircraft:0 "Heavy Aircraft Industry"
 
 
 #### Tooltips ####

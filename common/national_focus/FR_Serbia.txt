@@ -860,10 +860,6 @@ focus = {
 		cost = 10
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				factor = 0
-				date < 1938.1.1
-			}
 		}
 
 		bypass = {
@@ -876,13 +872,14 @@ focus = {
 			}
 
 		completion_reward = {
+			set_country_flag = serbia_demands_montenegro
 			army_experience = 10
 			if = {
 				limit = {
 					country_exists = MNT
 					MNT = {
 						has_civil_war = no
-						OR = {
+						AND = {
 							owns_state = 105
 						}
 					}
@@ -1055,7 +1052,7 @@ focus = {
                   has_country_flag = populists_gain_power
                 }
              }
-             add_timed_idea = { king_alexander_assassination_plot
+             add_timed_idea = {
                  idea = king_alexander_assassination_plot
                  days = 400
              }
@@ -1071,7 +1068,7 @@ focus = {
                   has_country_flag = populists_gain_power
                 }
              }
-             add_timed_idea = { king_alexander_assassination_plot
+             add_timed_idea = {
                  idea = king_alexander_assassination_plot
                  days = 400
              }

@@ -14,7 +14,10 @@ focus_tree = {
 		cost = 10.00
 		x = 9
 		y = 0
-
+		
+		completion_reward = {
+			add_political_power = 100
+		}
 	}
 	focus = {
 		id = HUN_external_focus
@@ -22,14 +25,17 @@ focus_tree = {
 		cost = 10.00
 		x = 13
 		y = 0
-
+		
+		completion_reward = {
+			add_political_power = 100 
+		}
 	}
 	focus = {
 		id = HUN_pressure_bosnia
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = HUN_coratian_question
+			focus = HUN_croatian_question
 		}
 		mutually_exclusive = {
 			focus = HUN_slavonian_puppet
@@ -44,7 +50,14 @@ focus_tree = {
 		cost = 10.00
 		x = 24
 		y = 0
-
+		completion_reward = {
+			add_political_power = 25 
+			add_tech_bonus = { 
+  				bonus = 0.25
+ 				uses = 1
+ 				category = industry 
+			}
+		}
 	}
 	focus = {
 		id = HUN_communist_threat
@@ -70,7 +83,7 @@ focus_tree = {
 		x = 7
 		y = 2
 		completion_reward = {
-            remove_ideas = { HUN_commie_compromise }
+            remove_ideas = { HUN_communist_dissent }
 		}
 	}
 	focus = {
@@ -86,11 +99,12 @@ focus_tree = {
 		x = 9
 		y = 2
 		completion_reward = {
-            remove_ideas = { HUN_commie_compromose }
+            remove_ideas = { HUN_communist_dissent }
+			add_political_power = -50
 		}
 	}
 	focus = {
-		id = HUN_Transylvanian_question
+		id = HUN_transylvanian_question
 		icon = GFX_goal_generic_major_alliance
 		cost = 10.00
 		prerequisite = {
@@ -98,7 +112,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 1
-
+		  completion_reward = {
+            country_event = { id = hun.1 }
+        }
 	}
 	focus = {
 		id = HUN_live_in_peace
@@ -119,12 +135,13 @@ focus_tree = {
 		id = HUN_split_transylvania
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 10.00
-		prerequisite = {
-			focus = HUN_Transylvanian_question
-		}
+		prerequisite = { focus = HUN_Transylvanian_question }
 		mutually_exclusive = {
 			focus = HUN_annex_transylvania
 			focus = HUN_live_in_peace
+		}
+		prerequisite = {
+			focus = HUN_transylvanian_question
 		}
 		x = 13
 		y = 2
@@ -146,7 +163,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = HUN_coratian_question
+		id = HUN_croatian_question
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		prerequisite = {
@@ -161,7 +178,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
-			focus = HUN_coratian_question
+			focus = HUN_croatian_question
 		}
 		mutually_exclusive = {
 			focus = HUN_pressure_bosnia
@@ -174,23 +191,65 @@ focus_tree = {
 		id = HUN_dockyards_1
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
+		available = {
+		any_owned_state = {
+                is_coastal = yes }
+			}
 		prerequisite = {
 			focus = HUN_industry_revival
 		}
 		x = 22
 		y = 1
-
+		completion_reward = {
+		random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                building = dockyard
+                size > 2
+                include_locked = yes
+				is_coastal = yes
+                }
+            }
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+            type = dockyard
+            level = 2
+            instant_build = yes
+			}
+		}
+		}
 	}
 	focus = {
 		id = HUN_dockyards_2
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
+		available = {
+		any_owned_state = { 
+                is_coastal = yes }
+			}
 		prerequisite = {
 			focus = HUN_dockyards_1
 		}
 		x = 22
 		y = 2
-
+		completion_reward = {
+		random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                building = dockyard
+                size > 2
+                include_locked = yes
+				is_coastal = yes
+                }
+            }
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+            type = dockyard
+            level = 2
+            instant_build = yes
+			}
+		}
+		}
 	}
 	focus = {
 		id = HUN_arms_industry_1
@@ -201,7 +260,23 @@ focus_tree = {
 		}
 		x = 24
 		y = 1
-
+		completion_reward = {
+			random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                building = arms_factory
+                size > 2
+                include_locked = yes
+                }
+            }
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+			}
+        }
+		}
 	}
 	focus = {
 		id = HUN_arms_industry_2
@@ -212,7 +287,23 @@ focus_tree = {
 		}
 		x = 24
 		y = 2
-
+		completion_reward = {
+			random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                building = arms_factory
+                size > 2
+                include_locked = yes
+                }
+            }
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+			}
+        }
+		}
 	}
 	focus = {
 		id = HUN_industry_9
@@ -229,7 +320,14 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
-
+		completion_reward = {
+			add_political_power = 100 
+			add_tech_bonus = { 
+  				bonus = 0.5  
+ 				uses = 2
+ 				category = industry 
+			}
+		}
 	}
 	focus = {
 		id = HUN_civ_industry_1
@@ -240,7 +338,23 @@ focus_tree = {
 		}
 		x = 26
 		y = 1
-
+		completion_reward = {
+			random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                building = industrial_complex
+                size > 2
+                include_locked = yes
+                }
+            }
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+			}
+        }
+		}
 	}
 	focus = {
 		id = HUN_civ_industry_2
@@ -251,6 +365,21 @@ focus_tree = {
 		}
 		x = 26
 		y = 2
-
+		completion_reward = {
+			random_owned_controlled_state = {
+            limit = {
+                free_building_slots = {
+                building = industrial_complex
+                size > 2
+                include_locked = yes
+                }
+            }
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+			}
+        }
 	}
 }

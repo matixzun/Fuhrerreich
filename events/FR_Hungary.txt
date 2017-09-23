@@ -8,7 +8,7 @@ country_event = { #Intro
 		tag = HUN
 	}
 
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 10 }
 
 	fire_only_once = yes
 
