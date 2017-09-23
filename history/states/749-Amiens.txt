@@ -1,0 +1,31 @@
+
+state={
+	id=749
+	name="STATE_749"
+	manpower = 2556400
+	
+	state_category = city
+	resources={
+		steel=32
+		aluminium=10
+	}
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			air_base = 2
+		}
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 6
+			}
+		}
+	}
+
+	provinces={
+		454 3402 3447 6585 9561 11420 11549 
+	}
+}

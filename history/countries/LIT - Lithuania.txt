@@ -27,7 +27,7 @@ set_politics = {
 			popularity = 15
 		}
 		
-		bloshevist = {
+		bolshevist = {
 			popularity = 15
 		}
 		
@@ -58,7 +58,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = bloshevist_subtype
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}
