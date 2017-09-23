@@ -75,7 +75,7 @@ set_politics = {
 }
 
 set_convoys = 20
-set_national_unity = 0.55
+set_national_unity = 0.6
 
 create_country_leader = {
 	name = "Abdülmecid II"

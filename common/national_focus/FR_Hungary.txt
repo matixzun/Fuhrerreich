@@ -16,7 +16,7 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-			add_political_power = 150 
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -27,7 +27,7 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-			add_political_power = 550 
+			add_political_power = 100 
 		}
 	}
 	focus = {
@@ -35,7 +35,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = HUN_coratian_question
+			focus = HUN_croatian_question
 		}
 		mutually_exclusive = {
 			focus = HUN_slavonian_puppet
@@ -50,7 +50,14 @@ focus_tree = {
 		cost = 10.00
 		x = 24
 		y = 0
-
+		completion_reward = {
+			add_political_power = 25 
+			add_tech_bonus = { 
+  				bonus = 0.25
+ 				uses = 1
+ 				category = industry 
+			}
+		}
 	}
 	focus = {
 		id = HUN_communist_threat
@@ -93,10 +100,11 @@ focus_tree = {
 		y = 2
 		completion_reward = {
             remove_ideas = { HUN_communist_dissent }
+			add_political_power = -50
 		}
 	}
 	focus = {
-		id = HUN_Transylvanian_question
+		id = HUN_transylvanian_question
 		icon = GFX_goal_generic_major_alliance
 		cost = 10.00
 		prerequisite = {
@@ -104,7 +112,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 1
-
+		  completion_reward = {
+            country_event = { id = hun.1 }
+        }
 	}
 	focus = {
 		id = HUN_live_in_peace
@@ -125,12 +135,13 @@ focus_tree = {
 		id = HUN_split_transylvania
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 10.00
-		prerequisite = {
-			focus = HUN_Transylvanian_question
-		}
+		prerequisite = { focus = HUN_Transylvanian_question }
 		mutually_exclusive = {
 			focus = HUN_annex_transylvania
 			focus = HUN_live_in_peace
+		}
+		prerequisite = {
+			focus = HUN_transylvanian_question
 		}
 		x = 13
 		y = 2
@@ -152,7 +163,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = HUN_coratian_question
+		id = HUN_croatian_question
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		prerequisite = {
@@ -167,7 +178,7 @@ focus_tree = {
 		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
-			focus = HUN_coratian_question
+			focus = HUN_croatian_question
 		}
 		mutually_exclusive = {
 			focus = HUN_pressure_bosnia
@@ -181,10 +192,9 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		available = {
-		any_owned_state = { 
-                is_coastal = yes 
+		any_owned_state = {
+                is_coastal = yes }
 			}
-	}
 		prerequisite = {
 			focus = HUN_industry_revival
 		}
@@ -205,7 +215,9 @@ focus_tree = {
             type = dockyard
             level = 2
             instant_build = yes
-        }
+			}
+		}
+		}
 	}
 	focus = {
 		id = HUN_dockyards_2
@@ -213,7 +225,7 @@ focus_tree = {
 		cost = 10.00
 		available = {
 		any_owned_state = { 
-                is_coastal = yes 
+                is_coastal = yes }
 			}
 		prerequisite = {
 			focus = HUN_dockyards_1
@@ -221,7 +233,7 @@ focus_tree = {
 		x = 22
 		y = 2
 		completion_reward = {
-			random_owned_controlled_state = {
+		random_owned_controlled_state = {
             limit = {
                 free_building_slots = {
                 building = dockyard
@@ -235,7 +247,9 @@ focus_tree = {
             type = dockyard
             level = 2
             instant_build = yes
-        }
+			}
+		}
+		}
 	}
 	focus = {
 		id = HUN_arms_industry_1
@@ -260,7 +274,9 @@ focus_tree = {
             type = arms_factory
             level = 2
             instant_build = yes
+			}
         }
+		}
 	}
 	focus = {
 		id = HUN_arms_industry_2
@@ -285,7 +301,9 @@ focus_tree = {
             type = arms_factory
             level = 2
             instant_build = yes
+			}
         }
+		}
 	}
 	focus = {
 		id = HUN_industry_9
@@ -334,7 +352,9 @@ focus_tree = {
             type = industrial_complex
             level = 2
             instant_build = yes
+			}
         }
+		}
 	}
 	focus = {
 		id = HUN_civ_industry_2
@@ -359,6 +379,7 @@ focus_tree = {
             type = industrial_complex
             level = 2
             instant_build = yes
+			}
         }
 	}
 }
