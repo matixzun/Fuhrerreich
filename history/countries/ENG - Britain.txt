@@ -109,7 +109,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 1
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 0
 		}
 		social_democrat = {
@@ -197,7 +197,7 @@ create_country_leader = {
 	desc = "POLITICS_GEORGE_V_DESC"
 	picture = "Portrait_Britain_George_V.tga"
 	expire = "1938.1.1"
-	ideology = libertartarian_socialist_subtype
+	ideology = libertarian_socialist_subtype
 	traits = {
 		
 	}

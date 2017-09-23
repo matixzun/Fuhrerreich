@@ -19,7 +19,7 @@ set_politics = {
 			popularity = 0
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 		}
 		

@@ -68,7 +68,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = authoritarian_democrat
+	ruling_party = social_conservative
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
@@ -80,7 +80,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
 	expire = "1953.3.1"
-	ideology = social_conservative
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}
@@ -91,7 +91,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_portrait_malaya_shenton_thomas"
 	expire = "1953.3.1"
-	ideology = social_conservative
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}
@@ -102,7 +102,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1953.3.1"
-	ideology = bolshevist
+	ideology = bolshevist_subtype
 	traits = {
 		
 	}
@@ -113,7 +113,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
 	expire = "1953.3.1"
-	ideology = authoritarian_democrat
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		
 	}

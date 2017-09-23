@@ -51,7 +51,7 @@ set_politics = {
 #		
 #		}
 		
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 25
 		}
 		social_conservative = {
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
 	expire = "1953.3.1"
-	ideology = libertartarian_socialist_subtype #insanity
+	ideology = libertarian_socialist_subtype #insanity
 	traits = {
 		
 	}

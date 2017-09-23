@@ -42,7 +42,7 @@ set_politics = {
 			popularity = 0
 		}
 		
-		bloshevist = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}
@@ -92,7 +92,7 @@ create_country_leader = {
 	desc = "POLITICS_JOHN_ORMOND_DESC"
 	picture = "GFX_NZL_elsie_farrelly"
 	expire = "1965.1.1"
-	ideology = bloshevist_subtype
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}

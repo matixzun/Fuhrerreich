@@ -32,7 +32,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 0
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 0
 		}
 		social_democrat = {
@@ -74,7 +74,7 @@ create_country_leader = {
 	desc = "POLITICS_EDVARD_BENES_DESC"
 	picture = "Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 		#
 	}
@@ -85,7 +85,7 @@ create_country_leader = {
 	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
 	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = valkist_subtype
 	traits = {
 		#
 	}
@@ -96,7 +96,7 @@ create_country_leader = {
 	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
 	picture = "Portrait_Czech_Klement_Gottwald.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}

@@ -24,7 +24,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 0
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 0
 		}
 		social_democrat = {
@@ -65,7 +65,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSEPH_BECH_DESC"
 	picture = "GFX_portrait_luxembourg_joseph_bech"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}

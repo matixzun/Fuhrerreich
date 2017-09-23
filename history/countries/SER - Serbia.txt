@@ -37,7 +37,7 @@ set_politics = {
         marxist_leninist = {
             popularity = 3
         }
-        libertartarian_socialist = {
+        libertarian_socialist = {
             popularity = 0
         }
         social_democrat = {
@@ -207,7 +207,7 @@ create_country_leader = {
 	desc = "POLITICS_PETAR_STAMBOLIC_DESC"
 	picture = "Portrait_Serbia_Petar_Stambolic.dds"
 	expire = "1965.1.1"
-	ideology = libertartarian_socialist_subtype
+	ideology = libertarian_socialist_subtype
 	traits = {
 		#
 	}

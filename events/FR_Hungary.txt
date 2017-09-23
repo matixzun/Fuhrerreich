@@ -1,4 +1,4 @@
-country_event = { #Intro
+﻿country_event = { #Intro
 	id = hun.1
 	title = hun.1.t
 	desc = hun.1.d

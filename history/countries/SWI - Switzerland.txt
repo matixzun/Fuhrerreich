@@ -27,7 +27,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 0
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 12
 		}
 		social_democrat = {
@@ -75,7 +75,7 @@ create_country_leader = {
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 		#
 	}
@@ -86,7 +86,7 @@ create_country_leader = {
 	desc = "POLITICS_ERNST_BEGUIN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}
@@ -97,7 +97,7 @@ create_country_leader = {
 	desc = "POLITICS_MAX_LEO_KELLER_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = valkist_subtype
 	traits = {
 		#
 	}
@@ -108,7 +108,7 @@ create_country_leader = {
 	desc = "POLITICS_FRITZ_PLATTEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}

@@ -75,7 +75,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 1
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 1
 		}
 		social_democrat = {
@@ -149,7 +149,7 @@ create_country_leader = {
 	desc = "POLITICS_EARL_BROWDER_DESC"
 	picture = "Portrait_USA_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		
 	}

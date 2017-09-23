@@ -309,12 +309,8 @@ country_event = {
 				}
 			}
 			set_country_flag = antonio_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.24 days = 1 }
 			}
 		}
 	}
@@ -338,9 +334,6 @@ country_event = {
 				}
 			}
 			set_country_flag = italo_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
 				news_event = { id = itanews.1 days = 1 }
@@ -394,12 +387,8 @@ country_event = {
 			}
 		}
 			set_country_flag = giuseppe_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.25 days = 1 }
 			}
 		}
 	}
@@ -447,12 +436,8 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = luigi_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.26 days = 1 }
 			}
 		}
 	}
@@ -500,12 +485,8 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = struzo_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.26 days = 1 }
 			}
 		}
 	}
@@ -599,7 +580,6 @@ country_event = {
 		hidden_effect = {
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.90 days = 1 }
 			}
 		}
 	}
@@ -647,12 +627,8 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = Amadeo_chairman
-			ITA = {
-				country_event = { id = italy.101 days = 14 }
-			}
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
-				news_event = { id = worldnews.26 days = 1 }
 			}
 		}
 	}

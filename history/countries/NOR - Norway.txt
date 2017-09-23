@@ -36,7 +36,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 0
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 4
 		}
 		social_democrat = {
@@ -77,7 +77,7 @@ create_country_leader = {
 	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
 	picture = "Portrait_Norway_Johan_Nygaardsvold.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_liberal_subtype
 	traits = {
 		#
 	}
@@ -88,7 +88,7 @@ create_country_leader = {
 	desc = "POLITICS_VIDKUN_QUISLING_DESC"
 	picture = "Portrait_Norway_Vidkun_Quisling.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = valkist_subtype
 	traits = {
 		#
 	}
@@ -99,7 +99,7 @@ create_country_leader = {
 	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}
@@ -110,7 +110,7 @@ create_country_leader = {
 	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = libertarian_socialist_subtype
 	traits = {
 		#
 	}
