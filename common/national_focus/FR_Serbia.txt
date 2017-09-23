@@ -1052,7 +1052,7 @@ focus = {
                   has_country_flag = populists_gain_power
                 }
              }
-             add_timed_idea = { king_alexander_assassination_plot
+             add_timed_idea = {
                  idea = king_alexander_assassination_plot
                  days = 400
              }
@@ -1068,7 +1068,7 @@ focus = {
                   has_country_flag = populists_gain_power
                 }
              }
-             add_timed_idea = { king_alexander_assassination_plot
+             add_timed_idea = {
                  idea = king_alexander_assassination_plot
                  days = 400
              }

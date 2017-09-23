@@ -229,8 +229,6 @@ country_event = {
 	desc = serbia.9.d
 	picture = 
 
-	fire_only_once = yes
-
 	trigger = {
 	     tag = SER
 	     NOT = { has_completed_focus = internalpolitics }
@@ -292,8 +290,6 @@ country_event = {
 	title = serbia.10.t
 	desc = serbia.10.d
 	picture = 
-
-	fire_only_once = yes
 	
 	trigger = {
 		tag = SER
@@ -336,7 +332,9 @@ country_event = {
 				popularity = 0.10
 		}		
 	   add_country_leader_trait = inexperienced_imperialist
+	   hidden effect = {
 	   set_country_flag = populists_gain_power
+	   }
     }
 }
 
@@ -358,14 +356,8 @@ country_event = {
 		kill_country_leader = yes
     }
 
-  create_country_leader = {
-	name = "Prince Paul"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		inexperienced_imperialist
-	}
+    set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+    }
   }
-}
