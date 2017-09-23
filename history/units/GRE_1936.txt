@@ -159,7 +159,52 @@ units = {
 	# E Sóma Stratoú
 	division = {
 		name = "XII Merarchía Pezikoú"
-		location = 11774
+		location = 6895
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division = {
+		name = "XIII Merarchía Pezikoú"
+		location = 4112
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division = {
+		name = "XIV Merarchía Pezikoú"
+		location = 849
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division = {
+		name = "XV Merarchía Pezikoú"
+		location = 4112
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division = {
+		name = "XVI Merarchía Pezikoú"
+		location = 3879
+		division_template = "Trigonikó Pezikoú" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+
+	division = {
+		name = "XVII Merarchía Pezikoú"
+		location = 922
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -185,8 +230,8 @@ units = {
 	}					
 	navy = {					
 		name = "Stolískou Ypovrychíon"				
-		base = 4109 
-		location = 4109 # Athens
+		base = 4112 
+		location = 4112 # Smyrna
 		ship = { name = "RHS Katsonis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
 		ship = { name = "RHS Papanikolis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		
 		ship = { name = "RHS Protefs" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		

@@ -15,6 +15,8 @@ country_event = {
 
     is_triggered_only = yes
 
+    fire_only_once = yes
+
     option = {
         name = serbia.1.a
     }
@@ -113,6 +115,13 @@ country_event = {
 	picture = GFX_report_event_hitler_parade
 	
 	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	  trigger = {
+	    has_country_flag = serbia_demands_montenegro
+	  }
+	}
 	
 	option = { # Accept
 		name = serbia.6.a
@@ -221,14 +230,12 @@ country_event = {
 	desc = serbia.9.d
 	picture = 
 
-	fire_only_once = yes
-
 	trigger = {
 	     tag = SER
 	     NOT = { has_completed_focus = internalpolitics }
 	     focus_progress = {
 	            focus = internalpolitics
-	            progress > 0.25
+	            progress > 0.50
 	     }
 	}
 	mean_time_to_happen = {
@@ -261,12 +268,20 @@ country_event = {
 	        factor = 30
 	    }
 	    name = serbia.9.c
-	    set_political_party = { ideology = paternal_autocrat popularity = -0.05 }
-	    set_political_party = { ideology = national_populist popularity = 0.05}
+	    add_popularity = {
+				ideology = national_populist
+				popularity = 0.10
+		}		
+		add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.10
+		}	
 	    custom_effect_tooltip = serbia.1_tt
-	    set_country_flag = no_solution
 	    add_political_power = 200
-	}
+	    hidden_effect = {
+	    set_country_flag = no_solution
+	    }
+	}  
 
 }
 
@@ -276,8 +291,6 @@ country_event = {
 	title = serbia.10.t
 	desc = serbia.10.d
 	picture = 
-
-	fire_only_once = yes
 	
 	trigger = {
 		tag = SER
@@ -315,9 +328,14 @@ country_event = {
 	      }
 	   }
 	   name = serbia.10.b
-	   set_political_party = { ideology = national_populist popularity = 0.10}
+	     add_popularity = {
+				ideology = national_populist
+				popularity = 0.10
+		}		
 	   add_country_leader_trait = inexperienced_imperialist
+	   hidden effect = {
 	   set_country_flag = populists_gain_power
+	   }
     }
 }
 
@@ -338,4 +356,9 @@ country_event = {
 		name = serbia.11.a
 		kill_country_leader = yes
     }
-}
+
+    set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+    }
+  }

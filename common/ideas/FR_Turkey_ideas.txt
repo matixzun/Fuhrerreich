@@ -33,7 +33,11 @@ ideas = {
 		}
 
 		TUR_the_phoenix = {
-			picture = AST_abandon_the_westminster_system
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			
 			modifier = {
 				unity_factor = 0.10
 				drift_defence_factor = 0.25
@@ -118,33 +122,71 @@ ideas = {
 			}
 		}
 
-		TUR_planning_our_battles
+		TUR_planning_our_battles = {
+
+			removal_cost = -1
+
 			picture = general_staff
+			
 			modifier = {
 				planning_speed = 0.05
 				max_planning = 0.10
 			}
 		}
 
-		TUR_supply_our_army
+		TUR_supply_our_army = {
+
+			removal_cost = -1
+
 			picture = generic_license_production
+			
 			modifier = {
 				supply_consumption_factor = -0.05
 			}
 		}
 
-		TUR_quality_training
+		TUR_quality_training = {
+
+			removal_cost = -1
+
 			picture = generic_infantry_bonus
+			
 			modifier = {
 				army_org_Factor = 0.05
 			}
 		}
 
-		TUR_religious_plurality
+		TUR_religious_plurality = {
+
+			removal_cost = -1
+
 			picture = generic_morale_bonus
+			
 			modifier = {
 				non_core_manpower = 0.05
 				drift_defence_factor = 0.15
+			}
+		}
+
+		TUR_light_aircraft = {
+
+			removal_cost = -1
+
+			picture = generic_air_research
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+		}
+
+		TUR_heavy_aircraft = {
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+			
+			research_bonus = {
+				air_equipment = 0.10
 			}
 		}
 
