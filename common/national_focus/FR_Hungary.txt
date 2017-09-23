@@ -121,7 +121,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = HUN_Transylvanian_question
+			focus = HUN_transylvanian_question
 		}
 		mutually_exclusive = {
 			focus = HUN_split_transylvania
@@ -152,7 +152,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = HUN_Transylvanian_question
+			focus = HUN_transylvanian_question
 		}
 		mutually_exclusive = {
 			focus = HUN_split_transylvania
@@ -202,7 +202,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 		random_owned_controlled_state = {
-            limit = {
                 free_building_slots = {
                 building = dockyard
                 size > 2
@@ -234,10 +233,9 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 		random_owned_controlled_state = {
-            limit = {
                 free_building_slots = {
                 building = dockyard
-                size > 2
+                size = 2
                 include_locked = yes
 				is_coastal = yes
                 }
@@ -262,10 +260,9 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			random_owned_controlled_state = {
-            limit = {
                 free_building_slots = {
                 building = arms_factory
-                size > 2
+                size = 2
                 include_locked = yes
                 }
             }
@@ -289,7 +286,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			random_owned_controlled_state = {
-            limit = {
                 free_building_slots = {
                 building = arms_factory
                 size > 2
@@ -340,7 +336,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			random_owned_controlled_state = {
-            limit = {
                 free_building_slots = {
                 building = industrial_complex
                 size > 2
@@ -367,7 +362,6 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			random_owned_controlled_state = {
-            limit = {
                 free_building_slots = {
                 building = industrial_complex
                 size > 2
