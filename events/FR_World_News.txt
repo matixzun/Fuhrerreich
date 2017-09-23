@@ -25,3 +25,25 @@ news_event = {
 		name = worldnews.1.a
 	}
 }
+
+# Black Wednesday
+news_event = {
+	id = worldnews.2
+	title = worldnews.2.t
+	desc = worldnews.2.d
+	picture = news_event_assassination_of_alexander_kerensky
+
+	is_triggered_only = yes
+	
+	trigger = {
+		date > 1936.7.13
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = worldnews.2.a
+	}
+}
