@@ -44,12 +44,6 @@ set_technology = {
 }
 set_convoys = 25
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
 set_politics = {
 
 	parties = {
@@ -58,6 +52,7 @@ set_politics = {
 		}
 
 #		national_populist = {
+				popularity = 0
 #		}
 		
 		bolshevist = {
@@ -73,50 +68,6 @@ set_politics = {
 	election_frequency = 60
 	elections_allowed = no
 
-}
-
-create_country_leader = {
-	name = "Onn Jaafar"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
-	expire = "1953.3.1"
-	ideology = social_conservative
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Shenton Thomas"
-	desc = ""
-	picture = "GFX_portrait_malaya_shenton_thomas"
-	expire = "1953.3.1"
-	ideology = social_conservative
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Lai Teck"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = bolshevist
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Ibrahim Hj Yaacob" #this guy supported Japanese during the war, and was imprisoned for it, could be made fascist?
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
-	expire = "1953.3.1"
-	ideology = authoritarian_democrat
-	traits = {
-		
-	}
 }
 
 set_cosmetic_tag = MAL_UK # British Malaya

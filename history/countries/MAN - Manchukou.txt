@@ -21,7 +21,7 @@ set_politics = {
 			popularity = 80
 		}
 		
-		bloshevist = {
+		bolshevist = {
 			popularity = 0
 		}
 
