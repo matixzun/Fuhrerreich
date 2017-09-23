@@ -1054,7 +1054,7 @@ focus = {
              }
              add_timed_idea = {
                  idea = king_alexander_assassination_plot
-                 days = 400
+                 days = 20
              }
              hidden_effect = {
                country_event = { id = serbia.11 days = 40 }
@@ -1070,10 +1070,16 @@ focus = {
              }
              add_timed_idea = {
                  idea = king_alexander_assassination_plot
-                 days = 400
+                 days = 200
              }
              hidden_effect = {
                country_event = { id = serbia.11 days = 100 }
+             }
+           }
+
+           else = {
+             country_event = {
+               id = serbia.11 days = 200
              }
            }
         }
