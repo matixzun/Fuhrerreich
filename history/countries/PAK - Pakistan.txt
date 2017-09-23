@@ -27,24 +27,24 @@ set_convoys = 20
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 17
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 2
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 1
 		}
 
-		neutrality = {
+		social_conservative = {
 			popularity = 80
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = social_conservative
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
@@ -56,7 +56,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 	expire = "1960.1.1"
-	ideology = centrism
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}
@@ -67,7 +67,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 	expire = "1960.1.1"
-	ideology = liberalism
+	ideology = market_liberal_subtype
 	traits = {
 		
 	}
@@ -78,7 +78,7 @@ create_country_leader = {
 	
 	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
 	expire = "1960.1.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		
 	}

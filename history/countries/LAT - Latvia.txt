@@ -20,24 +20,24 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_democrat = { 
 			popularity = 30
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 15
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 15
 		}
 		
-		neutrality = { 
+		paternal_autocrat = { 
 			popularity = 50
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = paternal_autocrat
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
@@ -48,7 +48,7 @@ create_country_leader = {
 	desc = "POLITICS_KARLIS_ULMANIS_DESC"
 	picture = "GFX_Portrait_latvia_karlis_ulmanis"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = paternal_autocrat_subtype
 	traits = {
 		#
 	}
@@ -59,7 +59,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}

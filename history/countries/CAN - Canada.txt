@@ -41,24 +41,24 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 98
 		}
 
-		fascism = {
+		national_populism = {
 			popularity = 1
 		}
 		
-		communism = {
+		bolshevism = {
 			popularity = 1
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = market_liberal
 	last_election = "1935.10.14"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -66,7 +66,7 @@ create_country_leader = {
 	desc = "POLITICS_MACKENZIE_KING_DESC"
 	picture = "Portrait_Canada_Mackenzie_King.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}
@@ -77,7 +77,7 @@ create_country_leader = {
 	desc = "POLITICS_ADRIEN_ARCAND_DESC"
 	picture = "GFX_CAN_adrien_arcand"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = national_populism_subtype
 	traits = {
 		#
 	}
@@ -88,7 +88,7 @@ create_country_leader = {
 	desc = "POLITICS_TIM_BUCK_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = bolshevism_subtype
 	traits = {
 		#
 	}

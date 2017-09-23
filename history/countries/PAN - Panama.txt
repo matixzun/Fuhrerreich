@@ -13,24 +13,24 @@ set_convoys = 10
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 100
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 0
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = market_liberal
 	last_election = "1932.6.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -38,7 +38,7 @@ create_country_leader = {
 	desc = "POLITICS_HARMODIO_ARIAS_MADRID_DESC"
 	picture = "GFX_portrait_panama_harmodio_arias_madrid"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}

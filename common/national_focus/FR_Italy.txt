@@ -349,11 +349,21 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_opinion_modifier = { target = ENG modifier = ITA_pro_entente }
-			add_opinion_modifier = { target = CAN modifier = ITA_pro_entente }
-			add_opinion_modifier = { target = AST modifier = ITA_pro_entente }
-			add_opinion_modifier = { target = RAJ modifier = ITA_pro_entente }
-			add_opinion_modifier = { target = FRA modifier = ITA_pro_france }			
+			ENG = {
+			add_opinion_modifier = { target = ITA modifier = ITA_pro_entente }
+			}
+			CAN = {
+			add_opinion_modifier = { target = ITA modifier = ITA_pro_entente }
+			}
+			AST = {
+			add_opinion_modifier = { target = ITA modifier = ITA_pro_entente }
+			}
+			RAJ = {
+			add_opinion_modifier = { target = ITA modifier = ITA_pro_entente }
+			}
+			FRA = {
+			add_opinion_modifier = { target = ITA modifier = ITA_pro_france }
+			}
 		}
 	}
 	

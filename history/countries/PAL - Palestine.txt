@@ -12,31 +12,35 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 40
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 30
 		}
 		
-		communism = {
+		marxist_leninist = {
 			popularity = 30
 			#banned = no #default is no
 		}
+		
+		authoritarian_democrat = {
+			popularity = 0
+		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = market_liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
 	name = "Ahmed Hilmi Pasha"
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_navy_1.dds"
-	ideology = liberalism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}
@@ -46,7 +50,7 @@ create_country_leader = {
 	name = "Amin al-Husseini"
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_land_2.dds"
-	ideology = fascism_ideology
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}
@@ -56,7 +60,7 @@ create_country_leader = {
 	name = "Prince Henry"
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Britain_George_VI.dds"
-	ideology = despotism
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}
@@ -66,7 +70,7 @@ create_country_leader = {
 	name = "Bulus Farah"
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
-	ideology = leninism
+	ideology = marxist_leninist_subtype
 	traits = {
 		#
 	}

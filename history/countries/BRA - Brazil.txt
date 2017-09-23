@@ -23,24 +23,24 @@ set_country_flag = monroe_doctrine
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 0
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 0
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 		}
 		
-		neutrality = { 
+		authoritarian_democrat = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1934.7.17"
 	election_frequency = 48
 	elections_allowed = no
@@ -51,7 +51,7 @@ create_country_leader = {
 	desc = "POLITICS_GETULIO_VARGAS_DESC"
 	picture = "Portrait_Brazil_Getulio_Vargas.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}
@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = "POLITICS_PLINIO_SALGADO_DESC"
 	picture = "Portrait_Brazil_Plinio_Salgado.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}
@@ -72,7 +72,7 @@ create_country_leader = {
 	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}
@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = "POLITICS_ARMANDO_SALES_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 		#
 	}

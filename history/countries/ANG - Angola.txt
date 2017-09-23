@@ -26,12 +26,12 @@ set_politics = {
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		authoritarian_democrat = { 
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -42,7 +42,7 @@ create_country_leader = {
 	name = "Jonas Lote"
 	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}

@@ -13,21 +13,21 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 100
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 0
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -38,7 +38,7 @@ create_country_leader = {
 	desc = "POLITICS_STENIO_VINCENT_DESC"
 	picture = "GFX_portrait_haiti_stenio_vincent"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 		#
 	}
@@ -49,7 +49,7 @@ create_country_leader = {
 	desc = "POLITICS_JACQUES_ROUMAIN_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}

@@ -40,18 +40,24 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		fascism = { 
-			popularity = 34
+		national_populism = { 
+			popularity = 10
 		}	
 	
-		democratic = { 
-			popularity = 30
+		social_conservative = { 
+			popularity = 60
 		}
 		
-		communism = {
-			popularity = 36
+		bolshevist = {
+			popularity = 30
 		}	
 	}
+	
+	ruling_party = social_conservative
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+
 }
 
 create_country_leader = {
@@ -59,7 +65,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1953.3.1"
-	ideology = fascism_ideology
+	ideology = national_populism_subtype
 	traits = {
 		
 	}
@@ -70,7 +76,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}
@@ -81,7 +87,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = bolshevist_subtype
 	traits = {
 		
 	}

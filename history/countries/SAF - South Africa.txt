@@ -37,23 +37,27 @@ set_convoys = 25
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 75
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 20
 		}
 		
-		communism = {
+		bolshivist = {
 			popularity = 5
+		}
+		
+		market_liberal = {
+			popularity = 0
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_conservative
 	last_election = "1933.5.17"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 
@@ -62,7 +66,7 @@ create_country_leader = {
 	desc = "POLITICS_J_B_M_HERTZOG_DESC"
 	picture = "GFX_SAF_james_hertzog"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 		#
 	}
@@ -73,7 +77,7 @@ create_country_leader = {
 	desc = "POLITICS_DF_MALAN_DESC"
 	picture = "GFX_SAF_daniel_malan"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}
@@ -84,7 +88,7 @@ create_country_leader = {
 	desc = "POLITICS_MOSES_KOTANE_DESC"
 	picture = "GFX_SAF_moses_kotane"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = bolshivist_subtype
 	traits = {
 		#
 	}
@@ -95,7 +99,7 @@ create_country_leader = {
 	desc = "POLITICS_PIXLEY_SEME_DESC"
 	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}

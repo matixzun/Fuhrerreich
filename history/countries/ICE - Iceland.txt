@@ -27,20 +27,24 @@ set_national_unity = 0.85
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_democrat = { 
 			popularity = 96
 		}
 
-		fascism = {
+		valksim = {
 			popularity = 2
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 2
+		}
+		
+		social_conservative = {
+			popularity = 0
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_democrat
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -51,7 +55,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conservatism_subtype
 	traits = {
 		#
 	}
@@ -62,7 +66,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = valksim_subtype
 	traits = {
 		#
 	}
@@ -73,7 +77,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = social_conservative_subtype
 	traits = {
 		#
 	}
@@ -84,7 +88,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}

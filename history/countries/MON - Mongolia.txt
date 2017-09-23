@@ -14,23 +14,23 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		socail_democrat = { 
 			popularity = 0
 			banned = yes
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 0
 			banned = yes
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 100
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = bolshevist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = "POLITICS_ANANDYN_AMAR_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}

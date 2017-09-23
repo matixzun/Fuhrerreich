@@ -21,24 +21,24 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 49
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 51
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = national_populist
 	last_election = "1931.10.11"
 	election_frequency = 96
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -46,7 +46,7 @@ create_country_leader = {
 	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
 	picture = "GFX_Portrait_peru_oscar_benavides"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}

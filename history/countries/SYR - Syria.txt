@@ -12,35 +12,35 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 50
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 10
 		}
 		
-		communism = {
+		marxist_leninist = {
 			popularity = 10
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		authoritarian_democrat = { 
 			popularity = 30
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = market_liberal
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
 	name = "Hashim al-Atassi"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_navy_1.dds"
-	ideology = liberalism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}
@@ -50,7 +50,7 @@ create_country_leader = {
 	name = "Antun Saadeh"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_3.dds"
-	ideology = fascism_ideology
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}
@@ -60,7 +60,7 @@ create_country_leader = {
 	name = "Ghazi bin Faisal"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_2.dds"
-	ideology = despotism
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}
@@ -70,7 +70,7 @@ create_country_leader = {
 	name = "Khalid Bakdash"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_communism1.dds"
-	ideology = leninism
+	ideology = marxist_leninist_subtype
 	traits = {
 		#
 	}

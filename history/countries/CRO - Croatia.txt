@@ -22,20 +22,20 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_conservative = { 
 			popularity = 15
 		}
 
-		fascism = {
+		valkist = {
 			popularity = 75
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 10
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = valkist
 	last_election = "1935.6.9"
 	election_frequency = 12
 	elections_allowed = no # none after offset 1
@@ -46,7 +46,7 @@ create_country_leader = {
 	desc = "ANTE_PAVELIC_DESC"
 	picture = "Portrait_Croatia_Ante_Pavelic.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = valkist_subtype
 	traits = {
 		#
 	}

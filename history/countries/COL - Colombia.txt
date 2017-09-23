@@ -20,21 +20,25 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 99
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 0
 		}
 		
-		communism = {
+		social_conservative = {
+			popularity = 0
+		}
+		
+		bolshevist = {
 			popularity = 1
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = market_liberal
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = yes
@@ -45,7 +49,7 @@ create_country_leader = {
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
 	picture = "GFX_Portrait_columbia_alfonso_lopez"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}
@@ -56,7 +60,7 @@ create_country_leader = {
 	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = social_conservative_subtype
 	traits = {
 		#
 	}

@@ -39,21 +39,21 @@ if = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_democrat = { 
 			popularity = 98
 		}
 
-		fascism = {
+		national_populism = {
 			popularity = 0
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 2
 			#banned = no #default is no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_democrat
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
@@ -64,7 +64,7 @@ create_country_leader = {
 	desc = "POLITICS_JOHN_CURTIN_DESC"
 	picture = "Portrait_Australia_John_Curtin.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat_subtype
 	traits = {
 		#
 	}
@@ -75,7 +75,7 @@ create_country_leader = {
 	desc = "POLITICS_ERIC_CAMPBELL_DESC"
 	picture = "GFX_AST_eric_campbell"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = national_populism_subtype
 	traits = {
 		#
 	}
@@ -86,7 +86,7 @@ create_country_leader = {
 	desc = "POLITICS_RICHARD_DIXON_DESC"
 	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}

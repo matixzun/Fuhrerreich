@@ -20,25 +20,25 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		social_democrat = { 
 			popularity = 20
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 15
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 5
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		authoritarian_democrat = { 
 			popularity = 60
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian_democrat
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
@@ -49,7 +49,7 @@ create_country_leader = {
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
 	picture = "GFX_Portrait_estonia_konstantin_pats"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}

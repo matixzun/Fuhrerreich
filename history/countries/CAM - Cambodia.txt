@@ -43,7 +43,7 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = { 
 			popularity = 40
 		}
 
@@ -51,15 +51,15 @@ set_politics = {
 #		
 #		}
 		
-		communism = {
+		libertartarian_socialist = {
 			popularity = 25
 		}
-		neutrality = {
+		social_conservative = {
 			popularity = 35
 		}
 	}
 
-	ruling_party = democratic
+	ruling_party = market_liberal
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord1.dds"
 	expire = "1953.3.1"
-	ideology = anarchist_communism #insanity
+	ideology = libertartarian_socialist_subtype #insanity
 	traits = {
 		
 	}
@@ -82,7 +82,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
 	expire = "1953.3.1"
-	ideology = liberalism
+	ideology = markey_liberal_subtype
 	traits = {
 		
 	}
@@ -93,7 +93,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}

@@ -12,28 +12,28 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		democratic = { 
+		market_liberal = {
 			popularity = 0
 		}
 
-		fascism = {
+		national_populist = {
 			popularity = 0
 		}
 		
-		communism = {
+		bolshevist = {
 			popularity = 0
 			#banned = no #default is no
 		}
 		
-		neutrality = { 
+		social_conservative = {
 			popularity = 100
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = social_conservative
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -42,7 +42,7 @@ create_country_leader = {
 	name = "Dedan Ngwale"
 	picture = "Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = social_conservative_subtype
 	traits = {
 		#
 	}
