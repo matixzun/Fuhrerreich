@@ -75,7 +75,9 @@ set_politics = {
 set_national_unity = 0.6
 
 add_ideas = {
-	
+	starting_idea1
+	starting_idea2
+	starting_idea3
 }
 
 create_country_leader = {
