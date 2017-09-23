@@ -114,14 +114,14 @@ hidden_ideas = {
 	}
 
 country = {
-				radical_socialist_influence = {
+				internationalist_influence = {
 			
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				has_government = radical_socialist
+				has_government = internationalist
 			}
 
 			removal_cost = -1
@@ -129,12 +129,12 @@ country = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				radical_socialist_drift = 0.1
-				radical_socialist_acceptance = 85
+				internationalist_drift = 0.1
+				internationalist_acceptance = 85
 			}
 		}
 		
-		syndicalist_influence = {
+		bolshevist_influence = {
 			
 			
 			allowed = {
@@ -142,7 +142,7 @@ country = {
 			}
 
 			allowed_civil_war = {
-				has_government = syndicalist
+				has_government = bolshevist
 			}
 
 			removal_cost = -1
@@ -150,11 +150,11 @@ country = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				syndicalist_drift = 0.1
-				syndicalist_acceptance = 85
+				bolshevist_drift = 0.1
+				bolshevist_acceptance = 85
 			}
 		}
-		totalist_influence = {
+		marxist_leninist_influence = {
 			
 			
 			allowed = {
@@ -162,7 +162,7 @@ country = {
 			}
 
 			allowed_civil_war = {
-				has_government = totalist
+				has_government = marxist_leninist
 			}
 
 			removal_cost = -1
@@ -170,8 +170,28 @@ country = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				totalist_drift = 0.1
-				totalist_acceptance = 85
+				marxist_leninist_drift = 0.1
+				marxist_leninist_acceptance = 85
+			}
+		}
+		libertartarian_socialist_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = libertartarian_socialist
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				libertartarian_socialist_drift = 0.1
+				libertartarian_socialist_acceptance = 85
 			}
 		}
 				social_democrat_influence = {
@@ -312,6 +332,26 @@ country = {
 			modifier = {
 				national_populist_drift = 0.1
 				national_populist_acceptance = 85
+			}
+		}
+			valkist_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = valkist
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascist_drift_bonus
+			
+			modifier = {
+				valkist_drift = 0.1
+				valkist_acceptance = 85
 			}
 		}
 		
