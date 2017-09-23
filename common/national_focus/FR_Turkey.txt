@@ -89,8 +89,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = TUR_revanchism_tt
-			if = {
-				limit = { has_idea = TUR_political_turmoil }
+			hidden_effect = {
 				remove_ideas = TUR_political_turmoil
 			}	
 		}
@@ -162,10 +161,9 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = TUR_figurehead_tt
-			if = {
-				limit = { has_idea = TUR_political_turmoil }
+			hidden_effect = {
 				remove_ideas = TUR_political_turmoil
-			}	
+			}
 		}
 	}
 
@@ -279,11 +277,8 @@ focus_tree = {
 			custom_effect_tooltip = TUR_theocracy_tt
 			hidden_effect = {
 				set_cosmetic_tag = TUR_islamist
-			}
-			if = {
-				limit = { has_idea = TUR_political_turmoil }
 				remove_ideas = TUR_political_turmoil
-			}	
+			}
 		}
 	}
 
@@ -371,11 +366,8 @@ focus_tree = {
 			custom_effect_tooltip = TUR_kemalism_tt
 			hidden_effect = {
 				set_cosmetic_tag = TUR_kemalist
-			}
-			if = {
-				limit = { has_idea = TUR_political_turmoil }
 				remove_ideas = TUR_political_turmoil
-			}	
+			}
 		}
 	}
 
@@ -445,11 +437,8 @@ focus_tree = {
 			custom_effect_tooltip = TUR_democrat_tt
 			hidden_effect = {
 				set_cosmetic_tag = TUR_democratic
-			}
-			if = {
-				limit = { has_idea = TUR_political_turmoil }
 				remove_ideas = TUR_political_turmoil
-			}	
+			}
 		}
 	}
 
@@ -2720,7 +2709,7 @@ focus_tree = {
 
 	focus = {
 		id = TUR_aerial_doctrines
-		icon = GFX_focus_YUG_rogozarski
+		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = TUR_light_aircraft_industry focus = TUR_heavy_aircraft_industry } 
 		x = 50
 		y = 4
