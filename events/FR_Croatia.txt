@@ -1,4 +1,12 @@
+##################
+# Croatia Events #
+#########################
+# Made by Darknight1342 #
+#########################
 
+add_namespace = cro
+
+#War of independance
 country_event = {
  id = cro.2
     title = cro.2.t
