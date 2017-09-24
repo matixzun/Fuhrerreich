@@ -22,10 +22,30 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		social_conservative = { 
-			popularity = 15
-		}
-
+	    internationalist = {
+            popularity = 5
+        }
+        bolshevist = {
+            popularity = 0
+        }
+        marxist_leninist = {
+            popularity = 0
+        }
+        libertarian_socialist = {
+            popularity = 0
+        }
+        social_democrat = {
+            popularity = 10
+        }
+        social_liberal = {
+            popularity = 0
+        }
+        market_liberal = {
+            popularity = 0
+        }
+        authoritarian_democrat = {
+            popularity = 0
+        }
 		valkist = {
 			popularity = 5
 		}
