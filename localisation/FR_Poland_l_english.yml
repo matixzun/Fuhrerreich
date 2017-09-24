@@ -94,6 +94,10 @@ POL_expand_warsaw_arsenal:0 "Expand the Warsaw Arsenal"
 POL_expand_warsaw_arsenal_desc:0 ""
 POL_krakow_arms_industry:0 "The Krakow arms Industry"
 POL_krakow_arms_industry_desc:0 ""
+POL_end_of_reforms:0 "End of Economic Reforms"
+POL_end_of_reforms_desc:0 ""
+POL_warsaw_university:0 "Warsaw University"
+POL_warsaw_university_desc:0 ""
 
 
 ### Events ###
@@ -173,7 +177,8 @@ POL_fate_baltics:0 "It is time to decide the fate of the baltics...."
 POL_crush_upstarts1:0 "Temporarily make the rebellion have a bigger chance to fire earlier..."
 POL_destroy_wolves1:0 "Makes Lithuania weaker in case of a revolt"
 POL_crush_aizsargi1:0 "Makes Latvia weaker in case of a revolt"
-POL_defense_league1:0 "Makes Estonia weaker in case of a revolt, "
+POL_defense_league1:0 "Makes Estonia weaker in case of a revolt"
+POL_restart_the_economy_tooltip:0 "Available when Black Wednesday has hit"
 
 #### Ideas ####
 
@@ -215,5 +220,9 @@ POL_direct_rule:0 "Direct rule from warsaw"
 POL_direct_rule_desc:0 "Direct rule from warsaw."
 POL_local_leadership:0 "Local Leadership"
 POL_local_leadership_desc:0 "Local Leadership ensures that the Polish people are more united and more willing to die for their country."
+POL_protect_consumer:0 "Protect the consumer"
+POL_protect_consumer_desc:0 ""
+POL_military_complex:0 "The Polish Military Industrial Complex"
+POL_military_complex_desc:0 ""
 
 
