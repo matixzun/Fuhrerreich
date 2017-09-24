@@ -1,0 +1,25 @@
+##################
+# Croatia Events #
+#########################
+# Made by Darknight1342 #
+#########################
+
+add_namespace = cro
+
+#War of independance
+country_event = {
+ id = cro.2
+    title = cro.2.t
+    desc = cro.2.d
+    picture = GFX_petain_NFA
+
+    is_triggered_only = yes
+
+    option = {
+        name = cro.2.a
+       
+        declare_war_on = {
+            target = HUN
+            }
+        }
+     }
