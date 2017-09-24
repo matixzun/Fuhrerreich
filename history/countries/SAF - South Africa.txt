@@ -24,14 +24,14 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-	add_ideas = SAF_ossewabrandwag
-	add_ideas = SAF_history_of_segregation
-
-	add_to_tech_sharing_group = commonwealth_research
-	add_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
-}
+#if = {
+#	limit = { has_dlc = "Together for Victory" }
+#	add_ideas = SAF_ossewabrandwag
+#	add_ideas = SAF_history_of_segregation
+#
+#	add_to_tech_sharing_group = commonwealth_research
+#	add_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
+#}
 
 set_convoys = 25
 set_politics = {
@@ -45,7 +45,7 @@ set_politics = {
 			popularity = 20
 		}
 		
-		bolshivist = {
+		bolshevist = {
 			popularity = 5
 		}
 		
@@ -88,7 +88,7 @@ create_country_leader = {
 	desc = "POLITICS_MOSES_KOTANE_DESC"
 	picture = "GFX_SAF_moses_kotane"
 	expire = "1965.1.1"
-	ideology = bolshivist_subtype
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}

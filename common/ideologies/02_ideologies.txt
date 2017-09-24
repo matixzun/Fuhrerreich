@@ -92,9 +92,9 @@ ideologies = {
 
 	}
 
-	libertartarian_socialist = {
+	libertarian_socialist = {
 		types = {
-			libertartarian_socialist_subtype = {}
+			libertarian_socialist_subtype = {}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_LIBERTARIAN_SOCIALIST_1"
