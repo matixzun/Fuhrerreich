@@ -4,7 +4,7 @@
 # Made by Ben "Doodle SM" Paris
 ##############################
 
-focus_tree = {  
+focus_tree = {
 
 	id = usa_focus
 	
@@ -85,18 +85,34 @@ focus_tree = {
 
 		completion_reward = {
 			378 = {
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			385 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			386 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
 	}
 
 	focus = {
-		id = USA_north_baja_expansion
+		id = USA_panama_expansion
 		x = 3
 		y = 2
 		cost = 10
@@ -104,11 +120,14 @@ focus_tree = {
 		prerequisite = { focus = USA_naval_expansion }
 
 		completion_reward = {
-			743 = {
+			hidden_effect = {
+                goto_province = 7617
+            }
+            685 = { 
 				add_building_consturction = {
 					type = naval_base
-					province = 1892
-					level = 2
+					province = 7617
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -122,13 +141,46 @@ focus_tree = {
 		y = 3
 		cost = 10
 
-		prerequisite = { focus = USA_north_baja_expansion }
+		prerequisite = { focus = USA_panama_expansion }
+		mutually_exclusive = { focus = USA_carrier_focus }
+
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 0.025
 				uses = 1
 				category = bb_tech
 				ahead_reduction = 1
+			}
+		}
+	}
+
+	focus = {
+		id = USA_buildup_new_fleet
+		icon = GFX_goal_generic_navy_battleship
+		x = 2
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = USA_capital_fleet focus = USA_carrier_focus }
+
+		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+					creator = "USA"
+					requested_factories = 2
+					progress = 0.80
+					amount = 8
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = light_cruiser_1
+					creator = "USA"
+					requested_factories = 2
+					progress = 0.75
+					amount = 3
+				}
 			}
 		}
 	}
@@ -158,8 +210,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = { 
-				bonus = 0.4 
-				uses = 3 
+				bonus = 0.5
+				uses = 1
 				category = air_equipment 
 			}
 		}
@@ -185,12 +237,12 @@ focus_tree = {
 		}
 	}
 
-	###### BLACK WEDNESDAY
+	#blackwednesday/election of '36
 
 	focus = {
 		id = USA_black_aftermath
 		icon = GFX_goal_generic_construct_civilian
-		x = 9
+		x = 11
 		y = 0
 		cost = 10
 
@@ -204,7 +256,7 @@ focus_tree = {
 	focus = {
 		id = USA_recovery_plan
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 9
+		x = 11
 		y = 1
 		cost = 10
 
@@ -215,7 +267,7 @@ focus_tree = {
 		}
 	}
 
-	##### Free Market Approach for Black Wednesday Recovery
+	#Huey Long
 
 	focus = {
 		id = USA_freemarket_approach
@@ -227,6 +279,7 @@ focus_tree = {
 		prerequisite = { focus = USA_recovery_plan }
 		mutually_exclusive = { focus = USA_balanced_approach }
 		mutually_exclusive = { focus = USA_government_intervention }
+		mutually_exclusive = { focus = USA_fourth_candidate }
 
 		completion_reward = {
 			
@@ -247,7 +300,7 @@ focus_tree = {
 		}
 	}
 
-	##### Balanced Approach for Black Wednesday Recovery
+	#FDR
 
 	focus = {
 		id = USA_balanced_approach
@@ -259,6 +312,7 @@ focus_tree = {
 		prerequisite = { focus = USA_recovery_plan }
 		mutually_exclusive = { focus = USA_government_intervention }
 		mutually_exclusive = { focus = USA_freemarket_approach }
+		mutually_exclusive = { focus = USA_fourth_candidate }
 
 		completion_reward = {
 			
@@ -279,18 +333,19 @@ focus_tree = {
 		}
 	}
 
-	##### Government Intervention for Black Wednesday Recovery
+	#ALF LANDON	
 
 	focus = {
-		id = USA_government_intervention
-		icon = GFX_goal_generic_political_pressure
-		x = 12
+			id = USA_government_intervention
+			icon = GFX_goal_generic_political_pressure
+			x = 12
 		y = 2
 		cost = 10
 
 		prerequisite = { focus = USA_recovery_plan }
 		mutually_exclusive = { focus = USA_balanced_approach }
 		mutually_exclusive = { focus = USA_freemarket_approach }
+		mutually_exclusive = { focus = USA_fourth_candidate }
 
 		completion_reward = {
 			
@@ -305,6 +360,39 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = USA_government_intervention }
+
+		completion_reward = {
+
+		}
+	}
+
+
+	#john n garner
+	focus = {
+		id = USA_fourth_candidate
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = USA_recovery_plan }
+		mutually_exclusive = { focus = USA_balanced_approach }
+		muutally_exclusive = { focus = USA_government_intervention }
+		mutually_exclusive = { focus = USA_freemarket_approach }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = USA_fourth_candidate_elected
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = USA_fourth_candidate }
 
 		completion_reward = {
 
@@ -332,7 +420,7 @@ focus_tree = {
 	focus = {
 		id = USA_economic_revival
 		icon = GFX_goal_generic_construct_civilian
-		x = 15
+		x = 17
 		y = 0
 		cost = 10
 
@@ -341,10 +429,18 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -354,7 +450,7 @@ focus_tree = {
 	focus = {
 		id = USA_civilian_efforts
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 14
+		x = 16
 		y = 1
 		cost = 10
 
@@ -369,18 +465,35 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			random_owned_controlled_states = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = USA_civilian_efforts2
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 14
+		x = 16
 		y = 2
+		cost = 10
 
 		prerequisite = { focus = USA_civilian_efforts }
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -395,7 +508,7 @@ focus_tree = {
 	focus = {
 		id = USA_military_economics
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 16
+		x = 18
 		y = 1
 		cost = 10
 
@@ -410,33 +523,103 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			random_owned_controlled = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = USA_militaristic_industrial_choice
 		icon = GFX_goal_generic_build_tank
-		x = 16
+		x = 18
 		y = 2
 		cost = 10
 
 		prerequisite = { focus = USA_military_economics }
 
 		completion_reward = { 
-			country_event = { usa.3 }
+			#country_event = { usa.3 }
 		}
 	}
 
 	focus = {
 		id = USA_military_industry_contracts
 		icon = GFX_goal_generic_construct_military
-		x = 16
+		x = 18
 		y = 3
+		cost = 10
 
 		prerequisite = { focus = USA_militaristic_industrial_choice }
-		mutually_exclusive = { focus = USA_civilian_efforts2 }
+		mutually_exclusive = { focus = USA_civilian_efforts3 }
 
 		completion_reward = {
-			country_event = { usa.6 }
+			#country_event = { usa.6 }
 		} 
+	}
+
+	focus = {
+		id = USA_researching_division
+		icon = GFX_focus_research
+		x = 17
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = USA_military_industry_contracts focus = USA_civilian_efforts3 }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = USA_jet_research
+		icon = GFX_goal_generic_secret_weapon
+		x = 17
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = USA_researching_division }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.4
+				category = jet_technology
+				uses = 1
+			}
+		}
+	}
+
+	focus = {
+		id = USA_military_standards
+		icon = GFX_generic_territory_or_war
+		x = 4
+		y = 4
+		cost = 10
+
+		prerequisite = { USA_light_tanks }
+		prerequisite = { USA_buildup_new_fleet }
+
+		completion_reward = {
+			remove_ideas = USA_failed_offensive
+		}
+	}
+
+	focus = {
+		id = USA_civilian_efforts3
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 16
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = USA_civilian_efforts2 }
+		mutually_exclusive = { focus = USA_military_industry_contracts }
+		completion_reward = {
+
+		}
 	}
