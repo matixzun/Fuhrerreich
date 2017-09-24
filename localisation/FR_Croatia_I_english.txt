@@ -1,0 +1,6 @@
+1_english
+
+###Events###
+cro.2.t:0 "The Croatian Independance War!"
+cro.2.d:0 "Our Hungarian opressors have refused to improve our political situation, and it has become clear that they are no longer capable or worthy of ruling over our people. The time has come for us to forge our own destiny, now we must pass our trial by fire to assert our permenant independance."
+cro.2.a:0 "Dok je srca, bit će i Kroacije!"
