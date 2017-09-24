@@ -132,7 +132,9 @@ focus_tree = {
 		}
 		x = 11
 		y = 2
-
+		completion_reward = {
+            remove_ideas = { HUN_communist_dissent }
+		}
 	}
 	focus = {
 		id = HUN_split_transylvania
@@ -148,7 +150,9 @@ focus_tree = {
 		}
 		x = 13
 		y = 2
-
+		completion_reward = {
+            remove_ideas = { HUN_communist_dissent }
+		}
 	}
 	focus = {
 		id = HUN_annex_transylvania
@@ -163,7 +167,9 @@ focus_tree = {
 		}
 		x = 15
 		y = 2
-
+		completion_reward = {
+            remove_ideas = { HUN_communist_dissent }
+		}
 	}
 	focus = {
 		id = HUN_croatian_question
