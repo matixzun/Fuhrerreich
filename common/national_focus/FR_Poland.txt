@@ -471,10 +471,16 @@ continuous_focus_position = { x = 0 y = 1300}
  		y = 0
  		cost = 10
 
- 		prerequisite = {}
+ 		available = {
+ 			custom_trigger_tooltip = {
+ 				tooltip = POL_restart_the_economy_tooltip 
+ 				has_global_flag = black_wednesday
+ 				}
+ 		}
 
    		available_if_capitulated = yes  
  		completion_reward = {
+ 			add_political_power = 25
    				}
 }
 
@@ -488,9 +494,11 @@ continuous_focus_position = { x = 0 y = 1300}
  		cost = 10
 
  		prerequisite = { focus = POL_restart_the_economy }
+ 		mutually_exclusive = { focus = POL_support_our_military_industrial_complex } 
 
    		available_if_capitulated = yes  
  		completion_reward = {
+ 			add_ideas = POL_protect_consumer
    				}
 }
 
@@ -500,14 +508,29 @@ continuous_focus_position = { x = 0 y = 1300}
  		ai_will_do = { factor = 10 } 
  		
  		x = 7
- 		y = 1
+ 		y = 2
  		cost = 10
 
  		prerequisite = { focus = POL_protect_the_consumer }
 
    		available_if_capitulated = yes  
  		completion_reward = {
-   				}
+ 			random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = industrial_complex
+			level = 3
+			instant_build = yes
+			}
+		}
+   	}
 }
 
       focus = { 
@@ -516,16 +539,218 @@ continuous_focus_position = { x = 0 y = 1300}
  		ai_will_do = { factor = 10 } 
  		
  		x = 7
- 		y = 1
+ 		y = 3
  		cost = 10
 
  		prerequisite = { focus = POL_subsudise_local_industries }
 
    		available_if_capitulated = yes  
  		completion_reward = {
+ 			random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = industrial_complex
+			level = 3
+			instant_build = yes
+			}
+		}
+   	}
+}
+
+      focus = { 
+		id = POL_warsaw_to_wilno_railway
+		icon = GFX_goal_generic_construct_infrastructure
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 9
+ 		y = 1
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_restart_the_economy }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			10 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			97 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			95 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			96 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+   			}
+}
+
+      focus = { 
+		id = POL_rail_to_lwow
+		icon = GFX_goal_generic_construct_infrastructure
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 9
+ 		y = 2
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_warsaw_to_wilno_railway }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			92 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			91 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+   			}
+}
+
+      focus = { 
+		id = POL_wolnosc_mine
+		icon = GFX_goal_generic_construction
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 9
+ 		y = 3
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_rail_to_lwow }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			add_resource = {
+				type = steel
+				amount = 20
+				state = 86
+			}
    				}
 }
 
+      focus = { 
+		id = POL_support_our_military_industrial_complex
+		icon = GFX_goal_generic_build_tank
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 11
+ 		y = 1
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_restart_the_economy }
+ 		mutually_exclusive = { focus = POL_protect_the_consumer } 
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			add_ideas = POL_military_complex
+   				}
+}
+
+      focus = { 
+		id = POL_expand_warsaw_arsenal
+		icon = GFX_goal_generic_construct_mil_factory
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 11
+ 		y = 2
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_support_our_military_industrial_complex }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			10 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+			type = arms_factory
+			level = 4
+			instant_build = yes
+			}
+		}
+   				}
+}
+
+      focus = { 
+		id = POL_krakow_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 11
+ 		y = 3
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_expand_warsaw_arsenal }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      focus = { 
+		id = POL_end_of_reforms
+		icon = GFX_goal_generic_construction
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 9
+ 		y = 4
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_krakow_arms_industry focus = POL_encourage_domestic_industry }
+ 		prerequisite = { focus = POL_wolnosc_mine }
+
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      focus = { 
+		id = POL_warsaw_university
+		icon = GFX_focus_research
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 9
+ 		y = 5
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_end_of_reforms }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			add_research_slot = 1
+   				}
+}
 
 
 

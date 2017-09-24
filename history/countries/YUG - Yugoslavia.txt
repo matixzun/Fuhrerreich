@@ -1,0 +1,77 @@
+﻿capital = 104
+
+oob = "BOS_1936"
+
+set_research_slots = 3
+
+
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	gwtank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	interwar_antitank = 1
+	gw_artillery = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+	superior_firepower = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = SER
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = SER
+	}
+}
+
+set_convoys = 0
+set_politics = {
+
+	parties = {
+		market_liberal = { 
+			popularity = 15
+		}
+
+		valkist = {
+			popularity = 10
+		}
+		
+		bolshevist = {
+			popularity = 15
+			#banned = no #default is no
+		}
+
+		paternal_autocrat = {
+		    popularity = 60
+		}
+	}
+	
+	ruling_party = paternal_autocrat
+	last_election = "1935.5.3"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+set_national_unity = 0.6
+
+create_country_leader = {
+	name = "Rodoljub Čolaković"
+	desc = "POLITICS_RODOLJUB_COLAKOVIC_DESC"
+	picture = "Portrait_Bosnia_Rodoljub_Colakovic.dds"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}

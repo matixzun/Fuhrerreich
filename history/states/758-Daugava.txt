@@ -17,9 +17,9 @@ state={
 			industrial_complex = 1
 			air_base = 7
 			}
-		}
 		add_core_of = LAT
 		add_core_of = EST
+	}
 
 	provinces={
 		265 3255 6222 11358

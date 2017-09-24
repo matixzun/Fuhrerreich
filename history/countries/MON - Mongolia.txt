@@ -14,7 +14,7 @@ add_ideas = {
 set_politics = {
 
 	parties = {
-		socail_democrat = { 
+		social_democrat = { 
 			popularity = 0
 			banned = yes
 		}

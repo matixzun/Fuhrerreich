@@ -22,6 +22,18 @@ set_technology = {
 	early_submarine = 1
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = BOS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = BOS
+	}
+}
 
 set_convoys = 0
 
@@ -37,7 +49,7 @@ set_politics = {
         marxist_leninist = {
             popularity = 3
         }
-        libertartarian_socialist = {
+        libertarian_socialist = {
             popularity = 0
         }
         social_democrat = {
@@ -47,7 +59,7 @@ set_politics = {
             popularity = 0
         }
         market_liberal = {
-            popularity = 
+            popularity = 0
         }
         social_conservative = {
             popularity = 8
@@ -207,7 +219,7 @@ create_country_leader = {
 	desc = "POLITICS_PETAR_STAMBOLIC_DESC"
 	picture = "Portrait_Serbia_Petar_Stambolic.dds"
 	expire = "1965.1.1"
-	ideology = libertartarian_socialist_subtype
+	ideology = libertarian_socialist_subtype
 	traits = {
 		#
 	}

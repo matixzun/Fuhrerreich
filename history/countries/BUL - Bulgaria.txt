@@ -29,7 +29,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 0
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 0
 		}
 		social_democrat = {
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_BORIS_III_DESC"
 	picture = "Portrait_Bulgaria_Boris_III.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian_democrat_subtype
 	traits = {
 		#
 	}
@@ -81,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_GEORGI_DIMITROV_DESC"
 	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = marxist_leninist_subtype
 	traits = {
 		#
 	}
@@ -92,7 +92,7 @@ create_country_leader = {
 	desc = "POLITICS_ZIVCO_TOPALOVIC_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat_subtype
 	traits = {
 		#
 	}
@@ -103,7 +103,7 @@ create_country_leader = {
 	desc = "POLITICS_HRISTO_LUKOV_DESC"
 	picture = "GFX_Portrait_bulgaria_hristo_lukov"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}

@@ -65,9 +65,9 @@ ROM = {
 	color = rgb { 215 196 72 }
 	color_ui = rgb { 255 255 120 }
 }
-YUG = {
-	color = rgb { 72 73 126 }
-	color_ui = rgb { 94 95 164 }
+BOS = {
+	color = rgb { 124 252 0 }
+	color_ui = rgb { 130 257 6 }
 }
 SWI = {
 	color = rgb { 224 5 5 }

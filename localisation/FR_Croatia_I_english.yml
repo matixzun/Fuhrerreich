@@ -1,0 +1,35 @@
+l_english:
+
+### Political Parties ###
+
+CRO_internationalist_party:0 "SKH"
+CRO_internationalist_party_long:0 "Savez Komunista Hrvatske"
+CRO_bolshevist_party:0 "HSRS"
+CRO_bolshevist_party_long:0 "Hrvatska Socijalistička Radnička Stranka"
+CRO_marxist_leninist_party:0 "MLS"
+CRO_marxist_leninist_party_long:0 "Marksističko Lenjinistička Stranka"
+CRO_libertartarian_socialist_party:0 "SSH"
+CRO_libertartarian_socialist_party_long:0 "Socijalistička Stranka Hrvatske"
+CRO_social_democrat_party:0 "SDSH"
+CRO_social_democrat_party_long:0 "Socijal-Demokratska Stranka Hrvatske"
+CRO_social_liberal_party:0 "HDZ"
+CRO_social_liberal_party_long:0 "Hrvatska Demokratska Zajednica"
+CRO_market_liberal_party:0 "HLS"
+CRO_market_liberal_party_long:0 "Hrvatska Liberalna Stranka"
+CRO_social_conservative_party:0 "HSS"
+CRO_social_conservative_party_long:0 "Hrvatska Seljačka Stranka"
+CRO_authoritarian_democrat_party:0 "UH"
+CRO_authoritarian_democrat_party_long:0 "Ujedinjena Hrvatska"
+CRO_paternal_autocrat_party:0 "HSP"
+CRO_paternal_autocrat_party_long:0 "Hrvatska Stranka Prava"
+CRO_national_populist_party:0 "RS"
+CRO_national_populist_party_long:0 "Radikalna Stranka"
+CRO_valkist_party:0 "HRO"
+CRO_valkist_party_long:0 "Hrvatska Revolucionarna Organizacija"
+
+
+###Events###
+
+cro.2.t:0 "The Croatian Independance War!"
+cro.2.d:0 "Our Hungarian opressors have refused to improve our political situation, and it has become clear that they are no longer capable or worthy of ruling over our people. The time has come for us to forge our own destiny, now we must pass our trial by fire to assert our permenant independance."
+cro.2.a:0 "Za Dom! Spremni!"

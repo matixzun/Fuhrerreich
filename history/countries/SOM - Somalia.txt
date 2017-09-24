@@ -1,4 +1,4 @@
-capital = 559
+﻿capital = 559
 
 oob = "SOM_1936"
 
@@ -26,7 +26,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 0
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 0
 		}
 		social_democrat = {

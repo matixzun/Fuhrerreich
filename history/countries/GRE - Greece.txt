@@ -37,7 +37,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 0
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 6
 		}
 		social_democrat = {
@@ -91,7 +91,7 @@ create_country_leader = {
 	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
 	picture = "Portrait_Greece_Markos_Vafiadis.dds"
 	expire = "1965.1.1"
-	ideology = libertartarian_socialist_subtype
+	ideology = libertarian_socialist_subtype
 	traits = {
 		#
 	}

@@ -174,7 +174,7 @@ country = {
 				marxist_leninist_acceptance = 85
 			}
 		}
-		libertartarian_socialist_influence = {
+		libertarian_socialist_influence = {
 			
 			
 			allowed = {
@@ -182,7 +182,7 @@ country = {
 			}
 
 			allowed_civil_war = {
-				has_government = libertartarian_socialist
+				has_government = libertarian_socialist
 			}
 
 			removal_cost = -1
@@ -190,8 +190,8 @@ country = {
 			picture = generic_communism_drift_bonus
 			
 			modifier = {
-				libertartarian_socialist_drift = 0.1
-				libertartarian_socialist_acceptance = 85
+				libertarian_socialist_drift = 0.1
+				libertarian_socialist_acceptance = 85
 			}
 		}
 				social_democrat_influence = {
