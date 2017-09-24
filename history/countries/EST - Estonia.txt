@@ -28,7 +28,7 @@ set_politics = {
 			popularity = 0
 		}
 
-		marxist_leninst = {
+		marxist_leninist = {
 			popularity = 3
 		}
 

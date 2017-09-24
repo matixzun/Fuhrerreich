@@ -381,8 +381,8 @@ air_wings = {
 		fighter_equipment_0 =  {		# Ar 68
 			owner = "GER" 
 			amount = 80
+			name = "Jagdgeschwader 132"
 		}
-		name = "Jagdgeschwader 132"
 		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
 			modifier="fighter_genius"
 			name="Erich"
