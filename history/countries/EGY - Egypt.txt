@@ -19,7 +19,7 @@ set_politics = {
 			popularity = 20
 		}
 		
-		bolshevist = {
+		marxist_leninist = {
 			popularity = 5
 			#banned = no #default is no
 		}
@@ -69,7 +69,7 @@ create_country_leader = {
 	name = "Hosni al-Arabi"
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
-	ideology = leninism
+	ideology = marxist_leninist_subtype
 	traits = {
 		#
 	}

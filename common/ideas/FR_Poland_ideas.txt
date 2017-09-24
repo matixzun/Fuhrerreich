@@ -123,12 +123,12 @@ ideas = {
 			}
 		}
 
-		POL_baltic_unrest = {
+		POL_lithuanian_unrest = {
 			picture = FRA_matignon_agreements
 			modifier = {
 				conscription = -0.01
 				consumer_goods_factor = 0.05
-				political_power_gain = -0.9
+				political_power_gain = -0.7
 			}
 		}
 

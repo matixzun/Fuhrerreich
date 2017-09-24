@@ -27,15 +27,21 @@ set_politics = {
 		}
 
 		valkist = {
-			popularity = 75
+			popularity = 5
 		}
 		
 		bolshevist = {
 			popularity = 10
 		}
-	}
+	    national_populist = {
+	        popularity = 10
+	    }
+	    social_conservative = {
+	        popularity = 60
+	    }
+	}   
 	
-	ruling_party = valkist
+	ruling_party = social_conservative
 	last_election = "1935.6.9"
 	election_frequency = 12
 	elections_allowed = no # none after offset 1
@@ -49,5 +55,16 @@ create_country_leader = {
 	ideology = valkist_subtype
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Vladko Maček"
+	desc = "VLADKO_MACEK_DESC"
+	picture = "Portrait_Croatia_Vladko_Macek.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+	    compassionate_gentleman
 	}
 }

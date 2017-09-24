@@ -27,7 +27,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 12
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 0
 		}
 		social_democrat = {

@@ -61,6 +61,9 @@ set_politics = {
 			popularity = 10
 			banned = no #default is no
 		}
+		social_democrat = {
+			popularity = 0
+		}
 	}
 	
 	ruling_party = democratic
@@ -109,7 +112,7 @@ create_country_leader = {
 #	desc = "POLITICS_OTTO_WELS_DESC"
 #	picture = "Portrait_Germany_Adolf_Hitler.dds"
 #	expire = "1938.1.16"
-#	ideology = socialism
+#	ideology = social_democrat_subtype
 #	traits = {
 #		exiled
 #		union_man

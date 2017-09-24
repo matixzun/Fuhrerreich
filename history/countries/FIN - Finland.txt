@@ -37,7 +37,7 @@ set_politics = {
 		marxist_leninist = {
 			popularity = 10
 		}
-		libertartarian_socialist = {
+		libertarian_socialist = {
 			popularity = 5
 		}
 		social_democrat = {
@@ -77,7 +77,7 @@ create_country_leader = {
 	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
 	picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_democrat_subtype
 	traits = {
 		#
 	}
@@ -88,7 +88,7 @@ create_country_leader = {
 	desc = "POLITICS_AIMO_AALTONEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = bolshevist_subtype
 	traits = {
 		#
 	}
@@ -99,7 +99,7 @@ create_country_leader = {
 	desc = "POLITICS_VILHO_ANNALA_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = national_populist_subtype
 	traits = {
 		#
 	}
@@ -110,7 +110,7 @@ create_country_leader = {
 	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
 	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = market_liberal_subtype
 	traits = {
 		#
 	}
@@ -118,9 +118,9 @@ create_country_leader = {
 
 
 
-add_ideas = {
-	sisu
-}
+#add_ideas = {
+#	sisu
+#}
 
 create_corps_commander = {
 	name = "Erik Heinrichs"
