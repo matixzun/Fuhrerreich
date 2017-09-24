@@ -26,6 +26,7 @@ set_technology = {
 
 give_guarantee = LAT
 give_guarantee = LIT
+puppet = LIT
 
 
 # DIPLOMACY
@@ -88,7 +89,7 @@ set_politics = {
 }
 
 add_ideas = {
-	POL_baltic_unrest
+	POL_Lithuanian_unrest
 	limited_conscription
 }
 

@@ -82,6 +82,18 @@ POL_subsudise_local_industries:0 "Subsudise local Industries"
 POL_subsudise_local_industries_desc:0 ""
 POL_encourage_domestic_industry:0 "Encourage domestic Industry"
 POL_encourage_domestic_industry_desc:0 ""
+POL_warsaw_to_wilno_railway:0 "Warsaw to Wilno Railway"
+POL_warsaw_to_wilno_railway_desc:0 ""
+POL_rail_to_lwow:0 "Expand the Rail to Lwow"
+POL_rail_to_lwow_desc:0 ""
+POL_wolnosc_mine:0 "Fund the Wolnosc Mine"
+POL_wolnosc_mine_desc:0 ""
+POL_support_our_military_industrial_complex:0 "Support our Military Industrial Complex"
+POL_support_our_military_industrial_complex_desc:0 ""
+POL_expand_warsaw_arsenal:0 "Expand the Warsaw Arsenal"
+POL_expand_warsaw_arsenal_desc:0 ""
+POL_krakow_arms_industry:0 "The Krakow arms Industry"
+POL_krakow_arms_industry_desc:0 ""
 
 
 ### Events ###
