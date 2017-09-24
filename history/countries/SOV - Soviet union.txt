@@ -106,10 +106,10 @@ add_to_faction = MON
 add_to_faction = TAN
 
 
-add_ideas = {
-	trotskyite_plot
-	home_of_revolution
-}
+#add_ideas = {
+#	trotskyite_plot
+#	home_of_revolution
+#}
 
 create_country_leader = {
 	name = "Vladimir Lenin"

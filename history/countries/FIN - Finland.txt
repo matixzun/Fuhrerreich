@@ -118,9 +118,9 @@ create_country_leader = {
 
 
 
-add_ideas = {
-	sisu
-}
+#add_ideas = {
+#	sisu
+#}
 
 create_corps_commander = {
 	name = "Erik Heinrichs"

@@ -47,7 +47,7 @@ set_politics = {
 			popularity = 40
 		}
 
-#		fascism = {
+#		national_populist = {
 #		
 #		}
 		

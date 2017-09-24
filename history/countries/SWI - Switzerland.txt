@@ -64,7 +64,6 @@ set_politics = {
 }
 
 add_ideas = {
-	neutrality_idea	
 	limited_conscription
 }
 
