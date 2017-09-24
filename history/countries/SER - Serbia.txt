@@ -22,6 +22,18 @@ set_technology = {
 	early_submarine = 1
 }
 
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = BOS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = BOS
+	}
+}
 
 set_convoys = 0
 
@@ -47,7 +59,7 @@ set_politics = {
             popularity = 0
         }
         market_liberal = {
-            popularity = 
+            popularity = 0
         }
         social_conservative = {
             popularity = 8
