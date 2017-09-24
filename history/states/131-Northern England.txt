@@ -4,7 +4,7 @@ state={
 	name="STATE_131"
 	manpower = 2128860
 	
-	state_category = city
+	state_category = megalopolis
 	resources={
 		steel=60
 		aluminium=8
@@ -17,8 +17,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 1
-			dockyard = 4
+			industrial_complex = 3
+			dockyard = 6
 			air_base = 6
 			351 = {
 				naval_base = 6

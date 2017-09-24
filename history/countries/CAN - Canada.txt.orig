@@ -48,12 +48,21 @@ set_politics = {
 			popularity = 25
 		}
 
+<<<<<<< HEAD
 		national_populist = {
-			popularity = 10
+			popularity = 1
 		}
 		
 		bolshevist = {
+			popularity = 1
+=======
+		national_populism = {
+			popularity = 10
+		}
+		
+		bolshevism = {
 			popularity = 5
+>>>>>>> 649e82a822e893be94b022c1eb50a7e1ce240352
 			#banned = no #default is no
 		}
 		social_conservative = {
