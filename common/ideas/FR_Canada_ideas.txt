@@ -126,7 +126,8 @@ ideas = {
 			allowed = {	always = no	}
 			allowed_civil_war = { always = yes }
 			modifier = {
-				defence = 0.10
+				defense = 0.10
+
 			}
 			picture = GFX_goal_generic_construct_military
 			removal_cost = -1

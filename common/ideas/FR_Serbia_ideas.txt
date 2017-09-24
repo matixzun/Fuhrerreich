@@ -164,36 +164,32 @@ ideas = {
 			}
 		}
 
-		partialreconstruction = { 
+		partialreconstruction = {
+		   
+		   picture = generic_pp_unity_bonus
 
-			picture = generic_pp_unity_bonus
+		   removal_cost = -1
 
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-		      	industrial_capacity_factory = -0.10
-			}
+		   allowed = {
+		         always = no
+		   }
+		   modifier = {
+		      industrial_capacity_factory = -0.10
+		   }
 		}
 
-		king_alexander_assassination_plot = { 
+		king_alexander_assassination_plot = {
+		  
+		  picture = 
 
-			picture = 
+          removal_cost = -1
 
-			removal_cost = -1
-			
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-             	national_populist_drift = 0.4
-			 	valkist_drift = 0.2
-			 	paternal_autocrat_drift = -0.1
-			}
+          allowed = {
+              always = no
+          }
+          modifier = {
+             national_populist_drift = 0.4
+			 valkist_drift = 0.2
+			 paternal_autocrat_drift = -0.1
+          }
 		}
-
-}

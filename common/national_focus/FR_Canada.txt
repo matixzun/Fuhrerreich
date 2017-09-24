@@ -289,7 +289,7 @@ focus_tree = {
 						is_in_home_area = yes
 						NOT = {
 							owner = {
-								any_owned_state = {
+								276 = {
 									free_building_slots = {
 										building = arms_factory
 										size > 0
@@ -333,7 +333,7 @@ focus_tree = {
 						is_in_home_area = yes
 						NOT = {
 							owner = {
-								any_owned_state = {
+								276 = {
 									free_building_slots = {
 										building = arms_factory
 										size > 0
@@ -718,7 +718,7 @@ focus_tree = {
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = CAN_tank_emplacement_stratagy }  
   		prerequisite = { focus = CAN_armor_innovations } 
- 		prerequisite = { focus = CAN_modernized_supply_lines } 
+ 		prerequisite = { focus = CAN_modernized_supplylines } 
 		x = 26
 		y = 4
 		cost = 10
