@@ -1,4 +1,4 @@
-﻿
+
 capital = 107
 
 oob = "SER_1936"
@@ -22,18 +22,18 @@ set_technology = {
 	early_submarine = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = BOS
-		autonomous_state = autonomy_reichskomissariat
-	}
-	else = {
-		puppet = BOS
-	}
-}
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = BOS
+#		autonomous_state = autonomy_colony
+#	}
+#	else = {
+#		puppet = BOS
+#	}
+#}
 
 set_convoys = 0
 

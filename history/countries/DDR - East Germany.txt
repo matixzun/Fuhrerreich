@@ -49,28 +49,48 @@ set_national_unity = 0.7
 set_politics = {
 
 	parties = {
-		social_conservative = { 
-			popularity = 30
+		internationalist = {
+			popularity = 0
 		}
-
-		valkist = {
-			popularity = 10
+		bolshevist = {
+			popularity = 0
 		}
-		
 		marxist_leninist = {
-			popularity = 60
-			banned = no #default is no
+			popularity = 0
+		}
+		libertarian_socialist = {
+			popularity = 0
 		}
 		social_democrat = {
 			popularity = 0
 		}
+		social_liberal = {
+			popularity = 35
+		}
+		market_liberal = {
+			popularity = 1
+		}
+		social_conservative = {
+			popularity = 7
+		}
+		authoritarian_democrat = {
+			popularity = 47
+		}
+		paternal_autocrat = {
+			popularity = 10
+		}
+		national_populist = {
+			popularity = 0
+		}
+		valkist = {
+			popularity = 0
+		}
 	}
 	
-	ruling_party = marxist_leninist
-	last_election = "1936.1.1"
+	ruling_party = authoritarian_democrat
+	last_election = "1935.9.8"
 	election_frequency = 48
 	elections_allowed = no
-
 }
 
 
