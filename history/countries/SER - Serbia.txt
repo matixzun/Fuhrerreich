@@ -28,7 +28,7 @@ if = {
 	}
 	set_autonomy = {
 		target = BOS
-		autonomous_state = autonomy_reichskomissariat
+		autonomous_state = autonomy_colony
 	}
 	else = {
 		puppet = BOS
