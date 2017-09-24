@@ -1,8 +1,8 @@
-﻿###########################
+﻿##############################
 # United States Events
-###########################
-# By Ben "Doodle SM" Paris
-###########################
+##############################
+# Made by Ben "Doodle SM" Paris
+##############################
 
 add_namespace = usa
 
@@ -156,6 +156,6 @@ country_event = {
 			base = 0
 		}
 		name = usa.6.b
-		add_ideas = USA_fix_const_speed
+		remove_ideas = USA_sick_man_america
 	}
 }
