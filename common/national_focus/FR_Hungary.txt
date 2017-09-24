@@ -31,7 +31,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = HUN_pressure_bosnia
+		id = HUN_martial_law_slavonia
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {

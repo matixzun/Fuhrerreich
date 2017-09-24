@@ -34,6 +34,8 @@ HUN_croatian_question:0 "The Croatian Question"
 HUN_croatian_question_desc:0 "Our territories in Slavonia have long been a point of hot political discussion and dissent, it is timne we address this issue as settle it once and for all."
 HUN_slavonian_puppet:0 "A Slavonian Puppet"
 HUN_slavonian_puppet_desc:0 "The Croats in Slavonia have recently been clamouring for more autonomy. With rising tensions in the Balkans, it would be best to give them what they demand."
+HUN_martial_law_slavonia:0 "Martial Law in Slavonia"
+HUN_martial_law_slavonia_desc:0 "Giving the Croats any more autonomy will simply show the world how weak we are. We cannot afford to lose any more territory, as such we must enforce military rule in Slavonia until the inhabitants learn their place in the Hungarian nation."
 
 ###INDUSTRY###
 HUN_industry_revival:0 "Industrial Revival"
