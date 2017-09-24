@@ -1228,10 +1228,7 @@ PRC_national_populist_DEF:0 "Zhongguo"
 PRC_valkist:0 "Heavenly State"
 PRC_valkist_ADJ:0 "Chinese"
 PRC_valkist_DEF:0 "The Heavenly State of China"
-<<<<<<< HEAD
 PRC_valkist_DEF:0 "Chinese"
-=======
->>>>>>> parent of 7ae65d9... Revert "Error fixes"
 
 #Afghanistan
 AFG_internationalist:0 "Afghan Socialist Republic"
