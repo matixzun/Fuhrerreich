@@ -395,7 +395,27 @@ focus = {
 						add_building_construction = {
 							type = bunker
 							level = 3
-							province = 3614
+							province = 6634
+							instant_build = yes
+						}
+					}
+				}
+			}
+			750 = {
+				    if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_hungarian
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3617
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11787
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -478,7 +498,27 @@ focus = {
 						add_building_construction = {
 							type = bunker
 							level = 3
-							province = 3614
+							province = 6634
+							instant_build = yes
+						}
+					}
+				}
+			}
+			750 = {
+				    if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_hungarian
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3617
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11787
 							instant_build = yes
 						}
 						add_building_construction = {
