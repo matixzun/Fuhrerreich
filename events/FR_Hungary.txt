@@ -69,6 +69,8 @@ country_event { #The Croatian Revolt
         CRO = {
             transfer_state = 109
             add_state_core = 109
-            country_event = { id = cro.2 days = 1 }
+            country_event = {
+                id = cro.2
+            }
         }
 }
