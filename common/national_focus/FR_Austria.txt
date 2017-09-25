@@ -11,7 +11,7 @@ default = no
 #Custom focuses start here
 #Focus for The Archdukes Reforms 
 	focus = {
-		id = thearchdukesreforms 
+		id = AUS_the_archdukes_reforms 
 		icon = GFX_goal_generic_propaganda 
 		bypass = {} 
 		ai_will_do = { factor = 100} 
@@ -28,11 +28,11 @@ default = no
  }
  #Focus for Reform the Officer Corps 
 	focus = { 
-		id = reformtheofficercorps 
+		id = AUS_reform_officer_corps 
 		icon = GFX_goal_generic_military_sphere 
 		bypass = {} 
 		ai_will_do = { factor = 100} 
-		x =10 
+		x =9 
 		y =1 
 		mutually_exclusive = { } 
 		prerequisite = { focus = thearchdukesreforms} 
@@ -45,7 +45,7 @@ default = no
 	}
  #Focus for Reform the Air Corps 
 	focus = {
-		id = reformtheaircorps 
+		id = AUS_reform_air_corps 
 		icon = GFX_goal_generic_air_fighter2 
 		bypass = {} 
 		ai_will_do = { factor = 100} 
@@ -67,11 +67,11 @@ default = no
  }
  #Focus for Reform the Army Corps 
 	focus = { 
-		id = reformthearmycorps 
+		id = AUS_reform_army_corps 
 		icon = GFX_goal_generic_allies_build_infantry 
 		bypass = {} 
 		ai_will_do = { factor = 100} 
-		x =12 
+		x =13
 		y =1 
 		mutually_exclusive = { } 
 		prerequisite = { focus = thearchdukesreforms} 
@@ -84,7 +84,7 @@ default = no
  }
  #Focus for Our Lost Land 
 	focus = { 
-		id = ourlostland 
+		id = AUS_our_lost_land 
 		icon = GFX_goal_tripartite_pact 
 		bypass = {}
 		ai_will_do = { factor = 10} 
@@ -101,7 +101,7 @@ default = no
  }
  #Focus for Confront Italy 
 	focus = { 
-		id = confrontitaly 
+		id = AUS_confront_italy 
 		icon = GFX_goal_demand_sudetenland 
 		bypass = {} 
 		ai_will_do = { factor = 10} 
@@ -118,11 +118,11 @@ default = no
  }
  #Focus for Negotiate for Dalmatia 
 	focus = { 
-		id = negotiatefordalmatia 
+		id = AUS_negotiate_dalamtia 
 		icon = GFX_goal_generic_intelligence_exchange 
 		bypass = {} 
 		ai_will_do = { factor = 10} 
-		x =1 
+		x =2
 		y =2 
 		mutually_exclusive = { } 
 		prerequisite = { focus = confrontitaly} 
@@ -135,11 +135,11 @@ default = no
  }
  #Focus for Negotiate for South Tirol 
 	focus = { 
-		id = negotiateforsouthtirol 
+		id = AUS_negotiate_south_tirol 
 		icon = GFX_goal_generic_intelligence_exchange 
 		bypass = {} 
 		ai_will_do = { factor = 10} 
-		x =2 
+		x =4
 		y =2 
 		mutually_exclusive = { } 
 		prerequisite = { focus = confrontitaly} 
@@ -152,11 +152,11 @@ default = no
  }
  #Focus for Negotiate for Carniola 
 	focus = { 
-		id = negotiateforcarniola 
+		id = AUS_negotiate_caniola 
 		icon = GFX_goal_generic_intelligence_exchange 
 		bypass = {} 
 		ai_will_do = { factor = 10} 
-		x =3 
+		x =6
 		y =2 
 		mutually_exclusive = { } 
 		prerequisite = { focus = confrontitaly} 
@@ -169,7 +169,7 @@ default = no
  }
  #Focus for War of Reclaimation 
 		focus = { 
-			id = warofreclaimation 
+			id = AUS_reclaimation_war 
 			icon = GFX_goal_demand_sudetenland 
 			bypass = {} 
 		ai_will_do = { factor = 10} 
