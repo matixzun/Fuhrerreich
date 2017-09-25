@@ -498,3 +498,302 @@ focus_tree = {
 			remove_ideas = ITA_communist_threat
 		}
 	}
+
+### colonial tree - Autonomy
+	focus = {
+		id = ITA_colonial_autonomy
+		icon = GFX_goal_generic_forceful_treaty
+		available = { always = no }
+		bypass = { has_country_flag = leftist_government }
+		x = 30
+		y = 0
+		cost = 10
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_negotiate_senussi
+		icon = GFX_goal_generic_forceful_treaty
+		x = 30
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_colonial_autonomy
+		}
+		
+		completion_reward = {
+		add_political_power = -50
+			add_popularity = {
+				ideology = valkist popularity = 0.02
+			}
+			add_popularity = {
+				ideology = national_populist popularity = 0.02
+			}
+			add_popularity = {
+				ideology = paternal_autocrat popularity = 0.02
+			}
+		}
+	}
+		
+	focus = {
+		id = ITA_senussi_emir
+		icon = GFX_goal_generic_forceful_treaty
+		x = 26
+		y = 2
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = ITA_libyan_rights
+			focus = ITA_white_emir
+		}
+			
+		prerequisite = {
+			focus = ITA_negotiate_senussi
+		}
+			
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = ITA_libyan_rights
+		icon = GFX_goal_generic_forceful_treaty
+		x = 28
+		y = 2
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = ITA_senussi_emir
+			focus = ITA_white_emir
+		}
+		
+		prerequisite = {
+			focus = ITA_negotiate_senussi
+		}
+		
+		completion_reward = {
+			add_ideas = ITA_libyan_soldiers
+		}
+	}
+	
+	focus = {
+		id = ITA_white_emir
+		icon = GFX_goal_generic_forceful_treaty
+		bypass = {
+			if = {
+				NOT = {
+					ITA = { 
+						controls_state = 448
+					}
+				}
+			}
+		}
+		x = 30
+		y = 2
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = ITA_senussi_emir
+			focus = ITA_libyan_rights
+		}
+		
+		prerequisite = {
+			focus = ITA_negotiate_senussi
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						controls_state = 448
+						controls_state = 450 
+					}
+				}
+				release = LBA
+				puppet = LBA
+				hidden_effect = {
+					LBA = {
+						set_cosmetic_tag = LBA_ITA
+						set_politics = {
+							ruling_party = authoritarian_democrat elections_allowed = no
+						}
+						create_country_leader = {
+							name = "Italo Gariboldil"
+							desc = "ITALO_GARIBOLDIL_DESC"
+							picture = "Portrait_Italy_Italo_Gariboldil.dds"
+							expire = "1965.1.1"
+							ideology = authoritarian_democrat_subtype
+							traits = {}
+						}
+						load_oob = LBA_INDIE
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_libyan_inde
+		icon = GFX_goal_generic_forceful_treaty
+		x = 24
+		y = 3
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = ITA_operation_tri
+		}
+		
+		prerequisite = {
+			focus = ITA_senussi_emir
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						controls_state = 448
+						controls_state = 450 
+					}
+				}
+				release = LBA
+				hidden_effect = {
+					LBA = {
+					set_politics = {
+						ruling_party = paternal_autocrat
+					}
+						create_country_leader = {
+						name = "Idris Senussi"
+						desc = ""
+						picture = "Portrait_Arabia_Generic_land_3.dds"
+						ideology = paternal_autocrat_subtype
+						traits = { }
+					}
+				}
+			}
+		}
+	}
+}
+
+	focus = {
+		id = ITA_operation_tri
+		icon = GFX_goal_generic_forceful_treaty
+		x = 26
+		y = 3
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = ITA_libyan_inde
+		}
+		
+		prerequisite = {
+			focus = ITA_senussi_emir
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					AND = {
+						controls_state = 448
+						controls_state = 450 
+					}
+				}
+				release = LBA
+				hidden_effect = {
+					LBA = {
+					set_politics = {
+						ruling_party = bolshevist
+					}
+						create_country_leader = {
+						name = "Hassan as-Senussi"
+						desc = ""
+						picture = "Portrait_Arabia_Generic_communism1.dds"
+						ideology = bolshevist_subtype
+						traits = { }
+					}
+				}
+			}
+		}
+	}
+}
+
+### colonial tree - Pacification
+	focus = {
+		id = ITA_forced_pacification
+		icon = GFX_goal_generic_forceful_treaty
+		available = { always = no }
+		bypass = { has_country_flag = rightwing_government }
+		x = 32
+		y = 0
+		cost = 10
+		
+		mutually_exclusive = {
+			focus = ITA_colonial_autonomy
+		}
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = ITA_pacify_libya
+		icon = GFX_goal_generic_forceful_treaty
+		x = 32
+		y = 1
+		cost = 10
+		
+		prerequisite = {
+			focus = ITA_forced_pacification
+		}
+		
+		completion_reward = {
+			army_experience = 5
+			add_political_power = -20
+			add_ideas = ITA_war_libya
+			hidden_effect = {
+				set_country_flag = libyan_war
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_libia_italiana
+		icon = GFX_goal_generic_forceful_treaty
+		x = 32
+		y = 3
+		cost = 17
+		
+		prerequisite = {
+			focus = ITA_pacify_libya
+		}
+		
+		completion_reward = {
+			remove_ideas = ITA_war_libya
+			hidden_effect = {
+				set_country_flag = libya_pacified
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_imperial_con
+		icon = GFX_goal_generic_forceful_treaty
+		x = 29
+		y = 4
+		cost = 5
+		
+		prerequisite = {
+			focus = ITA_libia_italiana
+			focus = ITA_white_emir
+			focus = ITA_libyan_rights
+			focus = ITA_senussi_emir
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			remove_ideas = ITA_colonial_administration
+		}
+	}

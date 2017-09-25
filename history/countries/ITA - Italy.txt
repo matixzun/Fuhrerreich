@@ -8,6 +8,7 @@ add_ideas = {
 	ITA_italia_irredenta
 	ITA_communist_threat
 	ITA_umberto_ii
+	ITA_colonial_administration
 }
 
 
