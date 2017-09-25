@@ -26,21 +26,41 @@ set_convoys = 0
 set_politics = {
 
 	parties = {
-		market_liberal = { 
-			popularity = 15
+		internationalist = {
+			popularity = 2
 		}
-
-		valkist = {
+		bolshevist = {
 			popularity = 10
 		}
-		
-		bolshevist = {
-			popularity = 15
-			#banned = no #default is no
+		marxist_leninist = {
+			popularity = 2
 		}
-
+		libertarian_socialist = {
+			popularity = 1
+		}
+		social_democrat = {
+			popularity = 1
+		}
+		social_liberal = {
+			popularity = 5
+		}
+		market_liberal = {
+			popularity = 3
+		}
+		social_conservative = {
+			popularity = 1
+		}
+		authoritarian_democrat = {
+			popularity = 5
+		}
 		paternal_autocrat = {
-		    popularity = 60
+			popularity = 60
+		}
+		national_populist = {
+			popularity = 0
+		}
+		valkist = {
+			popularity = 10
 		}
 	}
 	

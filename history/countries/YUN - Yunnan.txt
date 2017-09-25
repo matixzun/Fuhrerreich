@@ -8,7 +8,7 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		social_consevative = { 
+		social_conservative = { 
 			popularity = 0
 		}
 

@@ -362,5 +362,7 @@ country_event = {
         #SER = {
            #news_event = { }
         #}
+
+        remove_ideas = { king_alexander_assassination_plot }
   }
 }

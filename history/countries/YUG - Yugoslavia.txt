@@ -22,19 +22,6 @@ set_technology = {
 	superior_firepower = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = SER
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = SER
-	}
-}
-
 set_convoys = 0
 set_politics = {
 
@@ -49,7 +36,6 @@ set_politics = {
 		
 		bolshevist = {
 			popularity = 15
-			#banned = no #default is no
 		}
 
 		paternal_autocrat = {
@@ -72,6 +58,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = paternal_autocrat_subtype
 	traits = {
-		#
+		
 	}
 }

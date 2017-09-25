@@ -156,17 +156,16 @@ units = {
 		ship = { name = "OİG Zafer" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
 		ship = { name = "OİG Tinaztepe" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
 	}				
-	navy = {				
-		name = "Filotilla Denizalti Kücük"			
-		base = 11881 
-		location = 11881 # Samsun
-		ship = { name = "OİG Birinci Inönü" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR } } }		
-		ship = { name = "OİG Ikinci Inönü" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR } } }		
-		ship = { name = "OİG Dumlupinar" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR version_name = "Dumlupinar Class" } } }
-		ship = { name = "OİG Sakarya" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR version_name = "Dumlupinar Class" } } }
-		ship = { name = "OİG Gür" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR version_name = "Dumlupinar Class" } } }
-	}				
-}
+#	navy = {	#### this navy is broken please fix			
+#		name = "Filotilla Denizalti Kücük"			
+#		base = 9833 
+#		location = 9833 # Samsun
+#		ship = { name = "OİG Birinci Inönü" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR } } #}		
+#		ship = { name = "OİG Ikinci Inönü" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR } } #}		
+#		ship = { name = "OİG Dumlupinar" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR #version_name = "Dumlupinar Class" } } }
+#		ship = { name = "OİG Sakarya" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR #version_name = "Dumlupinar Class" } } }
+#		ship = { name = "OİG Gür" definition = submarine equipment = { submarine_1 = { amount = 1 owner = TUR version_name = #"Dumlupinar Class" } } }
+#	}				
 
 
 ### Air Wings ###
