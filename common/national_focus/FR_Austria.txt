@@ -1,14 +1,16 @@
 focus_tree = {
-id = 'FR_Austria'
+	id = FR_Austria
 country = {
-factor=0
-modifier = {
-add = 10
-tag = AUS
+	factor = 0
+	modifier = {
+		add = 10
+		tag = AUS
+		}
 }
-}
-default = no
-#Custom focuses start here
+	default = no
+
+continuous_focus_position = { x = 0 y = 1300}
+
 #Focus for The Archdukes Reforms 
 	focus = {
 		id = AUS_the_archdukes_reforms 
@@ -22,11 +24,11 @@ default = no
 		available = {  } 
 		cost = 10  
 		available_if_capitulated = yes  
-			completion_reward = { 
+		completion_reward = { 
 			add_political_power = 25 
 		} 
- }
- #Focus for Reform the Officer Corps 
+	}
+#Focus for Reform the Officer Corps 
 	focus = { 
 		id = AUS_reform_officer_corps 
 		icon = GFX_goal_generic_military_sphere 
@@ -43,7 +45,7 @@ default = no
 			army_experience= 10 
 		} 
 	}
- #Focus for Reform the Air Corps 
+#Focus for Reform the Air Corps 
 	focus = {
 		id = AUS_reform_air_corps 
 		icon = GFX_goal_generic_air_fighter2 
@@ -58,14 +60,14 @@ default = no
 		available_if_capitulated = yes
 		completion_reward = {
 			air_experience= 25 
-				add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 0.5  
 				uses = 2  
 				category = air_tech 
 			} 
 		}
  }
- #Focus for Reform the Army Corps 
+#Focus for Reform the Army Corps 
 	focus = { 
 		id = AUS_reform_army_corps 
 		icon = GFX_goal_generic_allies_build_infantry 
@@ -82,7 +84,7 @@ default = no
 			army_experience= 50 
 		} 
  }
- #Focus for Our Lost Land 
+#Focus for Our Lost Land 
 	focus = { 
 		id = AUS_our_lost_land 
 		icon = GFX_goal_tripartite_pact 
@@ -99,7 +101,7 @@ default = no
   
 		}
  }
- #Focus for Confront Italy 
+#Focus for Confront Italy 
 	focus = { 
 		id = AUS_confront_italy 
 		icon = GFX_goal_demand_sudetenland 
@@ -116,7 +118,7 @@ default = no
   
 		} 
  }
- #Focus for Negotiate for Dalmatia 
+#Focus for Negotiate for Dalmatia 
 	focus = { 
 		id = AUS_negotiate_dalamtia 
 		icon = GFX_goal_generic_intelligence_exchange 
@@ -133,7 +135,7 @@ default = no
   
 		} 
  }
- #Focus for Negotiate for South Tirol 
+#Focus for Negotiate for South Tirol 
 	focus = { 
 		id = AUS_negotiate_south_tirol 
 		icon = GFX_goal_generic_intelligence_exchange 
@@ -150,7 +152,7 @@ default = no
   
 		} 
  }
- #Focus for Negotiate for Carniola 
+#Focus for Negotiate for Carniola 
 	focus = { 
 		id = AUS_negotiate_caniola 
 		icon = GFX_goal_generic_intelligence_exchange 
@@ -167,7 +169,7 @@ default = no
   
 		} 
  }
- #Focus for War of Reclaimation 
+#Focus for War of Reclaimation 
 		focus = { 
 			id = AUS_reclaimation_war 
 			icon = GFX_goal_demand_sudetenland 
@@ -186,6 +188,6 @@ default = no
 		available_if_capitulated = yes  
 		completion_reward = { 
   
-		} 
+		}
  }
 }
