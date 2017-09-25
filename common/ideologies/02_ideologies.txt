@@ -272,6 +272,7 @@ ideologies = {
 		color = { 45 45 45 }
 		rules = {
 			can_force_government = no
+			can_puppet = yes
 			can_join_factions = no
 			can_send_volunteers = yes
 		}

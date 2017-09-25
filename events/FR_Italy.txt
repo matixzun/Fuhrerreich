@@ -633,3 +633,59 @@ country_event = {
 		}
 	}
 }
+
+### Pacify Lybia battle
+country_event = {
+	id = italy.17
+	title = italy.17.t
+	desc = italy.17.d
+	picture = GFX_report_event_election_vote
+	
+	trigger = {
+		AND = {
+		tag = ITA
+		has_country_flag = { flag = libyan_war }
+		NOT = {
+			has_country_flag = {flag = libya_pacified}
+			}
+		}
+	}
+	
+	mean_time_to_happen = { days 45 }
+	
+	fire_only_once = no
+	
+	option = {
+		name = italy.17.a
+		add_manpower = -1000
+		army_experience = -2
+	}
+}
+
+### Libya Right wing option
+country_event = {
+	id = italy.18
+	title = italy.18.t
+	desc = italy.18.d
+	picture = GFX_report_event_election_vote
+	
+	trigger = {
+		tag = ITA
+		OR = {
+			has_country_flag = { flag = italo_chairman }
+			has_country_flag = { flag = italo_chairman2 }
+			has_country_flag = { flag = Amadeo_chairman }
+			has_country_flag = { flag = struzo_chairman }
+			}
+		}
+		
+		mean_time_to_happen = { days 60 }
+		
+		fire_only_once = yes
+		
+		option = {
+			name = italy.18.a
+			set_country_flag = rightwing_government
+		}
+	}
+			

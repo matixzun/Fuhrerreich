@@ -395,7 +395,27 @@ focus = {
 						add_building_construction = {
 							type = bunker
 							level = 3
-							province = 3614
+							province = 6634
+							instant_build = yes
+						}
+					}
+				}
+			}
+			750 = {
+				    if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_hungarian1
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3617
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11787
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -478,7 +498,27 @@ focus = {
 						add_building_construction = {
 							type = bunker
 							level = 3
-							province = 3614
+							province = 6634
+							instant_build = yes
+						}
+					}
+				}
+			}
+			750 = {
+				    if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = fortification_effort_hungarian1
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3617
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11787
 							instant_build = yes
 						}
 						add_building_construction = {
@@ -560,20 +600,6 @@ focus = {
 					}
 				}
 			}
-			107 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = fortification_effort_romania
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 6
-							province = 6634
-							instant_build = yes
-						}
-					}
-				}
-			}
  } 
  }
  #Focus for Foreign Investators 
@@ -628,7 +654,9 @@ focus = {
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
-  
+      add_ideas = {
+        mobilization_act
+      }
  } 
  }
  #Focus for Army Studies  
@@ -641,7 +669,7 @@ focus = {
  y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
- available = {  } 
+ available = { has_completed_focus = internalpolitics }
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -984,10 +1012,10 @@ focus = {
 	icon = GFX_goal_generic_occupy_states_ongoing_war 
 	bypass = {} 
  ai_will_do = { factor = } 
- x = 6
+ x = 7
  y = 5
  mutually_exclusive = { } 
- prerequisite = { focus = extraresearchsloti } 
+ prerequisite = { focus = extraresearchsloti focus = indoctrination} 
  available = {  } 
  cost = 10  
   available_if_capitulated = yes  
@@ -1012,7 +1040,7 @@ focus = {
 				is_puppet = yes
 		}
 		cancel_if_invalid = no
-		x = 6
+		x = 7
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1075,7 +1103,7 @@ focus = {
  y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
- available = {  } 
+ available = { has_completed_focus = internalpolitics } 
  cost = 10  
  
   available_if_capitulated = yes  
@@ -1346,7 +1374,7 @@ focus = {
  y = 0 
  mutually_exclusive = { } 
  prerequisite = { } 
- available = {  } 
+ available = { has_completed_focus = internalpolitics } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 

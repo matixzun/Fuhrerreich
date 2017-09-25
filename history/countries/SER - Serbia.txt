@@ -29,12 +29,14 @@ set_technology = {
 #	}
 #	set_autonomy = {
 #		target = BOS
-#		autonomous_state = autonomy_colony
+#		autonomous_state = autonomy_integrated_puppet
 #	}
 #	else = {
 #		puppet = BOS
 #	}
 #}
+
+give_guarantee = BOS
 
 set_convoys = 0
 

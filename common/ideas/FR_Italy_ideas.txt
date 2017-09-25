@@ -58,6 +58,20 @@ ideas = {
 			}
 		}
 		
+		ITA_colonial_administration = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			removal_cost = 1
+			
+			modifier = {
+				conscription_factor = -0.15
+				consumer_goods_factor = 0.05
+			}
+		}
+		
 ### socialist ideas
 		ITA_monarchs_nomore = {
 		
@@ -230,5 +244,33 @@ ideas = {
 			national_populist_drift = 0.05
 			}
 		}
+
+### colonial tree
+	ITA_libyan_soldiers = {
+	
+		allowed = {
+			original_tag = ITA
+		}
+		
+		removal_cost = 1
+		
+		modifier = {
+			non_core_manpower = 0.05
+		}
 	}
+	
+	ITA_war_libya = {
+		
+		allowed = {
+			original_tag = ITA
+		}
+		
+		removal_cost = 1
+		
+		modifier = {
+			conscription_factor = -0.05
+			non_core_manpower = -0.25
+		}
+	}
+}
 }
