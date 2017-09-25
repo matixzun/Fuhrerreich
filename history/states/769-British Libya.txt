@@ -1,0 +1,21 @@
+state={
+	id=769
+	name="STATE_769"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 0
+			}
+		}
+
+
+	provinces={
+		1057 1060 1140 1994 4191 4200 7076 10104 10754 10785 11951 
+	}
+	manpower=2492
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+
+}

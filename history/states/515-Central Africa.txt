@@ -1,9 +1,7 @@
+
 state={
 	id=515
 	name="STATE_515"
-	
-	state_category = wasteland
-	impassable = yes
 
 	history={
 		owner = FRA
@@ -19,4 +17,5 @@ state={
 	}
 	manpower=1482744
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

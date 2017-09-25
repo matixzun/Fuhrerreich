@@ -1,0 +1,191 @@
+focus_tree = {
+id = 'FR_Austria'
+country = {
+factor=0
+modifier = {
+add = 10
+tag = AUS
+}
+}
+default = no
+#Custom focuses start here
+#Focus for The Archdukes Reforms 
+	focus = {
+		id = thearchdukesreforms 
+		icon = GFX_goal_generic_propaganda 
+		bypass = {} 
+		ai_will_do = { factor = 100} 
+		x =11 
+		y =0 
+		mutually_exclusive = { } 
+		prerequisite = { } 
+		available = {  } 
+		cost = 10  
+		available_if_capitulated = yes  
+			completion_reward = { 
+			add_political_power = 25 
+		} 
+ }
+ #Focus for Reform the Officer Corps 
+	focus = { 
+		id = reformtheofficercorps 
+		icon = GFX_goal_generic_military_sphere 
+		bypass = {} 
+		ai_will_do = { factor = 100} 
+		x =10 
+		y =1 
+		mutually_exclusive = { } 
+		prerequisite = { focus = thearchdukesreforms} 
+		available = {  } 
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = { 
+			army_experience= 10 
+		} 
+	}
+ #Focus for Reform the Air Corps 
+	focus = {
+		id = reformtheaircorps 
+		icon = GFX_goal_generic_air_fighter2 
+		bypass = {} 
+		ai_will_do = { factor = 100} 
+		x =11 
+		y =1 
+		mutually_exclusive = { } 
+		prerequisite = { focus = thearchdukesreforms} 
+		available = {  } 
+		cost = 10  
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience= 25 
+				add_tech_bonus = {
+				bonus = 0.5  
+				uses = 2  
+				category = air_tech 
+			} 
+		}
+ }
+ #Focus for Reform the Army Corps 
+	focus = { 
+		id = reformthearmycorps 
+		icon = GFX_goal_generic_allies_build_infantry 
+		bypass = {} 
+		ai_will_do = { factor = 100} 
+		x =12 
+		y =1 
+		mutually_exclusive = { } 
+		prerequisite = { focus = thearchdukesreforms} 
+		available = {  } 
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = { 
+			army_experience= 50 
+		} 
+ }
+ #Focus for Our Lost Land 
+	focus = { 
+		id = ourlostland 
+		icon = GFX_goal_tripartite_pact 
+		bypass = {}
+		ai_will_do = { factor = 10} 
+		x =2 
+		y =0 
+		mutually_exclusive = { }
+		prerequisite = { }
+		available = {  }
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = {
+  
+		}
+ }
+ #Focus for Confront Italy 
+	focus = { 
+		id = confrontitaly 
+		icon = GFX_goal_demand_sudetenland 
+		bypass = {} 
+		ai_will_do = { factor = 10} 
+		x =2 
+		y =1 
+		mutually_exclusive = { } 
+		prerequisite = { focus = ourlostland} 
+		available = {  } 
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = {
+  
+		} 
+ }
+ #Focus for Negotiate for Dalmatia 
+	focus = { 
+		id = negotiatefordalmatia 
+		icon = GFX_goal_generic_intelligence_exchange 
+		bypass = {} 
+		ai_will_do = { factor = 10} 
+		x =1 
+		y =2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = confrontitaly} 
+		available = {  } 
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = { 
+  
+		} 
+ }
+ #Focus for Negotiate for South Tirol 
+	focus = { 
+		id = negotiateforsouthtirol 
+		icon = GFX_goal_generic_intelligence_exchange 
+		bypass = {} 
+		ai_will_do = { factor = 10} 
+		x =2 
+		y =2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = confrontitaly} 
+		available = {  } 
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = { 
+  
+		} 
+ }
+ #Focus for Negotiate for Carniola 
+	focus = { 
+		id = negotiateforcarniola 
+		icon = GFX_goal_generic_intelligence_exchange 
+		bypass = {} 
+		ai_will_do = { factor = 10} 
+		x =3 
+		y =2 
+		mutually_exclusive = { } 
+		prerequisite = { focus = confrontitaly} 
+		available = {  } 
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = { 
+  
+		} 
+ }
+ #Focus for War of Reclaimation 
+		focus = { 
+			id = warofreclaimation 
+			icon = GFX_goal_demand_sudetenland 
+			bypass = {} 
+		ai_will_do = { factor = 10} 
+		x =0 
+		y =2 
+		mutually_exclusive = {
+			focus = negotiatefordalmatia
+			focus = negotiateforsouthtirol
+			focus = negotiateforcarniola
+		}
+		prerequisite = { focus = confrontitaly} 
+		available = {  } 
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = { 
+  
+		} 
+ }
+}
