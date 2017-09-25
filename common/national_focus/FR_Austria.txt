@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = FR_Austria
 country = {
 	factor = 0
@@ -11,7 +11,7 @@ country = {
 
 continuous_focus_position = { x = 0 y = 1300}
 
-#Focus for The Archdukes Reforms 
+#Focus for The Archdukes Reforms
 	focus = {
 		id = AUS_the_archdukes_reforms 
 		icon = GFX_goal_generic_propaganda 
