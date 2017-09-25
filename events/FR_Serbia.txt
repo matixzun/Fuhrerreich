@@ -230,11 +230,7 @@ country_event = {
 	desc = serbia.9.d
 	picture = 
 
-<<<<<<< HEAD
 	is_triggered_only = yes
-=======
-    is_triggered_only = yes
->>>>>>> master
 
 	trigger = {
 		AND = {
@@ -336,9 +332,10 @@ country_event = {
 	
 	trigger = {
 		tag = SER
+		has_government = paternal_autocrat
 	}
 
-	option = {
+  option = {
 		name = serbia.11.a
 		kill_country_leader = yes
           set_politics = {
@@ -348,7 +345,8 @@ country_event = {
      add_popularity = {
 			ideology = paternal_autocrat
 			popularity = -0.10
-		create_country_leader = {
+     }
+        create_country_leader = {
 	        name = "Prince Paul"
 	        desc = "POLITICS_PRINCE_PAUL_DESC"
 	        picture = "Portrait_Serbia_Prince_Paul.dds"
@@ -358,11 +356,54 @@ country_event = {
 		         inexperienced_imperialist
 	        }
         }
-     }
         #SER = {
            #news_event = { }
         #}
-
         remove_ideas = { king_alexander_assassination_plot }
+        hidden_effect = {
+           country_event = { days = 23 id = serbia.12 }
+        }
   }
+}
+
+#National Populist Coup
+country_event = {
+	id = serbia.12
+	title = serbia.12.t
+	desc = serbia.12.d
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_government = authoritarian_democrat
+		is_puppet = no
+		tag = SER
+	}
+	
+	option = {	
+		name = serbia.12.a
+		ai_chance = {
+			base = 100		
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_popularity = {
+				ideology = national_populist
+				popularity = 0.15
+		}
+	}
+
+	option = {
+		name = serbia.12.b
+		ai_chance = {
+			base = 0		
+		}
+		start_civil_war = {
+			ideology = national_populist
+			size = 0.6
+		}
+	}
 }

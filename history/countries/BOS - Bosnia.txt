@@ -22,8 +22,6 @@ set_technology = {
 	superior_firepower = 1
 }
 
-set_cosmetic_tag = BOS_SER # Bosnian State
-
 set_convoys = 0
 set_politics = {
 

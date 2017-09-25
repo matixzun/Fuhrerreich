@@ -17,9 +17,16 @@ country_event = {
 
     option = {
         name = cro.2.a
-       
-        declare_war_on = {
-            target = HUN
+        CRO = {
+            transfer_state = 109
+            declare_war_on = {
+                type = take_state_focus
+                target = HUN
+                generator = { 109 }
             }
-        }
-     }
+        }  
+    
+    }
+}
+
+     

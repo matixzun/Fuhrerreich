@@ -23,18 +23,20 @@ set_technology = {
 	early_submarine = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	set_autonomy = {
-		target = BOS
-		autonomous_state = autonomy_integrated_puppet
-	}
-	else = {
-		puppet = BOS
-	}
-}
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = BOS
+#		autonomous_state = autonomy_integrated_puppet
+#	}
+#	else = {
+#		puppet = BOS
+#	}
+#}
+
+give_guarantee = BOS
 
 set_convoys = 0
 
