@@ -27,7 +27,7 @@ focus_tree = {
 			focus = AUS_the_archdukes_reforms
 		}
 		x = 8
-		y = 0
+		y = 1
 		
 		completion_reward = {
 			army_experience = 10
@@ -60,8 +60,9 @@ focus_tree = {
 			focus = AUS_the_archdukes_reforms
 		}
 		x = 12
-		y = 2
+		y = 1
 		completion_reward = {
+
       army_experience = 50
 		}
 	}
@@ -72,6 +73,7 @@ focus_tree = {
 		x = 2
 		y = 0
     completion_reward = {
+
     }
 
 	}
@@ -85,18 +87,23 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
+
 		}
 	}
 	focus = {
 		id = AUS_negotiate_dalamtia
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
+		prerequisite = {
+			focus = AUS_confront_italy
+		}
 		mutually_exclusive = {
 			focus = AUS_confront_italy
 		}
 		x = 2
 		y = 2
 		completion_reward = {
+
 		}
 	}
 	focus = {
@@ -109,6 +116,7 @@ focus_tree = {
 		x = 4
 		y = 2
 		  completion_reward = {
+
         }
 	}
 	focus = {
@@ -123,6 +131,7 @@ focus_tree = {
 		x = 6
 		y = 2
 		completion_reward = {
+
 		}
 	}
 	focus = {
@@ -141,6 +150,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		completion_reward = {
+
 		}
 	}
 	focus = {
@@ -150,5 +160,66 @@ focus_tree = {
 		x = 20
 		y = 0
 		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_archduke_support
+		icon = GFX_generic_support_the_left_right
+		cost = 10.00
+		x = 20
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_archduke_coup
+		icon = GFX_generic_attack_allies
+		cost = 10.00
+		x = 22
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_embrace_conservative
+		icon = GFX_generic_improve_relations
+		cost = 10.00
+		x = 18
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_red_dawn
+		icon = GFX_generic_soviet_politics
+		cost = 10.00
+		x = 18
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_military_takeover
+		icon = GFX_generic_allies_build_infantry
+		cost = 10.00
+		x = 16
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_alpine_forts
+		icon = GFX_generic_construct_military
+		cost = 10.00
+		x = 16
+		y = 2
+		completion_reward = {
+		
 		}
 	}
