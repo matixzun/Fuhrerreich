@@ -36,7 +36,7 @@ continuous_focus_position = { x = 0 y = 1300}
 		x =9
 		y =1 
 		mutually_exclusive = { } 
-		prerequisite = { focus = thearchdukesreforms} 
+		prerequisite = { focus = AUS_the_archdukes_reforms} 
 		available = {  } 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -53,7 +53,7 @@ continuous_focus_position = { x = 0 y = 1300}
 		x =11 
 		y =1 
 		mutually_exclusive = { } 
-		prerequisite = { focus = thearchdukesreforms} 
+		prerequisite = { focus = AUS_the_archdukes_reforms} 
 		available = {  } 
 		cost = 10  
 		available_if_capitulated = yes
@@ -75,7 +75,7 @@ continuous_focus_position = { x = 0 y = 1300}
 		x =13
 		y =1 
 		mutually_exclusive = { } 
-		prerequisite = { focus = thearchdukesreforms} 
+		prerequisite = { focus = AUS_the_archdukes_reforms} 
 		available = {  } 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -109,7 +109,7 @@ continuous_focus_position = { x = 0 y = 1300}
 		x =2 
 		y =1 
 		mutually_exclusive = { } 
-		prerequisite = { focus = ourlostland} 
+		prerequisite = { focus = AUS_our_lost_land} 
 		available = {  } 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -126,7 +126,7 @@ continuous_focus_position = { x = 0 y = 1300}
 		x =2
 		y =2 
 		mutually_exclusive = { } 
-		prerequisite = { focus = confrontitaly} 
+		prerequisite = { focus = AUS_confront_italy} 
 		available = {  } 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -143,7 +143,7 @@ continuous_focus_position = { x = 0 y = 1300}
 		x =4
 		y =2 
 		mutually_exclusive = { } 
-		prerequisite = { focus = confrontitaly} 
+		prerequisite = { focus = AUS_confront_italy} 
 		available = {  } 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -160,7 +160,7 @@ continuous_focus_position = { x = 0 y = 1300}
 		x =6
 		y =2 
 		mutually_exclusive = { } 
-		prerequisite = { focus = confrontitaly} 
+		prerequisite = { focus = AUS_confront_italy} 
 		available = {  } 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -177,11 +177,11 @@ continuous_focus_position = { x = 0 y = 1300}
 		x =0 
 		y =2 
 		mutually_exclusive = {
-			focus = negotiatefordalmatia
-			focus = negotiateforsouthtirol
-			focus = negotiateforcarniola
+			focus = AUS_negotiate_dalamtia
+			focus = AUS_negotiate_south_tirol
+			focus = AUS_negotiate_caniola
 		}
-		prerequisite = { focus = confrontitaly} 
+		prerequisite = { focus = AUS_confront_italy} 
 		available = {  } 
 		cost = 10  
 		available_if_capitulated = yes  
@@ -189,4 +189,11 @@ continuous_focus_position = { x = 0 y = 1300}
   
 		}
  }
+
+
+
+
+
+
+
 }
