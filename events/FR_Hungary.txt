@@ -62,15 +62,8 @@ country_event { #The Croatian Revolt
         ai_chance = {
             factor = 100
         }
-		HUN = {
-			release = CRO
-		}
+		country_event = cro.2
         add_political_power = 100
-        CRO = {
-            transfer_state = 109
-            add_state_core = 109
-            country_event = {
-                id = cro.2
-            }
-        }
+
+    }
 }

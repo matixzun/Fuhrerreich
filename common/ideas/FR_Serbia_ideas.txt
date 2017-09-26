@@ -196,4 +196,15 @@ ideas = {
 			}
 		}
 
+		mobilization_act = {
+			allowed = {	always = no	}
+			allowed_civil_war = { always = yes }
+			modifier = {
+				unity_factor = 0.1
+				conscription = 0.05
+			}
+			picture = GFX_goal_generic_forceful_treaty
+			removal_cost = -1
+		}
+
 }

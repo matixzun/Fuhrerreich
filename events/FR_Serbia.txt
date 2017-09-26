@@ -32,7 +32,7 @@ country_event = {
 	
 	option = {
 		name = serbia.2.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 100 }
 		SER = {
 			country_event = serbia.3
 			add_to_faction = ROOT
@@ -46,7 +46,7 @@ country_event = {
 
 	option = {
 		name = serbia.2.b
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 		SER = { country_event = serbia.4 }
 	}
 }
@@ -102,7 +102,6 @@ country_event = {
 		annex_country = { target = MNT transfer_troops = yes }
 		add_political_power = 50
 		add_named_threat = { threat = 2 name = serbia.5.t }
-		set_country_flag = SER_annexed
 		news_event = { hours = 6 id = news.2 }
 	}
 }
@@ -117,11 +116,6 @@ country_event = {
 	is_triggered_only = yes
 
 	fire_only_once = yes
-
-	  trigger = {
-	    has_country_flag = serbia_demands_montenegro
-	  }
-	}
 	
 	option = { # Accept
 		name = serbia.6.a
@@ -230,11 +224,7 @@ country_event = {
 	desc = serbia.9.d
 	picture = 
 
-<<<<<<< HEAD
 	is_triggered_only = yes
-=======
-    is_triggered_only = yes
->>>>>>> master
 
 	trigger = {
 		AND = {
@@ -336,9 +326,10 @@ country_event = {
 	
 	trigger = {
 		tag = SER
+		has_government = paternal_autocrat
 	}
 
-	option = {
+  option = {
 		name = serbia.11.a
 		kill_country_leader = yes
           set_politics = {
@@ -348,7 +339,8 @@ country_event = {
      add_popularity = {
 			ideology = paternal_autocrat
 			popularity = -0.10
-		create_country_leader = {
+     }
+        create_country_leader = {
 	        name = "Prince Paul"
 	        desc = "POLITICS_PRINCE_PAUL_DESC"
 	        picture = "Portrait_Serbia_Prince_Paul.dds"
@@ -358,11 +350,319 @@ country_event = {
 		         inexperienced_imperialist
 	        }
         }
-     }
         #SER = {
            #news_event = { }
         #}
-
         remove_ideas = { king_alexander_assassination_plot }
+        hidden_effect = {
+           country_event = { days = 23 id = serbia.12 }
+        }
   }
+}
+
+#National Populist Coup
+country_event = {
+	id = serbia.12
+	title = serbia.12.t
+	desc = serbia.12.d
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_government = authoritarian_democrat
+		is_puppet = no
+		tag = SER
+	}
+	
+	option = {	
+		name = serbia.12.a
+		ai_chance = {
+			base = 100		
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_popularity = {
+				ideology = national_populist
+				popularity = 0.15
+		}
+	}
+
+	option = {
+		name = serbia.12.b
+		ai_chance = {
+			base = 0		
+		}
+		start_civil_war = {
+			ideology = national_populist
+			size = 0.6
+		}
+	}
+}
+
+# Serbia Demands Bosnia
+country_event = {
+	id = serbia.13
+	title = serbia.13.t
+	desc = serbia.13.d
+	picture = GFX_report_event_hitler_parade
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = { # Accept
+		name = serbia.13.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				SER = { has_army_size = { size < 5 } }
+			}
+			modifier = {
+				add = 100
+				SER = { has_army_size = { size > 10 } }
+			}
+			modifier = {
+				add = 20
+				is_in_faction_with = SER
+			}
+		}
+		SER = {
+			country_event = { hours = 2 id = serbia.15 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { # Refuse
+		name = serbia.13.b
+		ai_chance = {
+			base = 10			
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				SER = { has_army_size = { size > 10 } }
+				factor = 0.5
+			}
+			modifier = {
+				add = 20
+				SER = { has_army_size = { size < 5 } }
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+				NOT = { is_in_faction_with = SER }
+			}
+			modifier = {
+				any_other_country = {
+					has_guaranteed = SER
+				}
+				factor = 5
+			}
+		}
+		SER = {
+			add_opinion_modifier = { target = ROOT modifier = SER_bosnia_annexation_rejected }
+			country_event = { hours = 2 id = serbia.14 }
+			if = { limit = { is_in_faction_with = BOS }
+				remove_from_faction = BOS
+			}
+		}
+	}
+}
+
+# Bosnia Refuses
+country_event = {
+	id = serbia.14
+	title = serbia.14.t
+	desc = serbia.14.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = serbia.14.a
+		add_state_claim = 104
+		create_wargoal = {
+			type = take_state_focus
+			target = BOS
+			generator = { 104 }
+		}
+	}
+}
+
+# Annexation of Bosnia is acomplished
+country_event = {
+	id = serbia.15
+	title = serbia.15.t
+	desc = serbia.15.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = serbia.15.a
+		104 = {
+			if = {
+				limit = { is_owned_by = BOS }
+				add_core_of = SER
+			}
+		}		
+
+		annex_country = { target = BOS transfer_troops = yes }
+		add_political_power = 50
+		add_named_threat = { threat = 2 name = serbia.15.t }
+		news_event = { hours = 6 id = news.4 }
+	}
+}
+
+#Balkan Lands or War
+country_event = {
+	id = serbia.16
+	title = serbia.16.t
+	desc = serbia.16.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = SER }
+	}
+	
+	option = {
+		name = serbia.16.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		SER = { country_event = { id = serbia.17 days = 1 } }
+		effect_tooltip = {
+			SER = {
+				transfer_state = 767
+				transfer_state = 109
+				transfer_state = 45
+			}
+		}
+		hidden_effect = {
+			news_event = { id = news.203 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = serbia.16.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = SER
+					ratio > 0.6
+				}
+			}
+			modifier = {
+				factor = 0.1
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = HUN
+				}
+			}
+		}
+		SER = { country_event = { id = serbia.18 days = 1 } 
+			if = {
+				limit = {
+					is_in_faction_with = HUN
+					is_faction_leader = yes
+				}
+				remove_from_faction = HUN
+			}
+			if = {
+				limit = { 
+					is_in_faction_with = HUN
+					is_faction_leader = no
+				}
+				random_other_country = {
+					limit = { 
+						is_in_faction_with = SER
+						is_faction_leader = yes
+					}
+					remove_from_faction = SER
+				}
+			}			
+		}		
+		hidden_effect = {
+			news_event = { hours = 1 id = news.204 }
+		}
+		effect_tooltip = {
+			SER = {
+				declare_war_on = {
+					target = HUN
+					type = take_state
+					generator = { 767 109 45 }
+				}
+			}
+		}
+	}
+}
+
+# Hungary Cedes Balkan Area
+country_event = {
+	id = serbia.17
+	title = serbia.17.t
+	desc = serbia.17.d
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = serbia.17.a
+		transfer_state = 767
+		transfer_state = 109
+		transfer_state = 45
+	}
+}
+
+# Hungary Refuses to Cede Balkan Area
+country_event = {
+	id = serbia.18
+	title = serbia.18.t
+	desc = serbia.18.d
+	picture = GFX_report_event_polish_tanks_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = serbia.18.a
+		declare_war_on = {
+			target = HUN
+			type = take_state
+			generator = { 767 109 45 }
+		}
+		#if = {
+		#	limit = {
+		#		CZE = {
+		#			exists = yes
+		#			is_subject = no
+		#			has_government = democratic
+		#			NOT = { is_in_faction_with = GER }
+		#		}	
+		#	}	
+		#	CZE = {
+		#		add_ai_strategy = {
+		#			type = conquer
+		#			id = "GER"			
+		#			value = 200
+		#		}
+		#		add_ai_strategy = {
+		#			type = alliance
+		#			id = "HUN"			
+		#			value = 200
+		#		}	
+		#	}
+		#}
+	}
 }
