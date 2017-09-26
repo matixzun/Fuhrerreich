@@ -23,20 +23,21 @@ set_technology = {
 	early_submarine = 1
 }
 
+#puppet = BOS
+give_guarantee = BOS
+
+
+# DIPLOMACY
 #if = {
 #	limit = {
 #		has_dlc = "Together for Victory"
 #	}
 #	set_autonomy = {
 #		target = BOS
-#		autonomous_state = autonomy_integrated_puppet
-#	}
-#	else = {
-#		puppet = BOS
+#		autonomous_state = autonomy_dominion
+#		freedom_level = 0.4
 #	}
 #}
-
-give_guarantee = BOS
 
 set_convoys = 0
 

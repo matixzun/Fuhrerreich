@@ -985,6 +985,13 @@ focus = {
           hidden_effect = {
              news_event = { hours = 6 id = news.3 }
           }
+          	if = {
+				limit = {
+					NOT = { has_idea = war_economy }
+				}
+				add_political_power = 100
+			}
+				add_ideas = war_economy
        } 
  }
 
@@ -1028,10 +1035,10 @@ focus = {
  } 
  }
  #Focus for Serbia Demands Montenegro
-focus = {
+	focus = {
 		id = serbiademandsmontenegro
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = reclaimingbalkanlands focus = planofgreaterserbia }
+		prerequisite = { focus = reclaimingbalkanlands }
 		available = {
 			is_puppet = no
 			has_army_manpower = { size > 200000 }
@@ -1040,7 +1047,7 @@ focus = {
 				is_puppet = yes
 		}
 		cancel_if_invalid = no
-		x = 7
+		x = 5
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1092,6 +1099,137 @@ focus = {
 			}
 		}
 	}
+ #Focus for Serbia Demands Montenegro
+focus = {
+		id = serbiademandsmontenegro
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = reclaimingbalkanlands }
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 200000 }
+		}
+		cancel = {
+				is_puppet = yes
+		}
+		cancel_if_invalid = no
+		x = 5
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+			MNT = {
+				OR = {
+					is_puppet = yes
+					exists = no 
+					}
+				}
+			}
+
+		completion_reward = {
+			set_country_flag = serbia_demands_montenegro
+			army_experience = 10
+			if = {
+				limit = {
+					country_exists = MNT
+					MNT = {
+						has_civil_war = no
+						AND = {
+							owns_state = 105
+						}
+					}
+				}
+
+				MNT = {
+					country_event = serbia.6
+				}				
+			}
+
+			if = {
+				limit = {
+					105 = {
+						owner = {
+							NOT = {
+								tag = MNT
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 105
+			}
+		}
+	}
+ #Focus for Serbia Demands Bosnia
+	focus = {
+		id = serbiademandsbosnia
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = reclaimingbalkanlands }
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 200000 }
+		}
+		cancel = {
+				is_puppet = yes
+		}
+		cancel_if_invalid = no
+		x = 7
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+			BOS = {
+				OR = {
+					is_puppet = yes
+					exists = no 
+					}
+				}
+			}
+
+		completion_reward = {
+			set_country_flag = serbia_demands_bosnia
+			army_experience = 10
+			if = {
+				limit = {
+					country_exists = BOS
+					BOS = {
+						has_civil_war = no
+						AND = {
+							owns_state = 104
+						}
+					}
+				}
+
+				BOS = {
+					country_event = serbia.13
+				}				
+			}
+
+			if = {
+				limit = {
+					104 = {
+						owner = {
+							NOT = {
+								tag = BOS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 104
+			}
+		}
+	}
+
 
  #Focus for Airforce Studies 
 	focus = { 
