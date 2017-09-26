@@ -47,6 +47,7 @@ country_event = {
 		}
 	}
 
+# Foreign Policy question
 country_event = {
 	id = italy.2
 	title = italy.2.t
@@ -100,8 +101,7 @@ country_event = {
 	}
 }
 
-# Internal policy
-
+# Suffragette question
 country_event = {
 	id = italy.3
 	title = italy.3.t
@@ -152,8 +152,7 @@ country_event = {
 	}
 }
 
-# Military policy
-
+# Internal policy
 country_event = {
 	id = italy.4
 	title = italy.4.t
@@ -204,8 +203,7 @@ country_event = {
 	}
 }
 
-# Foreign policy
-
+# Economic Policy
 country_event = {
 	id = italy.5
 	title = italy.5.t
@@ -258,12 +256,6 @@ country_event = {
 
 ### Election results
 
-### Majority governments
-
-# Socialist wins
-
-### Minority governments
-
 # Socialist wins
 
 country_event = {
@@ -309,6 +301,7 @@ country_event = {
 				}
 			}
 			set_country_flag = antonio_chairman
+			set_country_flag = ITA_election_over
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
 			}
@@ -387,6 +380,7 @@ country_event = {
 			}
 		}
 			set_country_flag = giuseppe_chairman
+			set_country_flag = ITA_election_over
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
 			}
@@ -436,6 +430,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = luigi_chairman
+			set_country_flag = ITA_election_over
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
 			}
@@ -485,6 +480,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = struzo_chairman
+			set_country_flag = ITA_election_over
 			random_country = {
 				limit = { NOT = { TAG = ITA } }
 			}
@@ -661,21 +657,19 @@ country_event = {
 		army_experience = -2
 	}
 }
-
-### Libya Right wing option
+	
+### Libya moderate option
 country_event = {
-	id = italy.18
-	title = italy.18.t
-	desc = italy.18.d
+	id = italy.20
+	title = italy.20.t
+	desc = italy.20.d
 	picture = GFX_report_event_election_vote
 	
 	trigger = {
 		tag = ITA
 		OR = {
-			has_country_flag = { flag = italo_chairman }
-			has_country_flag = { flag = italo_chairman2 }
-			has_country_flag = { flag = Amadeo_chairman }
-			has_country_flag = { flag = struzo_chairman }
+			has_country_flag = { flag = antonio_chairman }
+			has_country_flag = { flag = giuseppe_chairman }
 			}
 		}
 		
@@ -684,8 +678,207 @@ country_event = {
 		fire_only_once = yes
 		
 		option = {
-			name = italy.18.a
+			name = italy.20.a
+			set_country_flag = leftwing_government
+		}
+		
+		option = {
+			name = italy.20.b
 			set_country_flag = rightwing_government
 		}
 	}
-			
+	
+### War in Libya. If flag "ITA_libya_unrest" goes above 3 libya will declare independance and start a war
+
+#Take Prisoners?
+country_event = {
+	id = italy.30
+	title = italy.30.t
+	desc = italy.30.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = ITA
+		focus_progress = { focus = ITA_pacify_libya progress > 0.5 }
+		OR = {
+		has_country_flag = libyan_war 
+	}
+}
+
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+	
+	immediate = {
+		# set up the flag starting values
+		set_country_flag = { flag = ITA_libya_unrest value = 0 }
+	}
+
+	option = {
+		name = italy.30.a
+		ai_chance = { factor = 15 }
+		set_country_flag = ITA_lybia_1
+		modify_country_flag = { flag = ITA_libya_unrest value = 1 }
+		add_manpower = -10000
+	}
+	option = {
+		name = italy.30.b
+		ai_chance = { factor = 30 }
+		set_country_flag = ITA_lybia_1
+		add_ideas = ITA_libyan_prisoners
+	}
+}
+
+#Poison gas?
+country_event = {
+	id = italy.31
+	title = italy.31.t
+	desc = italy.31.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = ITA
+		focus_progress = { focus = ITA_pacify_libya progress > 0.5 }
+		OR = {
+		has_country_flag = ITA_lybia_1
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	option = {
+		name = italy.31.a
+		ai_chance = { factor = 15 }
+		set_country_flag = ITA_lybia_2
+		modify_country_flag = { flag = ITA_libya_unrest value = 1 }
+		army_experience = 5
+	}
+	option = {
+		name = italy.31.b
+		ai_chance = { factor = 30 }
+		set_country_flag = ITA_lybia_2
+		add_national_unity = 0.05
+	}
+}
+
+#remove rebel infrastructure
+country_event = {
+	id = italy.33
+	title = italy.33.t
+	desc = italy.33.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = ITA
+		focus_progress = { focus = ITA_pacify_libya progress > 0.5 }
+		OR = {
+		has_country_flag = ITA_lybia_3
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	option = {
+		name = italy.33.a
+		ai_chance = { factor = 15 }
+		set_country_flag = ITA_lybia_4
+		modify_country_flag = { flag = ITA_libya_unrest value = 1 }
+		448 = {
+			add_building_construction = {
+					type = infrastructure
+					level = -2
+					instant_build = yes
+				}
+			}
+		449 = {
+			add_building_construction = {
+					type = infrastructure
+					level = -2
+					instant_build = yes
+				}
+			}
+		450 = {
+			add_building_construction = {
+					type = infrastructure
+					level = -2
+					instant_build = yes
+				}
+			}			
+		}
+	option = {
+		name = italy.33.b
+		ai_chance = { factor = 30 }
+		set_country_flag = ITA_lybia_4
+		add_manpower = -5000 
+		}
+	}
+
+#Rebel arrsted
+country_event = {
+	id = italy.32
+	title = italy.32.t
+	desc = italy.32.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = ITA
+		focus_progress = { focus = ITA_pacify_libya progress > 0.5 }
+		OR = {
+		has_country_flag = ITA_lybia_2
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	option = {
+		name = italy.32.a
+		ai_chance = { factor = 15 }
+		set_country_flag = ITA_lybia_3
+		modify_country_flag = { flag = ITA_libya_unrest value = 1 }
+		add_national_unity = -0.05
+	}
+	option = {
+		name = italy.32.b
+		ai_chance = { factor = 30 }
+		set_country_flag = ITA_lybia_3
+		add_national_unity = 0.05
+	}
+}
+
+
+### Lybian war
+#country_event = {
+#	id = italy.34
+#	title = italy.34.t
+#	desc = italy.34.d
+#	picture = GFX_report_event_communists_cheer
+#
+#	trigger = {
+#		tag = ITA
+#		has_country_flag = { flag = ITA_libya_unrest value > 2 }
+#		}
+#
+#	mean_time_to_happen = { days = 1 }
+#
+#	fire_only_once = yes
+#
+#	option = {
+#		name = italy.34.a
+#		set_country_flag = libyan_total_war
+#		remove_ideas = ITA_libyan_prisoners
+#		remove_ideas = ITA_war_libya
+#		LBA = {
+#				transfer_state = 448
+#				transfer_state = 449
+#				transfer_state = 661
+#				transfer_state = 662
+#				transfer_state = 273
+#				}
+#			}
+#		}

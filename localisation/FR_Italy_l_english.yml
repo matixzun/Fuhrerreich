@@ -61,6 +61,10 @@ ITA_valkist_party_long:0 "Fasci di Combattimento"
  ITA_mil_role_desc:0 "Combining the military and civillian police force into one entity will allow us to quickly respond to threats"
  ITA_dio_patria:0 "Dio. Patria. Famiglia."
  ITA_dio_patria_desc:0 "God. Homeland. Family. These are the virtues that Italians must stand by"
+ ITA_colonial_administration:0 "Colonial Administration"
+ ITA_colonial_administration_desc:0 "After the Great War we were awarded many new territorial holdings but they are very expensive to maintain. Libya itslef seems right on the cusp of open revolt. A large military garrison is needed their to keep order."
+ ITA_socialist_strike2:0 "Socialist Strike"
+ ITA_socialist_strike2_desc:0 "In response to the victory of the right wing in the recent election many socialists have decided to go on strike. They demand that the government implement social programs and pass meaningful economic legislation"
  
  #### Events ####
  
@@ -121,6 +125,21 @@ ITA_valkist_party_long:0 "Fasci di Combattimento"
  italy.18.t:0 ""
  italy.18.d:0 ""
  italy.18.a:0 ""
+ italy.30.t:0 ""
+ italy.30.d:0 ""
+ italy.30.a:0 ""
+ italy.31.t:0 ""
+ italy.31.d:0 ""
+ italy.31.a:0 ""
+ italy.32.t:0 ""
+ italy.32.d:0 ""
+ italy.32.a:0 ""
+ italy.33.t:0 ""
+ italy.33.d:0 ""
+ italy.33.a:0 ""
+ italy.34.t:0 ""
+ italy.34.d:0 ""
+ italy.34.a:0 ""
  
  ### Focuses ###
  

@@ -25,7 +25,7 @@ focus_tree = {
 		id = ITA_parliamentary_election
 		icon = GFX_focus_generic_italy_first
 		available = { always = no }
-		bypass = { has_country_flag = ITA_election }
+		bypass = { has_country_flag = ITA_election_over }
 		x = 10
 		y = 0
 		cost = 10
@@ -38,11 +38,13 @@ focus_tree = {
 	focus = {
 		id = ITA_socialist_win
 		icon = GFX_focus_generic_soviet_politics
-		available = { always = no }
-		bypass = { has_country_flag = antonio_chairman }
 		x = 7
 		y = 1
-		cost = 10
+		cost = 5
+		
+		available = {
+			has_government = bolshevist
+		}
 		
 		prerequisite = {
 			focus = ITA_parliamentary_election
@@ -117,11 +119,13 @@ focus_tree = {
 	focus = {
 		id = ITA_liberal_win
 		icon = GFX_focus_generic_the_giant_wakes
-		available = { always = no }
-		bypass = { has_country_flag = luigi_chairman }
 		x = 9
 		y = 1
-		cost = 10
+		cost = 5
+		
+		available = {
+			has_government = market_liberal
+		}
 		
 		prerequisite = {
 			focus = ITA_parliamentary_election
@@ -196,11 +200,13 @@ focus_tree = {
 	focus = {
 		id = ITA_leftist_coalition
 		icon = GFX_goal_tfv_burn_the_royal_portraits
-		available = { always = no }
-		bypass = { has_country_flag = giuseppe_chairman }
 		x = 11
 		y = 1
-		cost = 10
+		cost = 5
+		
+		available = {
+			has_government = social_democrat	
+		}
 		
 		prerequisite = {
 			focus = ITA_parliamentary_election
@@ -273,18 +279,20 @@ focus_tree = {
 	focus = {
 		id = ITA_conservatives_win
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		available = { always = no }
-		bypass = { has_country_flag = struzo_chairman }
 		x = 13
 		y = 1
-		cost = 10
+		cost = 5
+		
+		available = {
+			has_government = social_conservative
+		}
 		
 		prerequisite = {
 			focus = ITA_parliamentary_election
 		}
 		
 		completion_reward = {
-			add_ideas = ITA_socialist_strike
+			add_ideas = ITA_socialist_strike2
 		}
 	}
 	
@@ -301,10 +309,16 @@ focus_tree = {
 		
 		completion_reward = {
 			remove_ideas = ITA_communist_threat
-			remove_ideas = ITA_socialist_strike
-			add_ideas = ITA_left_crush
-		}
-	}
+			remove_ideas = ITA_socialist_strike2
+			}
+            
+			completion_reward = {
+				add_timed_idea = {
+					add_ideas = ITA_left_crush
+					days = 365
+				}
+            }
+        }
 
 # ask about this one	
 	focus = {
@@ -503,13 +517,24 @@ focus_tree = {
 	focus = {
 		id = ITA_colonial_autonomy
 		icon = GFX_goal_generic_forceful_treaty
-		available = { always = no }
-		bypass = { has_country_flag = leftist_government }
 		x = 30
 		y = 0
-		cost = 10
+		cost = 5
+
+		mutually_exclusive = {
+			focus = ITA_forced_pacification
+		}
+		
+		available = {
+			OR = {
+				has_government = bolshevist
+				has_government = social_democrat
+				has_country_flag = liberal_autonomy
+			}
+		}
 		
 		completion_reward = {
+			add_political_power = -50
 		}
 	}
 	
@@ -525,7 +550,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		add_political_power = -50
 			add_popularity = {
 				ideology = valkist popularity = 0.02
 			}
@@ -724,17 +748,25 @@ focus_tree = {
 	focus = {
 		id = ITA_forced_pacification
 		icon = GFX_goal_generic_forceful_treaty
-		available = { always = no }
-		bypass = { has_country_flag = rightwing_government }
 		x = 32
 		y = 0
 		cost = 10
+		
+		available = {
+			OR = {
+				has_government = social_conservative
+				has_government = valkist
+				has_government = national_populist
+				has_country_flag = liberal_pacification
+			}
+		}
 		
 		mutually_exclusive = {
 			focus = ITA_colonial_autonomy
 		}
 		
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	
@@ -766,6 +798,10 @@ focus_tree = {
 		y = 3
 		cost = 17
 		
+		bypass = { 
+			has_country_flag = libyan_total_war
+		}
+		
 		prerequisite = {
 			focus = ITA_pacify_libya
 		}
@@ -785,6 +821,14 @@ focus_tree = {
 		y = 4
 		cost = 5
 		
+		available = {
+			NOT = {
+			ITA = {
+				has_war_with = LBA
+			}
+		}
+	}
+		
 		prerequisite = {
 			focus = ITA_libia_italiana
 			focus = ITA_white_emir
@@ -797,3 +841,53 @@ focus_tree = {
 			remove_ideas = ITA_colonial_administration
 		}
 	}
+	
+		focus = {
+		id = ITA_west_africa
+		icon = GFX_goal_generic_forceful_treaty
+		x = 27
+		y = 5
+		cost 10
+		
+		prerequisite = {
+			focus = ITA_imperial_con
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+		
+	}
+	
+	focus = {
+		id = ITA_asia_minor
+		icon = GFX_goal_generic_forceful_treaty
+		x = 29
+		y = 5
+		cost 10
+		
+		prerequisite = {
+			focus = ITA_imperial_con
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+		focus = {
+		id = ITA_east_africa
+		icon = GFX_goal_generic_forceful_treaty
+		x = 31
+		y = 5
+		cost 10
+		
+		prerequisite = {
+			focus = ITA_imperial_con
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+}
