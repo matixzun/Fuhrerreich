@@ -1,0 +1,254 @@
+focus_tree = {
+	id = FR_Greece
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+	focus = {
+		id = GRE_organize_ionia
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		x = 6
+		y = 0
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = GRE_immigration
+		icon = GFX_goal_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_organize_ionia
+		}
+		mutually_exclusive = {
+			focus = GRE_deportation
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = GRE_deportation
+		icon = GFX_goal_saf_colonialist_crusade
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_organize_ionia
+		}
+		mutually_exclusive = {
+			focus = GRE_immigration
+		}
+		x = 8
+		y = 1
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = GRE_colonial_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_immigration
+			focus = GRE_deportation
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = GRE_colonial_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+		focus = GRE_immigration
+		focus = GRE_deportation
+		}
+		x = 8
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_colonial_arms
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_immigration
+			focus = GRE_deportation
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_greater_megali
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		x = 16
+		y = 0
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_claim_izmit
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_greater_megali
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_claim_panfilia
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_greater_megali
+		}
+		x = 18
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_claim_south_epirus
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_greater_megali
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_claim_Rumelia
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_greater_megali
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_claim_cyprus_rhodes
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_greater_megali
+		}
+		x = 22
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_political_direction
+		icon = GFX_Focus_generic_diplomatic_treaty
+		cost = 10.00
+		x = 28
+		y = 0
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_true_democracy
+		icon = GFX_Focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_political_direction
+		}
+		x = 28
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_remove_constitution #DIRECT RULE FROM ATHENS
+		icon = GFX_Focus_renounce_the_treaty_of_trianon
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_political_direction
+		}
+		mutually_exclusive = {
+			focus = GRE_true_democracy
+		}
+		x = 26
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_centralization
+		icon = GFX_Goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_true_democracy
+		}
+		mutually_exclusive = {
+			focus = GRE_decentralization
+		}
+		x = 28
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_decentralization
+		icon = GFX_Focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_true_democracy
+		}
+		mutually_exclusive = {
+			focus = GRE_centralization
+		}
+		x = 30
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = GRE_integrate_Anatolian_land
+		icon = GFX_Focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = GRE_remove_constitution
+		}
+		x = 26
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+}
