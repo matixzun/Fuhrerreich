@@ -208,7 +208,6 @@ focus = {
  y = 2 
  mutually_exclusive = { focus = industrialefforti} 
  prerequisite = { focus = rebuildingournation} 
- available = {  } 
  cost = 10  
   
   available_if_capitulated = yes 
@@ -1070,73 +1069,8 @@ focus = {
 				limit = {
 					country_exists = MNT
 					MNT = {
-						has_civil_war = no
 						AND = {
-							owns_state = 105
-						}
-					}
-				}
-
-				MNT = {
-					country_event = serbia.6
-				}				
-			}
-
-			if = {
-				limit = {
-					105 = {
-						owner = {
-							NOT = {
-								tag = MNT
-							}
-							NOT = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-				}
-				add_state_core = 105
-			}
-		}
-	}
- #Focus for Serbia Demands Montenegro
-focus = {
-		id = serbiademandsmontenegro
-		icon = GFX_goal_anschluss
-		prerequisite = { focus = reclaimingbalkanlands }
-		available = {
-			is_puppet = no
-			has_army_manpower = { size > 200000 }
-		}
-		cancel = {
-				is_puppet = yes
-		}
-		cancel_if_invalid = no
-		x = 5
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-
-		bypass = {
-			MNT = {
-				OR = {
-					is_puppet = yes
-					exists = no 
-					}
-				}
-			}
-
-		completion_reward = {
-			set_country_flag = serbia_demands_montenegro
-			army_experience = 10
-			if = {
-				limit = {
-					country_exists = MNT
-					MNT = {
 						has_civil_war = no
-						AND = {
 							owns_state = 105
 						}
 					}
