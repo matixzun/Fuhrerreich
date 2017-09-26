@@ -1,192 +1,296 @@
 focus_tree = {
 	id = FR_Austria
-country = {
-	factor = 0
-	modifier = {
-		add = 10
-		tag = AUS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUS
 		}
-}
-
-continuous_focus_position = { x = 0 y = 1300}
-
-#Focus for The Archdukes Reforms
-	focus = {
-		id = AUS_the_archdukes_reforms 
-		icon = GFX_goal_generic_propaganda 
-		bypass = {} 
-		ai_will_do = { factor = 100} 
-		x =11 
-		y =0 
-		mutually_exclusive = { } 
-		prerequisite = { } 
-		available = {  } 
-		cost = 10  
-		available_if_capitulated = yes  
-		completion_reward = { 
-			add_political_power = 25 
-		} 
 	}
-#Focus for Reform the Officer Corps 
-	focus = { 
-		id = AUS_reform_officer_corps 
-		icon = GFX_goal_generic_military_sphere 
-		bypass = {} 
-		ai_will_do = { factor = 100}
-		x =9
-		y =1 
-		mutually_exclusive = { } 
-		prerequisite = { focus = thearchdukesreforms} 
-		available = {  } 
-		cost = 10  
-		available_if_capitulated = yes  
-		completion_reward = { 
-			army_experience= 10 
-		} 
-	}
-#Focus for Reform the Air Corps 
+	default = no
 	focus = {
-		id = AUS_reform_air_corps 
-		icon = GFX_goal_generic_air_fighter2 
-		bypass = {} 
-		ai_will_do = { factor = 100} 
-		x =11 
-		y =1 
-		mutually_exclusive = { } 
-		prerequisite = { focus = thearchdukesreforms} 
-		available = {  } 
-		cost = 10  
-		available_if_capitulated = yes
+		id = AUS_the_archdukes_reforms
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		x = 10
+		y = 0
+		
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = AUS_reform_officer_corps
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_the_archdukes_reforms
+		}
+		x = 8
+		y = 1
+		
+		completion_reward = {
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = AUS_reform_air_corps
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_the_archdukes_reforms
+		}
+		x = 10
+		y = 1
 		completion_reward = {
 			air_experience= 25 
-			add_tech_bonus = {
-				bonus = 0.5  
-				uses = 2  
-				category = air_tech 
-			} 
+      add_tech_bonus = {
+        bonus = 0.5  
+        uses = 2  
+        category = air_tech 
+      }
+    }
+
+	}
+	focus = {
+		id = AUS_reform_army_corps
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_the_archdukes_reforms
 		}
- }
-#Focus for Reform the Army Corps 
-	focus = { 
-		id = AUS_reform_army_corps 
-		icon = GFX_goal_generic_allies_build_infantry 
-		bypass = {} 
-		ai_will_do = { factor = 100} 
-		x =13
-		y =1 
-		mutually_exclusive = { } 
-		prerequisite = { focus = thearchdukesreforms} 
-		available = {  } 
-		cost = 10  
-		available_if_capitulated = yes  
-		completion_reward = { 
-			army_experience= 50 
-		} 
- }
-#Focus for Our Lost Land 
-	focus = { 
-		id = AUS_our_lost_land 
-		icon = GFX_goal_tripartite_pact 
-		bypass = {}
-		ai_will_do = { factor = 10} 
-		x =2 
-		y =0 
-		mutually_exclusive = { }
-		prerequisite = { }
-		available = {  }
-		cost = 10  
-		available_if_capitulated = yes  
+		x = 12
+		y = 1
 		completion_reward = {
-  
+
+      army_experience = 50
 		}
- }
-#Focus for Confront Italy 
-	focus = { 
-		id = AUS_confront_italy 
-		icon = GFX_goal_demand_sudetenland 
-		bypass = {} 
-		ai_will_do = { factor = 10} 
-		x =2 
-		y =1 
-		mutually_exclusive = { } 
-		prerequisite = { focus = ourlostland} 
-		available = {  } 
-		cost = 10  
-		available_if_capitulated = yes  
+	}
+	focus = {
+		id = AUS_our_lost_land
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		x = 2
+		y = 0
+    completion_reward = {
+
+    }
+
+	}
+	focus = {
+		id = AUS_confront_italy
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_our_lost_land
+		}
+		x = 2
+		y = 1
 		completion_reward = {
-  
-		} 
- }
-#Focus for Negotiate for Dalmatia 
-	focus = { 
-		id = AUS_negotiate_dalamtia 
-		icon = GFX_goal_generic_intelligence_exchange 
-		bypass = {} 
-		ai_will_do = { factor = 10} 
-		x =2
-		y =2 
-		mutually_exclusive = { } 
-		prerequisite = { focus = confrontitaly} 
-		available = {  } 
-		cost = 10  
-		available_if_capitulated = yes  
-		completion_reward = { 
-  
-		} 
- }
-#Focus for Negotiate for South Tirol 
-	focus = { 
-		id = AUS_negotiate_south_tirol 
-		icon = GFX_goal_generic_intelligence_exchange 
-		bypass = {} 
-		ai_will_do = { factor = 10} 
-		x =4
-		y =2 
-		mutually_exclusive = { } 
-		prerequisite = { focus = confrontitaly} 
-		available = {  } 
-		cost = 10  
-		available_if_capitulated = yes  
-		completion_reward = { 
-  
-		} 
- }
-#Focus for Negotiate for Carniola 
-	focus = { 
-		id = AUS_negotiate_caniola 
-		icon = GFX_goal_generic_intelligence_exchange 
-		bypass = {} 
-		ai_will_do = { factor = 10} 
-		x =6
-		y =2 
-		mutually_exclusive = { } 
-		prerequisite = { focus = confrontitaly} 
-		available = {  } 
-		cost = 10  
-		available_if_capitulated = yes  
-		completion_reward = { 
-  
-		} 
- }
-#Focus for War of Reclaimation 
-		focus = { 
-			id = AUS_reclaimation_war 
-			icon = GFX_goal_demand_sudetenland 
-			bypass = {} 
-		ai_will_do = { factor = 10} 
-		x =0 
-		y =2 
+
+		}
+	}
+	focus = {
+		id = AUS_negotiate_dalamtia
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_confront_italy
+		}
 		mutually_exclusive = {
-			focus = negotiatefordalmatia
-			focus = negotiateforsouthtirol
-			focus = negotiateforcarniola
+			focus = AUS_confront_italy
 		}
-		prerequisite = { focus = confrontitaly} 
-		available = {  } 
-		cost = 10  
-		available_if_capitulated = yes  
-		completion_reward = { 
-  
+		x = 2
+		y = 2
+		completion_reward = {
+
 		}
- }
+	}
+	focus = {
+		id = AUS_negotiate_south_tirol
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_confront_italy
+		}
+		x = 4
+		y = 2
+		  completion_reward = {
+
+        }
+	}
+	focus = {
+		id = AUS_negotiate_caniola
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_confront_italy
+		}
+		mutually_exclusive = {
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_reclaimation_war
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = { focus = AUS_confront_italy }
+		mutually_exclusive = {
+      focus = AUS_negotiate_dalamtia
+      focus = AUS_negotiate_south_tirol
+      focus = AUS_negotiate_caniola
+		}
+		prerequisite = {
+			focus = AUS_confront_italy
+		}
+		x = 0
+		y = 2
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_political_upheval
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		x = 20
+		y = 0
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_archduke_support
+		icon = GFX_goal_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
+		x = 20
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_archduke_coup
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
+		x = 22
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_embrace_conservative
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
+		x = 24
+		y = 1
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = AUS_red_dawn
+		icon = GFX_goal_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
+		x = 18
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_military_takeover
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_alpine_forts
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_military_takeover
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_socialist_teachings
+		icon = GFX_goal_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_red_dawn
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_the_next_habsburgs
+		icon = GFX_goal_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_archduke_support
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_new_republic
+		icon = GFX_goal_renounce_the_treaty_of_trianon
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_archduke_coup
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_true_democracy
+		icon = GFX_goal_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_embrace_conservative
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+		
+		}
+	}
 }
