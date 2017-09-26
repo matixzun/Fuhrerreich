@@ -23,6 +23,9 @@ focus_tree = {
 		id = AUS_reform_officer_corps
 		icon = GFX_goal_generic_military_sphere
 		cost = 10.00
+		prerequisite = {
+			focus = AUS_the_archdukes_reforms
+		}
 		x = 8
 		y = 0
 		
@@ -53,8 +56,11 @@ focus_tree = {
 		id = AUS_reform_army_corps
 		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
+		prerequisite = {
+			focus = AUS_the_archdukes_reforms
+		}
 		x = 12
-		y = 1
+		y = 2
 		completion_reward = {
       army_experience = 50
 		}
