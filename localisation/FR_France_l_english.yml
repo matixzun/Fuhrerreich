@@ -1,0 +1,36 @@
+﻿l_english:
+
+#### Political Parties ####
+
+FRA_internationalist_party:0 ""
+FRA_internationalist_party_long:0 ""
+FRA_bolshevist_party:0 "PCF"
+FRA_bolshevist_party_long:0 "Parti Communiste Français"
+FRA_marxist_leninist_party:0 "PCF"
+FRA_marxist_leninist_party_long:0 "Parti Communiste Français"
+FRA_libertarian_socialist_party:0 ""
+FRA_libertarian_socialist_party_long:0 ""
+FRA_social_democrat_party:0 "Parti Socialiste"
+FRA_social_democrat_party_long:0 "Parti Socialiste"
+FRA_social_liberal_party:0 ""
+FRA_social_liberal_party_long:0 ""
+FRA_market_liberal_party:0 ""
+FRA_market_liberal_party_long:0 ""
+FRA_social_conservative_party:0 ""
+FRA_social_conservative_party_long:0 ""
+FRA_authoritarian_democrat_party:0 "Maison de Orléans"
+FRA_authoritarian_democrat_party_long:0 "Maison de Orléans"
+FRA_paternal_autocrat_party:0 "Action Française"
+FRA_paternal_autocrat_party_long:0 "Action Française"
+FRA_national_populist_party:0 ""
+FRA_national_populist_party_long:0 ""
+FRA_valkist_party:0 ""
+FRA_valkist_party_long:0 ""
+
+
+#### Ideas ####
+
+FRA_great_war_victors:0 "Victors Of The Great War"
+FRA_great_war_victors_desc:0 "When the dust had finally settled at the end of the war, we, alongside Britain, the United States, and a multitude of other countries, had emerged victorious from the Great War. While this has been a huge boost to our national pride, our army is very complacent and unwilling to reform."
+FRA_rhineland_coal:0 "Coal From The Rhineland"
+FRA_rhineland_coal_desc:0 "With the acquisition of the Rhineland from Germany after the Great War, we have seen a surplus of coal, a resource badly needed for the French industry. So long as we remain in control of the Rhineland, we can ensure that our industrial capacity and profits are at an all time high."

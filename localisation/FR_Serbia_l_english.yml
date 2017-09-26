@@ -117,6 +117,11 @@ invitingforeigninnovators:0 "Inviting Foreign Innovators"
 invitingforeigninnovators_desc:0 ""
 nationalizefactories:0 "Nationalize Factories"
 nationalizefactories_desc:0 ""
+serbiademandsbosnia:0 "Serbia Demands Bosnia & Herzegovina"
+serbiademandsbosnia_desc:0 ""
+balkanlandorwar:0 "Balkan Land or War"
+balkanlandorwar_desc:0 ""
+
 
 ### Events ###
 
@@ -162,6 +167,16 @@ serbia.12.t:0 "National Populists Coup!"
 serbia.12.d:0 ""
 serbia.12.a:0 "Grand victory for our nation!"
 serbia.12.b:0 "We shall stand our ground!"
+serbia.13.t:0 "Annexation or War"
+serbia.13.d:0 ""
+serbia.13.a:0 "We should lay down our weapons."
+serbia.13.b:0 "Never surrender!"
+serbia.14.t:0 "Bosnia refused"
+serbia.14.d:0 ""
+serbia.14.a:0 "This means war."
+serbia.15.t:0 "Annexation of Bosnia & Herzegovina"
+serbia.15.d:0 ""
+serbia.15.a:0 "Another fine victory.."
 
 ### Serbia News ###
 
@@ -186,6 +201,8 @@ news.2.e:0 "We must decide when to draw the line."
 news.3.t:0 "Načertanije"
 news.3.d:0 ""
 news.3.a:0 "Remembering our old path."
+news.4.t:0 "Annexation of Bosnia"
+news.4.d:0 ""
 
 ### Ideas ###
 starting_idea1:0 "Destroyed Factories"
@@ -207,4 +224,6 @@ mobilization_act_desc:0 ""
 
 serbia.1_tt:0 "Will lead to a coup organized by National Populists.!"
 serbia.2_tt:0 "We must solve our inner conflicts before we organize our nation!"
-
+serbia.3_tt:0 "§R[This.GetName] must approve of the agreement for bonuses to take effect.§!\n"
+serbia.4_tt:0 "§R[This.GetName] must approve of the agreement for bonuses to take effect. They will leave [Root.GetFactionName] if war is declared.§!\n"
+serbia.5_tt:0 "§R[This.GetName] must approve of the agreement for bonuses to take effect. You will leave [Root.GetFactionName] the faction if war is declared.§!\n"

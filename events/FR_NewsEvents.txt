@@ -111,3 +111,44 @@ news_event = {
 	   trigger = { TAG = SER }
 	}
 }
+
+#Annexation of Bosnia
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_news_event_german_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		trigger = {
+			NOT = {
+				TAG = SER
+				TAG = ROM
+				TAG = HUN
+				TAG = GRE
+			}
+		}
+	}
+	option = {
+		name = news.2.b
+		trigger = { TAG = SER }
+	}
+	option = {
+		name = news.2.c
+		trigger = { TAG = ROM }
+	}
+	option = {
+		name = news.2.e
+		trigger = {
+			OR = {
+				TAG = HUN
+				TAG = GRE
+			}
+		}
+	}
+}
