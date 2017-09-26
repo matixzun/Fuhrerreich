@@ -117,8 +117,12 @@ invitingforeigninnovators:0 "Inviting Foreign Innovators"
 invitingforeigninnovators_desc:0 ""
 nationalizefactories:0 "Nationalize Factories"
 nationalizefactories_desc:0 ""
-serbiademandsbosnia:0 "Serbia Demands Bosnia"
+serbiademandsbosnia:0 "Serbia Demands Bosnia & Herzegovina"
 serbiademandsbosnia_desc:0 ""
+balkanlandorwar:0 "Balkan Land or War"
+balkanlandorwar_desc:0 ""
+
+
 ### Events ###
 
 serbia.1.t:0 "The Kingdom of Serbia"
@@ -170,7 +174,7 @@ serbia.13.b:0 "Never surrender!"
 serbia.14.t:0 "Bosnia refused"
 serbia.14.d:0 ""
 serbia.14.a:0 "This means war."
-serbia.15.t:0 "Annexation of Bosnia"
+serbia.15.t:0 "Annexation of Bosnia & Herzegovina"
 serbia.15.d:0 ""
 serbia.15.a:0 "Another fine victory.."
 
@@ -220,4 +224,6 @@ mobilization_act_desc:0 ""
 
 serbia.1_tt:0 "Will lead to a coup organized by National Populists.!"
 serbia.2_tt:0 "We must solve our inner conflicts before we organize our nation!"
-
+serbia.3_tt:0 "§R[This.GetName] must approve of the agreement for bonuses to take effect.§!\n"
+serbia.4_tt:0 "§R[This.GetName] must approve of the agreement for bonuses to take effect. They will leave [Root.GetFactionName] if war is declared.§!\n"
+serbia.5_tt:0 "§R[This.GetName] must approve of the agreement for bonuses to take effect. You will leave [Root.GetFactionName] the faction if war is declared.§!\n"
