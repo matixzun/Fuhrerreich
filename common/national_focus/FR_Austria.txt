@@ -33,7 +33,7 @@ continuous_focus_position = { x = 0 y = 1300}
 		icon = GFX_goal_generic_military_sphere 
 		bypass = {} 
 		ai_will_do = { factor = 100}
-		x =9 
+		x =9
 		y =1 
 		mutually_exclusive = { } 
 		prerequisite = { focus = thearchdukesreforms} 
