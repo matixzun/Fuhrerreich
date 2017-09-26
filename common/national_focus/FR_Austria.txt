@@ -165,8 +165,11 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_archduke_support
-		icon = GFX_generic_support_the_left_right
+		icon = GFX_goal_generic_support_the_left_right
 		cost = 10.00
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
 		x = 20
 		y = 1
 		completion_reward = {
@@ -175,8 +178,11 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_archduke_coup
-		icon = GFX_generic_attack_allies
+		icon = GFX_goal_generic_attack_allies
 		cost = 10.00
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
 		x = 22
 		y = 1
 		completion_reward = {
@@ -185,9 +191,12 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_embrace_conservative
-		icon = GFX_generic_improve_relations
+		icon = GFX_goal_generic_improve_relations
 		cost = 10.00
-		x = 18
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
+		x = 24
 		y = 1
 		completion_reward = {
 
@@ -195,8 +204,11 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_red_dawn
-		icon = GFX_generic_soviet_politics
+		icon = GFX_goal_generic_soviet_politics
 		cost = 10.00
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
 		x = 18
 		y = 1
 		completion_reward = {
@@ -205,8 +217,11 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_military_takeover
-		icon = GFX_generic_allies_build_infantry
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
+		prerequisite = {
+			focus = AUS_political_upheval
+		}
 		x = 16
 		y = 1
 		completion_reward = {
@@ -215,11 +230,67 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_alpine_forts
-		icon = GFX_generic_construct_military
+		icon = GFX_goal_generic_construct_military
 		cost = 10.00
+		prerequisite = {
+			focus = AUS_military_takeover
+		}
 		x = 16
 		y = 2
 		completion_reward = {
 		
 		}
 	}
+	focus = {
+		id = AUS_socialist_teachings
+		icon = GFX_goal_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_red_dawn
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_the_next_habsburgs
+		icon = GFX_goal_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_archduke_support
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_new_republic
+		icon = GFX_goal_renounce_the_treaty_of_trianon
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_archduke_coup
+		}
+		x = 22
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_true_democracy
+		icon = GFX_goal_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_embrace_conservative
+		}
+		x = 24
+		y = 2
+		completion_reward = {
+		
+		}
+	}
+}
