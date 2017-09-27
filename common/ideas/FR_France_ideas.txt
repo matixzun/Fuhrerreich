@@ -15,6 +15,7 @@ ideas = {
 			modifier = {
 				unity_factor = 0.10
 				conscription = -0.005
+				land_doctrine = -0.7
 			}
 		}
 
