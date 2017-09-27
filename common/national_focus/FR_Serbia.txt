@@ -1031,6 +1031,8 @@ focus = {
         add_state_core = 103
         add_state_core = 102
         add_state_core = 163
+        add_state_core = 767
+        add_state_core = 736
  } 
  }
  #Focus for Serbia Demands Montenegro
@@ -1046,7 +1048,7 @@ focus = {
 				is_puppet = yes
 		}
 		cancel_if_invalid = no
-		x = 5
+		x = 6
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1111,7 +1113,7 @@ focus = {
 				is_puppet = yes
 		}
 		cancel_if_invalid = no
-		x = 7
+		x = 8
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1164,6 +1166,210 @@ focus = {
 		}
 	}
 
+ #Focus for Balkan Land or War
+ focus = {
+		id = balkanlandorwar
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = reclaimingbalkanlands }
+		will_lead_to_war_with = HUN
+		available = {
+			has_completed_focus = serbiademandsbosnia
+			has_completed_focus = serbiademandsmontenegro
+			is_puppet = no
+			has_army_manpower = { size > 200000 }		
+			#Make custom trigger tooltip here
+			767 = {
+				owner = {
+					original_tag = HUN
+				}
+				controller = {
+					original_tag = HUN
+				}
+			}
+			109 = {
+				owner = {
+					original_tag = HUN
+				}
+				controller = {
+					original_tag = HUN
+				}
+			}
+			45 = {
+				owner = {
+					original_tag = HUN
+				}
+				controller = {
+					original_tag = HUN
+				}
+			}
+			OR = {
+				HUN = {
+					has_civil_war = no
+				}
+					#tooltip = GER_danzig_trigger_polish_civil_war
+					AND = {
+						any_other_country = {
+							original_tag = HUN
+							has_civil_war = yes
+							OR = {
+								is_in_faction_with = ROOT
+								has_volunteers_amount_from = {
+									tag = SER
+									count > 0
+								}
+							}
+						}
+					}
+
+			}
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = HUN
+				is_in_faction_with = HUN
+				NOT = {
+						767 = {
+							owner = {
+							original_tag = HUN
+							}
+							controller = {
+							original_tag = HUN
+							}
+						}
+						109 = {
+							owner = {
+							original_tag = HUN
+							}
+							controller = {
+							original_tag = HUN
+							}
+						}
+						45 = {
+							owner = {
+							original_tag = HUN
+							}
+							controller = {
+							original_tag = HUN
+							}
+						}
+					}
+			}
+		}
+		cancel_if_invalid = no
+		x = 7
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 10	
+			modifier = {
+				factor = 0
+				OR = {
+					any_neighbor_country = {
+						has_war_with = SER
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = SER
+							ratio > 0.6
+						}
+					}
+				}
+			}
+		}	
+		completion_reward = {
+			add_named_threat = { threat = 5 name = balkanlandorwar }
+			if = {
+				limit = {
+					767 = {
+						controller = {
+							tag = HUN
+							has_civil_war = no
+						}
+					}
+					109 = {
+						controller = {
+							tag = HUN
+							has_civil_war = no
+						}
+					}
+					45 = {
+						controller = {
+							tag = HUN
+							has_civil_war = no
+						}
+					}
+				}
+				effect_tooltip = {
+					transfer_state = 767
+					transfer_state = 109
+					transfer_state = 45
+				}
+				HUN = {
+					country_event = { id = serbia.16 }
+					if = {
+						limit = { NOT = { is_in_faction_with = ROOT } }
+						custom_effect_tooltip = serbia.3_tt
+					}
+					if = {
+						limit = { 
+							is_in_faction_with = ROOT 
+							ROOT = { is_faction_leader = yes }
+						}
+						custom_effect_tooltip = serbia.4_tt
+					}
+					if = {
+						limit = {
+							is_in_faction_with = ROOT 
+							NOT = { ROOT = { is_faction_leader = yes } }
+						}
+						custom_effect_tooltip = serbia.5_tt
+					}
+				}
+			}
+			if = {
+				limit = {
+					767 = {
+						owner = {
+							OR = {
+								original_tag = HUN
+								tag = HUN
+							}
+						}
+					}
+					109 = {
+						owner = {
+							OR = {
+								original_tag = HUN
+								tag = HUN
+							}
+						}
+					}
+					45 = {
+						owner = {
+							OR = {
+								original_tag = HUN
+								tag = HUN
+							}
+						}
+					}
+				}
+				random_other_country = {
+					limit = {
+						original_tag = HUN
+						has_civil_war = yes
+						OR = {
+							is_in_faction_with = SER
+							has_volunteers_amount_from = {
+								tag = SER
+								count > 0
+							}
+						}
+					}
+					#country_event = { id = germany.113 days = 1 }
+				}
+			}
+		}
+	}
 
  #Focus for Airforce Studies 
 	focus = { 

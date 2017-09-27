@@ -1,0 +1,31 @@
+############################
+# France Ideas
+############################
+# Made by VirtualHummingbird
+############################
+
+ideas = {
+##############
+# Country ideas
+##############
+	country = {
+
+		FRA_great_war_victors = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				unity_factor = 0.10
+				conscription = -0.005
+				land_doctrine = -0.7
+			}
+		}
+
+		FRA_rhineland_coal = {
+			picture = ast_all_in
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+
+
+}

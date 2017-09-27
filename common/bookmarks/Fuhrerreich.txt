@@ -44,6 +44,15 @@ bookmarks = {
 			}
 		}
 
+		"FRA"={
+			history = "FRA_FUHRERREICH_DESC"
+			ideology = social_democrat
+			ideas = {
+				FRA_great_war_victors
+				FRA_rhineland_coal
+			}
+		}
+
 		"POL"={
 			history = "POL_FUHRERREICH_DESC"
 			ideology = authoritarian_democrat
