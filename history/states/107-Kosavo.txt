@@ -2,15 +2,15 @@
 state={
 	id=107
 	name="STATE_107" # Serbia
-	manpower = 1434700
+	manpower = 2560000
 	
 	state_category = large_city
 	history={
 		owner = SER
 		buildings = {
 			infrastructure = 6
-			arms_factory = 3
-			industrial_complex = 4
+			arms_factory = 4
+			industrial_complex = 7
 			air_base = 5
 		}
 		victory_points = {

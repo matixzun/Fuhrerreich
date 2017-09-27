@@ -121,6 +121,8 @@ serbiademandsbosnia:0 "Serbia Demands Bosnia & Herzegovina"
 serbiademandsbosnia_desc:0 ""
 balkanlandorwar:0 "Balkan Land or War"
 balkanlandorwar_desc:0 ""
+bayernagreement:0 "Bayern Agreement"
+bayernagreement_desc:0 "Bayern Agreement"
 
 
 ### Events ###
@@ -177,6 +179,16 @@ serbia.14.a:0 "This means war."
 serbia.15.t:0 "Annexation of Bosnia & Herzegovina"
 serbia.15.d:0 ""
 serbia.15.a:0 "Another fine victory.."
+serbia.16.t:0 "Serbia Demands Land"
+serbia.16.d:0 ""
+serbia.16.a:0 "We can't afford to end up in a war"
+serbia.16.b:0 "Come and get it!"
+serbia.17.t:0 "Hungary Cedes Territory"
+serbia.17.d:0 ""
+serbia.17.a:0 "This is only the beginning..."
+serbia.18.t:0 "Hungary Refuses Territory"
+serbia.18.d:0 ""
+serbia.18.a:0 "Mobilize armed forces."
 
 ### Serbia News ###
 
@@ -219,6 +231,7 @@ king_alexander_assassination_plot:0 "King Alexander Assassination Plot"
 king_alexander_assassination_plot_desc:0 ""
 mobilization_act:0 "Mobilization Act"
 mobilization_act_desc:0 ""
+national_populist_influence:0 "Populists Influence"
 
 ### Custom Effect Tooltips ###
 
