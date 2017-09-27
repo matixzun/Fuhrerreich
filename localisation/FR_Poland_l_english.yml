@@ -98,6 +98,8 @@ POL_end_of_reforms:0 "End of Economic Reforms"
 POL_end_of_reforms_desc:0 ""
 POL_warsaw_university:0 "Warsaw University"
 POL_warsaw_university_desc:0 ""
+POL_review_our_military:0 "Review our military"
+POL_review_our_military_desc:0 ""
 
 
 ### Events ###
@@ -224,5 +226,7 @@ POL_protect_consumer:0 "Protect the consumer"
 POL_protect_consumer_desc:0 ""
 POL_military_complex:0 "The Polish Military Industrial Complex"
 POL_military_complex_desc:0 ""
+POL_krakow_arms:0 "The Krakow Arms industry"
+POL_krakow_arms_desc:0 ""
 
 
