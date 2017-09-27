@@ -714,6 +714,7 @@ continuous_focus_position = { x = 0 y = 1300}
 
    		available_if_capitulated = yes  
  		completion_reward = {
+ 			add_ideas = POL_krakow_arms
    				}
 }
 
@@ -732,6 +733,7 @@ continuous_focus_position = { x = 0 y = 1300}
 
    		available_if_capitulated = yes  
  		completion_reward = {
+
    				}
 }
 
@@ -752,5 +754,154 @@ continuous_focus_position = { x = 0 y = 1300}
    				}
 }
 
+      focus = { 
+		id = POL_krakow_arms
+		icon = GFX_goal_rhineland
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 15
+ 		y = 0
+ 		cost = 10
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			army_experience = 50
+   				}
+}
+
+      focus = { 
+		id = POL_offensive_doctrine
+		icon = GFX_goal_rhineland
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 13
+ 		y = 1
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_krakow_arms }
+
+ 		mutually_exclusive = { focus = POL_fortress_poland }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      focus = { 
+		id = POL_develop_new_arms
+		icon = GFX_goal_rhineland
+ 		ai_will_do = { factor = 10 } 
+
+ 		mutually_exclusive = { focus =  }
+ 		
+ 		x = 13
+ 		y = 2
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_offensive_doctrine }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      focus = { 
+		id = POL_develop_new_tanks
+		icon = GFX_goal_rhineland
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 13
+ 		y = 3
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_develop_new_arms }
+
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      focus = { 
+		id = POL_new_military_factories
+		icon = GFX_goal_rhineland
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 15
+ 		y = 1
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_krakow_arms }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+			focus = { 
+		id = POL_continue_the_buildup
+		icon = GFX_goal_rhineland
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 15
+ 		y = 2
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_new_military_factories }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      		focus = { 
+		id = POL_fortress_poland
+		icon = GFX_goal_rhineland
+ 		ai_will_do = { factor = 10 } 
+ 		
+ 		x = 17
+ 		y = 1
+ 		cost = 10
+
+ 		mutually_exclusive = { focus = POL_offensive_doctrine }
+ 		prerequisite = { focus = POL_krakow_arms }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+			focus = { 
+		id = POL_silesia_bunker
+		icon = GFX_goal_rhineland
+ 		ai_will_do = { factor = 10 } 
+
+ 		prerequisite = { focus = POL_fortress_poland }
+ 		
+ 		x = 17
+ 		y = 2
+ 		cost = 10
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
+
+      focus = { 
+		id = POL_electronic_research
+		icon = GFX_goal_rhineland
+ 		ai_will_do = { factor = 10 }
+
+ 		
+ 		x = 17
+ 		y = 3
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_silesia_bunker }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
 
 

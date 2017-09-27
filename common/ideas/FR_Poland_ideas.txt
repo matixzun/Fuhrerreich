@@ -160,4 +160,12 @@ ideas = {
 				production_speed_arms_factory_factor  = 0.1
 			}
 		}
+		POL_krakow_arms = {
+			picture = generic_war_preparation
+				equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+	}
 }
