@@ -61,28 +61,28 @@ set_politics = {
 			popularity = 0
 		}
 		social_democrat = {
-			popularity = 10
+			popularity = 32
 		}
 		social_liberal = {
-			popularity = 15
+			popularity = 8
 		}
 		market_liberal = {
-			popularity = 35
+			popularity = 13
 		}
 		social_conservative = {
-			popularity = 20
+			popularity = 34
 		}
 		authoritarian_democrat = {
-			popularity = 0
+			popularity = 1
 		}
 		paternal_autocrat = {
-			popularity = 20
+			popularity = 0
 		}
 		national_populist = {
 			popularity = 0
 		}
 		valkist = {
-			popularity = 0
+			popularity = 12
 		}
 	}
 	
@@ -96,3 +96,12 @@ set_politics = {
 add_ideas = {
 }
 
+create_country_leader = {
+	name = "Josef Friedrich Matthes"
+	desc = "POLITICS_JOSEF_FRIEDRICH_MATTHES_DESC"
+	picture = "Portrait_Rhine_Portrait_Rhine_Josef_Friedrich_Matthes.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+	}
+}
