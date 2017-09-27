@@ -853,32 +853,35 @@ country_event = {
 
 
 ### Lybian war
-#country_event = {
-#	id = italy.34
-#	title = italy.34.t
-#	desc = italy.34.d
-#	picture = GFX_report_event_communists_cheer
-#
-#	trigger = {
-#		tag = ITA
-#		has_country_flag = { flag = ITA_libya_unrest value > 2 }
-#		}
-#
-#	mean_time_to_happen = { days = 1 }
-#
-#	fire_only_once = yes
-#
-#	option = {
-#		name = italy.34.a
-#		set_country_flag = libyan_total_war
-#		remove_ideas = ITA_libyan_prisoners
-#		remove_ideas = ITA_war_libya
-#		LBA = {
-#				transfer_state = 448
-#				transfer_state = 449
-#				transfer_state = 661
-#				transfer_state = 662
-#				transfer_state = 273
-#				}
-#			}
-#		}
+country_event = {
+	id = italy.34
+	title = italy.34.t
+	desc = italy.34.d
+	picture = GFX_report_event_communists_cheer
+
+	trigger = {
+		tag = ITA
+		has_country_flag = { flag = ITA_libya_unrest value > 2 }
+		}
+
+	mean_time_to_happen = { days = 1 }
+
+	fire_only_once = yes
+
+	option = {
+		name = italy.34.a
+		set_country_flag = libyan_total_war
+		remove_ideas = ITA_libyan_prisoners
+		remove_ideas = ITA_war_libya
+		LBA = {
+				transfer_state = 273
+				transfer_state = 449
+				transfer_state = 661
+				transfer_state = 662
+				declare_war_on = { target = ITA type = annex_everything }
+				hidden_effect = {
+					load_oob = LBA_1936
+					}
+				}
+			}
+		}

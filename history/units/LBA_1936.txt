@@ -14,7 +14,7 @@
 units = {
 	division = {
 	name = "Tripoli Garrison"
-	location = 1149
+	location = 4051
 	division_template = "Libyan Infantry"
 	force_equipment_variants = { infantry_equipment_0 = { owner = "LBA" } }
 	start_equipment_factor = 0.5
@@ -22,7 +22,7 @@ units = {
 	
 	division = {
 	name = "Tripoli Garrison II"
-	location = 1149
+	location = 4051
 	division_template = "Libyan Infantry"
 	force_equipment_variants = { infantry_equipment_0 = { owner = "LBA" } }
 	start_equipment_factor = 0.5
@@ -30,7 +30,7 @@ units = {
 	
 	division = {
 	name = "Tripolitania Garrison"
-	location = 7066
+	location = 1198
 	division_template = "Libyan Infantry"
 	force_equipment_variants = { infantry_equipment_0 = { owner = "LBA" } }
 	start_equipment_factor = 0.4
@@ -38,7 +38,7 @@ units = {
 	
 	division = {
 	name = "Tripolitania Garrison"
-	location = 7066
+	location = 1198
 	division_template = "Libyan Infantry"
 	force_equipment_variants = { infantry_equipment_0 = { owner = "LBA" } }
 	start_equipment_factor = 0.4
@@ -46,7 +46,7 @@ units = {
 	
 	division = {
 	name = "El Agheila Garrison"
-	location = 1198
+	location = 7139
 	division_template = "Libyan Infantry"
 	force_equipment_variants = { infantry_equipment_0 = { owner = "LBA" } }
 	start_equipment_factor = 0.6
@@ -54,7 +54,7 @@ units = {
 	
 	division = {
 	name = "El Agheila Garrison"
-	location = 1198
+	location = 7139
 	division_template = "Libyan Infantry"
 	force_equipment_variants = { infantry_equipment_0 = { owner = "LBA" } }
 	start_equipment_factor = 0.6

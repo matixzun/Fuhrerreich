@@ -137,6 +137,16 @@ fr.political.23.d:0 "Our current government contains a Minister of a different i
 fr.political.23.a:0 "There is nothing we can do."
 fr.political.23.b:0 "Use our influence to revert his efforts."
 
+### Remove Independent War Event ###
+fr.political.30.t:0 "End of Our Independent War"
+fr.political.30.d:0 "Now that our independent war is over we can call our allies to war again."
+fr.political.30.a:0 "Understood"
+
+### Gamestart Opinion Modifiers ###
+fr.political.40.t:0 "Setting Opinion Modifiers"
+fr.political.40.d:0 "If you can see this, make a bug report!"
+fr.political.40.a:0 "Seriously, report it."
+
 FR_different_ideology:0 "Different Ideology"
 FR_similar_ideology:0 "Similar Ideology"
 FR_same_ideology:0 "Same Ideology"
