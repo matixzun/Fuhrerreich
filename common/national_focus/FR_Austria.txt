@@ -282,13 +282,49 @@ focus_tree = {
 	}
 	focus = {
 		id = AUS_true_democracy
-		icon = GFX_goal_generic_self_management
+		icon = GFX_generic_self_management
 		cost = 10.00
 		prerequisite = {
 			focus = AUS_embrace_conservative
 		}
 		x = 24
 		y = 2
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_rearmament
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		x = 34
+		y = 0
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_Volksarmee
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_reamament
+		}
+		x = 34
+		y = 1
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_war_spirit
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = AUS_reamament
+		}
+		x = 36
+		y = 1
 		completion_reward = {
 		
 		}
