@@ -97,3 +97,9 @@ FRA_naval_aircraft:0 "Naval Aircraft"
 FRA_naval_aircraft_desc:0 "Bombers that can be refueled and fight from the high seas will be extremely important in exacting lethal damage towards enemy ships."
 FRA_paratrooper_technology:0 "Paratrooper Technology"
 FRA_paratrooper_technology_desc:0 "Instead of primarily relying on planes, we could also shift our focus to include paratroopers."
+
+
+#### Flags ####
+
+FIGHTER_FOCUS:0 "The high command has decided to focus on fighter planes."
+BOMBER_FOCUS:0 "The high command has decided to focus on bomber planes."

@@ -518,6 +518,9 @@ focus_tree = {
 	focus = {
 		id = FRA_commission_new_bombers
 		icon = GFX_goal_generic_air_bomber
+		available = {
+			has_global_flag = BOMBER_FOCUS
+		}
 		prerequisite = { focus = FRA_aerial_doctrines }
 		x = 0
 		y = 2
@@ -541,6 +544,9 @@ focus_tree = {
 	focus = {
 		id = FRA_invest_in_fighter_planes
 		icon = GFX_goal_generic_air_fighter
+		available = {
+			has_global_flag = FIGHTER_FOCUS
+		}
 		prerequisite = { focus = FRA_aerial_doctrines }
 		x = 4
 		y = 2
