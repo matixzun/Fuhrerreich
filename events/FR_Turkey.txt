@@ -17,7 +17,7 @@ country_event = {
 	
 	trigger = {
 		tag = TUR
-		date > 1936.01.5
+		date > 1936.01.23
 	}
 
 	mean_time_to_happen = { days = 3 }
@@ -310,7 +310,7 @@ country_event = {
 	id = tur.7
 	title = tur.7.t
 	desc = tur.7.d
-	picture = GFX_report_event_military_planning
+	picture = GFX_report_event_generic_factory
 
 	is_triggered_only = yes
 

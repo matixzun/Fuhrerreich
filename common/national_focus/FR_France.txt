@@ -1,0 +1,669 @@
+focus_tree = {
+	id = france_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+
+	default = no
+
+	##### FRENCH LAND ARMY
+
+	focus = {
+		id = FRA_the_land_army
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 9
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 40
+		}
+	}
+
+	focus = {
+		id = FRA_mechanized_warfare
+		icon = GFX_goal_RUS_Markov_plan
+		prerequisite = { focus = FRA_the_land_army }
+		mutually_exclusive = { focus = FRA_careful_planning } 
+  		mutually_exclusive = { focus = FRA_levee_en_masse } 
+  		mutually_exclusive = { focus = FRA_artillery_barrage } 
+		x = 6
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_motorized_infantry
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = FRA_mechanized_warfare }
+		x = 6
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_airplane_technology
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = FRA_motorized_infantry }
+		x = 6
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_tank_production
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = FRA_airplane_technology }
+		x = 6
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_artillery_barrage
+		icon = GFX_goal_doctrine_fire_superiority
+		prerequisite = { focus = FRA_the_land_army }
+		mutually_exclusive = { focus = FRA_levee_en_masse } 
+  		mutually_exclusive = { focus = FRA_careful_planning }  
+  		mutually_exclusive = { focus = FRA_mechanized_warfare } 
+		x = 8
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_support_companies
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = FRA_artillery_barrage }
+		x = 8
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+			} 	
+		}
+	}
+
+	focus = {
+		id = FRA_artillery_production
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = FRA_support_companies }
+		x = 8
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_offensive_training
+		icon = GFX_goal_offensive_army
+		prerequisite = { focus = FRA_artillery_production }
+		x = 8
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_levee_en_masse
+		icon = GFX_goal_conscription
+		prerequisite = { focus = FRA_the_land_army }
+		mutually_exclusive = { focus = FRA_artillery_barrage } 
+  		mutually_exclusive = { focus = FRA_mechanized_warfare } 
+  		mutually_exclusive = { focus = FRA_careful_planning } 
+		x = 10
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_mass_production_of_infantry_equipment
+		icon = GFX_goal_national_arsenal
+		prerequisite = { focus = FRA_levee_en_masse }
+		x = 10
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_mandatory_draft
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = FRA_mass_production_of_infantry_equipment }
+		x = 10
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_militarization
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = FRA_mandatory_draft }
+		x = 10
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_careful_planning
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = FRA_the_land_army }
+		mutually_exclusive = { focus = FRA_levee_en_masse } 
+  		mutually_exclusive = { focus = FRA_artillery_barrage } 
+  		mutually_exclusive = { focus = FRA_mechanized_warfare } 
+		x = 12
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctrine_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_military_academies
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = FRA_careful_planning }
+		x = 12
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_alsace_rhine_line
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = FRA_military_academies }
+		x = 12
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_the_guard_on_the_rhine
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = FRA_alsace_rhine_line }
+		x = 12
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_the_army_reformed
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = FRA_the_guard_on_the_rhine focus = FRA_militarization focus = FRA_offensive_training focus = FRA_tank_production }
+		x = 9
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	##### FRENCH AIR ARMY
+
+	focus = {
+		id = FRA_air_army
+		icon = GFX_goal_generic_build_airforce
+		x = 2
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 40
+			14 = {
+				if = {
+					limit = {
+						is_owned_by = FRA
+					}
+					add_building_construction = {
+							type = air_base
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+			29 = {
+				if = {
+					limit = {
+						is_owned_by = FRA
+					}
+					add_building_construction = {
+							type = air_base
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+			28 = {
+				if = {
+					limit = {
+						is_owned_by = FRA
+					}
+					add_building_construction = {
+							type = air_base
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+			19 = {
+				if = {
+					limit = {
+						is_owned_by = FRA
+					}
+					add_building_construction = {
+							type = air_base
+							level = 1
+							instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_aerial_doctrines
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = FRA_air_army }
+		x = 2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 3
+				category = air_doctrine
+			}			
+		}
+	}
+
+	focus = {
+		id = FRA_commission_new_bombers
+		icon = GFX_goal_generic_air_bomber
+		available = {
+			has_global_flag = BOMBER_FOCUS
+		}
+		prerequisite = { focus = FRA_aerial_doctrines }
+		x = 0
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 2
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_invest_in_fighter_planes
+		icon = GFX_goal_generic_air_fighter
+		available = {
+			has_global_flag = FIGHTER_FOCUS
+		}
+		prerequisite = { focus = FRA_aerial_doctrines }
+		x = 4
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_light_aircraft_industry
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = FRA_invest_in_fighter_planes } 
+  		prerequisite = { focus = FRA_aerial_doctrines } 
+		x = 3
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = FRA_close_air_support
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = FRA_invest_in_fighter_planes } 
+  		prerequisite = { focus = FRA_airplane_technology } 
+		x = 4
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 2
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_heavy_aircraft_industry
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = FRA_aerial_doctrines } 
+  		prerequisite = { focus = FRA_commission_new_bombers } 
+		x = 1
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = FRA_naval_aircraft
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = FRA_heavy_aircraft_industry }
+		x = 0
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 2
+				category = naval_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_paratrooper_technology
+		icon = GFX_focus_generic_paratrooper
+		prerequisite = { focus = FRA_heavy_aircraft_industry focus = FRA_light_aircraft_industry } 
+		x = 2
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 2
+				technology = paratroopers
+				technology = paratroopers2
+			}
+		}
+	}
+
+}

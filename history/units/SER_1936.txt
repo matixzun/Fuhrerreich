@@ -60,12 +60,10 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "1. 'Cerska' Pesadijska Div."  			# Peadijska if we get font support
+		name = "Gardijska Pesadijska Div."  			# Peadijska if we get font support
 		location = 11586
 		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-		
-
+		start_experience_factor = 0.3
 	}
 	division = {
 		name = "1. Bataljon Bornih Kola"
@@ -73,13 +71,12 @@ units = {
 		division_template = "Tenkovski Bataljon"
 		start_experience_factor = 0.3
 		force_equipment_variants = { gw_tank_equipment = { owner = "SER" creator = "FRA" } }
-
 	}
 
 	### Obalnim Armija ###
 	division = {
-		name = "12. 'Jadranska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 3924
+		name = "12. 'Beogradska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 3984
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 
@@ -87,25 +84,22 @@ units = {
 
 	### 5. Armija ###
 	division = {
-		name = "8. 'Krajinska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 907
+		name = "Gardijska Pesadijska Div."  			# Peadijska if we get font support
+		location = 11586
 		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "9. 'Timocka' Pesadijska Div."  				# Peadijska if we get font support
-		location = 11868
+		name = "Gardijska Pesadijska Div."  			# Peadijska if we get font support
+		location = 11586
 		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-
+		start_experience_factor = 0.3
 	}
 	division = {
-		name = "2. Konjička Divizija"
-		location = 11887
-		division_template = "Konjička Divizija"
-		start_experience_factor = 0.1
-
+		name = "Gardijska Pesadijska Div."  			# Peadijska if we get font support
+		location = 11586
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.3
 	}
 
 	### 6. Armija ###
@@ -162,7 +156,23 @@ units = {
 		
 
 	}
+	division = {
+		name = "23. 'Moravska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 6953
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		
 
+	}
+	division = {
+		name = "24. 'Makedonska' Pesadijska Div."  			# Peadijska if we get font support
+		location = 9874
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.1
+		
+
+	}
+}
 ### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
@@ -170,8 +180,8 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "SER"
 		}
-		requested_factories = 1
-		progress = 0.37
+		requested_factories = 4
+		progress = 0.57
 		efficiency = 100
 	}
 	add_equipment_production = {
@@ -179,9 +189,17 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "SER"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.76
 		efficiency = 100
 	}
-	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SER" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
 }
