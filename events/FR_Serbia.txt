@@ -388,6 +388,10 @@ country_event = {
 				ideology = national_populist
 				popularity = 0.15
 		}
+		add_timed_idea = {
+			idea = reign_of_terror
+			days = 200
+		}
 	}
 
 	option = {
@@ -534,7 +538,7 @@ country_event = {
 	option = {
 		name = serbia.16.a
 		ai_chance = {
-			factor = 20
+			factor = 40
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
@@ -556,7 +560,7 @@ country_event = {
 	option = {
 		name = serbia.16.b
 		ai_chance = {
-			factor = 80
+			factor = 50
 			modifier = {
 				factor = 3
 				strength_ratio = {
