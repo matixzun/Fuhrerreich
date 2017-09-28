@@ -124,7 +124,6 @@ units = {
 		location = 5291
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -141,7 +140,6 @@ units = {
 		location = 9503
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -180,7 +178,6 @@ units = {
 		location = 3509
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 
@@ -196,7 +193,6 @@ units = {
 		location = 3671
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 
@@ -206,7 +202,6 @@ units = {
 		location = 3552
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -220,7 +215,6 @@ units = {
 		location = 11506
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -228,7 +222,6 @@ units = {
 		location = 11506
 		division_template = "Brigade de Chars de Combat" 		# R-35s
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -238,8 +231,6 @@ units = {
 		location = 678
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
 	}
 	division= {	
 		name = "13ème Division d'Infanterie"
@@ -266,8 +257,6 @@ units = {
 		location = 3652
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
 	}
 
 	# Maginot Line -- Divisions d'Forteresse
@@ -276,7 +265,6 @@ units = {
 		location = 5291
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -284,7 +272,6 @@ units = {
 		location = 11502
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -292,7 +279,6 @@ units = {
 		location = 3629
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -300,7 +286,6 @@ units = {
 		location = 9503
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -308,7 +293,6 @@ units = {
 		location = 678
 		division_template = "Brigade Coloniale" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
@@ -319,7 +303,6 @@ units = {
 		location = 6766
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -327,7 +310,6 @@ units = {
 		location = 6766
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 
@@ -343,7 +325,6 @@ units = {
 		location = 6657
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 
@@ -367,7 +348,6 @@ units = {
 		location = 3764
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -391,7 +371,6 @@ units = {
 		location = 11834
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
 
 	}
 
@@ -413,7 +392,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -422,7 +400,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -431,7 +408,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -440,7 +416,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	# attached directly to Army
@@ -450,7 +425,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -459,7 +433,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -468,7 +441,6 @@ units = {
 		division_template = "Division de Cavalerie" 	
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	
@@ -479,7 +451,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -488,7 +459,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 
 	}
 
@@ -499,7 +469,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -508,7 +477,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -517,7 +485,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -526,7 +493,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -535,7 +501,6 @@ units = {
 		division_template = "Division de Cavalerie" 	
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
@@ -548,7 +513,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
 
 	}
 
@@ -569,7 +533,6 @@ units = {
 		location = 4948
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -590,7 +553,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -599,7 +561,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 	division= {	
@@ -608,7 +569,6 @@ units = {
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
