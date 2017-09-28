@@ -19,7 +19,7 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			remove_ideas = HUN_black_wednesday
-			add_ideas = HUN_intital_recovery
+			add_ideas = HUN_initial_recovery
 		}
 	}
 	focus = {
@@ -32,7 +32,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = HUN_efficiant_industry
 		}
 	}
 	focus = {
@@ -48,7 +48,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = HUN_new_economic_policy
 		}
 	}
 	focus = {
@@ -64,7 +64,12 @@ focus_tree = {
 		x = 6
 		y = 2
 		completion_reward = {
-			add_political_power = 25
+			43 = {
+				remove_building = { type = industrial_complex level = 1 }
+			}
+			155 = {
+				remove_building = { type = industrial_complex level = 1 }
+			}
 		}
 	}
 	focus = {
@@ -77,7 +82,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = HUN_cut_military_spending
 		}
 	}
 	focus = {
@@ -90,7 +95,7 @@ focus_tree = {
 		x = 6
 		y = 3
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = HUN_reorganize_civ_tax
 		}
 	}
 	focus = {
@@ -103,7 +108,7 @@ focus_tree = {
 		x = 2
 		y = 4
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = HUN_new_trade_deals
 		}
 	}
 	focus = {
@@ -116,7 +121,7 @@ focus_tree = {
 		x = 6
 		y = 4
 		completion_reward = {
-			add_political_power = 25
+			add_ideas = HUN_industrial_reform
 		}
 	}
 	focus = {
@@ -130,7 +135,16 @@ focus_tree = {
 		x = 4
 		y = 5
 		completion_reward = {
-			add_political_power = 25
+			remove_ideas = {
+				HUN_industrial_reform
+				HUN_reorganize_civ_tax
+				HUN_new_trade_deals
+				HUN_cut_military_spending
+				HUN_new_economic_policy
+				HUN_efficiant_industry
+				HUN_initial_recovery
+				}
+			add_ideas = HUN_black_wednesday_over
 		}
 	}
 	focus = {

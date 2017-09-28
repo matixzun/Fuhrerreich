@@ -96,6 +96,22 @@ bookmarks = {
 			}
 		}
 
+		"HUN"={
+			minor = yes
+			history = "HUN_FUHRERREICH_DESC"
+			ideology = social_conservative
+			ideas = {
+				HUN_transylvanian_promise_broken
+				HUN_communist_dissent
+				
+			}
+			focuses = {
+				HUN_embrace_the_reds
+				HUN_join_entente
+				HUN_civil_protection_unit
+			}
+		}
+
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

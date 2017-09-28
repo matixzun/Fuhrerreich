@@ -9,11 +9,34 @@ HUN_communist_dissent:0 "Communist Dissent"
 HUN_communist_dissent_desc:0 "Despite the Hungarian Soviet Republic being defeated shortly after the Great War, and the legitamite government being put in power, a large portion of our population still holds strong socialist traditions."
 ###
 HUN_black_wednesday:0 "Black Wednesday"
-HUN_black_wednesday_desc:0 "Placeholder"
+HUN_black_wednesday_desc:0 "The effects of Black Wednesday have hit us in full. Our economy is in ruins and the people are growing restless. We must act quickly if we are to lessen the effects of this crisis."
 ###
 HUN_initial_recovery:0 "Initial Black Wednesday Recovery"
-HUN_initial_recovery_desc:0 "Placeholder"
-
+HUN_initial_recovery_desc:0 "Our nation has begun the long and painful proccess of reversing the effects of Black Wednesday, but our job is far from over. Further reforms must be enacted if we are to ever see our economy recover."
+###
+HUN_initial_recovery1:0 "Initial Black Wednesday Recovery"
+HUN_initial_recovery1_desc:0 "Our nation has begun the long and painful proccess of reversing the effects of Black Wednesday, but our job is far from over. Further reforms must be enacted if we are to ever see our economy recover."
+###
+HUN_industrial_reform:0 "Industrial reforms"
+HUN_industrial_refrom_desc:0 "The Hungarian industrial sector has long lagged behind it's neighbors, and Black Wednesday made that especially clear. Mass reforms in our industry will allow us to compete and recover from this economic disaster faster.
+###
+HUN_reorganize_civ_tax:0 "Reorganized Civilian Tax Systems"
+HUN_reorganize_civ_tax_desc:0 "The old tax system has proven itself insufficiant for this crisis, and though it might pain us, lowering taxes just a tad will help our civilian economy."
+###
+HUN_new_trade_deals:0 "Renewed Trade Deals"
+HUN_new_trade_deals_desc:0 "We are not the only nation suffering from the effects of Black Wednesday. Mutual cooperation between nations will quicken the process of recovering from this disaster."
+###
+HUN_cut_military_spending:0 "Military Spending Cuts"
+HUN_cut_military_spending_desc:0 "As crazy and suicidal as it may seem, temporarily cutting our military spending will allow our economy to recover far quicker than other methods would allow."
+###
+HUN_new_economic_policy:0 "New Economic Policy"
+HUN_new_economic_policy_desc:0 "A sweeping new economic policy will revitalize our nation, and will serve us well in the upcoming years after this crisis has ended."
+###
+HUN_efficiant_industry:0 "Efficiant Industry"
+HUN_efficiant_industry_desc:0 "Our indsutry has been thrown into dissaray following the collapse of the global economy. It's time to shake up the entire industrial complex and be rid of any and all inefficiencies."
+###
+HUN_black_wednesday_recovery:0 "Black Wednesday Recovery"
+HUN_black_wednesday_recovery_desc:0 "We have managed to reverse the effects of Black Wednesday! Our nation is finally back on its feet and we are ready to finally look outwards again. This is a truely momentus occasion, but also a good lesson for the future."
 
 #### Focus ####
 
@@ -275,13 +298,13 @@ HUN_resource_extraction_desc:0 ""
 
 #### Events ####
 
-hun.1.t:0 "The Status of Hungary"
-hun.1.d:0 "At the dawn of the great war, Hungary was one half of the Austro-Hungarian Empire. Having fought for independance in 1848, and proper representation in 1867, the Hungarian people have proven themselves to be nothing but resiliant. Though the Hungarians lost The Great War, we were spared the worst of the damages. Rumors of a peace treaty being held at Trianon would have destroyed the modern Hungarian state and thrown its people into chaos. Still, the region of Transylvania was wrongly stolen by the Entente and now lies independant, mocking its neighbors. What path will Hungary take? What fate lies for the Magyar people?"
-hun.1.a:0 "Exciting stuff!"
+hungary.1.t:0 "The Status of Hungary"
+hungary.1.d:0 "At the dawn of the great war, Hungary was one half of the Austro-Hungarian Empire. Having fought for independance in 1848, and proper representation in 1867, the Hungarian people have proven themselves to be nothing but resiliant. Though the Hungarians lost The Great War, we were spared the worst of the damages. Rumors of a peace treaty being held at Trianon would have destroyed the modern Hungarian state and thrown its people into chaos. Still, the region of Transylvania was wrongly stolen by the Entente and now lies independant, mocking its neighbors. What path will Hungary take? What fate lies for the Magyar people?"
+hungary.1.a:0 "Exciting stuff!"
 ###
-hun.2.t:0 "The Croatian Revolt!"
-hun.2.d:0 "Ever since the collapse of the Austro-Hungarian Empire in 1919, the Croats inside our territory have been demanding more autonomy in their regions. It would appear that today those tentions have finally reached a boiling point, and now the Croatians have declared an open revolt against us! Towns all across Slavonia are waving the Croatian flag and the Croatian people have declared Leon Geršković as the Regent until a political path can be decided."
-hun.2.a:0 "I knew they couldn't be trusted!"
+hungary.2.t:0 "The Croatian Revolt!"
+hungary.2.d:0 "Ever since the collapse of the Austro-Hungarian Empire in 1919, the Croats inside our territory have been demanding more autonomy in their regions. It would appear that today those tentions have finally reached a boiling point, and now the Croatians have declared an open revolt against us! Towns all across Slavonia are waving the Croatian flag and the Croatian people have declared Leon Geršković as the Regent until a political path can be decided."
+hungary.2.a:0 "I knew they couldn't be trusted!"
 ###
 hungary.3.t:0 "Black Wednesday hits Hungary!"
 hungary.3.d:0 "We all knew this fateful day would come. The crippling worldwide effects of Black Wednesday have finally slammed into Hungary. All across the nation, prices are increasing at an alarming rate and even bread costs upwards of 6,000 forints. It seems things are going to get a lot worse before they get better, and the Hungary that emerges on the other side of this catastrophe will certainly be drastically different from the one that stands today. Thankfully, several economic paths were pre-planned for a market crash, just not of this scale. We must pour all our available resources into solving this economic crisis, lest our neighbors take advantage of our weakened state."
