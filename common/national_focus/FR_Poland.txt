@@ -755,7 +755,7 @@ continuous_focus_position = { x = 0 y = 1300}
 }
 
       focus = { 
-		id = POL_krakow_arms
+		id = POL_review_military
 		icon = GFX_goal_rhineland
  		ai_will_do = { factor = 10 } 
  		
@@ -771,14 +771,14 @@ continuous_focus_position = { x = 0 y = 1300}
 
       focus = { 
 		id = POL_offensive_doctrine
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_army_artillery2
  		ai_will_do = { factor = 10 } 
  		
  		x = 13
  		y = 1
  		cost = 10
 
- 		prerequisite = { focus = POL_krakow_arms }
+ 		prerequisite = { focus = POL_review_military }
 
  		mutually_exclusive = { focus = POL_fortress_poland }
 
@@ -789,10 +789,8 @@ continuous_focus_position = { x = 0 y = 1300}
 
       focus = { 
 		id = POL_develop_new_arms
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_small_arms
  		ai_will_do = { factor = 10 } 
-
- 		mutually_exclusive = { focus =  }
  		
  		x = 13
  		y = 2
@@ -807,7 +805,7 @@ continuous_focus_position = { x = 0 y = 1300}
 
       focus = { 
 		id = POL_develop_new_tanks
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_army_tanks
  		ai_will_do = { factor = 10 } 
  		
  		x = 13
@@ -824,14 +822,14 @@ continuous_focus_position = { x = 0 y = 1300}
 
       focus = { 
 		id = POL_new_military_factories
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_construct_mil_factory
  		ai_will_do = { factor = 10 } 
  		
  		x = 15
  		y = 1
  		cost = 10
 
- 		prerequisite = { focus = POL_krakow_arms }
+ 		prerequisite = { focus = POL_review_military }
 
    		available_if_capitulated = yes  
  		completion_reward = {
@@ -840,7 +838,7 @@ continuous_focus_position = { x = 0 y = 1300}
 
 			focus = { 
 		id = POL_continue_the_buildup
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_construct_mil_factory
  		ai_will_do = { factor = 10 } 
  		
  		x = 15
@@ -856,7 +854,7 @@ continuous_focus_position = { x = 0 y = 1300}
 
       		focus = { 
 		id = POL_fortress_poland
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_construct_military
  		ai_will_do = { factor = 10 } 
  		
  		x = 17
@@ -864,7 +862,7 @@ continuous_focus_position = { x = 0 y = 1300}
  		cost = 10
 
  		mutually_exclusive = { focus = POL_offensive_doctrine }
- 		prerequisite = { focus = POL_krakow_arms }
+ 		prerequisite = { focus = POL_review_military }
 
    		available_if_capitulated = yes  
  		completion_reward = {
@@ -873,7 +871,7 @@ continuous_focus_position = { x = 0 y = 1300}
 
 			focus = { 
 		id = POL_silesia_bunker
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_fortify_city
  		ai_will_do = { factor = 10 } 
 
  		prerequisite = { focus = POL_fortress_poland }
@@ -889,7 +887,7 @@ continuous_focus_position = { x = 0 y = 1300}
 
       focus = { 
 		id = POL_electronic_research
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_generic_radar
  		ai_will_do = { factor = 10 }
 
  		
@@ -904,4 +902,39 @@ continuous_focus_position = { x = 0 y = 1300}
    				}
 }
 
+     focus = { 
+		id = POL_krakow_military_institute
+		icon = GFX_focus_research
+ 		ai_will_do = { factor = 10 }
+
+ 		
+ 		x = 15
+ 		y = 4
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_electronic_research focus = POL_develop_new_tanks }
+ 		prerequisite = { focus = POL_continue_the_buildup }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+ 			add_research_slot = 1
+ 			}
+}
+
+      focus = { 
+		id = POL_casimir_project
+		icon = GFX_goal_generic_secret_weapon
+ 		ai_will_do = { factor = 10 }
+
+ 		
+ 		x = 15
+ 		y = 5
+ 		cost = 10
+
+ 		prerequisite = { focus = POL_krakow_military_institute }
+
+   		available_if_capitulated = yes  
+ 		completion_reward = {
+   				}
+}
 

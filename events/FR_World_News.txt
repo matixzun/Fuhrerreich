@@ -11,11 +11,9 @@ news_event = {
 	desc = worldnews.1.d
 	picture = news_event_assassination_of_alexander_kerensky
 
+	major = yes
+
 	is_triggered_only = yes
-	
-	trigger = {
-		date > 1936.1.13
-	}
 
 	mean_time_to_happen = {
 		days = 2
@@ -33,15 +31,18 @@ news_event = {
 	desc = worldnews.2.d
 	picture = news_event_assassination_of_alexander_kerensky
 
-	is_triggered_only = yes
+	major = yes
 	
 	trigger = {
 		date > 1936.7.13
+		NOT = { has_global_flag = black_wednesday }
 	}
 
 	mean_time_to_happen = {
 		days = 2
 	}
+
+	immediate = { set_global_flag = black_wednesday }
 
 	option = {
 		name = worldnews.2.a
