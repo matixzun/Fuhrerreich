@@ -2,7 +2,7 @@
 
 oob = "FRA_1936"
 
-set_research_slots = 3
+set_research_slots = 4
 
 # Starting tech
 set_technology = {
@@ -40,7 +40,6 @@ set_technology = {
 	trench_warfare = 1
 	fleet_in_being = 1
 }
-
 
 set_convoys = 300
 set_national_unity = 0.6
@@ -130,6 +129,30 @@ create_country_leader = {
 	picture = "Portrait_France_Pierre_Laval.tga"
 	expire = "1965.1.1"
 	ideology = social_democrat_subtype
+	traits = {
+		
+	}
+	
+}
+
+create_country_leader = {
+	name = "Édouard Daladier"
+	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	picture = "Portrait_France_EdouardDaladier.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+		
+	}
+	
+}
+
+create_country_leader = {
+	name = "Philippe Petain"
+	desc = "POLITICS_PHILIPPE_PETAIN_DESC"
+	picture = "Portrait_France_PhilippePetain.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
 	traits = {
 		
 	}
