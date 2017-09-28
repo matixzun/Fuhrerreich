@@ -42,7 +42,7 @@ country_event = { # Transylvania surrenders
 	}
 }
 country_event { #The Croatian Revolt
-  id = hun.3
+	id = hun.3
     title = hun.3.t
     desc = hun.3.d
     picture = GFX_petain_NFA
@@ -66,4 +66,10 @@ country_event { #The Croatian Revolt
         add_political_power = 100
 
     }
+}
+country_event { #Black Wednesday
+	id = hun.2
+	title = hun.2.t
+	desc = hun.2.d
+	picture = news_event_generic_rally2
 }
