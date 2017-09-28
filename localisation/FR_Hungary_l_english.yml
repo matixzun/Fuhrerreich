@@ -7,7 +7,12 @@ HUN_transylvanian_promise_broken_desc:0 "The Entente promised we would remain in
 ###
 HUN_communist_dissent:0 "Communist Dissent"
 HUN_communist_dissent_desc:0 "Despite the Hungarian Soviet Republic being defeated shortly after the Great War, and the legitamite government being put in power, a large portion of our population still holds strong socialist traditions."
-
+###
+HUN_black_wednesday:0 "Black Wednesday"
+HUN_black_wednesday_desc:0 "Placeholder"
+###
+HUN_initial_recovery:0 "Initial Black Wednesday Recovery"
+HUN_initial_recovery_desc:0 "Placeholder"
 
 
 #### Focus ####
@@ -274,11 +279,11 @@ hun.1.t:0 "The Status of Hungary"
 hun.1.d:0 "At the dawn of the great war, Hungary was one half of the Austro-Hungarian Empire. Having fought for independance in 1848, and proper representation in 1867, the Hungarian people have proven themselves to be nothing but resiliant. Though the Hungarians lost The Great War, we were spared the worst of the damages. Rumors of a peace treaty being held at Trianon would have destroyed the modern Hungarian state and thrown its people into chaos. Still, the region of Transylvania was wrongly stolen by the Entente and now lies independant, mocking its neighbors. What path will Hungary take? What fate lies for the Magyar people?"
 hun.1.a:0 "Exciting stuff!"
 ###
-hun.3.t:0 "The Croatian Revolt!"
-hun.3.d:0 "Ever since the collapse of the Austro-Hungarian Empire in 1919, the Croats inside our territory have been demanding more autonomy in their regions. It would appear that today those tentions have finally reached a boiling point, and now the Croatians have declared an open revolt against us! Towns all across Slavonia are waving the Croatian flag and the Croatian people have declared Leon Geršković as the Regent until a political path can be decided."
-hun.3.a:0 "I knew they couldn't be trusted!"
+hun.2.t:0 "The Croatian Revolt!"
+hun.2.d:0 "Ever since the collapse of the Austro-Hungarian Empire in 1919, the Croats inside our territory have been demanding more autonomy in their regions. It would appear that today those tentions have finally reached a boiling point, and now the Croatians have declared an open revolt against us! Towns all across Slavonia are waving the Croatian flag and the Croatian people have declared Leon Geršković as the Regent until a political path can be decided."
+hun.2.a:0 "I knew they couldn't be trusted!"
 ###
-hun.2.t:0 "Black Wednesday hits Hungary!"
-hun.2.d:0 "We all knew this fateful day would come. The crippling worldwide effects of Black Wednesday have finally slammed into Hungary. All across the nation, prices are increasing at an alarming rate and even bread costs upwards of 6,000 forints. It seems things are going to get a lot worse before they get better, and the Hungary that emerges on the other side of this catastrophe will certainly be drastically different from the one that stands today. Thankfully, several economic paths were pre-planned for a market crash, just not of this scale. We must pour all our available resources into solving this economic crisis, lest our neighbors take advantage of our weakened state."
-hun.2.a:0 "Those damn British!"
+hun.3.t:0 "Black Wednesday hits Hungary!"
+hun.3.d:0 "We all knew this fateful day would come. The crippling worldwide effects of Black Wednesday have finally slammed into Hungary. All across the nation, prices are increasing at an alarming rate and even bread costs upwards of 6,000 forints. It seems things are going to get a lot worse before they get better, and the Hungary that emerges on the other side of this catastrophe will certainly be drastically different from the one that stands today. Thankfully, several economic paths were pre-planned for a market crash, just not of this scale. We must pour all our available resources into solving this economic crisis, lest our neighbors take advantage of our weakened state."
+hun.3.a:0 "Those damn British!"
 ###
