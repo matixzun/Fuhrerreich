@@ -12,10 +12,14 @@ focus_tree = {
 		id = HUN_black_wednesday_initial
 		icon = GFX_goal_anti_comintern_pact
 		cost = 10.00
+		available = {
+			has_country_flag = HUN_black_wednesday
+		}
 		x = 4
 		y = 0
 		completion_reward = {
-			add_political_power = 25
+			remove_ideas = HUN_black_wednesday
+			add_ideas = HUN_intital_recovery
 		}
 	}
 	focus = {

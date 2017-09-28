@@ -15,10 +15,6 @@ news_event = {
 
 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 2
-	}
-
 	option = {
 		name = worldnews.1.a
 	}
@@ -39,7 +35,7 @@ news_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 2
+		days = 1
 	}
 
 	immediate = { set_global_flag = black_wednesday }
