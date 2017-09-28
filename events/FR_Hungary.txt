@@ -50,10 +50,10 @@ country_event { #The Croatian Revolt
 
     }
 }
-country_event { #Black Wednesday
-	id = hun.3
-	title = hun.3.t
-	desc = hun.3.d
+country_event = { #Black Wednesday
+	id = hungary.3
+	title = hungary.3.t
+	desc = hungary.3.d
 	picture = news_event_generic_rally2
 
 	mean_time_to_happen = {
@@ -67,7 +67,8 @@ country_event { #Black Wednesday
 		has_global_flag = black_wednesday
 	}
 	option = {
-		name = hun.3.a
+		name = hungary.3.a
 		add_ideas = HUN_black_wednesday
+		set_country_flag = HUN_black_wednesday
 	}
 }
