@@ -629,34 +629,6 @@ country_event = {
 		}
 	}
 }
-
-### Pacify Lybia battle
-country_event = {
-	id = italy.17
-	title = italy.17.t
-	desc = italy.17.d
-	picture = GFX_report_event_election_vote
-	
-	trigger = {
-		AND = {
-		tag = ITA
-		has_country_flag = { flag = libyan_war }
-		NOT = {
-			has_country_flag = {flag = libya_pacified}
-			}
-		}
-	}
-	
-	mean_time_to_happen = { days 45 }
-	
-	fire_only_once = no
-	
-	option = {
-		name = italy.17.a
-		add_manpower = -1000
-		army_experience = -2
-	}
-}
 	
 ### Libya moderate option
 country_event = {
@@ -667,10 +639,7 @@ country_event = {
 	
 	trigger = {
 		tag = ITA
-		OR = {
-			has_country_flag = { flag = antonio_chairman }
-			has_country_flag = { flag = giuseppe_chairman }
-			}
+		has_country_flag = { flag = luigi_chairman }
 		}
 		
 		mean_time_to_happen = { days 60 }
@@ -679,12 +648,12 @@ country_event = {
 		
 		option = {
 			name = italy.20.a
-			set_country_flag = leftwing_government
+			set_country_flag = liberal_autonomy
 		}
 		
 		option = {
 			name = italy.20.b
-			set_country_flag = rightwing_government
+			set_country_flag = liberal_pacification
 		}
 	}
 	
@@ -873,12 +842,17 @@ country_event = {
 		set_country_flag = libyan_total_war
 		remove_ideas = ITA_libyan_prisoners
 		remove_ideas = ITA_war_libya
+		add_national_unity = -0.05
+		add_manpower = -30000
 		LBA = {
 				transfer_state = 273
 				transfer_state = 449
 				transfer_state = 661
 				transfer_state = 662
-				declare_war_on = { target = ITA type = annex_everything }
+				transfer_state = 448
+				transfer_state = 450
+				transfer_state = 451
+				transfer_state = 663
 				hidden_effect = {
 					load_oob = LBA_1936
 					}
