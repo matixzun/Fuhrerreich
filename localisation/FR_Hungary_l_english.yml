@@ -7,13 +7,166 @@ HUN_transylvanian_promise_broken_desc:0 "The Entente promised we would remain in
 ###
 HUN_communist_dissent:0 "Communist Dissent"
 HUN_communist_dissent_desc:0 "Despite the Hungarian Soviet Republic being defeated shortly after the Great War, and the legitamite government being put in power, a large portion of our population still holds strong socialist traditions."
+
+
+
+#### Focus ####
+
+### Black Wednesday ###
+
+HUN_black_wednesday_initial:0 "Aftermath of Black Wednesday"
+HUN_black_wednesday_initial_desc:0 ""
 ###
+HUN_first_black_wednesday_reforms:0 "Economic Reforms"
+HUN_first_black_wednesday_reforms_desc:0 ""
+###
+HUN_new_economic_policy:0 "New Economic Policy"
+HUN_new_economic_policy_desc:0 ""
+###
+HUN_liquidate_unprofitable_assets:0 "Liquidate Unprofitable Assets"
+HUN_liquidate_unprofitable_assets_desc:0 ""
+###
+HUN_cut_military_spending:0 "Cut Military Spending"
+HUN_cut_military_spending_desc:0 ""
+###
+HUN_reorganize_civ_tax:0 "Tax Increases"
+HUN_reorganize_civ_tax_desc:0 ""
+###
+HUN_renewed_trade_deals:0 "Renewed Trade Deals"
+HUN_renewed_trade_deals_desc:0 ""
+###
+HUN_industrial_reforms:0 "Industrial Reforms"
+HUN_industrial_reforms_desc:0 ""
+###
+HUN_black_wednesday_recovery:0 "Black Wednesday Recovery"
+HUN_black_wednesday_recovery_desc:0 ""
+###
+HUN_industry_revival:0 "Industrial Revival"
+HUN_industry_revival_desc:0 ""
 
-###Focus###
 
-###POLITICAL###
+### Politics ###
 
-###INDUSTRY###
+HUN_a_new_nation:0 "A Nation Reborn"
+HUN_a_new_nation_desc:0 ""
+###
+HUN_reconciliation:0 "Reconciliation"
+HUN_reconciliation_desc:0 ""
+###
+HUN_balkan_revolution:0 "The Balkan Revolution"
+HUN_balkan_revolution_desc:0 ""
+###
+HUN_wraith_of_carpathia:0 "Wraith of Carpathia"
+HUN_wraith_of_carpathia_desc:0 ""
+###
+HUN_new_valkism:0 "New Valkism"
+HUN_new_valkism_desc:0 ""
+###
+HUN_transylvanian_commies:0 "Transylvanian Communists"
+HUN_transylvanian_commies_desc:0 ""
+###
+HUN_romanian_commies:0 "Romanian Communists"
+HUN_romanian_commies_desc:0 ""
+###
+HUN_romanian_alliance:0 "Alliance with Romania"
+HUN_romanian_alliance_desc:0 ""
+###
+HUN_transylvanian_alliance:0 "Alliance with Transylvania"
+HUN_transylvanian_alliance_desc:0 ""
+###
+transylvanian_referendum:0 "Referendum in Transylvania"
+transylvanian_referendum_desc:0 ""
+###
+HUN_deal_with_romania:0 "Agreement with Romania"
+HUN_deal_with_romania_desc:0 ""
+###
+HUN_invade_transylvania:0 "Invade Transylvania"
+HUN_invade_transylvania_desc:0 ""
+###
+HUN_transylvanian_paritian:0 "Partition Transylvania"
+HUN_transylvanian_paritian_desc:0 ""
+
+## Communism ##
+
+HUN_embrace_the_reds:0 "Embrace the Communists"
+HUN_embrace_the_reds_desc:0 ""
+###
+HUN_red_legions:0 "The Red Legions"
+HUN_red_legions_desc:0 ""
+###
+HUN_red_industry:0 "Collective Industry"
+HUN_red_industry_desc:0 ""
+###
+HUN_red_army:0 "Hungarian Red Army"
+HUN_red_army_desc:0 ""
+###
+HUN_soviet_allignment:0 "Alliance with the Soviets"
+HUN_soviet_allignment_desc:0 ""
+###
+HUN_independant_socialism:0 "Hungarian Socialism"
+HUN_independant_socialism_desc:0 ""
+
+## Democracy ##
+
+HUN_democratic_preservation:0 "Preserve Liberty"
+HUN_democratic_preservation_desc:0 ""
+###
+HUN_provincial_elections:0 "Provincial Elections"
+HUN_provincial_elections_desc:0 ""
+###
+HUN_entente_industry:0 "Entente Industry"
+HUN_entente_industry_desc:0 ""
+###
+HUN_free_army:0 "The Hungarian Army"
+HUN_free_army_desc:0 ""
+###
+HUN_join_entente:0 "Join the Entente"
+HUN_join_entente_desc:0 ""
+###
+HUN_balkan_angel:0 "Focus on the Balkans"
+HUN_balkan_angel_desc:0 ""
+
+## Fascism ##
+
+HUN_suspend_elections:0 "Suspend Elections"
+HUN_suspend_elections_desc:0 ""
+###
+HUN_civil_protection_unit:0 "Civil Protection Unit"
+HUN_civil_protection_unit_desc:0 ""
+###
+HUN_take_private_industry:0 "Nationalize our Industry"
+HUN_take_private_industry_desc:0 ""
+###
+HUN_army_of_authority:0 "Army of Authority"
+HUN_army_of_authority_desc:0 ""
+###
+HUN_join_balkan_pact:0 "Join the Balkan Pact"
+HUN_join_balkan_pact_desc:0 ""
+###
+HUN_new_balkan_authority:0 "Balkan Hegemon"
+HUN_new_balkan_authority_desc:0 ""
+###
+HUN_a_dark_path:0 "A Dark Path"
+HUN_a_dark_path_desc:0 ""
+###
+HUN_ban_political_opposition:0 "Ban the Opposition"
+HUN_ban_political_opposition_desc:0 ""
+###
+HUN_seize_foreign_industry:0 "Seize Foreign Industries"
+HUN_seize_foreign_industry_desc:0 ""
+###
+HUN_army_of_opression:0 "Army of Oppression"
+HUN_army_of_opression_desc:0 ""
+###
+HUN_german_alliance:0 "Ally with the Germans"
+HUN_german_alliance_desc:0 ""
+###
+HUN_greater_hungary:0 "Greater Hungary"
+HUN_greater_hungary_desc:0 ""
+
+
+### Industry ###
+
 HUN_industry_revival:0 "Industrial Revival"
 HUN_industrial_revival_desc:0 "The Hungarian Industry has never been famed for either its size or its efficiancy, the time has come to institute new projects that will change this worldwide perception."
 ###
@@ -37,9 +190,85 @@ HUN_civ_industry_1_desc:0 "Civilian industry cannot be understated in its import
 ###
 HUN_civ_industry_2:0 "Expand the Alfold Project"
 HUN_arms_industry_2_desc:0 "Hungarian civilian factories have ramped up their size and production, but we cannot stop here. Larger, and more numerous factories will be able to provide for the whole nation."
-###
 
-###Events###
+
+### Navy ###
+
+HUN_a_hungarian_navy:0 "The Hungarian Navy"
+HUN_a_hungarian_navy_desc:0 ""
+###
+HUN_heavy_ship_focus:0 "Emphasis on Heavy Ships"
+HUN_heavy_ship_focus_desc:0 ""
+###
+HUN_light_ship_focus:0 "Emphasis on Light Ships"
+HUN_light_ship_focus_desc:0 ""
+###
+HUN_battleship_advancements:0 "Battleship Research"
+HUN_battleship_advancements_desc:0 ""
+###
+HUN_carrier_advancements:0 "Carrier Research"
+HUN_carrier_advancements_desc:0 ""
+###
+HUN_destroyer_advancements:0 "Build Destroyers"
+HUN_destroyer_advancements_desc:0 ""
+###
+HUN_cruiser_advanvcements:0 "Build Cruisers"
+HUN_cruiser_advanvcements_desc:0 ""
+
+
+### Air Force ###
+
+HUN_a_hungarian_airforce:0 "The Hungarian Air Force"
+HUN_a_hungarian_airforce_desc:0 ""
+###
+HUN_heavy_aircraft_focus:0 "Create Heavy Aircraft"
+HUN_heavy_aircraft_focus_desc:0 ""
+###
+HUN_light_aircraft_focus:0 "Construct Light Aircraft"
+HUN_light_aircraft_focus_desc:0 ""
+###
+HUN_fighter_advancements:0 "Fighter Technology"
+HUN_fighter_advancements_desc:0 ""
+###
+HUN_cas_advancements:0 "Close Air Support Advancements"
+HUN_cas_advancements_desc:0 ""
+###
+HUN_naval_bomber_advancements:0 "Invest in Naval Bombers"
+HUN_naval_bomber_advancements_desc:0 ""
+###
+HUN_heavy_fighter_advancements:0 "Heavy Fighter Focus"
+HUN_heavy_fighter_advancements_desc:0 ""
+###
+HUN_tactical_bomber_advancements:0 "Tactical Bomber Research"
+HUN_tactical_bomber_advancements_desc:0 ""
+###
+HUN_stategic_bomber_focus:0 "Strategic Bombers"
+HUN_stategic_bomber_focus_desc:0 ""
+
+
+### Industrial Advancements ###
+
+HUN_industrial_advancements:0 "Industrial Advancement"
+HUN_industrial_advancements_desc:0 ""
+###
+HUN_electronic_advancements:0 "Electronics Research"
+HUN_electronic_advancements_desc:0 ""
+###
+HUN_radar_experiments:0 "RADAR"
+HUN_radar_experiments_desc:0 ""
+###
+HUN_decryption_experiments:0 "Decryption Techniques"
+HUN_decryption_experiments_desc:0 ""
+###
+HUN_efficiant_industry:0 "Efficient Industry"
+HUN_efficiant_industry_desc:0 ""
+###
+HUN_resource_extraction:0 "Resource Extraction Program"
+HUN_resource_extraction_desc:0 ""
+
+
+
+#### Events ####
 
 hun.1.t:0 "The Status of Hungary"
 hun.1.d:0 "At the dawn of the great war, Hungary was one half of the Austro-Hungarian Empire. Having fought for independance in 1848, and proper representation in 1867, the Hungarian people have proven themselves to be nothing but resiliant. Though the Hungarians lost The Great War, we were spared the worst of the damages. Rumors of a peace treaty being held at Trianon would have destroyed the modern Hungarian state and thrown its people into chaos. Still, the region of Transylvania was wrongly stolen by the Entente and now lies independant, mocking its neighbors. What path will Hungary take? What fate lies for the Magyar people?"

@@ -1135,7 +1135,7 @@ focus_tree = {
 			focus = HUN_wraith_of_carpathia
 		}
 		mutually_exclusive = {
-			focus = HUN_transylvanian_referendu
+			focus = transylvanian_referendum
 		}
 		x = 38
 		y = 7
