@@ -9,41 +9,125 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = HUN_internal_focus
-		icon = GFX_goal_generic_defence
+		id = HUN_black_wednesday_initial
+		icon = GFX_Goal_generic_war_with_comintern
 		cost = 10.00
-		x = 9
+		x = 4
 		y = 0
 		completion_reward = {
-			add_political_power = 75
+			add_political_power = 25
 		}
 	}
 	focus = {
-		id = HUN_external_focus
-		icon = GFX_goal_generic_demand_territory
-		cost = 10.00
-		x = 13
-		y = 0
-		completion_reward = {
-			add_political_power = 75
-		}
-	}
-	focus = {
-		id = HUN_martial_law_slavonia
-		icon = GFX_goal_generic_forceful_treaty
+		id = HUN_first_black_wednesday_reforms
+		icon = GFX_Goal_generic_war_with_comintern
 		cost = 10.00
 		prerequisite = {
-			focus = HUN_croatian_question
+			focus = HUN_black_wednesday_initial
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_new_economic_policy
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_first_black_wednesday_reforms
 		}
 		mutually_exclusive = {
-			focus = HUN_slavonian_puppet
+			focus = HUN_liquidate_unprofitable_assets
 		}
-		x = 19
+		x = 2
 		y = 2
 		completion_reward = {
-			set_country_flag = croats_appeased
+			add_political_power = 25
 		}
-
+	}
+	focus = {
+		id = HUN_liquidate_unprofitable_assets
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_first_black_wednesday_reforms
+		}
+		mutually_exclusive = {
+			focus = HUN_new_economic_policy
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_cut_military_spending
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_new_economic_policy
+		}
+		x = 2
+		y = 3
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_reorganize_civ_tax
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_liquidate_unprofitable_assets
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_renewed_trade_deals
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_cut_military_spending
+		}
+		x = 2
+		y = 4
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_industrial_reforms
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_reorganize_civ_tax
+		}
+		x = 6
+		y = 4
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_black_wednesday_recovery
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_industrial_reforms
+			focus = HUN_renewed_trade_deals
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = HUN_industry_revival
@@ -58,145 +142,6 @@ focus_tree = {
  				uses = 1
  				category = industry 
 			}
-		}
-	}
-	focus = {
-		id = HUN_communist_threat
-		icon = GFX_focus_generic_soviet_politics
-		cost = 10.00
-		prerequisite = {
-			focus = HUN_internal_focus
-		}
-		x = 9
-		y = 1
-
-	}
-	focus = {
-		id = HUN_commie_compromise
-		icon = GFX_goal_generic_major_alliance
-		cost = 10.00
-		prerequisite = {
-			focus = HUN_communist_threat
-		}
-		mutually_exclusive = {
-			focus = HUN_forced_deportation
-		}
-		x = 7
-		y = 2
-		completion_reward = {
-            remove_ideas = { HUN_communist_dissent }
-		}
-	}
-	focus = {
-		id = HUN_forced_deportation
-		icon = GFX_goal_generic_CAS
-		cost = 10.00
-		prerequisite = {
-			focus = HUN_communist_threat
-		}
-		mutually_exclusive = {
-			focus = HUN_commie_compromise
-		}
-		x = 9
-		y = 2
-		completion_reward = {
-            remove_ideas = { HUN_communist_dissent }
-			add_political_power = -50
-		}
-	}
-	focus = {
-		id = HUN_transylvanian_question
-		icon = GFX_goal_generic_major_alliance
-		cost = 10.00
-		prerequisite = {
-			focus = HUN_external_focus
-		}
-		x = 13
-		y = 1
-		  completion_reward = {
-            add_political_power = 25
-        }
-	}
-	focus = {
-		id = HUN_live_in_peace
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = HUN_transylvanian_question
-		}
-		mutually_exclusive = {
-			focus = HUN_split_transylvania
-			focus = HUN_annex_transylvania
-		}
-		x = 11
-		y = 2
-		completion_reward = {
-            remove_ideas = { HUN_communist_dissent }
-		}
-	}
-	focus = {
-		id = HUN_split_transylvania
-		icon = GFX_goal_generic_dangerous_deal
-		cost = 10.00
-		prerequisite = { focus = HUN_Transylvanian_question }
-		mutually_exclusive = {
-			focus = HUN_annex_transylvania
-			focus = HUN_live_in_peace
-		}
-		prerequisite = {
-			focus = HUN_transylvanian_question
-		}
-		x = 13
-		y = 2
-		completion_reward = {
-            remove_ideas = { HUN_communist_dissent }
-		}
-	}
-	focus = {
-		id = HUN_annex_transylvania
-		icon = GFX_goal_generic_forceful_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = HUN_transylvanian_question
-		}
-		mutually_exclusive = {
-			focus = HUN_split_transylvania
-			focus = HUN_live_in_peace
-		}
-		x = 15
-		y = 2
-		completion_reward = {
-            remove_ideas = { HUN_communist_dissent }
-		}
-	}
-	focus = {
-		id = HUN_croatian_question
-		icon = GFX_goal_generic_national_unity
-		cost = 10.00
-		prerequisite = {
-			focus = HUN_external_focus
-		}
-		x = 17
-		y = 1
-		completion_reward = {
-		add_political_power = 25
-		}
-
-	}
-	focus = {
-		id = HUN_slavonian_puppet
-		icon = GFX_goal_anschluss
-		cost = 10.00
-		prerequisite = {
-			focus = HUN_croatian_question
-		}
-		mutually_exclusive = {
-			focus = HUN_pressure_bosnia
-		}
-		x = 17
-		y = 2
-		completion_reward = {
-			set_country_flag = croats_appeased
 		}
 	}
 	focus = {
@@ -454,7 +399,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = HUN_indepenant_socialism
+		id = HUN_independant_socialism
 		icon = GFX_Focus_generic_soviet_politics
 		cost = 10.00
 		prerequisite = {
@@ -954,6 +899,278 @@ focus_tree = {
 		x = 52
 		y = 2
 		
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_industrial_advancements
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		x = 10
+		y = 0
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_electronic_advancements
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		x = 16
+		y = 0
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_radar_experiments
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_electronic_advancements
+		}
+		x = 16
+		y = 1
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_decryption_experiments
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_radar_experiments
+		}
+		x = 16
+		y = 2
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_efficiant_industry
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_industrial_advancements
+		}
+		x = 10
+		y = 1
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_resource_extraction
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_efficiant_industry
+		}
+		x = 10
+		y = 2
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_a_new_nation
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_independant_socialism
+			focus = HUN_soviet_allignment
+			focus = HUN_join_entente
+			focus = HUN_balkan_angel
+			focus = HUN_join_balkan_pact
+			focus = HUN_new_balkan_authority
+			focus = HUN_german_alliance
+			focus = HUN_greater_hungary
+		}
+		x = 35
+		y = 5
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_reconciliation
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_a_new_nation
+		}
+		x = 33
+		y = 6
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_balkan_revolution
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_a_new_nation
+		}
+		x = 29
+		y = 6
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_wraith_of_carpathia
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_a_new_nation
+		}
+		x = 37
+		y = 6
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_new_valkism
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_a_new_nation
+		}
+		x = 41
+		y = 6
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_transylvanian_commies
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_balkan_revolution
+		}
+		mutually_exclusive = {
+			focus = HUN_romanian_commies
+		}
+		x = 28
+		y = 7
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_romanian_commies
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_balkan_revolution
+		}
+		mutually_exclusive = {
+			focus = HUN_transylvanian_commies
+		}
+		x = 30
+		y = 7
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_romanian_alliance
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_reconciliation
+		}
+		mutually_exclusive = {
+			focus = HUN_transylvanian_alliance
+		}
+		x = 32
+		y = 7
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_transylvanian_alliance
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_reconciliation
+		}
+		mutually_exclusive = {
+			focus = HUN_romanian_alliance
+		}
+		x = 34
+		y = 7
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = transylvanian_referendum
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_wraith_of_carpathia
+		}
+		mutually_exclusive = {
+			focus = HUN_deal_with_romania
+		}
+		x = 36
+		y = 7
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_deal_with_romania
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_wraith_of_carpathia
+		}
+		mutually_exclusive = {
+			focus = HUN_transylvanian_referendu
+		}
+		x = 38
+		y = 7
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_invade_transylvania
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_new_valkism
+		}
+		mutually_exclusive = {
+			focus = HUN_transylvanian_paritian
+		}
+		x = 40
+		y = 7
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HUN_transylvanian_paritian
+		icon = GFX_Goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = HUN_new_valkism
+		}
+		mutually_exclusive = {
+			focus = HUN_invade_transylvania
+		}
+		x = 42
+		y = 7
 		completion_reward = {
 			add_political_power = 25
 		}
