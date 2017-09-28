@@ -44,5 +44,66 @@ ideas = {
                 min_export = -0.3
 			}
 		}
+		HUN_initial_recovery1 = {
+			picture = great_depression
+			modifier = {
+				unity_factor = -0.10
+                production_factory_max_efficiency_factor = -0.15
+                industrial_capacity_factory = -0.3
+                production_speed_buildings_factor = -0.3
+                min_export = -0.25
+			}
+		}
+		HUN_efficiant_industry = {
+			picture = generic_central_management
+			modifier = {
+                production_factory_max_efficiency_factor = +0.05
+			}
+		}
+		HUN_new_economic_policy = {
+			picture = generic_goods_red_bonus
+			modifier = {
+                consumer_goods_factor = -0.05
+			}
+		}
+		HUN_cut_military_spending = {
+			picture = general_Staff
+			modifier = {
+                conscription = -0.01
+                max_planning = -0.10
+                planning_speed = -0.05
+                army_morale_factor = -0.05
+			}
+		}
+		HUN_reorganize_civ_tax = {
+			picture = generic_foreign_capital
+			modifier = {
+                consumer_goods_factor = -0.05
+			}
+		}
+		HUN_new_trade_deals = {
+			picture = generic_production_bonus
+			modifier = {
+                trade_opinion_factor = 0.25
+                economy_cost_factor = -0.05
+                opinion_gain_monthly_factor = 0.25
+			}
+		}
+		HUN_industrial_reform = {
+			picture = generic_production_bonus
+			modifier = {
+                43 = {
+				remove_building = { type = industrial_complex level = 1 }
+				}
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		HUN_black_wednesday_over = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+
+			}
+		}
 	}
 }
