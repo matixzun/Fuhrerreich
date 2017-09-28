@@ -207,4 +207,320 @@ ideas = {
 			removal_cost = -1
 		}
 
+	political_advisor = {
+
+		SER_slobodan_jovanovic = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+		SER_ivan_ribar = {
+
+			picture = generic_political_advisor_europe_5
+
+			allowed = {
+				original_tag = SER
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		SER_milan_nedic = {
+
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		SER_ivo_lola_ribar = {
+
+			picture = generic_communist_europe
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			traits = { communist_revolutionary }
+		}
+
+		SER_milovan_djilas = {
+
+			picture = generic_democratic_europe
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			traits = { democratic_reformer }
+		}
+
+		SER_dimitrije_ljotic = {
+
+			picture = generic_fascist_europe
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			traits = { valkist_sympathies }
+		}
+	}
+
+	theorist = {
+
+		SER_ljubomir_maric = {
+					
+					
+			allowed = {
+				original_tag = SER
+			}
+			
+			picture = generic_army_europe_5
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+
+		SER_marijan_polic = {
+					
+					
+			allowed = {
+				original_tag = SER
+			}
+			
+			picture = generic_political_advisor_europe_2
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		SER_petar_drapsin = {
+
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			
+			traits = { blitzkrieg_theorist }
+		}
+	}
+	# MILITARY
+	army_chief = {
+
+		SER_milutin_nedic = {
+			
+			picture = generic_army_europe_6
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SER_draza_mihailovic = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SER_josip_broz_tito = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+
+			
+			traits = { army_chief_morale_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+
+		SER_dusan_simovic = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SER_petar_vukcevic = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		SER_bogoljub_ilic = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SER_petar_kosic = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		SER_arso_jovanovic = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		SER_mihajlo_lukic = {
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = SER
+			}
+			
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SER_danilo_kalafatovic = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+			
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SER_borivoje_mirkovic = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = SER
+			}
+			
+
+			traits = { air_bomber_interception_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 }
