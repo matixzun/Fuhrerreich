@@ -10,7 +10,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = HUN_black_wednesday_initial
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_anti_comintern_pact
 		cost = 10.00
 		x = 4
 		y = 0
@@ -20,7 +20,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_first_black_wednesday_reforms
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_production2
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_black_wednesday_initial
@@ -33,7 +33,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_new_economic_policy
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_consumer_goods
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_first_black_wednesday_reforms
@@ -49,7 +49,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_liquidate_unprofitable_assets
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_first_black_wednesday_reforms
@@ -65,7 +65,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_cut_military_spending
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_SAF_colonialist_crusade
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_new_economic_policy
@@ -78,7 +78,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_reorganize_civ_tax
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_liquidate_unprofitable_assets
@@ -91,7 +91,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_renewed_trade_deals
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_improve_relations
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_cut_military_spending
@@ -104,7 +104,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_industrial_reforms
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construction
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_reorganize_civ_tax
@@ -117,7 +117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_black_wednesday_recovery
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_generic_the_giant_wakes
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_industrial_reforms
@@ -131,7 +131,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_industry_revival
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_goal_generic_propaganda
 		cost = 10.00
 		x = 24
 		y = 0
@@ -330,7 +330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_embrace_the_reds
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_generic_soviet_politics
 		cost = 10.00
 		x = 30
 		y = 0
@@ -341,7 +341,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_red_legions
-		icon = GFX_Focus_yug_pan_slavic_congress
+		icon = GFX_focus_YUG_pan_slavic_congress
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_embrace_the_reds
@@ -355,7 +355,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_red_industry
-		icon = GFX_Goal_generic_construct_civilian
+		icon = GFX_goal_generic_soviet_construction
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_red_legions
@@ -369,7 +369,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_red_army
-		icon = GFX_Goal_generic_axis_build_infantry
+		icon = GFX_goal_support_communism
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_red_industry
@@ -383,7 +383,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_soviet_allignment
-		icon = GFX_Focus_generic_soviet_politics
+		icon = GFX_focus_generic_join_comintern
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_red_army
@@ -400,7 +400,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_independant_socialism
-		icon = GFX_Focus_generic_soviet_politics
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_red_army
@@ -417,7 +417,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_democratic_preservation
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_support_democracy
 		cost = 10.00
 		x = 32
 		y = 0
@@ -428,7 +428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_provincial_elections
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_democratic_preservation
@@ -442,7 +442,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_entente_industry
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_generic_the_giant_wakes
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_provincial_elections
@@ -456,7 +456,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_free_army
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_generic_little_entente
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_entente_industry
@@ -470,7 +470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_join_entente
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_major_alliance
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_free_army
@@ -487,7 +487,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_balkan_angel
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_more_territorial_claims
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_free_army
@@ -504,7 +504,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_suspend_elections
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 10.00
 		x = 36
 		y = 0
@@ -515,7 +515,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_civil_protection_unit
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_major_war
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_suspend_elections
@@ -529,7 +529,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_take_private_industry
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_political_pressure
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_civil_protection_unit
@@ -543,7 +543,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_army_of_authority
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_generic_military_mission
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_take_private_industry
@@ -557,7 +557,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_join_balkan_pact
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_military_deal
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_army_of_authority
@@ -574,7 +574,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_new_balkan_authority
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_army_of_authority
@@ -591,7 +591,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_a_dark_path
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_secret_weapon
 		cost = 10.00
 		x = 40
 		y = 0
@@ -602,7 +602,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_ban_political_opposition
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_a_dark_path
@@ -616,7 +616,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_seize_foreign_industry
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_ban_political_opposition
@@ -630,7 +630,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_army_of_opression
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_SAF_colonialist_crusade
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_seize_foreign_industry
@@ -644,7 +644,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_german_alliance
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_army_of_opression
@@ -661,7 +661,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_greater_hungary
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_anschluss
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_army_of_opression
@@ -678,7 +678,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_a_hungarian_navy
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_build_navy
 		cost = 10.00
 		x = 48
 		y = 0
@@ -689,7 +689,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_heavy_ship_focus
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_a_hungarian_navy
@@ -703,7 +703,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_light_ship_focus
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_a_hungarian_navy
@@ -720,7 +720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_battleship_advancements
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_navy_battleship
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_heavy_ship_focus
@@ -734,7 +734,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_carrier_advancements
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_navy_carrier
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_heavy_ship_focus
@@ -748,7 +748,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_destroyer_advancements
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_wolf_pack
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_light_ship_focus
@@ -762,7 +762,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_cruiser_advanvcements
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_light_ship_focus
@@ -776,7 +776,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_a_hungarian_airforce
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_build_airforce
 		cost = 10.00
 		x = 56
 		y = 0
@@ -787,7 +787,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_heavy_aircraft_focus
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_air_doctrine
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_a_hungarian_airforce
@@ -804,7 +804,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_light_aircraft_focus
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_air_production
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_a_hungarian_airforce
@@ -821,7 +821,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_fighter_advancements
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_air_fighter
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_light_aircraft_focus
@@ -835,7 +835,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_cas_advancements
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_CAS
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_light_aircraft_focus
@@ -849,7 +849,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_naval_bomber_advancements
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_air_naval_bomber
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_light_aircraft_focus
@@ -863,7 +863,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_heavy_fighter_advancements
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_air_fighter2
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_heavy_aircraft_focus
@@ -891,7 +891,7 @@ focus_tree = {
 	}
 	focus = {
 		id = HUN_stategic_bomber_focus
-		icon = GFX_Goal_generic_war_with_comintern
+		icon = GFX_goal_generic_air_bomber
 		cost = 10.00
 		prerequisite = {
 			focus = HUN_heavy_aircraft_focus
