@@ -670,3 +670,90 @@ country_event = {
 		#}
 	}
 }
+
+#Bayern Agreement
+country_event = {
+	id = serbia.19
+	title = serbia.19.t
+	desc = serbia.19.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = serbia.19.a
+		ai_chance = {
+			factor = 90
+		}
+		add_opinion_modifier = { target = SER modifier = bayern_agreement_accepted }
+		if = {
+			limit = {
+				SER = {
+					has_war_with = HUN
+				}
+			}
+			send_equipment = { target = SER type = infantry_equipment amount = 1000 }
+			set_global_flag = GER_aided_serbia
+		}
+	}
+
+	option = {
+		name = serbia.19.b
+		ai_chance = {
+			factor = 10
+		}
+		add_opinion_modifier = { target = SER modifier = bayern_agreement_declined }
+		set_global_flag = GER_declined_serbia
+	}
+}
+
+#Serbo Hungarian War - Serbia Wins
+country_event = {
+	id = serbia.20
+	title = serbia.20.t
+	desc = serbia.20.d
+	picture = GFX_report_event_german_troops
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = SER
+		has_war_with = HUN
+		OR = {
+			HUN = {
+				surrender_progress > 0.12
+			}
+			SER = {
+				controls_state = 767
+				controls_state = 109
+				controls_state = 45
+			}
+		}
+		has_civil_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = serbia.20.a
+		SER = { 
+			white_peace = HUN
+			transfer_state = 767
+			transfer_state = 109
+			transfer_state = 45
+			diplomatic_relation = {
+			country = HUN
+			relation = non_aggression_pact
+			}
+		}
+	}
+
+	option = {
+		name = serbia.20.b
+		HUN = {
+			country_event = { id = serbia.21 }
+		}
+	}
+}
