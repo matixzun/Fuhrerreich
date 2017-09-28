@@ -1,6 +1,7 @@
 ﻿capital = 43
 
 oob = "HUN_1936"
+country_event = { id = hungary.1 days = 1 }
 
 set_research_slots = 3
 

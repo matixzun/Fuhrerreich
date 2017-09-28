@@ -20,9 +20,6 @@ country_event = {
 
 	option = {
 		name = poland.1.a
-		ai_chance = {
-			factor = 50
-		}
 	}
 }
 
